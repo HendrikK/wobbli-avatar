@@ -1,0 +1,46 @@
+.aa-av .flp, .aa-av .flp2 { transform-origin: 50% 100%; }
+.aa-av.v-imcards .fx-icards { display: inline; }
+.aa-av.v-imcards .ic { opacity: 0; animation: aa-A-icard 1.5s ease-in infinite backwards; }
+.aa-av.v-imcards .ic:nth-child(2) { animation-delay: .5s; }
+.aa-av.v-imcards .ic:nth-child(3) { animation-delay: 1s; }
+.aa-av.v-imcards .w { animation: aa-A-gulp .5s ease-in-out infinite; }
+.aa-av.v-imcards .gz { transform: translate(-4px, 0px); }
+.aa-av.v-imvac .fx-vac { display: inline; }
+.aa-av.v-imvac .vl, .aa-av.v-imvac .vr { opacity: 0; animation: 1.2s ease-in infinite backwards; }
+.aa-av.v-imvac .vl { animation-name: aa-A-vacl; }
+.aa-av.v-imvac .vr { animation-name: aa-A-vacr; }
+.aa-av.v-imvac .vb2 { animation-delay: .4s; }
+.aa-av.v-imvac .vb3 { animation-delay: .8s; }
+.aa-av.v-imvac .w { transform: scale(.97, 1.04); animation: aa-A-inhale .4s ease-in-out infinite alternate; }
+.aa-av.v-imvac .e > path { animation: none; }
+.aa-av.v-imfunnel .fx-funnel { display: inline; }
+.aa-av.v-imfunnel .fdot { opacity: 0; animation: aa-A-fdot 1.2s ease-in infinite backwards; }
+.aa-av.v-imfunnel .fdot:nth-of-type(2) { animation-delay: .4s; }
+.aa-av.v-imfunnel .fdot:nth-of-type(3) { animation-delay: .8s; }
+.aa-av.v-imfunnel .fdrip { opacity: 0; animation: aa-A-fdrip .4s ease-in infinite; }
+.aa-av.v-imfunnel .gz { transform: translate(0px, -4.5px); }
+.aa-av.v-imfunnel .w { animation: aa-A-sip .4s ease-in-out infinite alternate; }
+.aa-av.v-imunpack .fx-xbox, .aa-av.v-imunpack .fx-items { display: inline; }
+.aa-av.v-imunpack .xpg { display: none; }
+.aa-av.v-imunpack .itm { opacity: 0; animation: aa-A-item 1.8s ease-out infinite backwards; }
+.aa-av.v-imunpack .itm:nth-of-type(2) { animation-delay: .6s; animation-name: aa-A-item2; }
+.aa-av.v-imunpack .itm:nth-of-type(3) { animation-delay: 1.2s; }
+.aa-av.v-imunpack .gz { animation: aa-A-unpackeyes .6s ease-in-out infinite alternate; }
+.aa-av.v-imunpack .w { animation: aa-A-gulp .6s ease-in-out infinite; }
+.aa-av.v-imfile .fx-file { display: inline; }
+.aa-av.v-imfile .fil { animation: aa-A-file 2.2s infinite; }
+.aa-av.v-imfile .gz { animation: aa-A-fileeyes 2.2s infinite; }
+.aa-av.v-imfile .w { animation: aa-A-filebody 2.2s infinite; }
+@keyframes aa-A-icard { 0% { translate: -10px 0; opacity: 0; scale: 1; } 15% { opacity: 1; } 55% { translate: 22px -2px; scale: 1; opacity: 1; } 75%, 100% { translate: 34px -4px; scale: .2; opacity: 0; } }
+@keyframes aa-A-gulp { 0%, 40%, 100% { scale: 1 1; } 70% { scale: 1.05 .94; } }
+@keyframes aa-A-vacl { 0% { translate: 0 0; scale: 1; opacity: 0; } 15% { opacity: 1; } 85% { translate: 26px 0; scale: .3; opacity: 1; } 100% { translate: 30px 0; scale: .1; opacity: 0; } }
+@keyframes aa-A-vacr { 0% { translate: 0 0; scale: 1; opacity: 0; } 15% { opacity: 1; } 85% { translate: -26px 0; scale: .3; opacity: 1; } 100% { translate: -30px 0; scale: .1; opacity: 0; } }
+@keyframes aa-A-inhale { from { scale: 1 1; } to { scale: .98 1.02; } }
+@keyframes aa-A-fdot { 0% { translate: 0 -6px; opacity: 0; } 20% { opacity: 1; } 70% { translate: 0 8px; opacity: 1; } 85%, 100% { translate: 0 10px; opacity: 0; } }
+@keyframes aa-A-fdrip { 0% { translate: 0 0; opacity: 1; scale: .6; } 80% { translate: 0 7px; opacity: 1; scale: 1; } 100% { translate: 0 8px; opacity: 0; scale: .6; } }
+@keyframes aa-A-item { 0% { translate: 0 0; opacity: 0; scale: .6; } 10% { opacity: 1; scale: 1; } 40% { translate: -10px -26px; } 75% { translate: 0 -40px; scale: .9; opacity: 1; } 90%, 100% { translate: 0 -44px; scale: .2; opacity: 0; } }
+@keyframes aa-A-item2 { 0% { translate: 0 0; opacity: 0; scale: .6; } 10% { opacity: 1; scale: 1; } 40% { translate: 10px -26px; } 75% { translate: 0 -40px; scale: .9; opacity: 1; } 90%, 100% { translate: 0 -44px; scale: .2; opacity: 0; } }
+@keyframes aa-A-unpackeyes { from { translate: 0 3px; } to { translate: 0 -3px; } }
+@keyframes aa-A-file { 0% { translate: 14px 0; opacity: 0; scale: 1; } 15% { opacity: 1; } 40%, 65% { translate: 0 0; scale: 1; opacity: 1; } 85%, 100% { translate: -26px 0; scale: .2; opacity: 0; } }
+@keyframes aa-A-fileeyes { 0%, 40% { translate: calc(var(--amp, 1) * 5px) 0; } 46% { translate: calc(var(--amp, 1) * 4px) -1px; } 52% { translate: calc(var(--amp, 1) * 5.5px) 1px; } 58% { translate: calc(var(--amp, 1) * 4px) 1px; } 66% { translate: calc(var(--amp, 1) * 5px) 0; } 85%, 100% { translate: 0 0; } }
+@keyframes aa-A-filebody { 0%, 70%, 92%, 100% { scale: 1 1; } 80% { scale: 1.05 .94; } }

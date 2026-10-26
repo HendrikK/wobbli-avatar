@@ -1,0 +1,139 @@
+{
+  "key": "approval",
+  "name": "Waiting on approval",
+  "when": "Needs a yes before it runs, sends or shares",
+  "group": "talk",
+  "verb": "asks first",
+  "mouth": "smile",
+  "hands": "clasp",
+  "pose": {
+    "sx": 1.1,
+    "sy": 1.1,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "apsign",
+      "name": "Sign",
+      "desc": "Holds up a sign with an empty checkbox that pulses.",
+      "hands": "offer"
+    },
+    {
+      "key": "aptap",
+      "name": "Foot tap",
+      "desc": "Taps one side on the floor and glances up, politely waiting.",
+      "pose": {
+        "sx": 1.05,
+        "sy": 0.8,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "hands": "tap"
+    },
+    {
+      "key": "apbell",
+      "name": "Desk bell",
+      "desc": "Rings a little desk bell, then looks back at you.",
+      "hands": "tap"
+    },
+    {
+      "key": "appuppy",
+      "name": "Puppy eyes",
+      "desc": "Big shiny eyes, a head tilt and a hopeful wiggle.",
+      "pose": {
+        "sx": 1.35,
+        "sy": 1.35,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "pout",
+      "hands": "clasp"
+    },
+    {
+      "key": "appen",
+      "name": "Sign here",
+      "desc": "Points a pen at the signature line and looks up at you.",
+      "hands": "offer"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 6,
+      "k": "eg-shine",
+      "on": [
+        "v-appuppy"
+      ],
+      "t": "<g class=\"eg eg-shine\" fill=\"#FFFFFF\"><circle cx=\"{{a.shx1}}\" cy=\"{{a.shy1}}\" r=\"1.9\"></circle><circle cx=\"{{a.shx2}}\" cy=\"{{a.shy2}}\" r=\"1.9\"></circle></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 253,
+      "k": "fx-sign",
+      "on": [
+        "v-apsign"
+      ],
+      "t": "<g class=\"fx-sign\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 17)\"><g class=\"a sgn\"><path class=\"thin\" d=\"M0 0V-10\"></path><rect class=\"pw\" x=\"-14\" y=\"-26\" width=\"28\" height=\"17\" rx=\"2\"></rect><rect class=\"a cbx\" x=\"-10\" y=\"-21\" width=\"7\" height=\"7\" rx=\"1.5\" fill=\"none\" stroke-width=\"1.8\" style=\"stroke: var(--aa-ink, #3A3833)\"></rect><path class=\"line2\" d=\"M0 -19.5H9M0 -15H6\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 254,
+      "k": "fx-tapmk",
+      "on": [
+        "v-aptap"
+      ],
+      "t": "<g class=\"fx-tapmk\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(25 79)\"><path class=\"a tpk thin\" d=\"M-2 -5L-5 -8M-4 -1H-8.5M-2 3L-5 5.5\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 255,
+      "k": "fx-bell",
+      "on": [
+        "v-apbell"
+      ],
+      "t": "<g class=\"fx-bell\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(93 81)\"><rect class=\"dk\" x=\"-9\" y=\"-2.5\" width=\"18\" height=\"2.5\" rx=\"1\"></rect><path class=\"gold\" d=\"M-7 -2.5A7 7 0 0 1 7 -2.5Z\"></path><g class=\"a bbtn\"><rect class=\"dk\" x=\"-1.2\" y=\"-12.5\" width=\"2.4\" height=\"3.5\" rx=\"1\"></rect></g><path class=\"a dng thin\" d=\"M-8 -12L-11.5 -15M8 -12L11.5 -15M-10 -7H-14M10 -7H14\"></path><g transform=\"translate(0 -17)\"><g class=\"a paw\"><ellipse class=\"hc\" cx=\"0\" cy=\"0\" rx=\"4\" ry=\"3.2\"></ellipse></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 256,
+      "k": "fx-sigdoc",
+      "on": [
+        "v-appen"
+      ],
+      "t": "<g class=\"fx-sigdoc\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"pw\" x=\"-16\" y=\"-11\" width=\"32\" height=\"22\" rx=\"2\"></rect><path class=\"line2\" d=\"M-11 -6H11M-11 -2H5\"></path><path class=\"thin\" d=\"M-12.5 3L-9.5 6M-9.5 3L-12.5 6\"></path><path class=\"lnk2\" d=\"M-6 6H12\"></path><g transform=\"translate(5 4)\"><g class=\"a hov\"><g transform=\"rotate(28)\"><path class=\"dk\" d=\"M0 0L-1.6 -4.5H1.6Z\"></path><rect class=\"gst\" x=\"-1.8\" y=\"-15\" width=\"3.6\" height=\"10.5\" rx=\".6\"></rect><rect class=\"cst\" x=\"-1.8\" y=\"-18\" width=\"3.6\" height=\"3\" rx=\"1\"></rect></g></g></g></g></g>"
+    }
+  ]
+}

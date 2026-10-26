@@ -1,0 +1,136 @@
+{
+  "key": "gotit",
+  "name": "Got it",
+  "when": "Acknowledging an instruction or a correction",
+  "group": "talk",
+  "verb": "gets it",
+  "mouth": "grin",
+  "hands": "thumbs",
+  "pose": {
+    "sx": 1.05,
+    "sy": 1,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "ginod",
+      "name": "Nod",
+      "desc": "Two quick nods with happy eyes.",
+      "mouth": "smile"
+    },
+    {
+      "key": "gitick",
+      "name": "Tick",
+      "desc": "A green tick draws itself and it hops."
+    },
+    {
+      "key": "giding",
+      "name": "Ding",
+      "desc": "A bright little burst and a bounce."
+    },
+    {
+      "key": "ginote",
+      "name": "Noted",
+      "desc": "Ticks items off on a notepad, then nods."
+    },
+    {
+      "key": "gibulb",
+      "name": "Light bulb",
+      "desc": "A light bulb switches on above its head.",
+      "pose": {
+        "sx": 1.1,
+        "sy": 1.2,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "osmall",
+      "hands": "reach"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 4,
+      "k": "eg-n",
+      "on": [
+        "v-awkward",
+        "v-floaty",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-hum",
+        "v-sparkle",
+        "v-squeeze"
+      ],
+      "t": "<g class=\"eg eg-n\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 276,
+      "k": "fx-tick",
+      "on": [
+        "v-gitick"
+      ],
+      "t": "<g class=\"fx-tick\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 12)\"><circle class=\"a tkc okf\" cx=\"0\" cy=\"0\" r=\"8.5\"></circle><path class=\"tkm\" d=\"M-4 0L-1 3L4.5 -3.5\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 277,
+      "k": "fx-dburst",
+      "on": [
+        "v-giding"
+      ],
+      "t": "<g class=\"fx-dburst\" transform=\"translate(0 {{a.mo}})\"><path class=\"a brst ray\" d=\"M86 48H92M75.5 22.5L79.7 18.3M50 12V6M24.5 22.5L20.3 18.3M14 48H8M24.5 73.5L20.3 77.7M50 84V90M75.5 73.5L79.7 77.7\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 278,
+      "k": "fx-notepad",
+      "on": [
+        "v-ginote"
+      ],
+      "t": "<g class=\"fx-notepad\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"pw\" x=\"-15\" y=\"-12\" width=\"30\" height=\"24\" rx=\"2\"></rect><rect class=\"pw\" x=\"-11\" y=\"-7.5\" width=\"5\" height=\"5\" rx=\"1\"></rect><rect class=\"pw\" x=\"-11\" y=\"2\" width=\"5\" height=\"5\" rx=\"1\"></rect><path class=\"line2\" d=\"M-3 -5H10M-3 4.5H8\"></path><path class=\"nck nck1\" d=\"M-10 -5L-8.6 -3.6L-5.5 -7.5\"></path><path class=\"nck nck2\" d=\"M-10 4.5L-8.6 5.9L-5.5 2\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 279,
+      "k": "fx-bulb",
+      "on": [
+        "v-gibulb"
+      ],
+      "t": "<g class=\"fx-bulb\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 4)\"><path class=\"a brays ray\" d=\"M0 -18.5V-22.5M8.1 -15.1L10.9 -17.9M-8.1 -15.1L-10.9 -17.9M11.5 -7H15.5M-11.5 -7H-15.5\"></path><path class=\"a blb bulb\" d=\"M-6 4C-6 0 -9 -2 -9 -7A9 9 0 0 1 9 -7C9 -2 6 0 6 4Z\"></path><rect class=\"dk\" x=\"-5\" y=\"5\" width=\"10\" height=\"2.2\" rx=\"1\"></rect><rect class=\"dk\" x=\"-4\" y=\"8\" width=\"8\" height=\"2\" rx=\"1\"></rect></g></g>"
+    }
+  ]
+}

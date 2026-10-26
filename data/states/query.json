@@ -1,0 +1,91 @@
+{
+  "key": "query",
+  "name": "Querying",
+  "when": "Running SQL against a connection",
+  "group": "work",
+  "verb": "queries",
+  "mouth": "flat",
+  "hands": "type",
+  "pose": {
+    "sx": 1.05,
+    "sy": 0.75,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "qurows",
+      "name": "Rows",
+      "desc": "Result rows scroll up a table while its eyes skim across."
+    },
+    {
+      "key": "qubar",
+      "name": "Segments",
+      "desc": "A segmented bar fills block by block as results come back."
+    },
+    {
+      "key": "qusql",
+      "name": "SQL",
+      "desc": "Lines of code type out in a little editor with a blinking cursor."
+    },
+    {
+      "key": "qusort",
+      "name": "Sort",
+      "desc": "Bars shuffle places until they line up shortest to tallest."
+    },
+    {
+      "key": "qudb",
+      "name": "Database",
+      "desc": "Sends a request to a database and catches the answer."
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 226,
+      "k": "fx-table",
+      "on": [
+        "v-qurows"
+      ],
+      "t": "<g class=\"fx-table\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"pw\" x=\"-16\" y=\"-11\" width=\"32\" height=\"22\" rx=\"2\"></rect><rect class=\"thd\" x=\"-15\" y=\"-10\" width=\"30\" height=\"5\" rx=\"1\"></rect><g transform=\"translate(0 2)\"><path class=\"a trow line2\" d=\"M-13 0H-2M2 0H13\"></path><path class=\"a trow line2\" d=\"M-13 0H-2M2 0H13\"></path><path class=\"a trow line2\" d=\"M-13 0H-2M2 0H13\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 227,
+      "k": "fx-seg",
+      "on": [
+        "v-qubar"
+      ],
+      "t": "<g class=\"fx-seg\" transform=\"translate(0 {{a.dn}})\"><rect class=\"track\" x=\"23\" y=\"87.5\" width=\"54\" height=\"7\" rx=\"3.5\"></rect><g><rect class=\"a seg head\" x=\"24\" y=\"88.5\" width=\"9.6\" height=\"5\" rx=\"2\"></rect><rect class=\"a seg head\" x=\"34.6\" y=\"88.5\" width=\"9.6\" height=\"5\" rx=\"2\"></rect><rect class=\"a seg head\" x=\"45.2\" y=\"88.5\" width=\"9.6\" height=\"5\" rx=\"2\"></rect><rect class=\"a seg head\" x=\"55.8\" y=\"88.5\" width=\"9.6\" height=\"5\" rx=\"2\"></rect><rect class=\"a seg head\" x=\"66.4\" y=\"88.5\" width=\"9.6\" height=\"5\" rx=\"2\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 228,
+      "k": "fx-code",
+      "on": [
+        "v-qusql"
+      ],
+      "t": "<g class=\"fx-code\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"codebg\" x=\"-17\" y=\"-11\" width=\"34\" height=\"22\" rx=\"3\"></rect><g><path class=\"a cl\" stroke=\"#7FB2F0\" d=\"M-12 -6H2\"></path><path class=\"a cl\" stroke=\"#F2B33D\" d=\"M-8 -1.5H10\"></path><path class=\"a cl\" stroke=\"#9BD08F\" d=\"M-8 3H5\"></path><path class=\"a cl\" stroke=\"#F27863\" d=\"M-12 7.5H-3\"></path></g><rect class=\"a cur\" x=\"-0.5\" y=\"5.5\" width=\"1.6\" height=\"4\" fill=\"#FFFFFF\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 229,
+      "k": "fx-sort",
+      "on": [
+        "v-qusort"
+      ],
+      "t": "<g class=\"fx-sort\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"pw\" x=\"-17\" y=\"-11\" width=\"34\" height=\"22\" rx=\"2\"></rect><path class=\"lnk2\" d=\"M-13 8.5H13\"></path><rect class=\"a sb1 hc\" x=\"-13\" y=\"-7\" width=\"5\" height=\"15\" rx=\"1\"></rect><rect class=\"a sb2 gst\" x=\"-6\" y=\"1\" width=\"5\" height=\"7\" rx=\"1\"></rect><rect class=\"a sb3 hc\" x=\"1\" y=\"-3\" width=\"5\" height=\"11\" rx=\"1\"></rect><rect class=\"a sb4 cst\" x=\"8\" y=\"3\" width=\"5\" height=\"5\" rx=\"1\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 230,
+      "k": "fx-db",
+      "on": [
+        "v-qudb"
+      ],
+      "t": "<g class=\"fx-db\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(96 52)\"><path class=\"pw\" d=\"M-8 -7V7A8 3 0 0 0 8 7V-7Z\"></path><path class=\"lnk2\" d=\"M-8 0A8 3 0 0 0 8 0\"></path><ellipse class=\"pw dbtop\" cx=\"0\" cy=\"-7\" rx=\"8\" ry=\"3\"></ellipse></g><circle class=\"a req dk\" cx=\"77\" cy=\"52\" r=\"2.4\"></circle><circle class=\"a res gold2\" cx=\"77\" cy=\"52\" r=\"2.4\"></circle></g>"
+    }
+  ]
+}

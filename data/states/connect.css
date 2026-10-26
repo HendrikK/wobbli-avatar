@@ -1,0 +1,52 @@
+.aa-av .lnk { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.aa-av .ant { transform-origin: 50% 100%; }
+.aa-av .wire { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; stroke-linecap: round; }
+.aa-av .chain { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.8; }
+.aa-av .wifi { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 3; stroke-linecap: round; }
+.aa-av .led { fill: #3E9B5F; }
+.aa-av .wck { fill: none; stroke: #FFFFFF; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.aa-av.v-coplug .fx-plug { display: inline; }
+.aa-av.v-coplug .plg { animation: aa-B-plug 2.2s ease-in-out infinite; }
+.aa-av.v-coplug .zap { animation: aa-B-zap 2.2s infinite; }
+.aa-av.v-coplug .gz { transform: translate(4.5px, 2.5px); }
+.aa-av.v-coplug .w { animation: aa-B-plugbody 2.2s infinite; }
+.aa-av.v-cosignal .fx-wifi { display: inline; }
+.aa-av.v-cosignal .wf1, .aa-av.v-cosignal .wf2, .aa-av.v-cosignal .wf3, .aa-av.v-cosignal .wf0 { animation: aa-B-wifi 1.6s infinite; }
+.aa-av.v-cosignal .wf1 { animation-delay: .2s; }
+.aa-av.v-cosignal .wf2 { animation-delay: .4s; }
+.aa-av.v-cosignal .wf3 { animation-delay: .6s; }
+.aa-av.v-cosignal .gz { transform: translate(0px, -4.5px); }
+.aa-av.v-cosignal .w { animation: aa-B-tune 1.6s ease-in-out infinite; }
+.aa-av.v-colink .fx-chain { display: inline; }
+.aa-av.v-colink .lk1 { animation: aa-B-lk1 2.2s ease-in-out infinite; }
+.aa-av.v-colink .lk2 { animation: aa-B-lk2 2.2s ease-in-out infinite; }
+.aa-av.v-colink .lkok { animation: aa-B-lkok 2.2s infinite; }
+.aa-av.v-colink .gz { transform: translate(0px, -4px); }
+.aa-av.v-coping .fx-server { display: inline; }
+.aa-av.v-coping .pd { opacity: .2; animation: aa-B-pd 2s infinite; }
+.aa-av.v-coping .pd:nth-of-type(2) { animation-delay: .2s; }
+.aa-av.v-coping .pd:nth-of-type(3) { animation-delay: .4s; }
+.aa-av.v-coping .led { animation: aa-B-led .4s steps(1) infinite; }
+.aa-av.v-coping .srvok { animation: aa-B-lkok 2s infinite; }
+.aa-av.v-coping .gz { transform: translate(4.5px, 1px); }
+.aa-av.v-coantenna .att-ant { display: inline; }
+.aa-av.v-coantenna .ant { animation: aa-ap-wob .8s ease-in-out infinite; }
+.aa-av.v-coantenna .fx-waves { display: inline; }
+.aa-av.v-coantenna .wv { opacity: 0; animation: aa-B-waveout 1.4s ease-out infinite backwards; }
+.aa-av.v-coantenna .wv:nth-of-type(2) { animation-delay: .45s; }
+.aa-av.v-coantenna .wv:nth-of-type(3) { animation-delay: .9s; }
+.aa-av.v-coantenna .gz { transform: translate(0px, -4px); }
+.aa-av .wire { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; stroke-linecap: round; }
+.aa-av .chain { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.8; }
+.aa-av.v-coantenna .cos .hat { display: none !important; }
+@keyframes aa-B-plug { 0%, 100% { translate: -6px 0; } 35%, 70% { translate: 0 0; } }
+@keyframes aa-B-zap { 0%, 33% { opacity: 0; scale: .5; } 38% { opacity: 1; scale: 1.2; } 50%, 100% { opacity: 0; scale: 1.4; } }
+@keyframes aa-B-plugbody { 0%, 34%, 46%, 100% { translate: 0 0; } 40% { translate: 0 calc(var(--amp, 1) * -3px); } }
+@keyframes aa-B-wifi { 0%, 100% { opacity: .15; } 10%, 70% { opacity: 1; } }
+@keyframes aa-B-tune { 0%, 100% { rotate: calc(var(--amp, 1) * -3deg); } 50% { rotate: calc(var(--amp, 1) * 3deg); } }
+@keyframes aa-B-lk1 { 0%, 100% { translate: -6px 0; } 40%, 75% { translate: 0 0; } }
+@keyframes aa-B-lk2 { 0%, 100% { translate: 6px 0; } 40%, 75% { translate: 0 0; } }
+@keyframes aa-B-lkok { 0%, 40% { scale: 0; opacity: 0; } 48% { scale: 1.3; opacity: 1; } 55%, 72% { scale: 1; opacity: 1; } 80%, 100% { opacity: 0; } }
+@keyframes aa-B-pd { 0%, 5% { opacity: .2; } 12%, 60% { opacity: 1; } 70%, 100% { opacity: .2; } }
+@keyframes aa-B-led { 0% { opacity: 1; } 50% { opacity: .2; } }
+@keyframes aa-B-waveout { 0% { scale: .4; opacity: 1; } 100% { scale: 1.5; opacity: 0; } }

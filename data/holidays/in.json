@@ -1,0 +1,2451 @@
+{
+  "pack": "in",
+  "name": "India",
+  "holidays": [
+    {
+      "key": "sankranti",
+      "label": "Makar Sankranti",
+      "kind": "seasonal",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ms-kite",
+          "name": "Kite"
+        },
+        {
+          "key": "ms-kitefight",
+          "name": "Kite fight"
+        },
+        {
+          "key": "ms-tilgul",
+          "name": "Til-gul"
+        },
+        {
+          "key": "ms-sugarcane",
+          "name": "Sugarcane"
+        },
+        {
+          "key": "ms-bonfire",
+          "name": "Bonfire"
+        }
+      ]
+    },
+    {
+      "key": "pongal",
+      "label": "Pongal",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "pg-pot",
+          "name": "Pongal pot"
+        },
+        {
+          "key": "pg-kolam",
+          "name": "Kolam"
+        },
+        {
+          "key": "pg-sun",
+          "name": "Sun"
+        },
+        {
+          "key": "pg-sugarcane",
+          "name": "Sugarcane arch"
+        },
+        {
+          "key": "pg-bell",
+          "name": "Garland and bell"
+        }
+      ]
+    },
+    {
+      "key": "republic",
+      "label": "Republic Day",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "rd-flag",
+          "name": "Tricolour"
+        },
+        {
+          "key": "rd-flypast",
+          "name": "Flypast"
+        },
+        {
+          "key": "rd-badge",
+          "name": "Flag badge"
+        },
+        {
+          "key": "rd-drum",
+          "name": "Parade drum"
+        },
+        {
+          "key": "rd-chakra",
+          "name": "Chakra"
+        }
+      ]
+    },
+    {
+      "key": "shivaratri",
+      "label": "Maha Shivaratri",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "sh-moon",
+          "name": "Crescent moon"
+        },
+        {
+          "key": "sh-diyas",
+          "name": "Diyas"
+        },
+        {
+          "key": "sh-bel",
+          "name": "Bel leaves"
+        },
+        {
+          "key": "sh-mala",
+          "name": "Rudraksha mala"
+        },
+        {
+          "key": "sh-bell",
+          "name": "Temple bell"
+        }
+      ]
+    },
+    {
+      "key": "holi",
+      "label": "Holi",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ho-cloud",
+          "name": "Colour clouds"
+        },
+        {
+          "key": "ho-pichkari",
+          "name": "Pichkari"
+        },
+        {
+          "key": "ho-splash",
+          "name": "Splashed"
+        },
+        {
+          "key": "ho-balloon",
+          "name": "Water balloon"
+        },
+        {
+          "key": "ho-thali",
+          "name": "Gulal plate"
+        }
+      ]
+    },
+    {
+      "key": "eidfitr",
+      "label": "Eid al-Fitr",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ef-moon",
+          "name": "Crescent moon"
+        },
+        {
+          "key": "ef-lantern",
+          "name": "Lantern"
+        },
+        {
+          "key": "ef-sweets",
+          "name": "Sweets"
+        },
+        {
+          "key": "ef-eidi",
+          "name": "Eidi"
+        },
+        {
+          "key": "ef-lights",
+          "name": "Lights"
+        }
+      ]
+    },
+    {
+      "key": "mahavir",
+      "label": "Mahavir Jayanti",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "mj-lotus",
+          "name": "Lotus"
+        },
+        {
+          "key": "mj-petals",
+          "name": "Petal shower"
+        },
+        {
+          "key": "mj-diya",
+          "name": "Diya"
+        },
+        {
+          "key": "mj-butterflies",
+          "name": "Butterflies"
+        },
+        {
+          "key": "mj-flags",
+          "name": "Festive flags"
+        }
+      ]
+    },
+    {
+      "key": "vaisakhi",
+      "label": "Vaisakhi",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "vk-wheat",
+          "name": "Wheat"
+        },
+        {
+          "key": "vk-dhol",
+          "name": "Dhol"
+        },
+        {
+          "key": "vk-phulkari",
+          "name": "Phulkari"
+        },
+        {
+          "key": "vk-sun",
+          "name": "Harvest sun"
+        },
+        {
+          "key": "vk-mela",
+          "name": "Mela"
+        }
+      ]
+    },
+    {
+      "key": "buddha",
+      "label": "Buddha Purnima",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "bp-moon",
+          "name": "Full moon"
+        },
+        {
+          "key": "bp-lotus",
+          "name": "Floating lotus"
+        },
+        {
+          "key": "bp-leaf",
+          "name": "Bodhi leaves"
+        },
+        {
+          "key": "bp-lanterns",
+          "name": "Lanterns"
+        },
+        {
+          "key": "bp-candle",
+          "name": "Candles"
+        }
+      ]
+    },
+    {
+      "key": "eidadha",
+      "label": "Eid al-Adha",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ed-lanterns",
+          "name": "Lanterns"
+        },
+        {
+          "key": "ed-star",
+          "name": "Star pattern"
+        },
+        {
+          "key": "ed-feast",
+          "name": "Shared feast"
+        },
+        {
+          "key": "ed-gifts",
+          "name": "Gifts"
+        },
+        {
+          "key": "ed-crescent",
+          "name": "Crescent and stars"
+        }
+      ]
+    },
+    {
+      "key": "indep",
+      "label": "Independence Day",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "id-kites",
+          "name": "Kites"
+        },
+        {
+          "key": "id-hoist",
+          "name": "Flag hoisting"
+        },
+        {
+          "key": "id-balloons",
+          "name": "Balloons"
+        },
+        {
+          "key": "id-scarf",
+          "name": "Tricolour scarf"
+        },
+        {
+          "key": "id-sweets",
+          "name": "Sweets"
+        }
+      ]
+    },
+    {
+      "key": "janmashtami",
+      "label": "Janmashtami",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "jm-feather",
+          "name": "Peacock feather"
+        },
+        {
+          "key": "jm-flute",
+          "name": "Flute"
+        },
+        {
+          "key": "jm-butter",
+          "name": "Butter pot"
+        },
+        {
+          "key": "jm-handi",
+          "name": "Dahi handi"
+        },
+        {
+          "key": "jm-cradle",
+          "name": "Cradle"
+        }
+      ]
+    },
+    {
+      "key": "ganesh",
+      "label": "Ganesh Chaturthi",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "gc-modak",
+          "name": "Modaks"
+        },
+        {
+          "key": "gc-marigold",
+          "name": "Marigolds"
+        },
+        {
+          "key": "gc-mouse",
+          "name": "Mouse friend"
+        },
+        {
+          "key": "gc-hibiscus",
+          "name": "Hibiscus"
+        },
+        {
+          "key": "gc-cymbals",
+          "name": "Cymbals"
+        }
+      ]
+    },
+    {
+      "key": "onam",
+      "label": "Onam",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "on-pookalam",
+          "name": "Pookalam"
+        },
+        {
+          "key": "on-boat",
+          "name": "Snake boat"
+        },
+        {
+          "key": "on-umbrella",
+          "name": "Olakkuda"
+        },
+        {
+          "key": "on-kasavu",
+          "name": "Kasavu"
+        },
+        {
+          "key": "on-sadhya",
+          "name": "Sadhya"
+        }
+      ]
+    },
+    {
+      "key": "gandhi",
+      "label": "Gandhi Jayanti",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "gj-charkha",
+          "name": "Charkha"
+        },
+        {
+          "key": "gj-dove",
+          "name": "Peace dove"
+        },
+        {
+          "key": "gj-khadi",
+          "name": "Khadi"
+        },
+        {
+          "key": "gj-tribute",
+          "name": "Tribute"
+        },
+        {
+          "key": "gj-walk",
+          "name": "Walk"
+        }
+      ]
+    },
+    {
+      "key": "navratri",
+      "label": "Navratri",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "nv-dandiya",
+          "name": "Dandiya"
+        },
+        {
+          "key": "nv-garbo",
+          "name": "Garbo lamp"
+        },
+        {
+          "key": "nv-mirror",
+          "name": "Mirror work"
+        },
+        {
+          "key": "nv-colours",
+          "name": "Nine colours"
+        },
+        {
+          "key": "nv-twirl",
+          "name": "Twirl"
+        }
+      ]
+    },
+    {
+      "key": "durga",
+      "label": "Durga Puja",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "dp-dhunuchi",
+          "name": "Dhunuchi"
+        },
+        {
+          "key": "dp-dhak",
+          "name": "Dhak"
+        },
+        {
+          "key": "dp-kash",
+          "name": "Kash flowers"
+        },
+        {
+          "key": "dp-conch",
+          "name": "Conch"
+        },
+        {
+          "key": "dp-lights",
+          "name": "Pandal lights"
+        }
+      ]
+    },
+    {
+      "key": "dussehra",
+      "label": "Dussehra",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ds-bow",
+          "name": "Bow and arrow"
+        },
+        {
+          "key": "ds-effigy",
+          "name": "Effigy"
+        },
+        {
+          "key": "ds-fireworks",
+          "name": "Fireworks"
+        },
+        {
+          "key": "ds-leaves",
+          "name": "Gold leaves"
+        },
+        {
+          "key": "ds-crown",
+          "name": "Crown"
+        }
+      ]
+    },
+    {
+      "key": "diwali",
+      "label": "Diwali",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "dw-diyas",
+          "name": "Diyas"
+        },
+        {
+          "key": "dw-rangoli",
+          "name": "Rangoli"
+        },
+        {
+          "key": "dw-sparkler",
+          "name": "Phuljhadi"
+        },
+        {
+          "key": "dw-lantern",
+          "name": "Akash kandil"
+        },
+        {
+          "key": "dw-sweets",
+          "name": "Mithai"
+        }
+      ]
+    },
+    {
+      "key": "gurpurab",
+      "label": "Guru Nanak Jayanti",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "gn-lights",
+          "name": "Lights"
+        },
+        {
+          "key": "gn-candles",
+          "name": "Candles"
+        },
+        {
+          "key": "gn-kirtan",
+          "name": "Kirtan"
+        },
+        {
+          "key": "gn-langar",
+          "name": "Langar"
+        },
+        {
+          "key": "gn-petals",
+          "name": "Petals"
+        }
+      ]
+    }
+  ],
+  "region": "IN",
+  "shared": [
+    "newyear",
+    "valentines",
+    "easter",
+    "halloween",
+    "christmas",
+    "nye"
+  ],
+  "dates": [
+    {
+      "key": "republic",
+      "on": "01-26"
+    },
+    {
+      "key": "indep",
+      "on": "08-15"
+    },
+    {
+      "key": "gandhi",
+      "on": "10-02"
+    },
+    {
+      "key": "sankranti",
+      "on": {
+        "table": "sankranti"
+      }
+    },
+    {
+      "key": "pongal",
+      "on": {
+        "table": "pongal"
+      }
+    },
+    {
+      "key": "shivaratri",
+      "on": {
+        "table": "shivaratri"
+      }
+    },
+    {
+      "key": "holi",
+      "on": {
+        "table": "holi"
+      }
+    },
+    {
+      "key": "eidfitr",
+      "on": {
+        "table": "eidfitr"
+      },
+      "from": -1,
+      "to": 1
+    },
+    {
+      "key": "mahavir",
+      "on": {
+        "table": "mahavir"
+      }
+    },
+    {
+      "key": "vaisakhi",
+      "on": {
+        "table": "vaisakhi"
+      }
+    },
+    {
+      "key": "buddha",
+      "on": {
+        "table": "buddha"
+      }
+    },
+    {
+      "key": "eidadha",
+      "on": {
+        "table": "eidadha"
+      },
+      "from": -1,
+      "to": 1
+    },
+    {
+      "key": "onam",
+      "on": {
+        "table": "onam"
+      }
+    },
+    {
+      "key": "janmashtami",
+      "on": {
+        "table": "janmashtami"
+      }
+    },
+    {
+      "key": "ganesh",
+      "on": {
+        "table": "ganesh"
+      }
+    },
+    {
+      "key": "navratri",
+      "on": {
+        "table": "navratri"
+      }
+    },
+    {
+      "key": "durga",
+      "on": {
+        "table": "durga"
+      }
+    },
+    {
+      "key": "dussehra",
+      "on": {
+        "table": "dussehra"
+      }
+    },
+    {
+      "key": "diwali",
+      "on": {
+        "table": "diwali"
+      }
+    },
+    {
+      "key": "gurpurab",
+      "on": {
+        "table": "gurpurab"
+      }
+    }
+  ],
+  "moon": {
+    "2026": {
+      "sankranti": [
+        "01-14"
+      ],
+      "pongal": [
+        "01-14",
+        "01-13",
+        "01-16"
+      ],
+      "shivaratri": [
+        "02-15"
+      ],
+      "holi": [
+        "03-04",
+        "03-03",
+        "03-04"
+      ],
+      "eidfitr": [
+        "03-21"
+      ],
+      "mahavir": [
+        "03-31"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-01"
+      ],
+      "eidadha": [
+        "05-28"
+      ],
+      "onam": [
+        "08-26",
+        "08-17",
+        "08-26"
+      ],
+      "janmashtami": [
+        "09-04"
+      ],
+      "ganesh": [
+        "09-14",
+        "09-14",
+        "09-25"
+      ],
+      "navratri": [
+        "10-15",
+        "10-11",
+        "10-19"
+      ],
+      "durga": [
+        "10-19",
+        "10-17",
+        "10-20"
+      ],
+      "dussehra": [
+        "10-20"
+      ],
+      "diwali": [
+        "11-08",
+        "11-06",
+        "11-11"
+      ],
+      "gurpurab": [
+        "11-24"
+      ]
+    },
+    "2027": {
+      "sankranti": [
+        "01-14"
+      ],
+      "pongal": [
+        "01-15",
+        "01-14",
+        "01-17"
+      ],
+      "shivaratri": [
+        "03-06"
+      ],
+      "holi": [
+        "03-23",
+        "03-22",
+        "03-23"
+      ],
+      "eidfitr": [
+        "03-10"
+      ],
+      "mahavir": [
+        "04-19"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-20"
+      ],
+      "eidadha": [
+        "05-17"
+      ],
+      "onam": [
+        "09-12",
+        "09-03",
+        "09-12"
+      ],
+      "janmashtami": [
+        "08-25"
+      ],
+      "ganesh": [
+        "09-04",
+        "09-04",
+        "09-14"
+      ],
+      "navratri": [
+        "10-04",
+        "09-30",
+        "10-08"
+      ],
+      "durga": [
+        "10-07",
+        "10-05",
+        "10-09"
+      ],
+      "dussehra": [
+        "10-09"
+      ],
+      "diwali": [
+        "10-29",
+        "10-27",
+        "10-31"
+      ],
+      "gurpurab": [
+        "11-14"
+      ]
+    },
+    "2028": {
+      "sankranti": [
+        "01-15"
+      ],
+      "pongal": [
+        "01-15",
+        "01-14",
+        "01-17"
+      ],
+      "shivaratri": [
+        "02-23"
+      ],
+      "holi": [
+        "03-11",
+        "03-10",
+        "03-11"
+      ],
+      "eidfitr": [
+        "02-27"
+      ],
+      "mahavir": [
+        "04-07"
+      ],
+      "vaisakhi": [
+        "04-13"
+      ],
+      "buddha": [
+        "05-08"
+      ],
+      "eidadha": [
+        "05-06"
+      ],
+      "onam": [
+        "09-01",
+        "08-23",
+        "09-01"
+      ],
+      "janmashtami": [
+        "08-13"
+      ],
+      "ganesh": [
+        "08-23",
+        "08-23",
+        "09-02"
+      ],
+      "navratri": [
+        "09-22",
+        "09-19",
+        "09-26"
+      ],
+      "durga": [
+        "09-26",
+        "09-24",
+        "09-27"
+      ],
+      "dussehra": [
+        "09-27"
+      ],
+      "diwali": [
+        "10-17",
+        "10-15",
+        "10-19"
+      ],
+      "gurpurab": [
+        "11-02"
+      ]
+    },
+    "2029": {
+      "sankranti": [
+        "01-14"
+      ],
+      "pongal": [
+        "01-14",
+        "01-13",
+        "01-16"
+      ],
+      "shivaratri": [
+        "02-11"
+      ],
+      "holi": [
+        "03-01",
+        "02-28",
+        "03-01"
+      ],
+      "eidfitr": [
+        "02-15"
+      ],
+      "mahavir": [
+        "04-26"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-27"
+      ],
+      "eidadha": [
+        "04-25"
+      ],
+      "onam": [
+        "08-22",
+        "08-14",
+        "08-22"
+      ],
+      "janmashtami": [
+        "09-01"
+      ],
+      "ganesh": [
+        "09-11",
+        "09-11",
+        "09-21"
+      ],
+      "navratri": [
+        "10-11",
+        "10-08",
+        "10-15"
+      ],
+      "durga": [
+        "10-14",
+        "10-12",
+        "10-16"
+      ],
+      "dussehra": [
+        "10-16"
+      ],
+      "diwali": [
+        "11-05",
+        "11-04",
+        "11-07"
+      ],
+      "gurpurab": [
+        "11-21"
+      ]
+    },
+    "2030": {
+      "sankranti": [
+        "01-14"
+      ],
+      "pongal": [
+        "01-14",
+        "01-13",
+        "01-16"
+      ],
+      "shivaratri": [
+        "03-02"
+      ],
+      "holi": [
+        "03-20",
+        "03-19",
+        "03-20"
+      ],
+      "eidfitr": [
+        "02-05"
+      ],
+      "mahavir": [
+        "04-16"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-17"
+      ],
+      "eidadha": [
+        "04-14"
+      ],
+      "onam": [
+        "09-09",
+        "08-31",
+        "09-09"
+      ],
+      "janmashtami": [
+        "08-21"
+      ],
+      "ganesh": [
+        "09-01",
+        "09-01",
+        "09-10"
+      ],
+      "navratri": [
+        "10-01",
+        "09-28",
+        "10-05"
+      ],
+      "durga": [
+        "10-04",
+        "10-02",
+        "10-06"
+      ],
+      "dussehra": [
+        "10-06"
+      ],
+      "diwali": [
+        "10-26",
+        "10-24",
+        "10-28"
+      ],
+      "gurpurab": [
+        "11-10"
+      ]
+    },
+    "2031": {
+      "sankranti": [
+        "01-15"
+      ],
+      "pongal": [
+        "01-15",
+        "01-14",
+        "01-17"
+      ],
+      "shivaratri": [
+        "02-20"
+      ],
+      "holi": [
+        "03-09",
+        "03-08",
+        "03-09"
+      ],
+      "eidfitr": [
+        "01-25"
+      ],
+      "mahavir": [
+        "04-05"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-07"
+      ],
+      "eidadha": [
+        "04-03"
+      ],
+      "onam": [
+        "08-30",
+        "08-22",
+        "08-30"
+      ],
+      "janmashtami": [
+        "08-10"
+      ],
+      "ganesh": [
+        "09-20",
+        "09-20",
+        "09-29"
+      ],
+      "navratri": [
+        "10-20",
+        "10-17",
+        "10-24"
+      ],
+      "durga": [
+        "10-23",
+        "10-21",
+        "10-25"
+      ],
+      "dussehra": [
+        "10-25"
+      ],
+      "diwali": [
+        "11-14",
+        "11-12",
+        "11-16"
+      ],
+      "gurpurab": [
+        "11-28"
+      ]
+    },
+    "2032": {
+      "sankranti": [
+        "01-15"
+      ],
+      "pongal": [
+        "01-15",
+        "01-14",
+        "01-17"
+      ],
+      "shivaratri": [
+        "03-10"
+      ],
+      "holi": [
+        "03-27",
+        "03-26",
+        "03-27"
+      ],
+      "eidfitr": [
+        "01-15"
+      ],
+      "mahavir": [
+        "04-23"
+      ],
+      "vaisakhi": [
+        "04-13"
+      ],
+      "buddha": [
+        "05-25"
+      ],
+      "eidadha": [
+        "03-22"
+      ],
+      "onam": [
+        "08-20",
+        "08-11",
+        "08-20"
+      ],
+      "janmashtami": [
+        "08-28"
+      ],
+      "ganesh": [
+        "09-08",
+        "09-08",
+        "09-18"
+      ],
+      "navratri": [
+        "10-09",
+        "10-05",
+        "10-13"
+      ],
+      "durga": [
+        "10-12",
+        "10-10",
+        "10-14"
+      ],
+      "dussehra": [
+        "10-14"
+      ],
+      "diwali": [
+        "11-02",
+        "10-31",
+        "11-04"
+      ],
+      "gurpurab": [
+        "11-17"
+      ]
+    },
+    "2033": {
+      "sankranti": [
+        "01-14"
+      ],
+      "pongal": [
+        "01-14",
+        "01-13",
+        "01-16"
+      ],
+      "shivaratri": [
+        "02-27"
+      ],
+      "holi": [
+        "03-16",
+        "03-15",
+        "03-16"
+      ],
+      "eidfitr": [
+        [
+          "01-03"
+        ],
+        [
+          "12-24"
+        ]
+      ],
+      "mahavir": [
+        "04-12"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-14"
+      ],
+      "eidadha": [
+        "03-12"
+      ],
+      "onam": [
+        "09-07",
+        "08-28",
+        "09-07"
+      ],
+      "janmashtami": [
+        "08-17"
+      ],
+      "ganesh": [
+        "08-28",
+        "08-28",
+        "09-08"
+      ],
+      "navratri": [
+        "09-28",
+        "09-24",
+        "10-02"
+      ],
+      "durga": [
+        "10-02",
+        "09-30",
+        "10-03"
+      ],
+      "dussehra": [
+        "10-03"
+      ],
+      "diwali": [
+        "10-22",
+        "10-20",
+        "10-25"
+      ],
+      "gurpurab": [
+        "11-06"
+      ]
+    },
+    "2034": {
+      "sankranti": [
+        "01-14"
+      ],
+      "pongal": [
+        "01-14",
+        "01-13",
+        "01-16"
+      ],
+      "shivaratri": [
+        "02-17"
+      ],
+      "holi": [
+        "03-05",
+        "03-04",
+        "03-05"
+      ],
+      "eidfitr": [
+        "12-13"
+      ],
+      "mahavir": [
+        "04-01"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-03"
+      ],
+      "eidadha": [
+        "03-02"
+      ],
+      "onam": [
+        "08-28",
+        "08-18",
+        "08-28"
+      ],
+      "janmashtami": [
+        "09-06"
+      ],
+      "ganesh": [
+        "09-16",
+        "09-16",
+        "09-27"
+      ],
+      "navratri": [
+        "10-17",
+        "10-13",
+        "10-21"
+      ],
+      "durga": [
+        "10-20",
+        "10-18",
+        "10-22"
+      ],
+      "dussehra": [
+        "10-22"
+      ],
+      "diwali": [
+        "11-10",
+        "11-08",
+        "11-12"
+      ],
+      "gurpurab": [
+        "11-25"
+      ]
+    },
+    "2035": {
+      "sankranti": [
+        "01-15"
+      ],
+      "pongal": [
+        "01-15",
+        "01-14",
+        "01-17"
+      ],
+      "shivaratri": [
+        "03-08"
+      ],
+      "holi": [
+        "03-24",
+        "03-23",
+        "03-24"
+      ],
+      "eidfitr": [
+        "12-02"
+      ],
+      "mahavir": [
+        "04-20"
+      ],
+      "vaisakhi": [
+        "04-14"
+      ],
+      "buddha": [
+        "05-22"
+      ],
+      "eidadha": [
+        "02-19"
+      ],
+      "onam": [
+        "09-14",
+        "09-04",
+        "09-14"
+      ],
+      "janmashtami": [
+        "08-26"
+      ],
+      "ganesh": [
+        "09-05",
+        "09-05",
+        "09-16"
+      ],
+      "navratri": [
+        "10-06",
+        "10-02",
+        "10-10"
+      ],
+      "durga": [
+        "10-09",
+        "10-07",
+        "10-11"
+      ],
+      "dussehra": [
+        "10-11"
+      ],
+      "diwali": [
+        "10-30",
+        "10-28",
+        "11-01"
+      ],
+      "gurpurab": [
+        "11-15"
+      ]
+    },
+    "2036": {
+      "sankranti": [
+        "01-15"
+      ],
+      "pongal": [
+        "01-15",
+        "01-14",
+        "01-17"
+      ],
+      "shivaratri": [
+        "02-25"
+      ],
+      "holi": [
+        "03-12",
+        "03-11",
+        "03-12"
+      ],
+      "eidfitr": [
+        "11-20"
+      ],
+      "mahavir": [
+        "04-08"
+      ],
+      "vaisakhi": [
+        "04-13"
+      ],
+      "buddha": [
+        "05-10"
+      ],
+      "eidadha": [
+        "02-08"
+      ],
+      "onam": [
+        "09-03",
+        "08-24",
+        "09-03"
+      ],
+      "janmashtami": [
+        "08-15"
+      ],
+      "ganesh": [
+        "08-24",
+        "08-24",
+        "09-04"
+      ],
+      "navratri": [
+        "09-24",
+        "09-20",
+        "09-28"
+      ],
+      "durga": [
+        "09-27",
+        "09-25",
+        "09-29"
+      ],
+      "dussehra": [
+        "09-29"
+      ],
+      "diwali": [
+        "10-18",
+        "10-17",
+        "10-21"
+      ],
+      "gurpurab": [
+        "11-03"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "zone": "cosb",
+      "i": 5,
+      "k": "b-cane",
+      "on": [
+        "cos-pg-sugarcane"
+      ],
+      "t": "<g class=\"b-cane\" transform=\"translate(50 {{a.mid}})\"><path class=\"s-v tk\" d=\"M-36 34L-18 -44\"></path><path class=\"s-k th\" d=\"M-35.4 24.3H-32.1M-33.2 14.5H-29.8M-30.9 4.8H-27.6M-28.7 -5H-25.3M-26.4 -14.8H-23.1M-24.2 -24.5H-20.8M-21.9 -34.3H-18.6\"></path><path class=\"f-l\" d=\"M-18 -44Q-27 -54 -32 -50Q-25 -48 -18 -44ZM-18 -44Q-16 -56 -9 -57Q-12 -50 -18 -44Z\"></path><path class=\"s-v tk\" d=\"M36 34L18 -44\"></path><path class=\"s-k th\" d=\"M32.1 24.3H35.4M29.8 14.5H33.2M27.6 4.8H30.9M25.3 -5H28.7M23.1 -14.8H26.4M20.8 -24.5H24.2M18.6 -34.3H21.9\"></path><path class=\"f-l\" d=\"M18 -44Q27 -54 32 -50Q25 -48 18 -44ZM18 -44Q16 -56 9 -57Q12 -50 18 -44Z\"></path></g>"
+    },
+    {
+      "zone": "cosb",
+      "i": 6,
+      "k": "b-ghagra",
+      "on": [
+        "cos-nv-twirl"
+      ],
+      "t": "<g class=\"b-ghagra\" transform=\"translate(50 {{a.base}})\"><g class=\"a skirt\"><path class=\"o-r\" d=\"M-26 -16Q-40 -4 -38 2Q0 8 38 2Q40 -4 26 -16Z\"></path><path class=\"s-y\" d=\"M-37 0Q0 6 37 0\"></path><path class=\"s-g th\" d=\"M-33 -6Q0 -1 33 -6\"></path></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 52,
+      "k": "c-garland",
+      "on": [
+        "cos-pg-bell"
+      ],
+      "t": "<g class=\"c-garland\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-g th\" d=\"M-24 -4Q0 12 24 -4\"></path><circle class=\"o-o th\" cx=\"-24\" cy=\"-4\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"-18\" cy=\"-.5\" r=\"2.6\"></circle><circle class=\"o-o th\" cx=\"-12\" cy=\"2\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"-6\" cy=\"3.5\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"6\" cy=\"3.5\" r=\"2.6\"></circle><circle class=\"o-o th\" cx=\"12\" cy=\"2\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"18\" cy=\"-.5\" r=\"2.6\"></circle><circle class=\"o-o th\" cx=\"24\" cy=\"-4\" r=\"2.6\"></circle><g class=\"pt pswing\"><g transform=\"translate(0 4)\"><g><path class=\"s-k th\" d=\"M0 0V2\"></path><path class=\"o-y\" d=\"M-3.5 7Q-3.5 1.5 0 1.5Q3.5 1.5 3.5 7Z\"></path><circle class=\"f-k\" cx=\"0\" cy=\"8\" r=\"1\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 53,
+      "k": "c-tribadge",
+      "on": [
+        "cos-rd-badge"
+      ],
+      "t": "<g class=\"c-tribadge\" transform=\"translate({{a.pinx}} {{a.piny}}) scale(1.6)\"><path class=\"o-s th\" d=\"M-2.5 3L-4 9L-1.5 7.5L0 10Z\"></path><path class=\"o-i th\" d=\"M2.5 3L4 9L1.5 7.5L0 10Z\"></path><rect class=\"f-s\" x=\"-5\" y=\"-3.5\" width=\"10\" height=\"2.4\"></rect><rect class=\"f-w\" x=\"-5\" y=\"-1.1\" width=\"10\" height=\"2.3\"></rect><rect class=\"f-i\" x=\"-5\" y=\"1.2\" width=\"10\" height=\"2.3\"></rect><circle class=\"s-d\" r=\".95\" style=\"stroke-width: .5\"></circle><rect class=\"s-k th\" x=\"-5\" y=\"-3.5\" width=\"10\" height=\"7\"></rect></g>"
+    },
+    {
+      "zone": "top",
+      "i": 54,
+      "k": "c-mala",
+      "on": [
+        "cos-sh-mala"
+      ],
+      "t": "<g class=\"c-mala\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-n th\" d=\"M-24 -6Q0 14 24 -6\"></path><circle class=\"o-n th\" cx=\"-20\" cy=\"-2.9\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"-16\" cy=\"-.4\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"-12\" cy=\"1.5\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"-8\" cy=\"2.9\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"-4\" cy=\"3.7\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"4\" cy=\"3.7\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"8\" cy=\"2.9\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"12\" cy=\"1.5\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"16\" cy=\"-.4\" r=\"1.8\"></circle><circle class=\"o-n th\" cx=\"20\" cy=\"-2.9\" r=\"1.8\"></circle><path class=\"s-r\" d=\"M0 6V12\"></path><circle class=\"o-n th\" cx=\"0\" cy=\"4.5\" r=\"2.5\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 55,
+      "k": "c-splats",
+      "on": [
+        "cos-ho-splash"
+      ],
+      "t": "<g class=\"c-splats\"><g transform=\"translate({{a.s1x}} {{a.s1y}}) scale(1.4)\"><path class=\"f-p\" d=\"M0 -4Q2 -5 3 -3Q5 -3 4 -1Q6 1 3 2Q3 5 0 4Q-2 6 -3 3Q-6 3 -4 0Q-6 -3 -3 -3Q-2 -5 0 -4Z\"></path></g><g transform=\"translate({{a.s2x}} {{a.s2y}}) rotate(40) scale(1.2)\"><path class=\"f-l\" d=\"M0 -4Q2 -5 3 -3Q5 -3 4 -1Q6 1 3 2Q3 5 0 4Q-2 6 -3 3Q-6 3 -4 0Q-6 -3 -3 -3Q-2 -5 0 -4Z\"></path></g><g transform=\"translate({{a.s3x}} {{a.s3y}}) rotate(-30) scale(1.5)\"><path class=\"f-y\" d=\"M0 -4Q2 -5 3 -3Q5 -3 4 -1Q6 1 3 2Q3 5 0 4Q-2 6 -3 3Q-6 3 -4 0Q-6 -3 -3 -3Q-2 -5 0 -4Z\"></path></g><g transform=\"translate({{a.s4x}} {{a.s4y}}) rotate(80) scale(1.1)\"><path class=\"f-b\" d=\"M0 -4Q2 -5 3 -3Q5 -3 4 -1Q6 1 3 2Q3 5 0 4Q-2 6 -3 3Q-6 3 -4 0Q-6 -3 -3 -3Q-2 -5 0 -4Z\"></path></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 56,
+      "k": "c-phulkari",
+      "on": [
+        "cos-vk-phulkari"
+      ],
+      "t": "<g class=\"c-phulkari\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"o-o\" d=\"M8 4L12 19H5L3 5Z\"></path><path class=\"s-p th\" d=\"M6.5 9H10.5M7.5 13.5H11.5\"></path><path class=\"o-o\" d=\"M-27 -4Q0 4 27 -4V2Q0 10 -27 2Z\"></path><path class=\"s-p th\" stroke-dasharray=\"1.6 2.4\" d=\"M-25 -1.6Q0 6.4 25 -1.6\"></path><path class=\"s-y th\" stroke-dasharray=\"1.6 2.4\" d=\"M-25 1Q0 9 25 1\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 57,
+      "k": "c-tricscarf",
+      "on": [
+        "cos-id-scarf"
+      ],
+      "t": "<g class=\"c-tricscarf\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><g transform=\"translate(6 5) rotate(-12)\"><rect class=\"f-s\" x=\"0\" y=\"0\" width=\"2.4\" height=\"14\"></rect><rect class=\"f-w\" x=\"2.4\" y=\"0\" width=\"2.4\" height=\"14\"></rect><rect class=\"f-i\" x=\"4.8\" y=\"0\" width=\"2.4\" height=\"14\"></rect><rect class=\"s-k th\" x=\"0\" y=\"0\" width=\"7.2\" height=\"14\"></rect></g><path class=\"f-s\" d=\"M-27 -4Q0 4 27 -4V-1.7Q0 6.3 -27 -1.7Z\"></path><path class=\"f-w\" d=\"M-27 -1.7Q0 6.3 27 -1.7V.7Q0 8.7 -27 .7Z\"></path><path class=\"f-i\" d=\"M-27 .7Q0 8.7 27 .7V3Q0 11 -27 3Z\"></path><path class=\"s-k th\" d=\"M-27 -4Q0 4 27 -4V3Q0 11 -27 3Z\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 58,
+      "k": "c-feather",
+      "on": [
+        "cos-jm-feather"
+      ],
+      "t": "<g class=\"c-feather hat\" transform=\"translate(50 {{a.top}})\"><path class=\"s-y\" d=\"M-16 7Q0 -2 16 7\"></path><g transform=\"translate(8 3)\"><g class=\"a fthr\"><path class=\"s-g\" d=\"M0 0Q-1 -10 2 -20\"></path><path class=\"o-g th\" d=\"M2 -20Q-5 -22 -4 -30Q0 -36 5 -30Q8 -23 2 -20Z\"></path><ellipse class=\"f-y\" cx=\"1\" cy=\"-27\" rx=\"3\" ry=\"3.8\"></ellipse><ellipse class=\"f-b\" cx=\"1\" cy=\"-27\" rx=\"1.8\" ry=\"2.4\"></ellipse><circle class=\"f-d\" cx=\"1.1\" cy=\"-26.8\" r=\".8\"></circle></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 59,
+      "k": "c-flute",
+      "on": [
+        "cos-jm-flute"
+      ],
+      "t": "<g class=\"c-flute\" transform=\"translate({{a.mx}} {{a.my}}) rotate(-8)\"><rect class=\"o-n th\" x=\"-6\" y=\"-1.6\" width=\"34\" height=\"3.2\" rx=\"1.6\"></rect><circle class=\"f-k\" cx=\"10\" cy=\"0\" r=\".6\"></circle><circle class=\"f-k\" cx=\"14\" cy=\"0\" r=\".6\"></circle><circle class=\"f-k\" cx=\"18\" cy=\"0\" r=\".6\"></circle><circle class=\"f-k\" cx=\"22\" cy=\"0\" r=\".6\"></circle><path class=\"s-r th\" d=\"M2 -1.6V1.6M26 -1.6V1.6\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 60,
+      "k": "c-garland2",
+      "on": [
+        "cos-gc-marigold"
+      ],
+      "t": "<g class=\"c-garland2\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-g th\" d=\"M-24 -4Q0 12 24 -4\"></path><circle class=\"o-o th\" cx=\"-24\" cy=\"-4\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"-18\" cy=\"-.5\" r=\"2.6\"></circle><circle class=\"o-o th\" cx=\"-12\" cy=\"2\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"-6\" cy=\"3.5\" r=\"2.6\"></circle><circle class=\"o-o th\" cx=\"0\" cy=\"4\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"6\" cy=\"3.5\" r=\"2.6\"></circle><circle class=\"o-o th\" cx=\"12\" cy=\"2\" r=\"2.6\"></circle><circle class=\"o-y th\" cx=\"18\" cy=\"-.5\" r=\"2.6\"></circle><circle class=\"o-o th\" cx=\"24\" cy=\"-4\" r=\"2.6\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 61,
+      "k": "c-hibiscus",
+      "on": [
+        "cos-gc-hibiscus"
+      ],
+      "t": "<g class=\"c-hibiscus hat\" transform=\"translate(50 {{a.top}})\"><g transform=\"translate(-13 5) scale(1.3)\"><path class=\"s-g th\" d=\"M2 3L7 8M1 4L4 10\"></path><circle class=\"o-r th\" cx=\"0\" cy=\"-2.8\" r=\"2.6\"></circle><circle class=\"o-r th\" cx=\"2.66\" cy=\"-.87\" r=\"2.6\"></circle><circle class=\"o-r th\" cx=\"1.65\" cy=\"2.27\" r=\"2.6\"></circle><circle class=\"o-r th\" cx=\"-1.65\" cy=\"2.27\" r=\"2.6\"></circle><circle class=\"o-r th\" cx=\"-2.66\" cy=\"-.87\" r=\"2.6\"></circle><path class=\"s-y th\" d=\"M0 0L4 -4\"></path><circle class=\"f-y\" cx=\"4.2\" cy=\"-4.2\" r=\".9\"></circle></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 62,
+      "k": "c-kasavu",
+      "on": [
+        "cos-on-kasavu"
+      ],
+      "t": "<g class=\"c-kasavu\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"o-m\" d=\"M8 4L12 19H5L3 5Z\"></path><path class=\"s-y\" d=\"M5.6 17.4H11.4\"></path><path class=\"o-m\" d=\"M-27 -4Q0 4 27 -4V2Q0 10 -27 2Z\"></path><path class=\"s-y\" d=\"M-26 .8Q0 8.8 26 .8\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 63,
+      "k": "c-dove",
+      "on": [
+        "cos-gj-dove"
+      ],
+      "t": "<g class=\"c-dove hat\" transform=\"translate(57 {{a.top}}) scale(1.5)\"><g class=\"a perch\"><path class=\"s-k th\" d=\"M-1 0V1.6M1.5 0V1.6\"></path><path class=\"o-w\" d=\"M-6 0Q-6 -5 -1 -5Q3 -7 5 -4L8 -4.5L5 -2.5Q4 0 -1 0Z\"></path><path class=\"o-w th\" d=\"M-4 -3Q-2 -7 2 -4\"></path><path class=\"s-g th\" d=\"M7 -4.5L10 -3\"></path><path class=\"f-l\" d=\"M9 -3.5Q11 -5 11.5 -3Q10 -2.5 9 -3.5Z\"></path><circle class=\"f-k\" cx=\"3.5\" cy=\"-4\" r=\".5\"></circle></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 64,
+      "k": "c-khadi",
+      "on": [
+        "cos-gj-khadi"
+      ],
+      "t": "<g class=\"c-khadi\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"o-w\" d=\"M-24 0L-30 18H-22L-18 3Z\"></path><path class=\"o-w\" d=\"M-28 -6Q0 2 28 -6V3Q0 11 -28 3Z\"></path><path class=\"s-e th\" d=\"M-27 -2Q0 6 27 -2M-25 13H-28\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 65,
+      "k": "c-jasmine",
+      "on": [
+        "cos-gj-tribute"
+      ],
+      "t": "<g class=\"c-jasmine\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-g th\" d=\"M-24 -4Q0 12 24 -4\"></path><circle class=\"o-w th\" cx=\"-24\" cy=\"-4\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"-18\" cy=\"-.5\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"-12\" cy=\"2\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"-6\" cy=\"3.5\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"0\" cy=\"4\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"6\" cy=\"3.5\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"12\" cy=\"2\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"18\" cy=\"-.5\" r=\"2.3\"></circle><circle class=\"o-w th\" cx=\"24\" cy=\"-4\" r=\"2.3\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 66,
+      "k": "c-mirror",
+      "on": [
+        "cos-nv-mirror"
+      ],
+      "t": "<g class=\"c-mirror\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"o-p\" d=\"M8 4L12 19H5L3 5Z\"></path><path class=\"o-p\" d=\"M-27 -4Q0 4 27 -4V2Q0 10 -27 2Z\"></path><path class=\"s-y th\" d=\"M-26 1.2Q0 9.2 26 1.2\"></path><g class=\"pt pflash\"><g transform=\"translate(-18 1.2)\"><circle class=\"o-w th\" r=\"1.4\"></circle></g><g transform=\"translate(-6 3.2)\"><circle class=\"o-w th\" r=\"1.4\"></circle></g><g transform=\"translate(6 3.2)\"><circle class=\"o-w th\" r=\"1.4\"></circle></g><g transform=\"translate(18 1.2)\"><circle class=\"o-w th\" r=\"1.4\"></circle></g><g transform=\"translate(9 12)\"><circle class=\"o-w th\" r=\"1.3\"></circle></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 67,
+      "k": "c-mukut",
+      "on": [
+        "cos-ds-crown"
+      ],
+      "t": "<g class=\"c-mukut hat\" transform=\"translate(50 {{a.top}}) scale(1.2)\"><path class=\"o-y\" d=\"M-13 5V-4L-9 -10L-5 -5L0 -14L5 -5L9 -10L13 -4V5Z\"></path><path class=\"s-n th\" d=\"M-13 2.5H13\"></path><circle class=\"o-r th\" cx=\"0\" cy=\"-2\" r=\"2.2\"></circle><circle class=\"o-g th\" cx=\"-7\" cy=\"-.5\" r=\"1.4\"></circle><circle class=\"o-g th\" cx=\"7\" cy=\"-.5\" r=\"1.4\"></circle></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 109,
+      "k": "x-kite",
+      "on": [
+        "cos-ms-kite"
+      ],
+      "t": "<g class=\"x-kite\" transform=\"translate(0 {{a.up}})\"><path class=\"s-e th\" d=\"M84 12Q92 30 78 46\"></path><g transform=\"translate(84 2)\"><g class=\"a kite\"><path class=\"s-y th\" d=\"M0 10Q-3 13 0 16Q3 19 0 22\"></path><path class=\"o-p\" d=\"M0 -9L7 0L0 10L-7 0Z\"></path><path class=\"s-k th\" d=\"M0 -9V10M-7 0H7\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 110,
+      "k": "x-kites2",
+      "on": [
+        "cos-ms-kitefight"
+      ],
+      "t": "<g class=\"x-kites2\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(68 -2)\"><g class=\"a k1\"><path class=\"s-e th\" d=\"M0 9Q-4 26 6 46\"></path><path class=\"o-o\" d=\"M0 -8L6 0L0 9L-6 0Z\"></path><path class=\"s-k th\" d=\"M0 -8V9M-6 0H6\"></path></g></g><g transform=\"translate(90 4)\"><g class=\"a k2\"><path class=\"s-e th\" d=\"M0 9Q6 24 16 40\"></path><path class=\"o-g\" d=\"M0 -8L6 0L0 9L-6 0Z\"></path><path class=\"s-k th\" d=\"M0 -8V9M-6 0H6\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 111,
+      "k": "x-tilgul",
+      "on": [
+        "cos-ms-tilgul"
+      ],
+      "t": "<g class=\"x-tilgul\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.25)\"><ellipse class=\"o-e th\" rx=\"12\" ry=\"2.4\"></ellipse><g class=\"pt pbob\"><g transform=\"translate(-5.5 -3.5)\"><g><circle class=\"o-m\" r=\"3.4\"></circle><path class=\"s-n th\" d=\"M-1.2 -1.1h.2M1 -.3h.2M-.2 1.3h.2\"></path></g></g><g transform=\"translate(1.5 -3.5)\"><g><circle class=\"o-y\" r=\"3.4\"></circle><path class=\"s-n th\" d=\"M-1.2 -1.1h.2M1 -.3h.2M-.2 1.3h.2\"></path></g></g><g transform=\"translate(-2 -9.5)\"><g><circle class=\"o-m\" r=\"3.4\"></circle><path class=\"s-n th\" d=\"M-1.2 -1.1h.2M1 -.3h.2M-.2 1.3h.2\"></path></g></g><g transform=\"translate(7.5 -3)\"><g><circle class=\"o-y\" r=\"3\"></circle></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 112,
+      "k": "x-canes",
+      "on": [
+        "cos-ms-sugarcane"
+      ],
+      "t": "<g class=\"x-canes\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(8 86)\"><g class=\"a cane2\"><path class=\"s-v tk\" d=\"M0 0L3 -40\"></path><path class=\"s-k th\" d=\"M-1.4 -10H1.9M-.7 -20H2.6M0 -30H3.3\"></path><path class=\"f-l\" d=\"M3 -40Q-4 -48 -8 -45Q-2 -43 3 -40ZM3 -40Q6 -50 12 -50Q9 -44 3 -40Z\"></path></g></g><g transform=\"translate(15 88)\"><g class=\"a cane2 cane3\"><path class=\"s-v tk\" d=\"M0 0L-1 -32\"></path><path class=\"s-k th\" d=\"M-2.1 -10H1.2M-2.4 -20H.9\"></path><path class=\"f-l\" d=\"M-1 -32Q-8 -38 -12 -35Q-6 -34 -1 -32ZM-1 -32Q2 -41 8 -42Q5 -36 -1 -32Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 113,
+      "k": "x-bonfire",
+      "on": [
+        "cos-bn-bonfire",
+        "cos-fj-fogueira",
+        "cos-ms-bonfire",
+        "cos-sm-fire"
+      ],
+      "t": "<g class=\"x-bonfire\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(92 82)\"><g class=\"pt pflick\"><g transform=\"translate(0 -3)\"><path class=\"o-o th\" d=\"M0 0Q-7 -2 -5 -9Q-3 -6 -2 -8Q-2 -14 2 -17Q2 -11 5 -10Q7 -4 0 0Z\"></path></g><g transform=\"translate(0 -3)\"><path class=\"f-y\" d=\"M0 0Q-3 -1 -2 -5Q0 -4 0 -8Q3 -5 3 -3Q3 0 0 0Z\"></path></g></g><path class=\"s-n tk\" d=\"M-9 0L7 -4M9 0L-7 -4\"></path></g><g class=\"pt prise\"><g transform=\"translate(90 66)\"><circle class=\"f-o\" r=\".9\"></circle></g><g transform=\"translate(95 68)\"><circle class=\"f-y\" r=\".9\"></circle></g><g transform=\"translate(92 62)\"><circle class=\"f-o\" r=\".8\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 114,
+      "k": "x-pongalpot",
+      "on": [
+        "cos-pg-pot"
+      ],
+      "t": "<g class=\"x-pongalpot\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.2)\"><path class=\"s-g\" d=\"M-5 -14L-10 -27M-3 -14L-4 -28M4 -14L9 -26\"></path><path class=\"f-g\" d=\"M-10 -27Q-14 -22 -9 -19Q-9 -24 -10 -27ZM9 -26Q13 -21 8 -18Q8 -23 9 -26Z\"></path><path class=\"o-n\" d=\"M-9 -10Q-13 -2 -6 0H6Q13 -2 9 -10Z\"></path><path class=\"s-y th\" d=\"M-10.5 -6H10.5M-9.5 -3H9.5\"></path><rect class=\"o-n\" x=\"-6.5\" y=\"-14.5\" width=\"13\" height=\"5\" rx=\"1.5\"></rect><g transform=\"translate(0 -14)\"><g class=\"a foam\"><path class=\"o-w th\" d=\"M-7 0Q-8 -4 -4 -4Q-2 -7 1 -5Q5 -7 6 -3Q9 -2 7 0Z\"></path></g></g><path class=\"o-w th\" d=\"M5 -14Q7.5 -10 6.5 -7Q4.5 -8 4.5 -12Z\"></path></g><g class=\"pt prise\"><g transform=\"translate(88 64)\"><circle class=\"o-w th\" r=\"1.4\"></circle></g><g transform=\"translate(94 62)\"><circle class=\"o-w th\" r=\"1.1\"></circle></g><g transform=\"translate(91 60)\"><circle class=\"o-w th\" r=\"1.2\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 115,
+      "k": "x-kolam",
+      "on": [
+        "cos-pg-kolam"
+      ],
+      "t": "<g class=\"x-kolam\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 90) scale(1 .38)\"><circle class=\"kol s-p\" pathLength=\"100\" r=\"22\"></circle><path class=\"kol s-o\" pathLength=\"100\" d=\"M0 -16Q10 -10 0 0Q-10 -10 0 -16ZM16 0Q10 10 0 0Q10 -10 16 0ZM0 16Q-10 10 0 0Q10 10 0 16ZM-16 0Q-10 -10 0 0Q-10 10 -16 0Z\"></path><circle class=\"f-k\" cx=\"0\" cy=\"-8\" r=\"1.3\"></circle><circle class=\"f-k\" cx=\"8\" cy=\"0\" r=\"1.3\"></circle><circle class=\"f-k\" cx=\"0\" cy=\"8\" r=\"1.3\"></circle><circle class=\"f-k\" cx=\"-8\" cy=\"0\" r=\"1.3\"></circle><circle class=\"f-k\" cx=\"11\" cy=\"-11\" r=\"1.3\"></circle><circle class=\"f-k\" cx=\"11\" cy=\"11\" r=\"1.3\"></circle><circle class=\"f-k\" cx=\"-11\" cy=\"11\" r=\"1.3\"></circle><circle class=\"f-k\" cx=\"-11\" cy=\"-11\" r=\"1.3\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 116,
+      "k": "x-surya",
+      "on": [
+        "cos-pg-sun"
+      ],
+      "t": "<g class=\"x-surya\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><g class=\"a surya\"><circle class=\"f-o\" r=\"14\" opacity=\".2\"></circle><g class=\"a srays\"><path class=\"s-o\" d=\"M0 -11V-15M7.8 -7.8L10.6 -10.6M11 0H15M7.8 7.8L10.6 10.6M0 11V15M-7.8 7.8L-10.6 10.6M-11 0H-15M-7.8 -7.8L-10.6 -10.6\"></path></g><circle class=\"o-o\" r=\"8.5\"></circle><circle class=\"f-y\" r=\"5.5\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 117,
+      "k": "x-trflag",
+      "on": [
+        "cos-rd-flag"
+      ],
+      "t": "<g class=\"x-trflag\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M85 78V36\"></path><g class=\"pt pwave\"><g transform=\"translate(85.5 37)\"><g><rect class=\"f-s\" x=\"0\" y=\"0\" width=\"18\" height=\"4\"></rect><rect class=\"f-w\" x=\"0\" y=\"4\" width=\"18\" height=\"4\"></rect><rect class=\"f-i\" x=\"0\" y=\"8\" width=\"18\" height=\"4\"></rect><circle class=\"s-d\" cx=\"9\" cy=\"6\" r=\"1.5\" style=\"stroke-width: .6\"></circle><rect class=\"s-k th\" x=\"0\" y=\"0\" width=\"18\" height=\"12\"></rect></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 118,
+      "k": "x-flypast",
+      "on": [
+        "cos-rd-flypast"
+      ],
+      "t": "<g class=\"x-flypast\" transform=\"translate(0 {{a.up}})\"><path class=\"ftrl s-s tk\" pathLength=\"100\" d=\"M-6 8Q50 -4 106 -18\"></path><path class=\"ftrl s-e\" pathLength=\"100\" style=\"stroke-width: 4.6\" d=\"M-6 13Q50 1 106 -13\"></path><path class=\"ftrl s-w tk\" pathLength=\"100\" d=\"M-6 13Q50 1 106 -13\"></path><path class=\"ftrl s-i tk\" pathLength=\"100\" d=\"M-6 18Q50 6 106 -8\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 119,
+      "k": "x-tripetals",
+      "on": [
+        "cos-rd-badge"
+      ],
+      "t": "<g class=\"x-tripetals pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 -2)\"><ellipse class=\"f-s\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(30 4)\"><ellipse class=\"o-w th\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(46 -6)\"><ellipse class=\"f-i\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(62 2)\"><ellipse class=\"f-s\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(78 -4)\"><ellipse class=\"o-w th\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(92 4)\"><ellipse class=\"f-i\" rx=\"2\" ry=\"1.3\"></ellipse></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 120,
+      "k": "x-drum",
+      "on": [
+        "cos-rd-drum"
+      ],
+      "t": "<g class=\"x-drum\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 92)\"><path class=\"o-r\" d=\"M-11 -10V-1Q0 3 11 -1V-10Z\"></path><path class=\"s-w th\" d=\"M-11 -9L-5.5 -2L0 -8L5.5 -2L11 -9\"></path><ellipse class=\"o-w\" cx=\"0\" cy=\"-10\" rx=\"11\" ry=\"3\"></ellipse></g><g transform=\"translate(30 68)\"><g class=\"vb0 stk1\"><path class=\"s-n\" d=\"M0 0L14 11\"></path><circle class=\"o-n th\" cx=\"14\" cy=\"11\" r=\"1.3\"></circle></g></g><g transform=\"translate(70 68)\"><g class=\"vb0 stk2\"><path class=\"s-n\" d=\"M0 0L-14 11\"></path><circle class=\"o-n th\" cx=\"-14\" cy=\"11\" r=\"1.3\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 121,
+      "k": "x-chakra",
+      "on": [
+        "cos-rd-chakra"
+      ],
+      "t": "<g class=\"x-chakra\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"o-w\" r=\"9.5\"></circle><g class=\"a chak\"><path class=\"s-d th\" d=\"M7.5 0L-7.5 0M7.24 1.94L-7.24 -1.94M6.5 3.75L-6.5 -3.75M5.3 5.3L-5.3 -5.3M3.75 6.5L-3.75 -6.5M1.94 7.24L-1.94 -7.24M0 7.5L0 -7.5M-1.94 7.24L1.94 -7.24M-3.75 6.5L3.75 -6.5M-5.3 5.3L5.3 -5.3M-6.5 3.75L6.5 -3.75M-7.24 1.94L7.24 -1.94\"></path></g><circle class=\"s-d\" r=\"8\"></circle><circle class=\"f-d\" r=\"1.6\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 122,
+      "k": "x-moon",
+      "on": [
+        "cos-sh-moon"
+      ],
+      "t": "<g class=\"x-moon\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"a mhalo f-y\" r=\"12\"></circle><path class=\"o-y th\" d=\"M-4 -5A8 8 0 1 0 4 5A6.5 6.5 0 1 1 -4 -5Z\"></path></g><g class=\"pt ptwk\"><g transform=\"translate(18 4)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(36 -6)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(64 -2)\"><path class=\"f-y\" d=\"M0 -4.5L1.2 -1.2L4.5 0L1.2 1.2L0 4.5L-1.2 1.2L-4.5 0L-1.2 -1.2Z\"></path></g><g transform=\"translate(96 24)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 123,
+      "k": "x-diyas",
+      "on": [
+        "cos-sh-diyas"
+      ],
+      "t": "<g class=\"x-diyas\" transform=\"translate(0 {{a.dn}})\"><g class=\"pt pflick\"><g transform=\"translate(14 85)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g><g transform=\"translate(50 91)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g><g transform=\"translate(86 85)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g></g><g transform=\"translate(14 86)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g><g transform=\"translate(50 92)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g><g transform=\"translate(86 86)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 124,
+      "k": "x-bel",
+      "on": [
+        "cos-sh-bel"
+      ],
+      "t": "<g class=\"x-bel pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(16 -2)\"><g><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\"></ellipse><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(-100)\"></ellipse><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(100)\"></ellipse></g></g><g transform=\"translate(36 4)\"><g><ellipse class=\"f-l\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\"></ellipse><ellipse class=\"f-l\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(-100)\"></ellipse><ellipse class=\"f-l\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(100)\"></ellipse></g></g><g transform=\"translate(58 -6)\"><g><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\"></ellipse><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(-100)\"></ellipse><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(100)\"></ellipse></g></g><g transform=\"translate(76 2)\"><g><ellipse class=\"f-l\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\"></ellipse><ellipse class=\"f-l\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(-100)\"></ellipse><ellipse class=\"f-l\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(100)\"></ellipse></g></g><g transform=\"translate(92 -4)\"><g><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\"></ellipse><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(-100)\"></ellipse><ellipse class=\"f-g\" cx=\"0\" cy=\"-3.2\" rx=\"1.6\" ry=\"3\" transform=\"rotate(100)\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 125,
+      "k": "x-tbell",
+      "on": [
+        "cos-sh-bell"
+      ],
+      "t": "<g class=\"x-tbell\" transform=\"translate({{a.side}} {{a.up}})\"><g class=\"pt pswing\"><g transform=\"translate(88 -12) scale(1.25)\"><g><path class=\"s-k th\" d=\"M0 0V8\"></path><path class=\"o-y\" d=\"M-6 20Q-6 9 0 8Q6 9 6 20Z\"></path><rect class=\"o-y th\" x=\"-7\" y=\"19.5\" width=\"14\" height=\"2\" rx=\"1\"></rect><circle class=\"o-y th\" cx=\"0\" cy=\"23\" r=\"1.6\"></circle></g></g></g><g class=\"pt pburst\"><g transform=\"translate(88 12)\"><path class=\"s-y th\" d=\"M-10 -2L-13 -4M10 -2L13 -4M-10 3H-14M10 3H14\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 126,
+      "k": "x-gulal",
+      "on": [
+        "cos-ho-cloud"
+      ],
+      "t": "<g class=\"x-gulal pt pburst\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(14 30)\"><path class=\"f-p\" opacity=\".8\" d=\"M0 -6Q4 -7 5 -3Q8 -1 5 2Q5 6 0 5Q-4 7 -5 3Q-8 1 -5 -2Q-5 -6 0 -6Z\"></path></g><g transform=\"translate(86 24)\"><path class=\"f-l\" opacity=\".8\" d=\"M0 -6Q4 -7 5 -3Q8 -1 5 2Q5 6 0 5Q-4 7 -5 3Q-8 1 -5 -2Q-5 -6 0 -6Z\"></path></g><g transform=\"translate(20 70)\"><path class=\"f-y\" opacity=\".8\" d=\"M0 -6Q4 -7 5 -3Q8 -1 5 2Q5 6 0 5Q-4 7 -5 3Q-8 1 -5 -2Q-5 -6 0 -6Z\"></path></g><g transform=\"translate(84 66)\"><path class=\"f-b\" opacity=\".8\" d=\"M0 -6Q4 -7 5 -3Q8 -1 5 2Q5 6 0 5Q-4 7 -5 3Q-8 1 -5 -2Q-5 -6 0 -6Z\"></path></g><g transform=\"translate(50 4)\"><path class=\"f-v\" opacity=\".8\" d=\"M0 -6Q4 -7 5 -3Q8 -1 5 2Q5 6 0 5Q-4 7 -5 3Q-8 1 -5 -2Q-5 -6 0 -6Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 127,
+      "k": "x-pichkari",
+      "on": [
+        "cos-ho-pichkari"
+      ],
+      "t": "<g class=\"x-pichkari\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"a spray s-p tk\" stroke-dasharray=\"3 3\" d=\"M83 56Q68 26 36 18\"></path><g transform=\"translate(90 58)\"><rect class=\"o-y\" x=\"-3\" y=\"-3\" width=\"14\" height=\"6\" rx=\"2\"></rect><path class=\"o-b th\" d=\"M-3 -1.5L-7 -1V1L-3 1.5Z\"></path><path class=\"s-k\" d=\"M11 0H15M15 -2.5V2.5\"></path></g><g class=\"pt prain\"><g transform=\"translate(40 20)\"><circle class=\"f-p\" r=\"1.2\"></circle></g><g transform=\"translate(48 22)\"><circle class=\"f-v\" r=\"1\"></circle></g><g transform=\"translate(34 24)\"><circle class=\"f-p\" r=\"1\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 128,
+      "k": "x-wballoon",
+      "on": [
+        "cos-ho-balloon"
+      ],
+      "t": "<g class=\"x-wballoon\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(90 80)\"><g class=\"a wsplash\"><path class=\"f-c\" d=\"M0 -4Q3 -6 4 -3Q8 -3 6 0Q9 2 5 3Q4 6 0 4Q-3 6 -4 3Q-8 3 -6 0Q-8 -3 -4 -3Q-3 -6 0 -4Z\"></path></g><g class=\"a wbal\"><path class=\"o-c\" d=\"M0 -4Q4 -4 4 1Q4 5 0 5Q-4 5 -4 1Q-4 -4 0 -4Z\"></path><path class=\"o-c th\" d=\"M-.8 -4L0 -6L.8 -4Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 129,
+      "k": "x-thali",
+      "on": [
+        "cos-ho-thali"
+      ],
+      "t": "<g class=\"x-thali\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.2)\"><ellipse class=\"o-y\" rx=\"12\" ry=\"3\"></ellipse><path class=\"f-p\" d=\"M-10 -.5Q-7 -6 -4 -.5Z\"></path><path class=\"f-l\" d=\"M-3 -.5Q0 -6.5 3 -.5Z\"></path><path class=\"f-b\" d=\"M4 -.5Q7 -6 10 -.5Z\"></path></g><g class=\"pt prise\"><g transform=\"translate(84 74)\"><circle class=\"f-p\" r=\"2.4\" opacity=\".8\"></circle></g><g transform=\"translate(91 72)\"><circle class=\"f-l\" r=\"2.4\" opacity=\".8\"></circle></g><g transform=\"translate(98 74)\"><circle class=\"f-b\" r=\"2.4\" opacity=\".8\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 130,
+      "k": "x-crescent",
+      "on": [
+        "cos-ef-moon"
+      ],
+      "t": "<g class=\"x-crescent\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"a mhalo f-y\" r=\"12\"></circle><path class=\"o-y th\" d=\"M-4 -5A8 8 0 1 0 4 5A6.5 6.5 0 1 1 -4 -5Z\"></path><g transform=\"translate(4 -3)\"><path class=\"o-y th\" d=\"M0 -3.5L1 -1.1L3.3 -1.1L1.5 .4L2.1 2.8L0 1.4L-2.1 2.8L-1.5 .4L-3.3 -1.1L-1 -1.1Z\"></path></g></g><g class=\"pt ptwk\"><g transform=\"translate(20 2)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(62 -6)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 131,
+      "k": "x-lantern",
+      "on": [
+        "cos-ef-lantern"
+      ],
+      "t": "<g class=\"x-lantern\" transform=\"translate({{a.side}} {{a.up}})\"><g class=\"pt pswing\"><g transform=\"translate(90 -6)\"><g><path class=\"s-k th\" d=\"M0 0V8\"></path><path class=\"o-y\" d=\"M-3 8H3L5 12H-5Z\"></path><path class=\"o-g\" d=\"M-5 12H5L6 24H-6Z\"></path><path class=\"a lglow f-y\" d=\"M-3 14H3L3.6 22H-3.6Z\"></path><path class=\"o-y\" d=\"M-6 24H6L3 27H-3Z\"></path><path class=\"s-y th\" d=\"M0 27V30\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 132,
+      "k": "x-sheer",
+      "on": [
+        "cos-ef-sweets"
+      ],
+      "t": "<g class=\"x-sheer\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(90 81) scale(1.2)\"><ellipse class=\"o-n th\" cx=\"-11\" cy=\"-1.4\" rx=\"2.2\" ry=\"1.4\"></ellipse><ellipse class=\"o-n th\" cx=\"-14.5\" cy=\"-1\" rx=\"2.2\" ry=\"1.4\"></ellipse><path class=\"o-w\" d=\"M-9 -8H9Q8 0 0 0Q-8 0 -9 -8Z\"></path><path class=\"f-m\" d=\"M-8.4 -7.6H8.4Q7 -5.5 0 -5.5Q-7 -5.5 -8.4 -7.6Z\"></path><path class=\"s-n th\" d=\"M-5 -7Q-3 -8 -1 -7Q1 -6 3 -7.5M-2 -6.5Q0 -7.6 4 -6.4\"></path></g><g class=\"pt prise\"><g transform=\"translate(87 68)\"><path class=\"s-e th\" d=\"M0 0Q-2 -3 0 -6Q2 -9 0 -12\"></path></g><g transform=\"translate(93 67)\"><path class=\"s-e th\" d=\"M0 0Q-2 -3 0 -6Q2 -9 0 -12\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 133,
+      "k": "x-eidi",
+      "on": [
+        "cos-ef-eidi"
+      ],
+      "t": "<g class=\"x-eidi\" transform=\"translate({{a.side}} {{a.mo}})\"><g class=\"pt pbob\"><g transform=\"translate(91 58) scale(1.15)\"><g><rect class=\"o-g\" x=\"-9\" y=\"-6\" width=\"18\" height=\"12\" rx=\"1.5\"></rect><path class=\"s-y th\" d=\"M-8.5 -5.5L0 1L8.5 -5.5\"></path><g transform=\"translate(0 2.5) scale(.38)\"><path class=\"f-y\" d=\"M-4 -5A8 8 0 1 0 4 5A6.5 6.5 0 1 1 -4 -5Z\"></path></g></g></g></g><g class=\"pt ptwk\"><g transform=\"translate(84 46)\"><circle class=\"o-y th\" r=\"2\"></circle></g><g transform=\"translate(98 48)\"><circle class=\"o-y th\" r=\"1.8\"></circle></g><g transform=\"translate(92 42)\"><circle class=\"o-y th\" r=\"1.6\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 134,
+      "k": "x-lights2",
+      "on": [
+        "cos-ef-lights"
+      ],
+      "t": "<g class=\"x-lights2\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M4 2Q50 20 96 2\"></path><g class=\"pt pflash\"><g transform=\"translate(15.5 5.9)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(27 8.8)\"><ellipse class=\"o-g th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(38.5 10.4)\"><ellipse class=\"o-w th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(50 11)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(61.5 10.4)\"><ellipse class=\"o-g th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(73 8.8)\"><ellipse class=\"o-w th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(84.5 5.9)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 135,
+      "k": "x-lotus",
+      "on": [
+        "cos-mj-lotus"
+      ],
+      "t": "<g class=\"x-lotus\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 92)\"><ellipse class=\"o-g th\" rx=\"17\" ry=\"2.6\"></ellipse><g class=\"a lotus\"><path class=\"o-p\" d=\"M0 0Q-12 -2 -14 -8Q-6 -8 0 0Z\"></path><path class=\"o-p\" d=\"M0 0Q12 -2 14 -8Q6 -8 0 0Z\"></path><path class=\"o-p\" d=\"M0 0Q-8 -6 -6 -13Q-1 -9 0 0Z\"></path><path class=\"o-p\" d=\"M0 0Q8 -6 6 -13Q1 -9 0 0Z\"></path><path class=\"o-w th\" d=\"M0 0Q-3 -8 0 -15Q3 -8 0 0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 136,
+      "k": "x-wpetals",
+      "on": [
+        "cos-mj-petals"
+      ],
+      "t": "<g class=\"x-wpetals pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 -2)\"><ellipse class=\"o-w th\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(30 4)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(46 -6)\"><ellipse class=\"o-w th\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(62 2)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(78 -4)\"><ellipse class=\"o-w th\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(92 4)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 137,
+      "k": "x-diya1",
+      "on": [
+        "cos-mj-diya"
+      ],
+      "t": "<g class=\"x-diya1\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 62)\"><circle class=\"a mhalo f-y\" cx=\"0\" cy=\"-6\" r=\"9\"></circle><path class=\"o-n\" d=\"M-7 -1Q-7 5 0 5Q7 5 7 -1Q3.5 0 0 0Q-3.5 0 -7 -1Z\"></path><g class=\"pt pflick\"><g transform=\"translate(0 -.5)\"><path class=\"o-y th\" d=\"M0 0Q-2.6 -3 0 -8Q2.6 -3 0 0Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 138,
+      "k": "x-bflies",
+      "on": [
+        "cos-mj-butterflies"
+      ],
+      "t": "<g class=\"x-bflies pt pdrift\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(14 30)\"><g><path class=\"a bflp o-y th\" d=\"M0 0Q-6 -7 -7 -2Q-7 2 0 0ZM0 0Q6 -7 7 -2Q7 2 0 0ZM0 0Q-4 5 -2 6Q0 5 0 0ZM0 0Q4 5 2 6Q0 5 0 0Z\"></path></g></g><g transform=\"translate(86 24)\"><g><path class=\"a bflp o-c th\" d=\"M0 0Q-6 -7 -7 -2Q-7 2 0 0ZM0 0Q6 -7 7 -2Q7 2 0 0ZM0 0Q-4 5 -2 6Q0 5 0 0ZM0 0Q4 5 2 6Q0 5 0 0Z\"></path></g></g><g transform=\"translate(88 64)\"><g><path class=\"a bflp o-p th\" d=\"M0 0Q-6 -7 -7 -2Q-7 2 0 0ZM0 0Q6 -7 7 -2Q7 2 0 0ZM0 0Q-4 5 -2 6Q0 5 0 0ZM0 0Q4 5 2 6Q0 5 0 0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 139,
+      "k": "x-jbunting",
+      "on": [
+        "cos-mj-flags"
+      ],
+      "t": "<g class=\"x-jbunting\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M6 2Q50 18 94 2\"></path><g class=\"pt pswing\"><g transform=\"translate(17 5.5)\"><path class=\"o-r th\" d=\"M-4 0H4L0 7Z\"></path></g><g transform=\"translate(28 8)\"><path class=\"o-y th\" d=\"M-4 0H4L0 7Z\"></path></g><g transform=\"translate(39 9.5)\"><path class=\"o-w th\" d=\"M-4 0H4L0 7Z\"></path></g><g transform=\"translate(50 10)\"><path class=\"o-g th\" d=\"M-4 0H4L0 7Z\"></path></g><g transform=\"translate(61 9.5)\"><path class=\"o-d th\" d=\"M-4 0H4L0 7Z\"></path></g><g transform=\"translate(72 8)\"><path class=\"o-r th\" d=\"M-4 0H4L0 7Z\"></path></g><g transform=\"translate(83 5.5)\"><path class=\"o-y th\" d=\"M-4 0H4L0 7Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 140,
+      "k": "x-wheat",
+      "on": [
+        "cos-vk-wheat"
+      ],
+      "t": "<g class=\"x-wheat\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(10 87)\"><g class=\"a whs\"><g transform=\"translate(-3 0) rotate(-10)\"><path class=\"s-y\" d=\"M0 0V-22\"></path><ellipse class=\"o-y th\" cx=\"0\" cy=\"-25\" rx=\"1.4\" ry=\"2.4\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -17.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -17.5)\"></ellipse></g><g transform=\"translate(2 1)\"><path class=\"s-y\" d=\"M0 0V-22\"></path><ellipse class=\"o-y th\" cx=\"0\" cy=\"-25\" rx=\"1.4\" ry=\"2.4\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -17.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -17.5)\"></ellipse></g></g></g><g transform=\"translate(90 87)\"><g class=\"a whs whs2\"><g transform=\"translate(-2 1)\"><path class=\"s-y\" d=\"M0 0V-22\"></path><ellipse class=\"o-y th\" cx=\"0\" cy=\"-25\" rx=\"1.4\" ry=\"2.4\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -17.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -17.5)\"></ellipse></g><g transform=\"translate(3 0) rotate(10)\"><path class=\"s-y\" d=\"M0 0V-22\"></path><ellipse class=\"o-y th\" cx=\"0\" cy=\"-25\" rx=\"1.4\" ry=\"2.4\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-21.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -21.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"-1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(-25 -1.8 -17.5)\"></ellipse><ellipse class=\"o-y th\" cx=\"1.8\" cy=\"-17.5\" rx=\"1.4\" ry=\"2.4\" transform=\"rotate(25 1.8 -17.5)\"></ellipse></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 141,
+      "k": "x-dhol",
+      "on": [
+        "cos-vk-dhol"
+      ],
+      "t": "<g class=\"x-dhol\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(91 64)\"><path class=\"o-r\" d=\"M-9 -6Q0 -8 9 -6V6Q0 8 -9 6Z\"></path><path class=\"s-y th\" d=\"M-7 -6L-3 6M-3 -7L1 7M1 -7L5 7M5 -6.5L8 5\"></path><ellipse class=\"o-m\" cx=\"-9\" cy=\"0\" rx=\"2.5\" ry=\"6\"></ellipse><ellipse class=\"o-m\" cx=\"9\" cy=\"0\" rx=\"2.5\" ry=\"6\"></ellipse></g><g transform=\"translate(78 52)\"><g class=\"vb0 db1\"><path class=\"s-n tk\" d=\"M0 0L4 10\"></path></g></g><g transform=\"translate(104 52)\"><g class=\"vb0 db2\"><path class=\"s-n\" d=\"M0 0L-4 10\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 142,
+      "k": "x-hsun",
+      "on": [
+        "cos-vk-sun"
+      ],
+      "t": "<g class=\"x-hsun\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"f-y\" r=\"14\" opacity=\".25\"></circle><g class=\"a hrays\"><path class=\"s-y\" d=\"M0 -11V-15M7.8 -7.8L10.6 -10.6M11 0H15M7.8 7.8L10.6 10.6M0 11V15M-7.8 7.8L-10.6 10.6M-11 0H-15M-7.8 -7.8L-10.6 -10.6\"></path></g><circle class=\"o-y\" r=\"8.5\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 143,
+      "k": "x-grains",
+      "on": [
+        "cos-vk-sun"
+      ],
+      "t": "<g class=\"x-grains pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 0)\"><ellipse class=\"f-y\" rx=\".9\" ry=\"1.6\"></ellipse></g><g transform=\"translate(30 -6)\"><ellipse class=\"f-y\" rx=\".9\" ry=\"1.6\"></ellipse></g><g transform=\"translate(46 4)\"><ellipse class=\"f-y\" rx=\".9\" ry=\"1.6\"></ellipse></g><g transform=\"translate(62 -4)\"><ellipse class=\"f-y\" rx=\".9\" ry=\"1.6\"></ellipse></g><g transform=\"translate(76 2)\"><ellipse class=\"f-y\" rx=\".9\" ry=\"1.6\"></ellipse></g><g transform=\"translate(92 -2)\"><ellipse class=\"f-y\" rx=\".9\" ry=\"1.6\"></ellipse></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 144,
+      "k": "x-pinwheel",
+      "on": [
+        "cos-kd-pinwheel",
+        "cos-vk-mela"
+      ],
+      "t": "<g class=\"x-pinwheel\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 48) scale(1.2)\"><path class=\"s-n\" d=\"M0 0V26\"></path><g class=\"a pinw\"><path class=\"o-p th\" d=\"M0 0V-8Q4 -8 4 -4Z\"></path><path class=\"o-y th\" d=\"M0 0H8Q8 4 4 4Z\"></path><path class=\"o-b th\" d=\"M0 0V8Q-4 8 -4 4Z\"></path><path class=\"o-l th\" d=\"M0 0H-8Q-8 -4 -4 -4Z\"></path></g><circle class=\"f-k\" r=\"1\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 145,
+      "k": "x-mballoons",
+      "on": [
+        "cos-vk-mela"
+      ],
+      "t": "<g class=\"x-mballoons pt pbob\" transform=\"translate({{a.ls}} {{a.mo}})\"><g transform=\"translate(9 28)\"><g><path class=\"s-e th\" d=\"M0 6Q-2 20 3 36\"></path><ellipse class=\"o-r\" rx=\"5\" ry=\"6\"></ellipse></g></g><g transform=\"translate(3 38)\"><g><path class=\"s-e th\" d=\"M0 6Q2 16 9 26\"></path><ellipse class=\"o-y\" rx=\"4.5\" ry=\"5.5\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 146,
+      "k": "x-fullmoon",
+      "on": [
+        "cos-bp-moon",
+        "cos-cs-moon",
+        "cos-ma-moon",
+        "cos-ma-rabbit"
+      ],
+      "t": "<g class=\"x-fullmoon\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"a mhalo f-y\" r=\"15\"></circle><circle class=\"o-m\" r=\"9\"></circle><circle class=\"f-e\" cx=\"-3\" cy=\"-2\" r=\"1.7\" opacity=\".6\"></circle><circle class=\"f-e\" cx=\"3\" cy=\"3\" r=\"1.2\" opacity=\".6\"></circle><circle class=\"f-e\" cx=\"2.5\" cy=\"-4\" r=\".9\" opacity=\".6\"></circle></g><g class=\"pt ptwk\"><g transform=\"translate(18 4)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(40 -6)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 147,
+      "k": "x-pond",
+      "on": [
+        "cos-bp-lotus"
+      ],
+      "t": "<g class=\"x-pond\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 90)\"><ellipse class=\"f-c\" rx=\"27\" ry=\"4\" opacity=\".7\"></ellipse><ellipse class=\"a ripl s-c th\" rx=\"14\" ry=\"2\"></ellipse><ellipse class=\"a ripl ripl2 s-c th\" rx=\"14\" ry=\"2\"></ellipse><g class=\"pt pbob\"><g transform=\"translate(16 0) scale(1.2)\"><g><ellipse class=\"o-g th\" rx=\"7\" ry=\"1.6\"></ellipse><path class=\"o-p th\" d=\"M0 0Q-7 -1 -8 -5Q-3 -5 0 0Z\"></path><path class=\"o-p th\" d=\"M0 0Q7 -1 8 -5Q3 -5 0 0Z\"></path><path class=\"o-w th\" d=\"M0 0Q-2.4 -6 0 -10Q2.4 -6 0 0Z\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 148,
+      "k": "x-bodhi",
+      "on": [
+        "cos-bp-leaf"
+      ],
+      "t": "<g class=\"x-bodhi pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 -2)\"><path class=\"f-g\" d=\"M0 -4Q4 -6 5 -2Q5 2 0 5V8V5Q-5 2 -5 -2Q-4 -6 0 -4Z\"></path></g><g transform=\"translate(34 4)\"><path class=\"f-l\" d=\"M0 -4Q4 -6 5 -2Q5 2 0 5V8V5Q-5 2 -5 -2Q-4 -6 0 -4Z\"></path></g><g transform=\"translate(56 -6)\"><path class=\"f-g\" d=\"M0 -4Q4 -6 5 -2Q5 2 0 5V8V5Q-5 2 -5 -2Q-4 -6 0 -4Z\"></path></g><g transform=\"translate(76 2)\"><path class=\"f-l\" d=\"M0 -4Q4 -6 5 -2Q5 2 0 5V8V5Q-5 2 -5 -2Q-4 -6 0 -4Z\"></path></g><g transform=\"translate(92 -4)\"><path class=\"f-g\" d=\"M0 -4Q4 -6 5 -2Q5 2 0 5V8V5Q-5 2 -5 -2Q-4 -6 0 -4Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 149,
+      "k": "x-skylant",
+      "on": [
+        "cos-bp-lanterns",
+        "cos-lf-sky"
+      ],
+      "t": "<g class=\"x-skylant pt prise slowr\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(14 60)\"><g><path class=\"o-o th\" d=\"M-3.5 -5H3.5L4.5 3.5H-4.5Z\"></path><path class=\"f-y\" d=\"M-2.6 .5H2.6L3.2 3.4H-3.2Z\"></path></g></g><g transform=\"translate(86 54)\"><g><path class=\"o-o th\" d=\"M-3.5 -5H3.5L4.5 3.5H-4.5Z\"></path><path class=\"f-y\" d=\"M-2.6 .5H2.6L3.2 3.4H-3.2Z\"></path></g></g><g transform=\"translate(24 36)\"><g><path class=\"o-r th\" d=\"M-3 -4.5H3L4 3H-4Z\"></path><path class=\"f-y\" d=\"M-2.2 .4H2.2L2.8 3H-2.8Z\"></path></g></g><g transform=\"translate(78 30)\"><g><path class=\"o-o th\" d=\"M-3 -4.5H3L4 3H-4Z\"></path><path class=\"f-y\" d=\"M-2.2 .4H2.2L2.8 3H-2.8Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 150,
+      "k": "x-candles3",
+      "on": [
+        "cos-bp-candle"
+      ],
+      "t": "<g class=\"x-candles3\" transform=\"translate(0 {{a.dn}})\"><rect class=\"o-w\" x=\"32.5\" y=\"82\" width=\"6\" height=\"9\" rx=\"1\"></rect><rect class=\"o-w\" x=\"47\" y=\"78\" width=\"6\" height=\"13\" rx=\"1\"></rect><rect class=\"o-w\" x=\"61.5\" y=\"82\" width=\"6\" height=\"9\" rx=\"1\"></rect><g class=\"pt pflick\"><g transform=\"translate(35.5 82)\"><path class=\"o-y th\" d=\"M0 0Q-2.2 -2.4 0 -6.5Q2.2 -2.4 0 0Z\"></path></g><g transform=\"translate(50 78)\"><path class=\"o-y th\" d=\"M0 0Q-2.2 -2.4 0 -6.5Q2.2 -2.4 0 0Z\"></path></g><g transform=\"translate(64.5 82)\"><path class=\"o-y th\" d=\"M0 0Q-2.2 -2.4 0 -6.5Q2.2 -2.4 0 0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 151,
+      "k": "x-lant3",
+      "on": [
+        "cos-ed-lanterns"
+      ],
+      "t": "<g class=\"x-lant3\" transform=\"translate(0 {{a.up}})\"><g class=\"pt pswing\"><g transform=\"translate(16 -14)\"><g><path class=\"s-k th\" d=\"M0 0V8\"></path><path class=\"o-y\" d=\"M-3 8H3L5 12H-5Z\"></path><path class=\"o-g\" d=\"M-5 12H5L6 24H-6Z\"></path><path class=\"a lglow f-y\" d=\"M-3 14H3L3.6 22H-3.6Z\"></path><path class=\"o-y\" d=\"M-6 24H6L3 27H-3Z\"></path></g></g><g transform=\"translate(84 -12)\"><g><path class=\"s-k th\" d=\"M0 0V6\"></path><path class=\"o-y\" d=\"M-3 6H3L5 10H-5Z\"></path><path class=\"o-r\" d=\"M-5 10H5L6 22H-6Z\"></path><path class=\"a lglow f-y\" d=\"M-3 12H3L3.6 20H-3.6Z\"></path><path class=\"o-y\" d=\"M-6 22H6L3 25H-3Z\"></path></g></g><g transform=\"translate(66 -22)\"><g><path class=\"s-k th\" d=\"M0 0V5\"></path><path class=\"o-y\" d=\"M-2.4 5H2.4L4 8H-4Z\"></path><path class=\"o-b\" d=\"M-4 8H4L4.8 17H-4.8Z\"></path><path class=\"a lglow f-y\" d=\"M-2.4 9.5H2.4L2.9 15.5H-2.9Z\"></path><path class=\"o-y\" d=\"M-4.8 17H4.8L2.4 19.5H-2.4Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 152,
+      "k": "x-star8",
+      "on": [
+        "cos-ed-star"
+      ],
+      "t": "<g class=\"x-star8\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"a mhalo f-y\" r=\"14\"></circle><g class=\"a st8\"><rect class=\"o-y th\" x=\"-6.5\" y=\"-6.5\" width=\"13\" height=\"13\"></rect><rect class=\"o-y th\" x=\"-6.5\" y=\"-6.5\" width=\"13\" height=\"13\" transform=\"rotate(45)\"></rect><circle class=\"o-g th\" r=\"3\"></circle></g></g><g class=\"pt ptwk\"><g transform=\"translate(20 4)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(60 -6)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 153,
+      "k": "x-feast",
+      "on": [
+        "cos-ed-feast"
+      ],
+      "t": "<g class=\"x-feast\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.15)\"><ellipse class=\"o-w th\" cx=\"-15\" cy=\"-1\" rx=\"6\" ry=\"1.6\"></ellipse><ellipse class=\"o-y th\" cx=\"-15\" cy=\"-2.4\" rx=\"3.4\" ry=\"1.4\"></ellipse><path class=\"o-n\" d=\"M-9 -9Q-11 0 -5 0H5Q11 0 9 -9Z\"></path><ellipse class=\"o-y\" cx=\"0\" cy=\"-9\" rx=\"9\" ry=\"2.4\"></ellipse><path class=\"s-o th\" d=\"M-5 -9.5h1.5M2 -9h1.5M-1 -10.2h1.5\"></path><path class=\"s-g th\" d=\"M4 -10L6 -11.5\"></path></g><g class=\"pt prise\"><g transform=\"translate(88 66)\"><path class=\"s-e th\" d=\"M0 0Q-2 -3 0 -6Q2 -9 0 -12\"></path></g><g transform=\"translate(94 65)\"><path class=\"s-e th\" d=\"M0 0Q-2 -3 0 -6Q2 -9 0 -12\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 154,
+      "k": "x-gifts",
+      "on": [
+        "cos-ed-gifts"
+      ],
+      "t": "<g class=\"x-gifts\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81)\"><rect class=\"o-g\" x=\"-9\" y=\"-10\" width=\"18\" height=\"10\" rx=\"1\"></rect><path class=\"f-y\" d=\"M-1.4 -10H1.4V0H-1.4Z\"></path><g class=\"pt pbob\"><g transform=\"translate(0 -10)\"><g><rect class=\"o-y\" x=\"-6\" y=\"-8\" width=\"12\" height=\"8\" rx=\"1\"></rect><path class=\"f-g\" d=\"M-1.2 -8H1.2V0H-1.2Z\"></path><path class=\"s-g th\" d=\"M0 -8Q-4 -12 -4 -9Q-3 -8 0 -8Q3 -8 4 -9Q4 -12 0 -8\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 155,
+      "k": "x-crescent2",
+      "on": [
+        "cos-ed-crescent"
+      ],
+      "t": "<g class=\"x-crescent2\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 0)\"><circle class=\"a mhalo f-y\" r=\"12\"></circle><path class=\"o-y th\" d=\"M-4 -5A8 8 0 1 0 4 5A6.5 6.5 0 1 1 -4 -5Z\"></path></g><g class=\"pt pswing\"><g transform=\"translate(70 -8)\"><g><path class=\"s-y th\" d=\"M0 0V9\"></path><g transform=\"translate(0 12)\"><path class=\"o-y th\" d=\"M0 -3.5L1 -1.1L3.3 -1.1L1.5 .4L2.1 2.8L0 1.4L-2.1 2.8L-1.5 .4L-3.3 -1.1L-1 -1.1Z\"></path></g></g></g><g transform=\"translate(97 4)\"><g><path class=\"s-y th\" d=\"M0 0V6\"></path><g transform=\"translate(0 9)\"><path class=\"o-y th\" d=\"M0 -3.5L1 -1.1L3.3 -1.1L1.5 .4L2.1 2.8L0 1.4L-2.1 2.8L-1.5 .4L-3.3 -1.1L-1 -1.1Z\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 156,
+      "k": "x-tkites",
+      "on": [
+        "cos-id-kites"
+      ],
+      "t": "<g class=\"x-tkites\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(18 0)\"><g class=\"a kt\"><path class=\"s-e th\" d=\"M0 9Q3 22 -2 34\"></path><path class=\"o-s\" d=\"M0 -8L6 0L0 9L-6 0Z\"></path><path class=\"s-k th\" d=\"M0 -8V9M-6 0H6\"></path></g></g><g transform=\"translate(54 -12)\"><g class=\"a kt kt2\"><path class=\"s-e th\" d=\"M0 9Q3 18 0 24\"></path><path class=\"o-w\" d=\"M0 -8L6 0L0 9L-6 0Z\"></path><path class=\"s-k th\" d=\"M0 -8V9M-6 0H6\"></path></g></g><g transform=\"translate(86 -2)\"><g class=\"a kt kt3\"><path class=\"s-e th\" d=\"M0 9Q-3 22 -8 34\"></path><path class=\"o-i\" d=\"M0 -8L6 0L0 9L-6 0Z\"></path><path class=\"s-k th\" d=\"M0 -8V9M-6 0H6\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 157,
+      "k": "x-hoist",
+      "on": [
+        "cos-id-hoist"
+      ],
+      "t": "<g class=\"x-hoist\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M88 80V28\"></path><circle class=\"o-y th\" cx=\"88\" cy=\"27\" r=\"1.6\"></circle><g transform=\"translate(88.5 30)\"><g class=\"a hoist\"><rect class=\"f-s\" x=\"0\" y=\"0\" width=\"16\" height=\"3.6\"></rect><rect class=\"f-w\" x=\"0\" y=\"3.6\" width=\"16\" height=\"3.6\"></rect><rect class=\"f-i\" x=\"0\" y=\"7.2\" width=\"16\" height=\"3.6\"></rect><circle class=\"s-d\" cx=\"8\" cy=\"5.4\" r=\"1.3\" style=\"stroke-width: .6\"></circle><rect class=\"s-k th\" x=\"0\" y=\"0\" width=\"16\" height=\"10.8\"></rect></g></g><g class=\"hpet\"><g transform=\"translate(94 30)\"><circle class=\"f-s\" r=\"1.3\"></circle></g><g transform=\"translate(92 31)\"><circle class=\"o-w th\" r=\"1.2\"></circle></g><g transform=\"translate(97 32)\"><circle class=\"f-i\" r=\"1.3\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 158,
+      "k": "x-tballoons",
+      "on": [
+        "cos-id-balloons"
+      ],
+      "t": "<g class=\"x-tballoons pt pbob\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(88 38)\"><g><path class=\"s-e th\" d=\"M0 6Q-2 16 -3 26\"></path><ellipse class=\"o-s\" rx=\"4.5\" ry=\"5.5\"></ellipse></g></g><g transform=\"translate(97 43)\"><g><path class=\"s-e th\" d=\"M0 6Q-3 14 -12 21\"></path><ellipse class=\"o-w\" rx=\"4.5\" ry=\"5.5\"></ellipse></g></g><g transform=\"translate(93 29)\"><g><path class=\"s-e th\" d=\"M0 6Q-2 20 -8 35\"></path><ellipse class=\"o-i\" rx=\"4.5\" ry=\"5.5\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 159,
+      "k": "x-jalebi",
+      "on": [
+        "cos-id-sweets"
+      ],
+      "t": "<g class=\"x-jalebi\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.15)\"><ellipse class=\"o-w th\" rx=\"12\" ry=\"2.6\"></ellipse><g transform=\"translate(-5 -4)\"><path class=\"s-o tk\" d=\"M0 0Q2 -2 3 0Q3 3 0 3Q-3 3 -3 0Q-3 -4 1 -4Q5 -4 5 0Q5 5 0 5\"></path></g><g transform=\"translate(5 -3.5)\"><path class=\"s-o tk\" d=\"M0 0Q2 -2 3 0Q3 3 0 3Q-3 3 -3 0Q-3 -4 1 -4Q5 -4 5 0Q5 5 0 5\"></path></g><circle class=\"o-y\" cx=\"0\" cy=\"-10\" r=\"3\"></circle></g><g class=\"pt ptwk\"><g transform=\"translate(84 64)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 160,
+      "k": "x-fnotes",
+      "on": [
+        "cos-jm-flute"
+      ],
+      "t": "<g class=\"x-fnotes pt prise\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(82 46)\"><g><ellipse class=\"f-k\" cx=\"-1.6\" cy=\"0\" rx=\"1.9\" ry=\"1.4\"></ellipse><path class=\"s-k th\" d=\"M.2 -.3V-7.5L3.5 -6.2\"></path></g></g><g transform=\"translate(88 52)\"><g><ellipse class=\"f-k\" cx=\"-1.6\" cy=\"0\" rx=\"1.9\" ry=\"1.4\"></ellipse><path class=\"s-k th\" d=\"M.2 -.3V-7.5L3.5 -6.2\"></path></g></g><g transform=\"translate(92 42)\"><g><ellipse class=\"f-k\" cx=\"-1.6\" cy=\"0\" rx=\"1.9\" ry=\"1.4\"></ellipse><path class=\"s-k th\" d=\"M.2 -.3V-7.5L3.5 -6.2\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 161,
+      "k": "x-makhan",
+      "on": [
+        "cos-jm-butter"
+      ],
+      "t": "<g class=\"x-makhan\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.15)\"><path class=\"o-n\" d=\"M-8 -10Q-11 -2 -5 0H5Q11 -2 8 -10Z\"></path><path class=\"s-y th\" d=\"M-9.5 -6H9.5\"></path><rect class=\"o-n\" x=\"-5.5\" y=\"-13\" width=\"11\" height=\"3.5\" rx=\"1\"></rect></g><g class=\"pt pbob\"><g transform=\"translate(91 64)\"><path class=\"o-w th\" d=\"M-6 2Q-7 -2 -2.5 -2.5Q0 -6 3.5 -2.5Q7 -2 6 2Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 162,
+      "k": "x-handi",
+      "on": [
+        "cos-jm-handi"
+      ],
+      "t": "<g class=\"x-handi\" transform=\"translate(0 {{a.up}})\"><path class=\"s-n\" d=\"M-4 -18Q50 -8 104 -18\"></path><g class=\"pt pswing\"><g transform=\"translate(68 -12)\"><g><path class=\"s-n th\" d=\"M0 0V6\"></path><rect class=\"o-n th\" x=\"-4\" y=\"6\" width=\"8\" height=\"4\" rx=\"1\"></rect><path class=\"o-n\" d=\"M-6.5 10Q-9 17 -4 19H4Q9 17 6.5 10Z\"></path><circle class=\"o-o th\" cx=\"-6\" cy=\"13\" r=\"1.7\"></circle><circle class=\"o-y th\" cx=\"0\" cy=\"18.5\" r=\"1.7\"></circle><circle class=\"o-o th\" cx=\"6\" cy=\"13\" r=\"1.7\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 163,
+      "k": "x-cradle",
+      "on": [
+        "cos-jm-cradle"
+      ],
+      "t": "<g class=\"x-cradle\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M80 38H100\"></path><g class=\"pt pswing\"><g transform=\"translate(90 38)\"><g><path class=\"s-y th\" d=\"M-6 0L-8 14M6 0L8 14\"></path><path class=\"o-y\" d=\"M-10 14H10Q9 22 0 22Q-9 22 -10 14Z\"></path><circle class=\"o-o th\" cx=\"-6\" cy=\"14\" r=\"1.6\"></circle><circle class=\"o-p th\" cx=\"0\" cy=\"14\" r=\"1.6\"></circle><circle class=\"o-o th\" cx=\"6\" cy=\"14\" r=\"1.6\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 164,
+      "k": "x-modaks",
+      "on": [
+        "cos-gc-modak"
+      ],
+      "t": "<g class=\"x-modaks\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.25)\"><ellipse class=\"o-y th\" rx=\"11\" ry=\"2.4\"></ellipse><g transform=\"translate(-5 -2)\"><path class=\"o-w\" d=\"M-3.5 2Q-4.5 -2 0 -7Q4.5 -2 3.5 2Z\"></path><path class=\"s-e th\" d=\"M-1.6 1.5Q-1.8 -2 0 -6M1.6 1.5Q1.8 -2 0 -6\"></path></g><g transform=\"translate(5 -2)\"><path class=\"o-w\" d=\"M-3.5 2Q-4.5 -2 0 -7Q4.5 -2 3.5 2Z\"></path><path class=\"s-e th\" d=\"M-1.6 1.5Q-1.8 -2 0 -6M1.6 1.5Q1.8 -2 0 -6\"></path></g><g transform=\"translate(0 -7)\"><path class=\"o-w\" d=\"M-3.5 2Q-4.5 -2 0 -7Q4.5 -2 3.5 2Z\"></path><path class=\"s-e th\" d=\"M-1.6 1.5Q-1.8 -2 0 -6M1.6 1.5Q1.8 -2 0 -6\"></path></g></g><g class=\"pt ptwk\"><g transform=\"translate(84 62)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 165,
+      "k": "x-mpetals",
+      "on": [
+        "cos-gc-marigold"
+      ],
+      "t": "<g class=\"x-mpetals pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 -2)\"><ellipse class=\"f-o\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(30 4)\"><ellipse class=\"f-y\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(46 -6)\"><ellipse class=\"f-o\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(62 2)\"><ellipse class=\"f-y\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(78 -4)\"><ellipse class=\"f-o\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(92 4)\"><ellipse class=\"f-y\" rx=\"2\" ry=\"1.3\"></ellipse></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 166,
+      "k": "x-mouse",
+      "on": [
+        "cos-gc-mouse"
+      ],
+      "t": "<g class=\"x-mouse\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(10 85) scale(1.25)\"><g class=\"a mouse\"><path class=\"s-e th\" d=\"M-6 -1Q-11 0 -12 -4\"></path><path class=\"o-e\" d=\"M-6 0Q-7 -6 0 -6Q5 -6 7 -2L9 -1L7 0Z\"></path><circle class=\"o-e th\" cx=\"2.5\" cy=\"-6\" r=\"2\"></circle><circle class=\"f-k\" cx=\"5.8\" cy=\"-3\" r=\".6\"></circle></g><g transform=\"translate(13 0)\"><path class=\"o-w\" d=\"M-3 0Q-4 -3 0 -6Q4 -3 3 0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 167,
+      "k": "x-cymbals",
+      "on": [
+        "cos-gc-cymbals"
+      ],
+      "t": "<g class=\"x-cymbals\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(86 56)\"><g class=\"a cym1\"><path class=\"s-n th\" d=\"M-2 0H-5\"></path><ellipse class=\"o-y\" rx=\"2\" ry=\"6.5\"></ellipse></g></g><g transform=\"translate(97 56)\"><g class=\"a cym2\"><path class=\"s-n th\" d=\"M2 0H5\"></path><ellipse class=\"o-y\" rx=\"2\" ry=\"6.5\"></ellipse></g></g><g transform=\"translate(91.5 56)\"><path class=\"a clash s-y th\" d=\"M0 -9V-12M5 -7L7 -9M5 7L7 9M0 9V12M-5 -7L-7 -9M-5 7L-7 9\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 168,
+      "k": "x-pookalam",
+      "on": [
+        "cos-on-pookalam"
+      ],
+      "t": "<g class=\"x-pookalam\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 90) scale(1 .38)\"><g class=\"a pook\"><circle class=\"f-o\" r=\"25\"></circle><circle class=\"f-y\" r=\"20\"></circle><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\"></ellipse><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\" transform=\"rotate(45)\"></ellipse><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\" transform=\"rotate(90)\"></ellipse><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\" transform=\"rotate(135)\"></ellipse><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\" transform=\"rotate(180)\"></ellipse><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\" transform=\"rotate(225)\"></ellipse><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\" transform=\"rotate(270)\"></ellipse><ellipse class=\"f-p\" cx=\"0\" cy=\"-17\" rx=\"2.6\" ry=\"3.8\" transform=\"rotate(315)\"></ellipse><circle class=\"f-r\" r=\"12\"></circle><circle class=\"f-w\" r=\"8\"></circle><circle class=\"f-v\" r=\"4.5\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 169,
+      "k": "x-boat",
+      "on": [
+        "cos-on-boat"
+      ],
+      "t": "<g class=\"x-boat\" transform=\"translate(0 {{a.dn}})\"><path class=\"f-c\" d=\"M-4 88Q50 85 104 88V95H-4Z\"></path><g class=\"a boatg\"><circle class=\"o-r th\" cx=\"22\" cy=\"85\" r=\"2\"></circle><circle class=\"o-w th\" cx=\"32\" cy=\"85\" r=\"2\"></circle><circle class=\"o-r th\" cx=\"42\" cy=\"85\" r=\"2\"></circle><circle class=\"o-w th\" cx=\"52\" cy=\"85\" r=\"2\"></circle><circle class=\"o-r th\" cx=\"62\" cy=\"85\" r=\"2\"></circle><g class=\"a oars\"><path class=\"s-n th\" d=\"M24 86L19 94M34 86L29 94M44 86L39 94M54 86L49 94M64 86L59 94\"></path></g><path class=\"o-k\" d=\"M10 88H70Q78 88 82 76L84 77Q82 90 72 92H14Q8 92 10 88Z\"></path><path class=\"s-y th\" d=\"M14 90H70\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 170,
+      "k": "x-olakkuda",
+      "on": [
+        "cos-on-umbrella"
+      ],
+      "t": "<g class=\"x-olakkuda\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(58 2) rotate(-30)\"><g class=\"a umb2\"><path class=\"s-n tk\" d=\"M0 0V44\"></path><path class=\"o-m\" d=\"M-24 0Q-22 -17 0 -18Q22 -17 24 0Z\"></path><path class=\"s-n th\" d=\"M0 -18L-24 0M0 -18L-16 0M0 -18L-8 0M0 -18V0M0 -18L8 0M0 -18L16 0M0 -18L24 0\"></path><path class=\"s-r\" d=\"M-24 0H24\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 171,
+      "k": "x-sadhya",
+      "on": [
+        "cos-on-sadhya"
+      ],
+      "t": "<g class=\"x-sadhya\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 91)\"><path class=\"o-g\" d=\"M-28 0Q-26 -6 0 -6Q26 -6 32 -2Q28 2 0 2Q-26 2 -28 0Z\"></path><path class=\"s-l th\" d=\"M-26 -2H30\"></path><circle class=\"o-w th\" cx=\"-13\" cy=\"-2.5\" r=\"3\"></circle><circle class=\"f-y\" cx=\"-3\" cy=\"-3\" r=\"1.6\"></circle><circle class=\"f-o\" cx=\"3\" cy=\"-3.2\" r=\"1.5\"></circle><circle class=\"f-r\" cx=\"9\" cy=\"-3\" r=\"1.5\"></circle><circle class=\"f-l\" cx=\"15\" cy=\"-2.6\" r=\"1.5\"></circle><ellipse class=\"o-y th\" cx=\"22\" cy=\"-3\" rx=\"2.6\" ry=\"1.4\"></ellipse></g><g class=\"pt prise\"><g transform=\"translate(37 84)\"><path class=\"s-e th\" d=\"M0 0Q-2 -3 0 -6Q2 -9 0 -12\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 172,
+      "k": "x-charkha",
+      "on": [
+        "cos-gj-charkha"
+      ],
+      "t": "<g class=\"x-charkha\" transform=\"translate({{a.side}} {{a.dn}})\"><path class=\"s-n\" d=\"M82 81H100M91 68L87 81M91 68L95 81\"></path><g transform=\"translate(91 68)\"><g class=\"a chw\"><circle class=\"s-n\" r=\"10\"></circle><path class=\"s-n th\" d=\"M-10 0H10M0 -10V10M-7 -7L7 7M-7 7L7 -7\"></path></g><circle class=\"f-n\" r=\"1.6\"></circle></g><path class=\"s-e th\" d=\"M81 66Q74 70 70 79\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 173,
+      "k": "x-steps2",
+      "on": [
+        "cos-gj-walk"
+      ],
+      "t": "<g class=\"x-steps2 pt ppop\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(62 87)\"><ellipse class=\"f-e\" rx=\"3.2\" ry=\"1.9\"></ellipse></g><g transform=\"translate(50 91)\"><ellipse class=\"f-e\" rx=\"3.2\" ry=\"1.9\"></ellipse></g><g transform=\"translate(38 87)\"><ellipse class=\"f-e\" rx=\"3.2\" ry=\"1.9\"></ellipse></g><g transform=\"translate(26 91)\"><ellipse class=\"f-e\" rx=\"3.2\" ry=\"1.9\"></ellipse></g><g transform=\"translate(14 87)\"><ellipse class=\"f-e\" rx=\"3.2\" ry=\"1.9\"></ellipse></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 174,
+      "k": "x-stick2",
+      "on": [
+        "cos-gj-walk"
+      ],
+      "t": "<g class=\"x-stick2\" transform=\"translate({{a.ls}} {{a.mo}})\"><path class=\"s-n tk\" d=\"M13 82L9 44Q8.5 39 12 38\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 175,
+      "k": "x-lamp",
+      "on": [
+        "cos-gj-tribute"
+      ],
+      "t": "<g class=\"x-lamp\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 79) scale(1.2)\"><circle class=\"a mhalo f-y\" cx=\"0\" cy=\"-6\" r=\"8\"></circle><path class=\"o-n\" d=\"M-7 -1Q-7 5 0 5Q7 5 7 -1Q3.5 0 0 0Q-3.5 0 -7 -1Z\"></path><g class=\"pt pflick\"><g transform=\"translate(0 -.5)\"><path class=\"o-y th\" d=\"M0 0Q-2.6 -3 0 -8Q2.6 -3 0 0Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 176,
+      "k": "x-dandiya",
+      "on": [
+        "cos-nv-dandiya"
+      ],
+      "t": "<g class=\"x-dandiya\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(86 72)\"><g class=\"vb0 dd1\"><path class=\"s-r tk\" d=\"M0 0L6 -24\"></path><path class=\"s-y th\" stroke-dasharray=\"2 2\" d=\"M0 0L6 -24\"></path></g></g><g transform=\"translate(100 72)\"><g class=\"vb0 dd2\"><path class=\"s-g tk\" d=\"M0 0L-6 -24\"></path><path class=\"s-y th\" stroke-dasharray=\"2 2\" d=\"M0 0L-6 -24\"></path></g></g><g transform=\"translate(93 46)\"><path class=\"a clash s-y th\" d=\"M0 -5V-8M4 -3L6 -5M-4 -3L-6 -5M5 1H8M-5 1H-8\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 177,
+      "k": "x-garbo",
+      "on": [
+        "cos-nv-garbo"
+      ],
+      "t": "<g class=\"x-garbo\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81) scale(1.2)\"><circle class=\"a mhalo f-y\" cx=\"0\" cy=\"-8\" r=\"10\"></circle><path class=\"o-n\" d=\"M-9 -9Q-12 -1 -6 0H6Q12 -1 9 -9Z\"></path><rect class=\"o-n\" x=\"-5\" y=\"-12\" width=\"10\" height=\"3\" rx=\"1\"></rect><g class=\"pt pflash\"><g transform=\"translate(-5 -5)\"><circle class=\"f-y\" r=\"1.2\"></circle></g><g transform=\"translate(0 -6)\"><circle class=\"f-y\" r=\"1.2\"></circle></g><g transform=\"translate(5 -5)\"><circle class=\"f-y\" r=\"1.2\"></circle></g><g transform=\"translate(-2.5 -2)\"><circle class=\"f-y\" r=\"1.2\"></circle></g><g transform=\"translate(2.5 -2)\"><circle class=\"f-y\" r=\"1.2\"></circle></g></g><g class=\"pt pflick\"><g transform=\"translate(0 -12)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.6 0 -7Q2.4 -2.6 0 0Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 178,
+      "k": "x-nine",
+      "on": [
+        "cos-nv-colours"
+      ],
+      "t": "<g class=\"x-nine pt ptwk\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 10)\"><circle class=\"o-w th\" r=\"2.6\"></circle></g><g transform=\"translate(23 2.1)\"><circle class=\"o-r th\" r=\"2.6\"></circle></g><g transform=\"translate(32 -3.5)\"><circle class=\"o-b th\" r=\"2.6\"></circle></g><g transform=\"translate(41 -6.9)\"><circle class=\"o-y th\" r=\"2.6\"></circle></g><g transform=\"translate(50 -8)\"><circle class=\"o-g th\" r=\"2.6\"></circle></g><g transform=\"translate(59 -6.9)\"><circle class=\"o-e th\" r=\"2.6\"></circle></g><g transform=\"translate(68 -3.5)\"><circle class=\"o-o th\" r=\"2.6\"></circle></g><g transform=\"translate(77 2.1)\"><circle class=\"o-c th\" r=\"2.6\"></circle></g><g transform=\"translate(86 10)\"><circle class=\"o-p th\" r=\"2.6\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 179,
+      "k": "x-dhunuchi",
+      "on": [
+        "cos-dp-dhunuchi"
+      ],
+      "t": "<g class=\"x-dhunuchi\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 62) scale(1.2)\"><path class=\"s-n\" d=\"M0 2V9M-3.5 9H3.5\"></path><path class=\"o-n\" d=\"M-7 -4H7Q6 2 0 2Q-6 2 -7 -4Z\"></path><path class=\"f-o\" d=\"M-5.5 -4Q0 -7.5 5.5 -4Z\"></path></g><g class=\"pt prise smk\"><g transform=\"translate(88 52)\"><circle class=\"f-e\" r=\"3\"></circle></g><g transform=\"translate(93 50)\"><circle class=\"f-e\" r=\"3.6\"></circle></g><g transform=\"translate(90 47)\"><circle class=\"f-e\" r=\"2.6\"></circle></g><g transform=\"translate(95 54)\"><circle class=\"f-e\" r=\"2.4\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 180,
+      "k": "x-dhak",
+      "on": [
+        "cos-dp-dhak"
+      ],
+      "t": "<g class=\"x-dhak\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(91 64)\"><path class=\"o-r\" d=\"M-8 -9Q-10 0 -8 9H8Q10 0 8 -9Z\"></path><path class=\"s-y th\" d=\"M-9 -3H9M-9 3H9\"></path><ellipse class=\"o-m\" cx=\"0\" cy=\"-9\" rx=\"8\" ry=\"2.4\"></ellipse><g transform=\"translate(-4 -10)\"><g class=\"a plume\"><path class=\"o-w th\" d=\"M0 0Q-6 -10 -2 -20Q0 -12 2 -20Q6 -10 0 0Z\"></path></g></g></g><g transform=\"translate(79 46)\"><g class=\"vb0 dkb\"><path class=\"s-n\" d=\"M0 0L9 9\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 181,
+      "k": "x-kash",
+      "on": [
+        "cos-dp-kash"
+      ],
+      "t": "<g class=\"x-kash\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(9 86)\"><g class=\"a kgr\"><path class=\"s-l\" d=\"M0 0Q-2 -12 -1 -26M3 0Q4 -10 7 -22M-3 0Q-6 -9 -9 -18\"></path><path class=\"o-w th\" d=\"M-1 -26Q-4 -32 -2 -36Q1 -32 -1 -26ZM7 -22Q5 -28 8 -32Q10 -27 7 -22ZM-9 -18Q-13 -23 -12 -27Q-8 -24 -9 -18Z\"></path></g></g><g transform=\"translate(91 86)\"><g class=\"a kgr kgr2\"><path class=\"s-l\" d=\"M0 0Q2 -12 1 -26M-3 0Q-4 -10 -7 -22M3 0Q6 -9 9 -18\"></path><path class=\"o-w th\" d=\"M1 -26Q4 -32 2 -36Q-1 -32 1 -26ZM-7 -22Q-5 -28 -8 -32Q-10 -27 -7 -22ZM9 -18Q13 -23 12 -27Q8 -24 9 -18Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 182,
+      "k": "x-conch",
+      "on": [
+        "cos-dp-conch"
+      ],
+      "t": "<g class=\"x-conch\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 58) scale(1.2)\"><path class=\"o-w\" d=\"M-8 2Q-9 -6 -2 -7Q6 -8 9 -2Q7 1 4 1Q8 4 2 5Q-4 6 -8 2Z\"></path><path class=\"s-e th\" d=\"M-5 0Q0 -4 5 -2M-3 3Q1 1 5 2\"></path></g><g class=\"pt pburst\"><g transform=\"translate(90 44)\"><path class=\"s-e\" d=\"M-7 -4Q-10 0 -7 4M7 -4Q10 0 7 4\"></path></g><g transform=\"translate(90 44)\"><path class=\"s-e th\" d=\"M-11 -6Q-15 0 -11 6M11 -6Q15 0 11 6\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 183,
+      "k": "x-pandal",
+      "on": [
+        "cos-dp-lights"
+      ],
+      "t": "<g class=\"x-pandal\"><path class=\"s-n th\" d=\"M3 92V40Q3 -6 50 -8Q97 -6 97 40V92\"></path><g class=\"pt pflash\"><g transform=\"translate(3 80)\"><circle class=\"o-y th\" r=\"2.2\"></circle></g><g transform=\"translate(3 52)\"><circle class=\"o-o th\" r=\"2.2\"></circle></g><g transform=\"translate(5.9 19.8)\"><circle class=\"o-r th\" r=\"2.2\"></circle></g><g transform=\"translate(29.4 -4.3)\"><circle class=\"o-y th\" r=\"2.2\"></circle></g><g transform=\"translate(70.6 -4.3)\"><circle class=\"o-p th\" r=\"2.2\"></circle></g><g transform=\"translate(94.1 19.8)\"><circle class=\"o-y th\" r=\"2.2\"></circle></g><g transform=\"translate(97 52)\"><circle class=\"o-r th\" r=\"2.2\"></circle></g><g transform=\"translate(97 80)\"><circle class=\"o-o th\" r=\"2.2\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 184,
+      "k": "x-bowarrow",
+      "on": [
+        "cos-ds-bow"
+      ],
+      "t": "<g class=\"x-bowarrow\" transform=\"translate({{a.ls}} {{a.mo}})\"><g transform=\"translate(10 24)\"><path class=\"s-n tk\" d=\"M3 -15Q-9 0 3 15\"></path><path class=\"s-e th\" d=\"M3 -15V15\"></path></g><g class=\"pt pfly\"><g transform=\"translate(24 6)\"><g><path class=\"s-n\" d=\"M-9 0H7\"></path><path class=\"o-y th\" d=\"M10 0L6 -3V3Z\"></path><path class=\"s-r th\" d=\"M-9 0L-12 -3M-9 0L-12 3M-6.5 0L-9.5 -3M-6.5 0L-9.5 3\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 185,
+      "k": "x-effigy",
+      "on": [
+        "cos-ds-effigy"
+      ],
+      "t": "<g class=\"x-effigy\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(92 81) scale(1.1)\"><path class=\"s-n\" d=\"M-5 -2L-7 0M5 -2L7 0\"></path><path class=\"o-r\" d=\"M-6 -2V-24H6V-2Z\"></path><path class=\"o-y th\" d=\"M-6 -16H6M-6 -9H6\"></path><circle class=\"o-m\" cx=\"0\" cy=\"-28\" r=\"4.5\"></circle><path class=\"o-y th\" d=\"M-4 -32L-2 -36L0 -33L2 -36L4 -32Z\"></path><path class=\"s-k th\" d=\"M-2 -28.5h.4M1.6 -28.5h.4M-1.6 -26.2Q0 -25.4 1.6 -26.2\"></path><g class=\"pt pflick\"><g transform=\"translate(-4 -1)\"><path class=\"o-o th\" d=\"M0 0Q-4 -2 -2 -8Q0 -6 1 -9Q3 -4 0 0Z\"></path></g><g transform=\"translate(4 -1)\"><path class=\"o-o th\" d=\"M0 0Q-4 -2 -2 -8Q0 -6 1 -9Q3 -4 0 0Z\"></path></g></g></g><g class=\"pt prise\"><g transform=\"translate(88 58)\"><circle class=\"f-o\" r=\".9\"></circle></g><g transform=\"translate(96 60)\"><circle class=\"f-y\" r=\".9\"></circle></g><g transform=\"translate(92 54)\"><circle class=\"f-o\" r=\".8\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 186,
+      "k": "x-fw3",
+      "on": [
+        "cos-ds-fireworks"
+      ],
+      "t": "<g class=\"x-fw3 pt pburst\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(18 6)\"><path class=\"s-y\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g><g transform=\"translate(84 0)\"><path class=\"s-r\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g><g transform=\"translate(54 -10)\"><path class=\"s-g\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g><g transform=\"translate(34 -4)\"><path class=\"s-o\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 187,
+      "k": "x-goldleaves",
+      "on": [
+        "cos-ds-leaves"
+      ],
+      "t": "<g class=\"x-goldleaves pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 -2)\"><path class=\"o-y th\" d=\"M0 -4Q3.5 -2.5 3 1Q2 4 0 4Q-2 4 -3 1Q-3.5 -2.5 0 -4Z\"></path></g><g transform=\"translate(32 4)\"><path class=\"o-y th\" d=\"M0 -4Q3.5 -2.5 3 1Q2 4 0 4Q-2 4 -3 1Q-3.5 -2.5 0 -4Z\"></path></g><g transform=\"translate(50 -6)\"><path class=\"o-y th\" d=\"M0 -4Q3.5 -2.5 3 1Q2 4 0 4Q-2 4 -3 1Q-3.5 -2.5 0 -4Z\"></path></g><g transform=\"translate(68 2)\"><path class=\"o-y th\" d=\"M0 -4Q3.5 -2.5 3 1Q2 4 0 4Q-2 4 -3 1Q-3.5 -2.5 0 -4Z\"></path></g><g transform=\"translate(86 -4)\"><path class=\"o-y th\" d=\"M0 -4Q3.5 -2.5 3 1Q2 4 0 4Q-2 4 -3 1Q-3.5 -2.5 0 -4Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 188,
+      "k": "x-sparkle2",
+      "on": [
+        "cos-ds-crown"
+      ],
+      "t": "<g class=\"x-sparkle2 pt ptwk\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(28 8)\"><path class=\"f-y\" d=\"M0 -4.5L1.2 -1.2L4.5 0L1.2 1.2L0 4.5L-1.2 1.2L-4.5 0L-1.2 -1.2Z\"></path></g><g transform=\"translate(72 4)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(50 -6)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 189,
+      "k": "x-diyarow",
+      "on": [
+        "cos-dw-diyas"
+      ],
+      "t": "<g class=\"x-diyarow\" transform=\"translate(0 {{a.dn}})\"><g class=\"pt pflick\"><g transform=\"translate(12 87)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g><g transform=\"translate(31 89)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g><g transform=\"translate(50 90)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g><g transform=\"translate(69 89)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g><g transform=\"translate(88 87)\"><path class=\"o-y th\" d=\"M0 0Q-2.4 -2.5 0 -7Q2.4 -2.5 0 0Z\"></path></g></g><g transform=\"translate(12 88)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g><g transform=\"translate(31 90)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g><g transform=\"translate(50 91)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g><g transform=\"translate(69 90)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g><g transform=\"translate(88 88)\"><path class=\"o-n\" d=\"M-6 -1Q-6 4 0 4Q6 4 6 -1Q3 0 0 0Q-3 0 -6 -1Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 190,
+      "k": "x-rangoli",
+      "on": [
+        "cos-dw-rangoli"
+      ],
+      "t": "<g class=\"x-rangoli\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 90) scale(1 .38)\"><g class=\"a rgl\"><circle class=\"f-p\" r=\"25\"></circle><circle class=\"f-y\" r=\"20\"></circle><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\"></ellipse><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\" transform=\"rotate(45)\"></ellipse><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\" transform=\"rotate(90)\"></ellipse><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\" transform=\"rotate(135)\"></ellipse><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\" transform=\"rotate(180)\"></ellipse><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\" transform=\"rotate(225)\"></ellipse><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\" transform=\"rotate(270)\"></ellipse><ellipse class=\"f-o\" cx=\"0\" cy=\"-14\" rx=\"3.4\" ry=\"5\" transform=\"rotate(315)\"></ellipse><circle class=\"f-b\" r=\"9\"></circle><circle class=\"f-w\" r=\"5.5\"></circle><circle class=\"f-r\" r=\"3\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 191,
+      "k": "x-phuljhadi",
+      "on": [
+        "cos-dw-sparkler"
+      ],
+      "t": "<g class=\"x-phuljhadi\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-e\" d=\"M84 72L93 46\"></path><g class=\"pt pburst spkl\"><g transform=\"translate(93 45)\"><path class=\"s-y th\" d=\"M0 -2V-6M0 2V6M-2 0H-6M2 0H6M1.4 -1.4L4.2 -4.2M-1.4 -1.4L-4.2 -4.2M1.4 1.4L4.2 4.2M-1.4 1.4L-4.2 4.2\"></path></g><g transform=\"translate(93 45) rotate(22)\"><path class=\"s-o th\" d=\"M0 -2V-6M0 2V6M-2 0H-6M2 0H6M1.4 -1.4L4.2 -4.2M-1.4 -1.4L-4.2 -4.2M1.4 1.4L4.2 4.2M-1.4 1.4L-4.2 4.2\"></path></g></g><g class=\"pt ptwk spkl\"><g transform=\"translate(87 38)\"><circle class=\"f-y\" r=\"1.1\"></circle></g><g transform=\"translate(100 40)\"><circle class=\"f-o\" r=\"1.1\"></circle></g><g transform=\"translate(98 53)\"><circle class=\"f-y\" r=\"1.1\"></circle></g><g transform=\"translate(86 50)\"><circle class=\"f-o\" r=\"1.1\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 192,
+      "k": "x-kandil",
+      "on": [
+        "cos-dw-lantern"
+      ],
+      "t": "<g class=\"x-kandil\" transform=\"translate({{a.side}} {{a.up}})\"><g class=\"pt pswing\"><g transform=\"translate(88 -12) scale(1.2)\"><g><path class=\"s-k th\" d=\"M0 0V6\"></path><g transform=\"translate(0 16)\"><path class=\"o-o\" d=\"M0 -10L2.9 -4L9.5 -3.1L4.7 1.5L5.9 8.1L0 5L-5.9 8.1L-4.7 1.5L-9.5 -3.1L-2.9 -4Z\"></path><path class=\"a lglow2 f-y\" d=\"M0 -5L1.45 -2L4.75 -1.55L2.35 .75L2.95 4.05L0 2.5L-2.95 4.05L-2.35 .75L-4.75 -1.55L-1.45 -2Z\"></path><path class=\"s-r th\" d=\"M-5.9 8.1V14M0 5V12M5.9 8.1V14\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 193,
+      "k": "x-mithai",
+      "on": [
+        "cos-dw-sweets"
+      ],
+      "t": "<g class=\"x-mithai\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(90 81) scale(1.2)\"><path class=\"o-y\" d=\"M-10 -6L-8 -14H12L10 -6Z\"></path><path class=\"o-w th\" d=\"M-8 -6L-6 -8.5L-4 -6L-6 -3.5Z\"></path><path class=\"o-l th\" d=\"M-3 -6L-1 -8.5L1 -6L-1 -3.5Z\"></path><circle class=\"o-o th\" cx=\"4\" cy=\"-7.5\" r=\"2.2\"></circle><circle class=\"o-y th\" cx=\"8\" cy=\"-7\" r=\"2\"></circle><path class=\"o-r\" d=\"M-10 -6H10V0H-10Z\"></path></g><g class=\"pt ptwk\"><g transform=\"translate(84 64)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(98 66)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 194,
+      "k": "x-gnlights",
+      "on": [
+        "cos-gn-lights"
+      ],
+      "t": "<g class=\"x-gnlights\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M4 2Q50 20 96 2\"></path><g class=\"pt pflash\"><g transform=\"translate(15.5 5.9)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(27 8.8)\"><ellipse class=\"o-o th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(38.5 10.4)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(50 11)\"><ellipse class=\"o-o th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(61.5 10.4)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(73 8.8)\"><ellipse class=\"o-o th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g><g transform=\"translate(84.5 5.9)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"2.6\" rx=\"1.9\" ry=\"2.6\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 195,
+      "k": "x-gncandles",
+      "on": [
+        "cos-gn-candles"
+      ],
+      "t": "<g class=\"x-gncandles\" transform=\"translate(0 {{a.dn}})\"><rect class=\"o-w\" x=\"7\" y=\"76\" width=\"6\" height=\"13\" rx=\"1\"></rect><rect class=\"o-w\" x=\"15\" y=\"81\" width=\"5.5\" height=\"9\" rx=\"1\"></rect><rect class=\"o-w\" x=\"79.5\" y=\"81\" width=\"5.5\" height=\"9\" rx=\"1\"></rect><rect class=\"o-w\" x=\"87\" y=\"76\" width=\"6\" height=\"13\" rx=\"1\"></rect><g class=\"pt pflick\"><g transform=\"translate(10 76)\"><path class=\"o-y th\" d=\"M0 0Q-2.2 -2.4 0 -6.5Q2.2 -2.4 0 0Z\"></path></g><g transform=\"translate(17.8 81)\"><path class=\"o-y th\" d=\"M0 0Q-2.2 -2.4 0 -6.5Q2.2 -2.4 0 0Z\"></path></g><g transform=\"translate(82.2 81)\"><path class=\"o-y th\" d=\"M0 0Q-2.2 -2.4 0 -6.5Q2.2 -2.4 0 0Z\"></path></g><g transform=\"translate(90 76)\"><path class=\"o-y th\" d=\"M0 0Q-2.2 -2.4 0 -6.5Q2.2 -2.4 0 0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 196,
+      "k": "x-harmonium",
+      "on": [
+        "cos-gn-kirtan"
+      ],
+      "t": "<g class=\"x-harmonium\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 94)\"><g transform=\"translate(-16 -6)\"><path class=\"a bel2 o-e th\" d=\"M-8 -5H0V5H-8ZM-8 -2.5H0M-8 0H0M-8 2.5H0\"></path></g><rect class=\"o-n\" x=\"-16\" y=\"-12\" width=\"32\" height=\"12\" rx=\"1.5\"></rect><rect class=\"o-w th\" x=\"-14\" y=\"-15.5\" width=\"28\" height=\"4\"></rect><path class=\"s-k th\" d=\"M-11 -15.5V-13M-7 -15.5V-13M-3 -15.5V-13M1 -15.5V-13M5 -15.5V-13M9 -15.5V-13\"></path><circle class=\"o-y th\" cx=\"-9\" cy=\"-6\" r=\"1.2\"></circle><circle class=\"o-y th\" cx=\"9\" cy=\"-6\" r=\"1.2\"></circle></g><g class=\"pt prise\"><g transform=\"translate(20 72)\"><g><ellipse class=\"f-k\" cx=\"-1.6\" cy=\"0\" rx=\"1.9\" ry=\"1.4\"></ellipse><path class=\"s-k th\" d=\"M.2 -.3V-7.5L3.5 -6.2\"></path></g></g><g transform=\"translate(80 68)\"><g><ellipse class=\"f-k\" cx=\"-1.6\" cy=\"0\" rx=\"1.9\" ry=\"1.4\"></ellipse><path class=\"s-k th\" d=\"M.2 -.3V-7.5L3.5 -6.2\"></path></g></g><g transform=\"translate(86 76)\"><g><ellipse class=\"f-k\" cx=\"-1.6\" cy=\"0\" rx=\"1.9\" ry=\"1.4\"></ellipse><path class=\"s-k th\" d=\"M.2 -.3V-7.5L3.5 -6.2\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 197,
+      "k": "x-langar",
+      "on": [
+        "cos-gn-langar"
+      ],
+      "t": "<g class=\"x-langar\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(90 81) scale(1.2)\"><ellipse class=\"o-e\" rx=\"12\" ry=\"3\"></ellipse><ellipse class=\"o-m th\" cx=\"-5\" cy=\"-1\" rx=\"4.5\" ry=\"1.4\"></ellipse><g transform=\"translate(3 -2)\"><path class=\"o-e th\" d=\"M-3 -2H3Q3 1 0 1Q-3 1 -3 -2Z\"></path><ellipse class=\"f-y\" cx=\"0\" cy=\"-2\" rx=\"3\" ry=\".9\"></ellipse></g><g transform=\"translate(8.5 -1)\"><path class=\"o-e th\" d=\"M-2.5 -2H2.5Q2.5 .6 0 .6Q-2.5 .6 -2.5 -2Z\"></path><ellipse class=\"f-l\" cx=\"0\" cy=\"-2\" rx=\"2.5\" ry=\".8\"></ellipse></g></g><g class=\"pt prise\"><g transform=\"translate(92 70)\"><path class=\"s-e th\" d=\"M0 0Q-2 -3 0 -6Q2 -9 0 -12\"></path></g><g transform=\"translate(97 71)\"><path class=\"s-e th\" d=\"M0 0Q-2 -3 0 -6Q2 -9 0 -12\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 198,
+      "k": "x-rpetals",
+      "on": [
+        "cos-gn-petals"
+      ],
+      "t": "<g class=\"x-rpetals pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 -2)\"><ellipse class=\"f-r\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(30 4)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(46 -6)\"><ellipse class=\"f-r\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(62 2)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(78 -4)\"><ellipse class=\"f-r\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(92 4)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g></g>"
+    }
+  ],
+  "moonSources": [
+    "https://www.staffnews.in/wp-content/uploads/2025/07/Holidays-to-be-observed-in-Central-Government-Offices-during-the-year-2026.pdf (DoPT O.M. 03.07.2025, holidays 2026)",
+    "https://www.staffnews.in/wp-content/uploads/2026/07/Holiday-list-2027.pdf (DoPT O.M. 16.07.2026, holidays 2027)",
+    "https://www.staffnews.in/2026/05/change-in-the-date-of-holiday-on-account-of-id-u-zuha-bakrid.html (DoPT O.M. 22.05.2026, Bakrid moved to 28 May 2026)",
+    "https://www.drikpanchang.com/calendars/indian/indiancalendar.html?year=2026&geoname-id=1261481 (and year=2027..2031)",
+    "https://www.drikpanchang.com/festivals/lakshmipuja/festivals-lakshmipuja-timings.html?year=2031 (plus Dhanteras, Ganesh Chaturthi, Janmashtami, Holi, Anant Chaturdashi, Onam, Durga Puja, Navratri pages, 2026-2031 and multi-year lists to 2038)",
+    "https://panchang.astrosage.com/calendars/indiancalendar?language=en&date=2026 (and hindu-calendar, date=2026..2036)",
+    "https://www.timeanddate.com/holidays/india/2026 (and 2027..2036)",
+    "https://www.drikpanchang.com/jain/calendar/jain-calendar.html?year=2034",
+    "https://www.freepressjournal.in/lifestyle/onam-2026-begins-with-athachamayam-celebrations-a-look-at-thiruvonam-date-and-the-kerala-festivals-10-days",
+    "Own astronomical check: Meeus lunar/solar theory, tithi at New Delhi sunrise/pradosh/madhyahna, Lahiri ayanamsa"
+  ],
+  "moonNotes": [
+    "IN 2026/2027: verified against the DoPT Office Memoranda (F.No.12/2/2023-JCA dated 03.07.2025 for 2026 and 16.07.2026 for 2027), both gazetted Annexure-I and restricted Annexure-II lists. All 2027 entries match the DoPT list exactly (Makar Sankranti 01-14, Pongal 01-15, Maha Shivratri 03-06, Holika Dahan 03-22, Holi 03-23, Id-ul-Fitr 03-10, Mahavir 04-19, Vaisakhi 04-14, Buddha Purnima 05-20, Id-ul-Zuha 05-17, Janmashtami 08-25, Ganesh Chaturthi 09-04, Onam 09-12, Dussehra Saptami/Mahashtami/Mahanavmi 10-06/10-07/10-08, Vijaya Dashami 10-09, Naraka Chaturdasi 10-28, Diwali 10-29, Bhai Duj 10-31, Guru Nanak 11-14).",
+    "IN 2026 eidadha CHANGED 05-27 -> 05-28: DoPT O.M. dated 22.05.2026 moved the Id-ul-Zuha (Bakrid) holiday for Delhi central government offices from 27 May to 28 May 2026 after moon sighting; timeanddate also shows 05-28. All other 2026 values match the DoPT 2026 list (Id-ul-Fitr 03-21, Holika Dahan 03-03, Holi 03-04, Mahashtami 10-19, Dussehra 10-20, Diwali 11-08, Bhai Duj 11-11, Guru Nanak 11-24).",
+    "IN disagreements where the government date was kept: Sankranti 2027 (DoPT/timeanddate 01-14; drikpanchang/astrosage 01-15 because the Makara transit is ~21:00 IST on Jan 14). Holi 2027 (DoPT/astrosage Holika Dahan 03-22, Holi 03-23; drikpanchang/timeanddate 03-21/03-22). Eid al-Fitr 2026 (DoPT/timeanddate 03-21; drikpanchang 03-20).",
+    "IN ganesh 2026/2027 last day kept as given (09-23, 09-13 = Chaturthi + 9 days) but actual Anant Chaturdashi per drikpanchang and astrosage is 2026-09-25 and 2027-09-14; consider updating. From 2028 on, the last day is the actual Anant Chaturdashi (drikpanchang to 2031, astrosage to 2036, own tithi calculation agrees).",
+    "IN onam 2026 first day kept as 08-17; sources disagree (Free Press Journal/Oneindia and own Hasta-nakshatra calculation give Atham 08-16). Atham for 2028-2036 is a computed estimate (Hasta nakshatra at Kochi sunrise or sunrise+2h24m, latest qualifying day 8-10 days before Thiruvonam); the same method reproduces the existing 2027 Atham (09-03). Thiruvonam (main/last) is sourced. Onam 2035: Thiruvonam also occurs on 08-18 (first day of Chingam); astrosage and timeanddate both use 09-14. Onam 2033: astrosage and own calculation 09-07, timeanddate 09-06.",
+    "IN patterns used for 2028+ (derived from the 2026/2027 data): pongal = [Thai Pongal, Bhogi = -1, Kaanum = +2]; holi = [Holi/Dhulandi, Holika Dahan, Holi]; navratri = [midpoint of span, Ghatasthapana/Pratipada, day before Vijayadashami]; durga = [Maha Ashtami, Shashthi = Ashtami-2 (matches timeanddate 'First day of Durga Puja festivities' every year), Vijayadashami]; diwali = [Lakshmi Puja, Dhanteras, Bhai Dooj]; ganesh = [Chaturthi, Chaturthi, Anant Chaturdashi]; onam = [Thiruvonam, Atham, Thiruvonam].",
+    "IN janmashtami uses the Vaishnav/gazetted date (DoPT lists 'Janmashtami (Vaishnav)'; timeanddate gazetted row). Smarta date (drikpanchang main page) is one day earlier in 2031 (08-09), 2034 (09-05) and 2036 (08-14).",
+    "IN eidfitr/eidadha are moon-sighting dependent: 2026/2027 are DoPT dates; 2028-2036 use timeanddate's India 'tentative' dates (which matched DoPT in 2026 and 2027). drikpanchang agrees for Eid al-Fitr 2028-2031 but gives Bakrid one day earlier in 2028 (05-05) and 2029 (04-24). Expect +/-1 day changes once announced.",
+    "IN eidfitr 2033: Eid al-Fitr falls twice in 2033 (01-03 and 12-24, timeanddate tentative). Only the first (01-03) fits the one-date format; add 12-24 separately if the calendar supports multiple occurrences.",
+    "IN mahavir 2032-2036 is a computed estimate (Chaitra Shukla Trayodashi at Delhi sunrise; the same calculation matches drikpanchang/DoPT for all of 2026-2031); 2034-04-01 is confirmed by drikpanchang's Jain calendar. 2036-04-08 is a kshaya-tithi year (Trayodashi starts after sunrise and ends before the next sunrise), so treat it as lower confidence.",
+    "IN buddha and gurpurab 2032-2036: astrosage Purnima listing plus own calculation (both agree; same method matches drikpanchang 2026-2031). Gurpurab 2034-11-25 is a kshaya-Purnima day (astrosage 11-25).",
+    "IN minor source disagreements resolved by majority/drikpanchang rule: Sankranti/Pongal 2030 (astrosage 01-15, others 01-14), 2034 (astrosage 01-15; timeanddate 01-14 and transit 16:07 IST before sunset -> 01-14); Dussehra 2027 (astrosage 10-10, DoPT 10-09), 2033 (astrosage 10-04, timeanddate and calculation 10-03); Dhanteras 2029 (astrosage 11-03, drikpanchang 11-04); Onam 2027 (astrosage 09-13, DoPT 09-12).",
+    "IN 2028-2031 Hindu dates are drikpanchang (New Delhi) with astrosage and timeanddate as second/third sources; 2032-2036 rely on astrosage + timeanddate + drikpanchang multi-year lists (Diwali, Dhanteras, Ganesh, Janmashtami) + own astronomical tithi calculation (drikpanchang year pages stop at 2031). No official government list exists beyond 2027.",
+    "Ganesh Chaturthi 2026 and 2027: last day changed to the actual Anant Chaturdashi (09-25, 09-14) to match later years; the prototype used Chaturthi + 9 days.",
+    "Eid al-Fitr 2033 falls twice (01-03 and 12-24): the table lists both."
+  ],
+  "moonReviewed": "2026-10-26"
+}

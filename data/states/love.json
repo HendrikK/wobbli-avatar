@@ -1,0 +1,156 @@
+{
+  "key": "love",
+  "name": "Love",
+  "when": "User says thanks · a favourite or five stars",
+  "group": "feelings",
+  "verb": "swoons",
+  "mouth": "cat",
+  "hands": "heart",
+  "pose": null,
+  "variants": [
+    {
+      "key": "hearteyes",
+      "name": "Heart eyes",
+      "desc": "Heart eyes that beat, rosy cheeks and a slow sway.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "bigsmile",
+      "hands": "heart"
+    },
+    {
+      "key": "floaty",
+      "name": "Floating hearts",
+      "desc": "Little hearts drift up while it smiles with its eyes shut.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "heartbeat",
+      "name": "Heartbeat",
+      "desc": "A big heart beats above it and the body pulses along.",
+      "pose": {
+        "sx": 0.86,
+        "sy": 1.28,
+        "ex": -0.35,
+        "ey": -0.5,
+        "rot": -14,
+        "lock": 1
+      },
+      "mouth": "smile"
+    },
+    {
+      "key": "squeeze",
+      "name": "Squeeze",
+      "desc": "Hugs itself tight, wiggles, and hearts pop out.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "kiss"
+    },
+    {
+      "key": "swoon",
+      "name": "Swoon",
+      "desc": "Melts to one side with dreamy eyes as a heart flutters by.",
+      "pose": {
+        "sx": 1.2,
+        "sy": 0.45,
+        "ex": 0.6,
+        "ey": -2.5,
+        "rot": -10,
+        "lock": 1
+      },
+      "mouth": "bigsmile"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 0,
+      "k": "eg-heart",
+      "on": [
+        "v-hearteyes"
+      ],
+      "t": "<g class=\"eg eg-heart\" fill=\"#F25C82\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"a\" d=\"M0 5.5C-7 1 -7.5 -3.5 -4.2 -5.2C-2.2 -6.2 -0.6 -5 0 -3.6C0.6 -5 2.2 -6.2 4.2 -5.2C7.5 -3.5 7 1 0 5.5Z\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"a\" d=\"M0 5.5C-7 1 -7.5 -3.5 -4.2 -5.2C-2.2 -6.2 -0.6 -5 0 -3.6C0.6 -5 2.2 -6.2 4.2 -5.2C7.5 -3.5 7 1 0 5.5Z\"></path></g></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 4,
+      "k": "eg-n",
+      "on": [
+        "v-awkward",
+        "v-floaty",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-hum",
+        "v-sparkle",
+        "v-squeeze"
+      ],
+      "t": "<g class=\"eg eg-n\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 23,
+      "k": "fx-hearts",
+      "on": [
+        "v-floaty",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"fx-hearts\" fill=\"#F25C82\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(32 10)\"><path class=\"a ht\" d=\"M0 5.5C-7 1 -7.5 -3.5 -4.2 -5.2C-2.2 -6.2 -0.6 -5 0 -3.6C0.6 -5 2.2 -6.2 4.2 -5.2C7.5 -3.5 7 1 0 5.5Z\"></path></g><g transform=\"translate(68 6)\"><path class=\"a ht\" d=\"M0 5.5C-7 1 -7.5 -3.5 -4.2 -5.2C-2.2 -6.2 -0.6 -5 0 -3.6C0.6 -5 2.2 -6.2 4.2 -5.2C7.5 -3.5 7 1 0 5.5Z\"></path></g><g transform=\"translate(50 -2)\"><path class=\"a ht\" d=\"M0 5.5C-7 1 -7.5 -3.5 -4.2 -5.2C-2.2 -6.2 -0.6 -5 0 -3.6C0.6 -5 2.2 -6.2 4.2 -5.2C7.5 -3.5 7 1 0 5.5Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 24,
+      "k": "fx-bigheart",
+      "on": [
+        "v-heartbeat"
+      ],
+      "t": "<g class=\"fx-bigheart\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 2) scale(1.5)\"><path class=\"a hring heartline\" d=\"M0 5.5C-7 1 -7.5 -3.5 -4.2 -5.2C-2.2 -6.2 -0.6 -5 0 -3.6C0.6 -5 2.2 -6.2 4.2 -5.2C7.5 -3.5 7 1 0 5.5Z\"></path><path class=\"a bh\" fill=\"#F25C82\" d=\"M0 5.5C-7 1 -7.5 -3.5 -4.2 -5.2C-2.2 -6.2 -0.6 -5 0 -3.6C0.6 -5 2.2 -6.2 4.2 -5.2C7.5 -3.5 7 1 0 5.5Z\"></path></g></g>"
+    }
+  ]
+}

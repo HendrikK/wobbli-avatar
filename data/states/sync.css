@@ -1,0 +1,36 @@
+.aa-av .lnk { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.aa-av .tline { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 1 5; }
+.aa-av .twinb { fill: currentColor; fill-opacity: .22; stroke: currentColor; stroke-width: 5; }
+.aa-av .gear { fill: #3A3833; fill-rule: evenodd; }
+.aa-av.v-syarrows .fx-cyc { display: inline; }
+.aa-av.v-syarrows .cyc { animation: aa-A-cyc 2.2s linear infinite; }
+.aa-av.v-syarrows .gz { animation: aa-bb-chase 2.2s linear infinite; }
+.aa-av.v-sypong .fx-ppong { display: inline; }
+.aa-av.v-sypong .pp { animation: aa-A-pp .9s ease-in-out infinite alternate; }
+.aa-av.v-sypong .gz { animation: aa-A-ppeyes .9s ease-in-out infinite alternate; }
+.aa-av.v-sypong .w { animation: aa-A-ppbody .9s ease-in-out infinite alternate; }
+.aa-av.v-syswap .fx-swap { display: inline; }
+.aa-av.v-syswap .sw1 { animation: aa-A-sw1 2.4s ease-in-out infinite; }
+.aa-av.v-syswap .sw2 { animation: aa-A-sw2 2.4s ease-in-out infinite; }
+.aa-av.v-syswap .gz { animation: aa-A-swapeyes 2.4s ease-in-out infinite; }
+.aa-av.v-sytwin .fx-twin { display: inline; }
+.aa-av.v-sytwin .w { animation: aa-A-bobsync 1.2s ease-in-out infinite; }
+.aa-av.v-sytwin .twn { animation: aa-A-bobsync 1.2s ease-in-out infinite; animation-delay: -.6s; }
+.aa-av.v-sytwin .tline { animation: aa-A-dash .5s linear infinite; }
+.aa-av.v-sytwin .gz { transform: translate(3.5px, 0px); }
+.aa-av.v-sygears .fx-gears { display: inline; }
+.aa-av.v-sygears .g1 { animation: aa-A-cyc 2.8s linear infinite; }
+.aa-av.v-sygears .g2 { animation: aa-A-ccw 1.96s linear infinite; }
+.aa-av.v-sygears .gz { transform: translate(3px, -3.5px); }
+.aa-av.v-sygears .w { animation: aa-A-tick .7s steps(2) infinite; }
+@keyframes aa-A-cyc { to { rotate: 360deg; } }
+@keyframes aa-A-pp { 0% { translate: 0 0; } 50% { translate: 18px -12px; } 100% { translate: 37px 2px; } }
+@keyframes aa-A-ppeyes { from { translate: -1px -3px; } to { translate: calc(var(--amp, 1) * 4.5px) -3px; } }
+@keyframes aa-A-ppbody { from { rotate: calc(var(--amp, 1) * -1.5deg); } to { rotate: calc(var(--amp, 1) * 2.5deg); } }
+@keyframes aa-A-sw1 { 0%, 15% { translate: 0 0; } 30% { translate: 12px -8px; } 45%, 65% { translate: 24px 0; } 80% { translate: 12px 6px; } 95%, 100% { translate: 0 0; } }
+@keyframes aa-A-sw2 { 0%, 15% { translate: 0 0; } 30% { translate: -12px 6px; } 45%, 65% { translate: -24px 0; } 80% { translate: -12px -8px; } 95%, 100% { translate: 0 0; } }
+@keyframes aa-A-swapeyes { 0%, 15%, 95%, 100% { translate: calc(var(--amp, 1) * -2.5px) -4px; } 45%, 65% { translate: calc(var(--amp, 1) * 2.5px) -4px; } }
+@keyframes aa-A-bobsync { 0%, 100% { translate: 0 0; } 50% { translate: 0 -5px; } }
+@keyframes aa-A-dash { to { stroke-dashoffset: -6; } }
+@keyframes aa-A-ccw { to { rotate: -360deg; } }
+@keyframes aa-A-tick { 0% { rotate: 0deg; } 50% { rotate: calc(var(--amp, 1) * 1.5deg); } 100% { rotate: 0deg; } }

@@ -1,0 +1,271 @@
+{
+  "events": [
+    {
+      "group": "A chat turn",
+      "event": "message.sent",
+      "means": "The user sends a message",
+      "state": "busy"
+    },
+    {
+      "group": "A chat turn",
+      "event": "stream.start",
+      "means": "The answer starts streaming",
+      "state": "write"
+    },
+    {
+      "group": "A chat turn",
+      "event": "stream.end",
+      "means": "The answer is complete",
+      "state": "happy"
+    },
+    {
+      "group": "A chat turn",
+      "event": "input.unclear",
+      "means": "It needs clarification",
+      "state": "curious"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.search",
+      "means": "Searching reports, data or the web",
+      "state": "search"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.query",
+      "means": "Running a query",
+      "state": "query"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.analyze",
+      "means": "Crunching the numbers",
+      "state": "analyze"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.build",
+      "means": "Building a chart, report or deck",
+      "state": "build"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.export",
+      "means": "Exporting a file",
+      "state": "export"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.import",
+      "means": "Importing a file",
+      "state": "import"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.download",
+      "means": "Downloading a file",
+      "state": "download"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.upload",
+      "means": "Uploading a file",
+      "state": "upload"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.sync",
+      "means": "Syncing a source",
+      "state": "sync"
+    },
+    {
+      "group": "Tools",
+      "event": "tool.connect",
+      "means": "Signing in to a source",
+      "state": "connect"
+    },
+    {
+      "group": "Waiting and talking",
+      "event": "approval.needed",
+      "means": "It needs a yes before it acts",
+      "state": "approval"
+    },
+    {
+      "group": "Waiting and talking",
+      "event": "input.needed",
+      "means": "It is the user's turn",
+      "state": "waiting"
+    },
+    {
+      "group": "Waiting and talking",
+      "event": "instruction.ack",
+      "means": "It takes a correction on board",
+      "state": "gotit"
+    },
+    {
+      "group": "Waiting and talking",
+      "event": "handoff",
+      "means": "It passes work to someone else",
+      "state": "handoff"
+    },
+    {
+      "group": "Waiting and talking",
+      "event": "voice.start",
+      "means": "It listens to voice input",
+      "state": "listen"
+    },
+    {
+      "group": "Waiting and talking",
+      "event": "session.start",
+      "means": "A chat opens",
+      "state": "greet"
+    },
+    {
+      "group": "Waiting and talking",
+      "event": "session.end",
+      "means": "A chat closes",
+      "state": "bye"
+    },
+    {
+      "group": "Errors",
+      "event": "error.network",
+      "means": "The connection dropped",
+      "state": "offline"
+    },
+    {
+      "group": "Errors",
+      "event": "error.rate_limit",
+      "means": "Too many requests",
+      "state": "queued"
+    },
+    {
+      "group": "Errors",
+      "event": "error.permission",
+      "means": "Blocked by a permission",
+      "state": "sad"
+    },
+    {
+      "group": "Errors",
+      "event": "error.no_results",
+      "means": "Nothing came back",
+      "state": "sad"
+    },
+    {
+      "group": "Errors",
+      "event": "error.unknown",
+      "means": "Anything else that failed",
+      "state": "error"
+    }
+  ],
+  "notes": {
+    "error.network": "I lost the connection to the data source. Trying again…",
+    "error.rate_limit": "Lots of requests right now. I’ll try again in a moment.",
+    "error.permission": "I don’t have permission to open that source.",
+    "error.no_results": "I couldn’t find anything for that.",
+    "error.unknown": "Something went wrong on my side. Trying again."
+  },
+  "oneShotMs": {
+    "greet": 2800,
+    "bye": 2800,
+    "gotit": 2200
+  },
+  "progressVariants": {
+    "busy": "ring",
+    "download": "dlbar",
+    "query": "qubar"
+  },
+  "errorKinds": [
+    "sad",
+    "offline",
+    "queued",
+    "error",
+    "anger"
+  ],
+  "stillWorking": {
+    "after": 20,
+    "state": "still",
+    "variant": "random",
+    "range": [
+      3,
+      120
+    ]
+  },
+  "fidgets": {
+    "sometimes": [
+      12000,
+      26000
+    ],
+    "often": [
+      4500,
+      9000
+    ],
+    "durationsMs": {
+      "fglance": 2800,
+      "fstretch": 2400,
+      "fblink": 900,
+      "flook": 2600,
+      "fshuffle": 2000,
+      "fyawn": 3600,
+      "fwake": 1200
+    },
+    "yawnAfterIdleMs": 60000
+  },
+  "doze": {
+    "afterSeconds": [
+      0,
+      60,
+      300,
+      600
+    ],
+    "default": 600,
+    "variants": [
+      "slcap",
+      "sldream",
+      "slloaf",
+      "slmoon"
+    ],
+    "graceMs": 800
+  },
+  "tickMs": 400,
+  "states": [
+    "idle",
+    "busy",
+    "happy",
+    "sad",
+    "curious",
+    "anger",
+    "fear",
+    "disgust",
+    "surprise",
+    "excitement",
+    "love",
+    "pride",
+    "contentment",
+    "shame",
+    "guilt",
+    "download",
+    "upload",
+    "sync",
+    "export",
+    "import",
+    "search",
+    "query",
+    "build",
+    "analyze",
+    "write",
+    "connect",
+    "still",
+    "approval",
+    "waiting",
+    "handoff",
+    "listen",
+    "greet",
+    "bye",
+    "gotit",
+    "offline",
+    "queued",
+    "sleep",
+    "monitor",
+    "error"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "key": "queued",
+  "name": "Rate limited",
+  "when": "Too many requests, or waiting in a queue",
+  "group": "status",
+  "verb": "waits its turn",
+  "mouth": "flat",
+  "hands": "shrug",
+  "pose": {
+    "sx": 1,
+    "sy": 0.85,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "quhour",
+      "name": "Hourglass",
+      "desc": "Watches the sand run through, then flips it over.",
+      "hands": "tap"
+    },
+    {
+      "key": "quticket",
+      "name": "Ticket",
+      "desc": "Holds a queue ticket whose dots count down to its turn."
+    },
+    {
+      "key": "qulight",
+      "name": "Traffic light",
+      "desc": "Waits at a red light and gets ready on green."
+    },
+    {
+      "key": "qucount",
+      "name": "Countdown",
+      "desc": "A ring above its head runs down, then it hops.",
+      "hands": "tap"
+    },
+    {
+      "key": "qubreath",
+      "name": "Catch breath",
+      "desc": "Panting with a sweat drop: it needs a moment.",
+      "pose": {
+        "sx": 1.1,
+        "sy": 0.5,
+        "ex": 0,
+        "ey": 0,
+        "rot": -6,
+        "lock": 1
+      },
+      "mouth": "own",
+      "hands": "droop"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 1,
+      "k": "sw",
+      "on": [
+        "v-awkward",
+        "v-qubreath",
+        "v-sweatdrop",
+        "v-tremble"
+      ],
+      "t": "<g transform=\"translate({{a.swx}} {{a.swy}})\"><path class=\"a sw\" d=\"M0 -7C2.6 -2.6 4.3 0 4.3 2.4A4.3 4.3 0 0 1 -4.3 2.4C-4.3 0 -2.6 -2.6 0 -7Z\"></path></g>"
+    },
+    {
+      "zone": "front",
+      "i": 10,
+      "k": "att-mouth",
+      "on": [
+        "v-qubreath",
+        "v-wayawn",
+        "v-fyawn"
+      ],
+      "t": "<g class=\"att att-mouth\"><ellipse class=\"a mth\" fill=\"{{a.eye}}\" cx=\"{{a.mx}}\" cy=\"{{a.my}}\" rx=\"3.6\" ry=\"4.6\"></ellipse></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 285,
+      "k": "fx-hour",
+      "on": [
+        "v-quhour"
+      ],
+      "t": "<g class=\"fx-hour\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(92 50)\"><g class=\"a hgl\"><path class=\"pw\" d=\"M-6 -10H6V-8Q6 -3 1.5 0Q6 3 6 8V10H-6V8Q-6 3 -1.5 0Q-6 -3 -6 -8Z\"></path><path class=\"a snd1 gold2\" d=\"M-4.3 -7.5H4.3Q4.3 -4 0 -1.2Q-4.3 -4 -4.3 -7.5Z\"></path><path class=\"a snd2 gold2\" d=\"M-4.3 8.5H4.3Q4.3 5.5 0 3.5Q-4.3 5.5 -4.3 8.5Z\"></path><path class=\"sndf\" d=\"M0 -1V8\"></path><path class=\"dk2\" d=\"M-7.5 -10.5H7.5M-7.5 10.5H7.5\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 286,
+      "k": "fx-ticket",
+      "on": [
+        "v-quticket"
+      ],
+      "t": "<g class=\"fx-ticket\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(83 10)\"><g class=\"a tkt\"><path class=\"gst\" d=\"M-11 -7H11V-2.5A2.5 2.5 0 0 0 11 2.5V7H-11V2.5A2.5 2.5 0 0 0 -11 -2.5Z\"></path><g class=\"tkn tn3\"><circle class=\"dk\" cx=\"-5\" cy=\"0\" r=\"1.8\"></circle><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"1.8\"></circle><circle class=\"dk\" cx=\"5\" cy=\"0\" r=\"1.8\"></circle></g><g class=\"tkn tn2\"><circle class=\"dk\" cx=\"-2.5\" cy=\"0\" r=\"1.8\"></circle><circle class=\"dk\" cx=\"2.5\" cy=\"0\" r=\"1.8\"></circle></g><g class=\"tkn tn1\"><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"1.8\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 287,
+      "k": "fx-traffic",
+      "on": [
+        "v-qulight"
+      ],
+      "t": "<g class=\"fx-traffic\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(93 48)\"><path class=\"dk2\" d=\"M0 14V33\"></path><rect class=\"dk\" x=\"-5.5\" y=\"-14\" width=\"11\" height=\"28\" rx=\"3\"></rect><circle class=\"tl tlr\" cx=\"0\" cy=\"-8\" r=\"3\"></circle><circle class=\"tl tla\" cx=\"0\" cy=\"0\" r=\"3\"></circle><circle class=\"tl tlg\" cx=\"0\" cy=\"8\" r=\"3\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 288,
+      "k": "fx-cring",
+      "on": [
+        "v-qucount"
+      ],
+      "t": "<g class=\"fx-cring\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 3)\"><circle class=\"ctrk\" cx=\"0\" cy=\"0\" r=\"8\"></circle><circle class=\"cdn\" cx=\"0\" cy=\"0\" r=\"8\" transform=\"rotate(-90)\"></circle><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"1.6\"></circle></g></g>"
+    }
+  ]
+}

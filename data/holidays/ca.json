@@ -1,0 +1,121 @@
+{
+  "pack": "ca",
+  "name": "Canada",
+  "holidays": [
+    {
+      "key": "canadaday",
+      "label": "Canada Day",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "cd-flag",
+          "name": "Flag"
+        },
+        {
+          "key": "cd-maple",
+          "name": "Maple leaves"
+        },
+        {
+          "key": "cd-fireworks",
+          "name": "Fireworks"
+        },
+        {
+          "key": "cd-facepaint",
+          "name": "Face paint"
+        },
+        {
+          "key": "cd-canoe",
+          "name": "Canoe"
+        }
+      ]
+    }
+  ],
+  "region": "CA",
+  "shared": [
+    "newyear",
+    "valentines",
+    "easter",
+    "halloween",
+    "christmas",
+    "nye"
+  ],
+  "dates": [
+    {
+      "key": "canadaday",
+      "on": "07-01"
+    },
+    {
+      "key": "labor",
+      "on": {
+        "nth": [
+          9,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "key": "thanksgiving",
+      "on": {
+        "nth": [
+          10,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "key": "boxing",
+      "on": "12-26"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "top",
+      "i": 107,
+      "k": "c-mapleface",
+      "on": [
+        "cos-cd-facepaint"
+      ],
+      "t": "<g class=\"c-mapleface\" transform=\"translate({{a.ck2}} {{a.cky}})\"><path class=\"f-r\" d=\"M0 -4.8L1.04 -2.88L2.16 -3.44L1.76 -1.04L3.76 -2L3.28 -0.56L4.72 0.08L2.72 1.36L3.04 2.32L0.88 1.84L0.4 3.52L0.28 5.28L-0.28 5.28L-0.4 3.52L-0.88 1.84L-3.04 2.32L-2.72 1.36L-4.72 0.08L-3.28 -0.56L-3.76 -2L-1.76 -1.04L-2.16 -3.44L-1.04 -2.88Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 421,
+      "k": "x-caflag",
+      "on": [
+        "cos-cd-flag"
+      ],
+      "t": "<g class=\"x-caflag\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M85 78V36\"></path><g class=\"pt pwave\"><g transform=\"translate(85.5 37)\"><g><rect class=\"o-w th\" x=\"0\" y=\"0\" width=\"18\" height=\"12\"></rect><rect class=\"f-r\" x=\"0\" y=\"0\" width=\"4.5\" height=\"12\"></rect><rect class=\"f-r\" x=\"13.5\" y=\"0\" width=\"4.5\" height=\"12\"></rect><g transform=\"translate(9 5.4)\"><path class=\"f-r\" d=\"M0 -3.72L0.81 -2.23L1.67 -2.67L1.36 -0.81L2.91 -1.55L2.54 -0.43L3.66 0.06L2.11 1.05L2.36 1.8L0.68 1.43L0.31 2.73L0.22 4.09L-0.22 4.09L-0.31 2.73L-0.68 1.43L-2.36 1.8L-2.11 1.05L-3.66 0.06L-2.54 -0.43L-2.91 -1.55L-1.36 -0.81L-1.67 -2.67L-0.81 -2.23Z\"></path></g><rect class=\"s-k th\" x=\"0\" y=\"0\" width=\"18\" height=\"12\"></rect></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 422,
+      "k": "x-maplefall",
+      "on": [
+        "cos-cd-facepaint",
+        "cos-cd-maple"
+      ],
+      "t": "<g class=\"x-maplefall\" transform=\"translate(0 {{a.up}})\"><g class=\"pt pfall\"><g transform=\"translate(12 -2)\"><g><path class=\"f-r\" d=\"M0 -6.3L1.37 -3.78L2.84 -4.51L2.31 -1.37L4.94 -2.62L4.3 -0.73L6.2 0.11L3.57 1.78L3.99 3.04L1.16 2.42L0.53 4.62L0.37 6.93L-0.37 6.93L-0.53 4.62L-1.16 2.42L-3.99 3.04L-3.57 1.78L-6.2 0.11L-4.3 -0.73L-4.94 -2.62L-2.31 -1.37L-2.84 -4.51L-1.37 -3.78Z\"></path></g></g><g transform=\"translate(30 -8)\"><g><path class=\"f-o\" d=\"M0 -6.3L1.37 -3.78L2.84 -4.51L2.31 -1.37L4.94 -2.62L4.3 -0.73L6.2 0.11L3.57 1.78L3.99 3.04L1.16 2.42L0.53 4.62L0.37 6.93L-0.37 6.93L-0.53 4.62L-1.16 2.42L-3.99 3.04L-3.57 1.78L-6.2 0.11L-4.3 -0.73L-4.94 -2.62L-2.31 -1.37L-2.84 -4.51L-1.37 -3.78Z\"></path></g></g><g transform=\"translate(56 -4)\"><g><path class=\"f-r\" d=\"M0 -6.3L1.37 -3.78L2.84 -4.51L2.31 -1.37L4.94 -2.62L4.3 -0.73L6.2 0.11L3.57 1.78L3.99 3.04L1.16 2.42L0.53 4.62L0.37 6.93L-0.37 6.93L-0.53 4.62L-1.16 2.42L-3.99 3.04L-3.57 1.78L-6.2 0.11L-4.3 -0.73L-4.94 -2.62L-2.31 -1.37L-2.84 -4.51L-1.37 -3.78Z\"></path></g></g><g transform=\"translate(74 2)\"><g><path class=\"f-r\" d=\"M0 -6.3L1.37 -3.78L2.84 -4.51L2.31 -1.37L4.94 -2.62L4.3 -0.73L6.2 0.11L3.57 1.78L3.99 3.04L1.16 2.42L0.53 4.62L0.37 6.93L-0.37 6.93L-0.53 4.62L-1.16 2.42L-3.99 3.04L-3.57 1.78L-6.2 0.11L-4.3 -0.73L-4.94 -2.62L-2.31 -1.37L-2.84 -4.51L-1.37 -3.78Z\"></path></g></g><g transform=\"translate(92 -6)\"><g><path class=\"f-o\" d=\"M0 -6.3L1.37 -3.78L2.84 -4.51L2.31 -1.37L4.94 -2.62L4.3 -0.73L6.2 0.11L3.57 1.78L3.99 3.04L1.16 2.42L0.53 4.62L0.37 6.93L-0.37 6.93L-0.53 4.62L-1.16 2.42L-3.99 3.04L-3.57 1.78L-6.2 0.11L-4.3 -0.73L-4.94 -2.62L-2.31 -1.37L-2.84 -4.51L-1.37 -3.78Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 423,
+      "k": "x-cafire",
+      "on": [
+        "cos-cd-fireworks"
+      ],
+      "t": "<g class=\"x-cafire\" transform=\"translate(0 {{a.up}})\"><g class=\"pt pburst\"><g transform=\"translate(18 6)\"><g><path class=\"s-r\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g><g transform=\"translate(84 0)\"><g><path class=\"s-c\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g><g transform=\"translate(54 -10)\"><g><path class=\"s-r\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 424,
+      "k": "x-canoe",
+      "on": [
+        "cos-cd-canoe"
+      ],
+      "t": "<g class=\"x-canoe\" transform=\"translate(0 {{a.dn}})\"><path class=\"s-c\" d=\"M0 95Q10 92 20 95T40 95T60 95T80 95T100 95\"></path><g class=\"a bobs\"><path class=\"o-r\" d=\"M8 87Q50 97 92 87Q90 92 86 93H14Q10 92 8 87Z\"></path><path class=\"s-n th\" d=\"M11 88.6Q50 96 89 88.6\"></path><path class=\"s-n tk\" d=\"M72 70L84 92\"></path><path class=\"o-n th\" d=\"M82 88L87 98L84 99L80 91Z\"></path></g></g>"
+    }
+  ]
+}

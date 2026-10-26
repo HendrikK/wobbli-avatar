@@ -1,0 +1,398 @@
+{
+  "pack": "kr",
+  "name": "South Korea",
+  "holidays": [
+    {
+      "key": "seollal",
+      "label": "Seollal",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "kn-pouch",
+          "name": "Lucky pouch"
+        },
+        {
+          "key": "kn-hanbok",
+          "name": "Hanbok"
+        },
+        {
+          "key": "kn-yut",
+          "name": "Yut sticks"
+        },
+        {
+          "key": "kn-kite",
+          "name": "Shield kite"
+        },
+        {
+          "key": "kn-tteokguk",
+          "name": "Tteokguk"
+        }
+      ]
+    },
+    {
+      "key": "chuseok",
+      "label": "Chuseok",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "cs-songpyeon",
+          "name": "Songpyeon"
+        },
+        {
+          "key": "cs-moon",
+          "name": "Harvest moon"
+        },
+        {
+          "key": "cs-persimmon",
+          "name": "Persimmons"
+        },
+        {
+          "key": "cs-hanbok",
+          "name": "Hanbok"
+        },
+        {
+          "key": "cs-rice",
+          "name": "Rice harvest"
+        }
+      ]
+    },
+    {
+      "key": "hangul",
+      "label": "Hangul Day",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "hg-brush",
+          "name": "Brush"
+        },
+        {
+          "key": "hg-letters",
+          "name": "Letters"
+        },
+        {
+          "key": "hg-scroll",
+          "name": "Scroll"
+        },
+        {
+          "key": "hg-book",
+          "name": "Book"
+        },
+        {
+          "key": "hg-ink",
+          "name": "Ink stone"
+        }
+      ]
+    }
+  ],
+  "region": "KR",
+  "shared": [
+    "newyear",
+    "valentines",
+    "christmas",
+    "nye"
+  ],
+  "dates": [
+    {
+      "key": "seollal",
+      "on": {
+        "table": "seollal"
+      }
+    },
+    {
+      "key": "chuseok",
+      "on": {
+        "table": "chuseok"
+      }
+    },
+    {
+      "key": "hangul",
+      "on": "10-09"
+    }
+  ],
+  "moon": {
+    "2026": {
+      "seollal": [
+        "02-17",
+        "02-16",
+        "02-18"
+      ],
+      "chuseok": [
+        "09-25",
+        "09-24",
+        "09-26"
+      ]
+    },
+    "2027": {
+      "seollal": [
+        "02-07",
+        "02-06",
+        "02-09"
+      ],
+      "chuseok": [
+        "09-15",
+        "09-14",
+        "09-16"
+      ]
+    },
+    "2028": {
+      "seollal": [
+        "01-27",
+        "01-26",
+        "01-28"
+      ],
+      "chuseok": [
+        "10-03",
+        "10-02",
+        "10-04"
+      ]
+    },
+    "2029": {
+      "seollal": [
+        "02-13",
+        "02-12",
+        "02-14"
+      ],
+      "chuseok": [
+        "09-22",
+        "09-21",
+        "09-23"
+      ]
+    },
+    "2030": {
+      "seollal": [
+        "02-03",
+        "02-02",
+        "02-04"
+      ],
+      "chuseok": [
+        "09-12",
+        "09-11",
+        "09-13"
+      ]
+    },
+    "2031": {
+      "seollal": [
+        "01-23",
+        "01-22",
+        "01-24"
+      ],
+      "chuseok": [
+        "10-01",
+        "09-30",
+        "10-02"
+      ]
+    },
+    "2032": {
+      "seollal": [
+        "02-11",
+        "02-10",
+        "02-12"
+      ],
+      "chuseok": [
+        "09-19",
+        "09-18",
+        "09-20"
+      ]
+    },
+    "2033": {
+      "seollal": [
+        "01-31",
+        "01-30",
+        "02-01"
+      ],
+      "chuseok": [
+        "09-08",
+        "09-07",
+        "09-09"
+      ]
+    },
+    "2034": {
+      "seollal": [
+        "02-19",
+        "02-18",
+        "02-20"
+      ],
+      "chuseok": [
+        "09-27",
+        "09-26",
+        "09-28"
+      ]
+    },
+    "2035": {
+      "seollal": [
+        "02-08",
+        "02-07",
+        "02-09"
+      ],
+      "chuseok": [
+        "09-16",
+        "09-15",
+        "09-17"
+      ]
+    },
+    "2036": {
+      "seollal": [
+        "01-28",
+        "01-27",
+        "01-29"
+      ],
+      "chuseok": [
+        "10-04",
+        "10-03",
+        "10-05"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "zone": "top",
+      "i": 102,
+      "k": "c-bokjumeoni",
+      "on": [
+        "cos-kn-pouch",
+        "cos-kn-tteokguk"
+      ],
+      "t": "<g class=\"c-bokjumeoni\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-y th\" d=\"M-12 -3Q0 5 12 -3\"></path><path class=\"o-r\" d=\"M-5 5Q-7 14 0 15Q7 14 5 5Q0 3 -5 5Z\"></path><path class=\"s-y th\" d=\"M-4.4 5H4.4\"></path><circle class=\"o-y th\" cx=\"0\" cy=\"10\" r=\"1.8\"></circle><path class=\"s-c th\" d=\"M-1 15.6V19M1 15.6V19\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 103,
+      "k": "c-hanbok",
+      "on": [
+        "cos-cs-hanbok",
+        "cos-kn-hanbok"
+      ],
+      "t": "<g class=\"c-hanbok\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1) translate(0 2)\"><path class=\"o-r th\" d=\"M3 8L9 19L6.4 19.6L1 10ZM3 8L-1 19L1.6 19.8L4 10Z\"></path><path class=\"o-w th\" d=\"M-16 -5L-.6 9.6L1.6 7.6L-13 -6Z\"></path><path class=\"o-w th\" d=\"M16 -5L.6 11L-1.6 9L13 -6Z\"></path><ellipse class=\"o-r th\" cx=\"3.4\" cy=\"8\" rx=\"3.4\" ry=\"2\"></ellipse></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 146,
+      "k": "x-fullmoon",
+      "on": [
+        "cos-bp-moon",
+        "cos-cs-moon",
+        "cos-ma-moon",
+        "cos-ma-rabbit"
+      ],
+      "t": "<g class=\"x-fullmoon\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"a mhalo f-y\" r=\"15\"></circle><circle class=\"o-m\" r=\"9\"></circle><circle class=\"f-e\" cx=\"-3\" cy=\"-2\" r=\"1.7\" opacity=\".6\"></circle><circle class=\"f-e\" cx=\"3\" cy=\"3\" r=\"1.2\" opacity=\".6\"></circle><circle class=\"f-e\" cx=\"2.5\" cy=\"-4\" r=\".9\" opacity=\".6\"></circle></g><g class=\"pt ptwk\"><g transform=\"translate(18 4)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(40 -6)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 403,
+      "k": "x-yut",
+      "on": [
+        "cos-kn-yut"
+      ],
+      "t": "<g class=\"x-yut\" transform=\"translate({{a.side}} {{a.mo}})\"><g class=\"pt ppop\"><g transform=\"translate(84 58)\"><g><g transform=\"rotate(-30)\"><rect class=\"o-m th\" x=\"-1.4\" y=\"-6\" width=\"2.8\" height=\"12\" rx=\"1.4\"></rect><path class=\"s-n th\" d=\"M-.6 -3.4L.6 -2.6M-.6 0L.6 .8M-.6 3.4L.6 4.2\"></path></g></g></g><g transform=\"translate(91 50)\"><g><g transform=\"rotate(15)\"><rect class=\"o-m th\" x=\"-1.4\" y=\"-6\" width=\"2.8\" height=\"12\" rx=\"1.4\"></rect><path class=\"s-n th\" d=\"M-.6 -3.4L.6 -2.6M-.6 0L.6 .8M-.6 3.4L.6 4.2\"></path></g></g></g><g transform=\"translate(98 60)\"><g><g transform=\"rotate(60)\"><rect class=\"o-m th\" x=\"-1.4\" y=\"-6\" width=\"2.8\" height=\"12\" rx=\"1.4\"></rect><path class=\"s-n th\" d=\"M-.6 -3.4L.6 -2.6M-.6 0L.6 .8M-.6 3.4L.6 4.2\"></path></g></g></g><g transform=\"translate(90 68)\"><g><g transform=\"rotate(-75)\"><rect class=\"o-m th\" x=\"-1.4\" y=\"-6\" width=\"2.8\" height=\"12\" rx=\"1.4\"></rect><path class=\"s-n th\" d=\"M-.6 -3.4L.6 -2.6M-.6 0L.6 .8M-.6 3.4L.6 4.2\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 404,
+      "k": "x-yeon",
+      "on": [
+        "cos-kn-kite"
+      ],
+      "t": "<g class=\"x-yeon\" transform=\"translate(0 {{a.up}})\"><path class=\"s-e th\" d=\"M82 14Q76 30 62 44\"></path><g transform=\"translate(82 2)\"><g class=\"a kite\"><rect class=\"o-w th\" x=\"-7\" y=\"-9\" width=\"14\" height=\"18\"></rect><circle class=\"o-c th\" cx=\"0\" cy=\"0\" r=\"3\"></circle><path class=\"f-r\" d=\"M-4 -9A4 4 0 0 0 4 -9Z\"></path><path class=\"s-b th\" d=\"M-7 -9L7 9M7 -9L-7 9\" opacity=\".4\"></path><rect class=\"f-b\" x=\"-7\" y=\"5.4\" width=\"14\" height=\"1.4\"></rect></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 405,
+      "k": "x-tteokguk",
+      "on": [
+        "cos-kn-tteokguk"
+      ],
+      "t": "<g class=\"x-tteokguk\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 82)\"><ellipse class=\"f-m\" cx=\"0\" cy=\"-8\" rx=\"8\" ry=\"1.8\"></ellipse><ellipse class=\"o-w th\" cx=\"-3.4\" cy=\"-8.6\" rx=\"2.4\" ry=\"1.2\"></ellipse><ellipse class=\"o-w th\" cx=\"1.6\" cy=\"-9\" rx=\"2.4\" ry=\"1.2\"></ellipse><ellipse class=\"o-w th\" cx=\"-0.6\" cy=\"-7.6\" rx=\"2.2\" ry=\"1.1\"></ellipse><path class=\"s-y th\" d=\"M3 -8.4L6 -7.6\"></path><path class=\"s-k th\" d=\"M-6 -8L-4.4 -9\" opacity=\".7\"></path><path class=\"o-w\" d=\"M-9 -8H9Q8 0 0 0Q-8 0 -9 -8Z\"></path><path class=\"s-b th\" d=\"M-8.4 -5H8.4\"></path><g class=\"pt prise\"><g transform=\"translate(-2 -12)\"><g><path class=\"s-e th\" d=\"M0 0Q-1.5 -2 0 -4Q1.5 -6 0 -8\"></path></g></g><g transform=\"translate(2 -13)\"><g><path class=\"s-e th\" d=\"M0 0Q1.5 -2 0 -4Q-1.5 -6 0 -8\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 406,
+      "k": "x-songpyeon",
+      "on": [
+        "cos-cs-hanbok",
+        "cos-cs-songpyeon"
+      ],
+      "t": "<g class=\"x-songpyeon\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 84)\"><ellipse class=\"o-w th\" cx=\"0\" cy=\"0\" rx=\"10\" ry=\"2\"></ellipse><path class=\"s-g th\" d=\"M-9 -1L-5 -3M-8 0L-4 -1.6\"></path><g transform=\"translate(-4 -1)\"><path class=\"o-p th\" d=\"M-3.6 0Q-3.6 -5 0 -5Q3.6 -5 3.6 0Z\"></path></g><g transform=\"translate(3.4 -1)\"><path class=\"o-l th\" d=\"M-3.6 0Q-3.6 -5 0 -5Q3.6 -5 3.6 0Z\"></path></g><g transform=\"translate(0 -4.2)\"><path class=\"o-w th\" d=\"M-3.6 0Q-3.6 -5 0 -5Q3.6 -5 3.6 0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 407,
+      "k": "x-ricestalks",
+      "on": [
+        "cos-cs-moon",
+        "cos-cs-rice"
+      ],
+      "t": "<g class=\"x-ricestalks\" transform=\"translate(0 {{a.dn}})\"><g class=\"pt pgrow\"><g transform=\"translate(6 94)\"><g><path class=\"s-y\" d=\"M0 0Q1 -8 4 -12\"></path><ellipse class=\"f-y\" cx=\"4.4\" cy=\"-12.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"3\" cy=\"-10.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"5.6\" cy=\"-10.4\" rx=\"1\" ry=\"1.6\"></ellipse></g></g><g transform=\"translate(14 95)\"><g><path class=\"s-y\" d=\"M0 0Q1 -8 4 -12\"></path><ellipse class=\"f-y\" cx=\"4.4\" cy=\"-12.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"3\" cy=\"-10.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"5.6\" cy=\"-10.4\" rx=\"1\" ry=\"1.6\"></ellipse></g></g><g transform=\"translate(84 94)\"><g><path class=\"s-y\" d=\"M0 0Q1 -8 4 -12\"></path><ellipse class=\"f-y\" cx=\"4.4\" cy=\"-12.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"3\" cy=\"-10.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"5.6\" cy=\"-10.4\" rx=\"1\" ry=\"1.6\"></ellipse></g></g><g transform=\"translate(92 95)\"><g><path class=\"s-y\" d=\"M0 0Q1 -8 4 -12\"></path><ellipse class=\"f-y\" cx=\"4.4\" cy=\"-12.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"3\" cy=\"-10.6\" rx=\"1\" ry=\"1.6\"></ellipse><ellipse class=\"f-y\" cx=\"5.6\" cy=\"-10.4\" rx=\"1\" ry=\"1.6\"></ellipse></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 408,
+      "k": "x-persimmon",
+      "on": [
+        "cos-cs-persimmon"
+      ],
+      "t": "<g class=\"x-persimmon\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M80 34Q90 40 104 34\"></path><path class=\"o-g th\" d=\"M92 37Q96 32 100 34Q96 38 92 37Z\"></path><g class=\"pt pswing\"><g transform=\"translate(86 37)\"><g><path class=\"s-n th\" d=\"M0 0V3\"></path><circle class=\"o-o\" cx=\"0\" cy=\"6.6\" r=\"3.6\"></circle><path class=\"o-g th\" d=\"M-2.2 3.4L0 2L2.2 3.4L0 4.6Z\"></path></g></g><g transform=\"translate(95 38)\"><g><path class=\"s-n th\" d=\"M0 0V3\"></path><circle class=\"o-o\" cx=\"0\" cy=\"6.6\" r=\"3.6\"></circle><path class=\"o-g th\" d=\"M-2.2 3.4L0 2L2.2 3.4L0 4.6Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 409,
+      "k": "x-brush",
+      "on": [
+        "cos-hg-brush",
+        "cos-hg-ink"
+      ],
+      "t": "<g class=\"x-brush\" transform=\"translate({{a.side}} {{a.mo}})\"><g class=\"a quillw\"><path class=\"s-k th\" d=\"M74 78Q82 76 88 79\" opacity=\".8\"></path><path class=\"s-n tk\" d=\"M86 42L94 62\"></path><path class=\"f-k\" d=\"M93 61L98 70L91.6 64Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 410,
+      "k": "x-hangul",
+      "on": [
+        "cos-hg-letters",
+        "cos-hg-scroll"
+      ],
+      "t": "<g class=\"x-hangul\" transform=\"translate(0 {{a.mo}})\"><g class=\"pt pdrift\"><g transform=\"translate(10 24)\"><g><path class=\"s-d\" d=\"M-3 -3H3V3\"></path></g></g><g transform=\"translate(90 30)\"><g><path class=\"s-d\" d=\"M-3 -3V3H3\"></path></g></g><g transform=\"translate(16 58)\"><g><path class=\"s-d\" d=\"M-2 -4H2M-3.4 -2H3.4\"></path><circle class=\"s-d th\" cx=\"0\" cy=\"1.6\" r=\"2.2\"></circle></g></g><g transform=\"translate(94 64)\"><g><path class=\"s-d\" d=\"M0 -4V4M0 0H3\"></path></g></g><g transform=\"translate(26 6)\"><g><circle class=\"s-d\" cx=\"0\" cy=\"0\" r=\"2.6\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 411,
+      "k": "x-scroll",
+      "on": [
+        "cos-hg-scroll"
+      ],
+      "t": "<g class=\"x-scroll\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(91 58)\"><path class=\"s-n th\" d=\"M-6 -11L0 -16L6 -11\"></path><rect class=\"o-w th\" x=\"-6\" y=\"-10\" width=\"12\" height=\"22\"></rect><rect class=\"o-n th\" x=\"-7.6\" y=\"-11.4\" width=\"15.2\" height=\"2\" rx=\"1\"></rect><rect class=\"o-n th\" x=\"-7.6\" y=\"11\" width=\"15.2\" height=\"2\" rx=\"1\"></rect><path class=\"s-k\" d=\"M-2.4 -6H2V-2M-2.4 1V5H2.4\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 412,
+      "k": "x-hgbook",
+      "on": [
+        "cos-hg-book"
+      ],
+      "t": "<g class=\"x-hgbook\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 82)\"><path class=\"o-w\" d=\"M0 -2Q-5 -5 -10 -3V-13Q-5 -15 0 -12Z\"></path><path class=\"o-w\" d=\"M0 -2Q5 -5 10 -3V-13Q5 -15 0 -12Z\"></path><path class=\"s-k th\" d=\"M0 -12V-2\"></path><path class=\"s-d th\" d=\"M-7 -10H-4V-7M-7 -6V-4H-4M3 -10V-6H6M4 -4.4H7\" opacity=\".8\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 413,
+      "k": "x-inkstone",
+      "on": [
+        "cos-hg-ink"
+      ],
+      "t": "<g class=\"x-inkstone\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 82)\"><rect class=\"o-k\" x=\"-8\" y=\"-5\" width=\"16\" height=\"5\" rx=\"1.4\"></rect><ellipse class=\"f-d\" cx=\"-3.6\" cy=\"-4.6\" rx=\"3\" ry=\"1\"></ellipse><rect class=\"o-k th\" x=\"2\" y=\"-13\" width=\"3\" height=\"8\" rx=\"0.6\"></rect><rect class=\"f-y\" x=\"2.4\" y=\"-12\" width=\"2.2\" height=\"2\"></rect></g></g>"
+    }
+  ],
+  "moonSources": [
+    "https://astro.kasi.re.kr/life/pageView/8 (KASI lunar-solar conversion, /life/lunc)",
+    "https://www.timeanddate.com/holidays/south-korea/2026 (and 2027..2036)",
+    "https://kholidayz.com/year/2028/seollal",
+    "https://dallyeok.com/holiday/seollal/2028/"
+  ],
+  "moonNotes": [
+    "KR: lunar dates from KASI's official lunar-solar converter (astro.kasi.re.kr /life/lunc). Korea uses UTC+9, so a new moon between 15:00 and 16:00 UTC gives a different date than China: 2027 (Seollal 02-07 vs China 02-06) and 2028.",
+    "KR 2028 seollal CHANGED from ['01-26','01-25','01-27'] to ['01-27','01-26','01-28']: KASI converts lunar 2028-01-01 to solar 2028-01-27 (Thu); the new moon is 2028-01-26 15:12 UTC = 00:12 KST on Jan 27 (own Meeus calculation agrees). timeanddate and some Korean sites (dallyeok.com) say 01-26 (Chinese date); kholidayz.com says 01-27. The official 2028 holiday list (from KASI's 2028 calendar notes) is not published yet.",
+    "KR 2027 seollal last day 02-09 kept (substitute holiday). 2028+ use the plain 3-day span (no substitute days). timeanddate's Korea pages give Seollal 2030 as 02-04 and 2034 as 02-20; KASI says 02-03 and 02-19 (same as China), and KASI is used."
+  ],
+  "moonReviewed": "2026-10-26"
+}

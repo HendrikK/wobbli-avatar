@@ -1,0 +1,109 @@
+{
+  "key": "offline",
+  "name": "Offline",
+  "when": "Lost the connection, or a service is down",
+  "group": "status",
+  "verb": "drops out",
+  "mouth": "frown",
+  "hands": "droop",
+  "pose": {
+    "sx": 1,
+    "sy": 0.75,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "ofplug",
+      "name": "Unplugged",
+      "desc": "A plug dangles loose beside an empty socket.",
+      "hands": "shrug"
+    },
+    {
+      "key": "ofwifi",
+      "name": "No signal",
+      "desc": "Looks up at a crossed-out wifi sign as the bars flicker.",
+      "pose": {
+        "sx": 1.05,
+        "sy": 1.05,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "ofcloud",
+      "name": "Cloud down",
+      "desc": "A crossed-out cloud drifts above it."
+    },
+    {
+      "key": "ofstatic",
+      "name": "Static",
+      "desc": "Flat eyes and a fuzz of static, like a lost channel.",
+      "pose": {
+        "sx": 1.25,
+        "sy": 0.15,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "wobble"
+    },
+    {
+      "key": "oflink",
+      "name": "Broken link",
+      "desc": "Two chain links try to join, spark and bounce apart."
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 280,
+      "k": "fx-dangle",
+      "on": [
+        "v-ofplug"
+      ],
+      "t": "<g class=\"fx-dangle\" transform=\"translate({{a.side}} {{a.mo}})\"><rect class=\"pw\" x=\"92\" y=\"40\" width=\"8\" height=\"18\" rx=\"2\"></rect><path class=\"lnk2\" d=\"M92 46.5H94.5M92 51.5H94.5\"></path><g transform=\"translate(79 56)\"><g class=\"vb0 dgl\"><path class=\"wire\" d=\"M0 0Q4 10 5 19\"></path><g transform=\"translate(5 19) rotate(-10)\"><rect class=\"dk\" x=\"-3\" y=\"0\" width=\"6\" height=\"8.5\" rx=\"1.5\"></rect><path class=\"lnk2\" d=\"M-1.5 8.5V11.5M1.5 8.5V11.5\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 281,
+      "k": "fx-nowifi",
+      "on": [
+        "v-ofwifi"
+      ],
+      "t": "<g class=\"fx-nowifi\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 9)\"><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"2.2\"></circle><path class=\"nwifi wfa\" d=\"M-3.9 -3.9A5.5 5.5 0 0 1 3.9 -3.9\"></path><path class=\"nwifi wfb\" d=\"M-7 -7A9.9 9.9 0 0 1 7 -7\"></path><path class=\"nwifi wfc\" d=\"M-10.1 -10.1A14.3 14.3 0 0 1 10.1 -10.1\"></path><path class=\"slashb\" d=\"M-10 -15L9 3\"></path><path class=\"slash\" d=\"M-10 -15L9 3\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 282,
+      "k": "fx-nocloud",
+      "on": [
+        "v-ofcloud"
+      ],
+      "t": "<g class=\"fx-nocloud\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(82 6)\"><g class=\"a ncl\"><path class=\"pw\" d=\"M-9 5A5 5 0 0 1 -8 -4.5A6.5 6.5 0 0 1 4 -6A5.5 5.5 0 0 1 9 5Z\"></path><path class=\"slashb\" d=\"M-8 -9L8 9\"></path><path class=\"slash\" d=\"M-8 -9L8 9\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 283,
+      "k": "fx-static",
+      "on": [
+        "v-ofstatic"
+      ],
+      "t": "<g class=\"fx-static\" transform=\"translate(0 {{a.mo}})\"><g><rect class=\"a stl\" x=\"22\" y=\"30\" width=\"30\" height=\"2\" rx=\"1\"></rect><rect class=\"a stl\" x=\"44\" y=\"42\" width=\"34\" height=\"2\" rx=\"1\"></rect><rect class=\"a stl\" x=\"26\" y=\"58\" width=\"24\" height=\"2\" rx=\"1\"></rect><rect class=\"a stl\" x=\"50\" y=\"66\" width=\"22\" height=\"2\" rx=\"1\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 284,
+      "k": "fx-broken",
+      "on": [
+        "v-oflink"
+      ],
+      "t": "<g class=\"fx-broken\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 5)\"><rect class=\"a bk1 chain\" x=\"-14\" y=\"-4\" width=\"12\" height=\"8\" rx=\"4\"></rect><rect class=\"a bk2 chain\" x=\"2\" y=\"-4\" width=\"12\" height=\"8\" rx=\"4\"></rect><path class=\"a bksp hot\" d=\"M0 -9V-6M0 6V9M-3.5 -8L-2.2 -5.8M3.5 8L2.2 5.8\"></path></g></g>"
+    }
+  ]
+}

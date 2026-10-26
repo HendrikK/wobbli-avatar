@@ -1,0 +1,40 @@
+.aa-av .sgn { transform-origin: 50% 100%; }
+.aa-av.v-apsign .fx-sign { display: inline; }
+.aa-av.v-apsign .sgn { animation: aa-C-signsway 2.4s ease-in-out infinite; }
+.aa-av.v-apsign .cbx { animation: aa-C-cbx 1.2s ease-in-out infinite; }
+.aa-av.v-apsign .gz { transform: translate(0px, -2px); }
+.aa-av.v-apsign .w { animation: aa-bb-bob 1.2s ease-in-out infinite alternate; }
+.aa-av.v-aptap .fx-tapmk { display: inline; }
+.aa-av.v-aptap .w { animation: aa-C-tap 1s ease-in-out infinite; }
+.aa-av.v-aptap .tpk { opacity: 0; animation: aa-C-tapmk 1s infinite; }
+.aa-av.v-aptap .gz { animation: aa-C-tapeyes 4s ease-in-out infinite; }
+.aa-av.v-apbell .fx-bell { display: inline; }
+.aa-av.v-apbell .paw { animation: aa-C-paw 1.8s infinite; }
+.aa-av.v-apbell .bbtn { animation: aa-C-bbtn 1.8s infinite; }
+.aa-av.v-apbell .dng { opacity: 0; animation: aa-C-ding 1.8s infinite; }
+.aa-av.v-apbell .gz { animation: aa-C-belleyes 1.8s ease-in-out infinite; }
+.aa-av.v-apbell .w { animation: aa-C-bellhop 1.8s infinite; }
+.aa-av.v-appuppy .eg-shine, .aa-av.v-appuppy .cheeks { display: inline; }
+.aa-av.v-appuppy .sp { rotate: calc(var(--amp, 1) * -8deg); }
+.aa-av.v-appuppy .w { animation: aa-C-plead 1.8s ease-in-out infinite; }
+.aa-av.v-appuppy .gz { transform: translate(-1px, -2.5px); }
+.aa-av.v-appuppy .eg-shine circle { animation: aa-C-glim 1.8s ease-in-out infinite; }
+.aa-av.v-appen .fx-sigdoc { display: inline; }
+.aa-av.v-appen .hov { animation: aa-C-hover 1.2s ease-in-out infinite; }
+.aa-av.v-appen .gz { animation: aa-C-peneyes 3.6s ease-in-out infinite; }
+.aa-av.v-appen .w { animation: aa-bb-breathe 1.8s ease-in-out infinite alternate; }
+.aa-av.v-apsign .cos .hat { display: none !important; }
+@keyframes aa-C-signsway { 0%, 100% { rotate: -6deg; } 50% { rotate: 6deg; } }
+@keyframes aa-C-cbx { 0%, 100% { scale: 1; } 50% { scale: 1.25; } }
+@keyframes aa-C-tap { 0%, 100% { rotate: 0deg; } 25% { rotate: calc(var(--amp, 1) * 6deg); } 40% { rotate: 0deg; } }
+@keyframes aa-C-tapmk { 0%, 38% { opacity: 0; scale: .6; } 42% { opacity: 1; scale: 1; } 60%, 100% { opacity: 0; scale: 1.2; } }
+@keyframes aa-C-tapeyes { 0%, 40%, 100% { translate: calc(var(--amp, 1) * 3px) calc(var(--amp, 1) * -3px); } 50%, 90% { translate: 0 0; } }
+@keyframes aa-C-paw { 0%, 100% { translate: 0 -3px; } 20% { translate: 0 -4px; } 28% { translate: 0 1.6px; } 36% { translate: 0 -3px; } }
+@keyframes aa-C-bbtn { 0%, 26%, 34%, 100% { translate: 0 0; } 29% { translate: 0 1px; } }
+@keyframes aa-C-ding { 0%, 27% { opacity: 0; scale: .7; } 31% { opacity: 1; scale: 1; } 55%, 100% { opacity: 0; scale: 1.25; } }
+@keyframes aa-C-belleyes { 0%, 20%, 100% { translate: calc(var(--amp, 1) * 1px) -2px; } 28%, 45% { translate: calc(var(--amp, 1) * 4px) 2px; } }
+@keyframes aa-C-bellhop { 0%, 26%, 40%, 100% { translate: 0 0; } 32% { translate: 0 calc(var(--amp, 1) * -2.5px); } }
+@keyframes aa-C-plead { 0%, 100% { scale: 1 1; } 50% { scale: 1.04 .96; } }
+@keyframes aa-C-glim { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+@keyframes aa-C-hover { 0%, 100% { translate: 0 -4px; } 50% { translate: 2px -1px; } }
+@keyframes aa-C-peneyes { 0%, 40%, 100% { translate: 0 calc(var(--amp, 1) * 4px); } 50%, 90% { translate: 0 -1.5px; } }

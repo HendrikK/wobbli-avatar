@@ -1,0 +1,50 @@
+.aa-av .ok { fill: none; stroke: #3E9B5F; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+.aa-av .prt { transform-origin: 0% 50%; }
+.aa-av .flp, .aa-av .flp2 { transform-origin: 50% 100%; }
+.aa-av .ptrail { fill: none; stroke: #B5AC9E; stroke-width: 1.8; stroke-linecap: round; stroke-dasharray: 2 4; }
+.aa-av.v-exprint .fx-print { display: inline; }
+.aa-av.v-exprint .prt { animation: aa-A-print 2s infinite; }
+.aa-av.v-exprint .sp { animation: aa-A-buzz 2s linear infinite; }
+.aa-av.v-exprint .gz { transform: translate(3px, 1px); }
+.aa-av.v-exstamp .fx-stamp { display: inline; }
+.aa-av.v-exstamp .stp { animation: aa-A-stamp 2.2s infinite; }
+.aa-av.v-exstamp .stck { animation: aa-A-stck 2.2s infinite; }
+.aa-av.v-exstamp .w { animation: aa-A-stampb 2.2s infinite; }
+.aa-av.v-exstamp .gz { transform: translate(0px, 3px); }
+.aa-av.v-explane .fx-plane { display: inline; }
+.aa-av.v-explane .pln { animation: aa-A-plane 2s ease-in infinite; }
+.aa-av.v-explane .ptrail { animation: aa-A-trail 2s infinite; }
+.aa-av.v-explane .w { animation: aa-A-throw 2s infinite; }
+.aa-av.v-explane .gz { animation: aa-A-planeeyes 2s ease-in infinite; }
+.aa-av.v-exdeck .fx-deck { display: inline; }
+.aa-av.v-exdeck .dk1 { animation: aa-A-deck1 2.6s infinite; }
+.aa-av.v-exdeck .dk2 { animation: aa-A-deck2 2.6s infinite; }
+.aa-av.v-exdeck .dk3 { animation: aa-A-deck3 2.6s infinite; }
+.aa-av.v-exdeck .w { animation: aa-A-deal 2.6s ease-in-out infinite; }
+.aa-av.v-exdeck .gz { animation: aa-A-deckeyes 2.6s ease-in-out infinite; }
+.aa-av.v-exbox .fx-xbox { display: inline; }
+.aa-av.v-exbox .xpg { animation: aa-A-xpage 2.4s infinite; }
+.aa-av.v-exbox .flp, .aa-av.v-exbox .flp2 { animation: aa-A-flap 2.4s infinite; }
+.aa-av.v-exbox .xb { animation: aa-A-boxbounce 2.4s infinite; }
+.aa-av.v-exbox .gz { animation: aa-A-boxeyes 2.4s infinite; }
+.aa-av.v-exbox .w { animation: aa-A-boxnod 2.4s infinite; }
+.aa-av .dk2 { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; stroke-linecap: round; }
+@keyframes aa-A-print { 0% { scale: 0 .9; opacity: 0; translate: -4px 0; rotate: 0deg; } 8% { opacity: 1; } 45% { scale: 1 1; translate: 0 0; } 65% { translate: 0 0; opacity: 1; rotate: 0deg; scale: 1 1; } 85%, 100% { translate: 6px 16px; rotate: 18deg; opacity: 0; scale: 1 1; } }
+@keyframes aa-A-buzz { 0%, 46%, 100% { translate: 0 0; } 4%, 12%, 20%, 28%, 36%, 44% { translate: .6px 0; } 8%, 16%, 24%, 32%, 40% { translate: -.6px 0; } }
+@keyframes aa-A-stamp { 0% { translate: -30px 0; opacity: 0; } 15%, 70% { translate: 0 0; opacity: 1; } 90%, 100% { translate: 30px 0; opacity: 0; } }
+@keyframes aa-A-stck { 0%, 40% { scale: 0; } 48% { scale: 1.3; } 55%, 100% { scale: 1; } }
+@keyframes aa-A-stampb { 0%, 15% { translate: 0 0; scale: 1 1; } 32% { translate: 0 calc(var(--amp, 1) * -12px); scale: .95 1.06; animation-timing-function: cubic-bezier(.7,0,1,.5); } 40% { translate: 0 0; scale: 1.14 .84; } 50%, 100% { translate: 0 0; scale: 1 1; } }
+@keyframes aa-A-plane { 0% { translate: -8px 8px; scale: 0; opacity: 0; rotate: 0deg; } 15% { scale: 1; opacity: 1; translate: 0 0; } 70% { translate: 26px -18px; rotate: -12deg; opacity: 1; scale: 1; } 85%, 100% { translate: 34px -24px; opacity: 0; rotate: -12deg; scale: 1; } }
+@keyframes aa-A-trail { 0%, 25% { opacity: 0; } 45%, 70% { opacity: .9; } 90%, 100% { opacity: 0; } }
+@keyframes aa-A-throw { 0%, 30%, 100% { rotate: 0deg; scale: 1 1; } 8% { rotate: calc(var(--amp, 1) * -4deg); scale: 1.03 .97; } 16% { rotate: calc(var(--amp, 1) * 6deg); scale: .98 1.03; } }
+@keyframes aa-A-planeeyes { 0%, 15% { translate: 2px -1px; } 70%, 100% { translate: calc(var(--amp, 1) * 5px) calc(var(--amp, 1) * -4.5px); } }
+@keyframes aa-A-deck1 { 0% { translate: 0 0; scale: 0; rotate: 0deg; opacity: 1; } 22%, 84% { translate: 22px -16px; scale: 1; rotate: -10deg; opacity: 1; } 95%, 100% { translate: 22px -16px; scale: 1; rotate: -10deg; opacity: 0; } }
+@keyframes aa-A-deck2 { 0%, 14% { translate: 0 0; scale: 0; rotate: 0deg; opacity: 1; } 36%, 84% { translate: 26px 0; scale: 1; rotate: 0deg; opacity: 1; } 95%, 100% { translate: 26px 0; scale: 1; opacity: 0; } }
+@keyframes aa-A-deck3 { 0%, 28% { translate: 0 0; scale: 0; rotate: 0deg; opacity: 1; } 50%, 84% { translate: 22px 16px; scale: 1; rotate: 10deg; opacity: 1; } 95%, 100% { translate: 22px 16px; scale: 1; rotate: 10deg; opacity: 0; } }
+@keyframes aa-A-deal { 0%, 60%, 100% { rotate: 0deg; } 10% { rotate: calc(var(--amp, 1) * 3deg); } 24% { rotate: calc(var(--amp, 1) * -1deg); } 32% { rotate: calc(var(--amp, 1) * 3deg); } 46% { rotate: calc(var(--amp, 1) * -1deg); } }
+@keyframes aa-A-deckeyes { 0%, 100% { translate: 3px -2px; } 22% { translate: calc(var(--amp, 1) * 4.5px) -3.5px; } 36% { translate: calc(var(--amp, 1) * 5px) 0; } 50%, 84% { translate: calc(var(--amp, 1) * 4.5px) 3px; } }
+@keyframes aa-A-xpage { 0% { translate: 0 -6px; opacity: 0; scale: 1; } 8% { opacity: 1; } 35% { translate: 0 22px; opacity: 1; scale: .9; animation-timing-function: ease-in; } 42%, 100% { translate: 0 28px; opacity: 0; scale: .8; } }
+@keyframes aa-A-flap { 0%, 42% { scale: 1 1; } 56%, 92% { scale: 1 -.45; } 100% { scale: 1 1; } }
+@keyframes aa-A-boxbounce { 0%, 56%, 72%, 100% { translate: 0 0; scale: 1 1; } 62% { translate: 0 -4px; scale: .97 1.04; } 68% { translate: 0 0; scale: 1.05 .95; } }
+@keyframes aa-A-boxeyes { 0% { translate: 0 -3px; } 35%, 70% { translate: 0 calc(var(--amp, 1) * 4px); } 100% { translate: 0 -3px; } }
+@keyframes aa-A-boxnod { 0%, 54%, 74%, 100% { scale: 1 1; } 62% { scale: 1.03 .96; } }

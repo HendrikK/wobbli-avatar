@@ -1,0 +1,564 @@
+{
+  "pack": "cn",
+  "name": "China, Singapore and Taiwan",
+  "holidays": [
+    {
+      "key": "lny",
+      "label": "Lunar New Year",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ln-lion",
+          "name": "Lion dance"
+        },
+        {
+          "key": "ln-envelope",
+          "name": "Red envelope"
+        },
+        {
+          "key": "ln-crackers",
+          "name": "Firecrackers"
+        },
+        {
+          "key": "ln-lanterns",
+          "name": "Red lanterns"
+        },
+        {
+          "key": "ln-zodiac",
+          "name": "Zodiac hat"
+        }
+      ]
+    },
+    {
+      "key": "lantern",
+      "label": "Lantern Festival",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "lf-lantern",
+          "name": "Round lantern"
+        },
+        {
+          "key": "lf-rabbit",
+          "name": "Rabbit lantern"
+        },
+        {
+          "key": "lf-riddles",
+          "name": "Lantern riddles"
+        },
+        {
+          "key": "lf-tangyuan",
+          "name": "Tangyuan"
+        },
+        {
+          "key": "lf-sky",
+          "name": "Sky lanterns"
+        }
+      ]
+    },
+    {
+      "key": "dragonboat",
+      "label": "Dragon Boat Festival",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "db-boat",
+          "name": "Dragon boat"
+        },
+        {
+          "key": "db-zongzi",
+          "name": "Zongzi"
+        },
+        {
+          "key": "db-drum",
+          "name": "Drum"
+        },
+        {
+          "key": "db-sachet",
+          "name": "Sachet"
+        },
+        {
+          "key": "db-paddle",
+          "name": "Paddle"
+        }
+      ]
+    },
+    {
+      "key": "midautumn",
+      "label": "Mid-Autumn Festival",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ma-mooncake",
+          "name": "Mooncake"
+        },
+        {
+          "key": "ma-moon",
+          "name": "Full moon"
+        },
+        {
+          "key": "ma-rabbit",
+          "name": "Jade rabbit"
+        },
+        {
+          "key": "ma-lantern",
+          "name": "Carp lantern"
+        },
+        {
+          "key": "ma-tea",
+          "name": "Tea"
+        }
+      ]
+    }
+  ],
+  "region": "CN",
+  "shared": [
+    "newyear",
+    "valentines",
+    "christmas",
+    "nye"
+  ],
+  "dates": [
+    {
+      "key": "lny",
+      "on": {
+        "table": "lny"
+      }
+    },
+    {
+      "key": "lantern",
+      "on": {
+        "table": "lantern"
+      }
+    },
+    {
+      "key": "dragonboat",
+      "on": {
+        "table": "dragonboat"
+      }
+    },
+    {
+      "key": "midautumn",
+      "on": {
+        "table": "midautumn"
+      }
+    }
+  ],
+  "moon": {
+    "2026": {
+      "lny": [
+        "02-17",
+        "02-16",
+        "02-23"
+      ],
+      "lantern": [
+        "03-03"
+      ],
+      "dragonboat": [
+        "06-19"
+      ],
+      "midautumn": [
+        "09-25"
+      ]
+    },
+    "2027": {
+      "lny": [
+        "02-06",
+        "02-05",
+        "02-12"
+      ],
+      "lantern": [
+        "02-20"
+      ],
+      "dragonboat": [
+        "06-09"
+      ],
+      "midautumn": [
+        "09-15"
+      ]
+    },
+    "2028": {
+      "lny": [
+        "01-26",
+        "01-25",
+        "02-01"
+      ],
+      "lantern": [
+        "02-09"
+      ],
+      "dragonboat": [
+        "05-28"
+      ],
+      "midautumn": [
+        "10-03"
+      ]
+    },
+    "2029": {
+      "lny": [
+        "02-13",
+        "02-12",
+        "02-19"
+      ],
+      "lantern": [
+        "02-27"
+      ],
+      "dragonboat": [
+        "06-16"
+      ],
+      "midautumn": [
+        "09-22"
+      ]
+    },
+    "2030": {
+      "lny": [
+        "02-03",
+        "02-02",
+        "02-09"
+      ],
+      "lantern": [
+        "02-17"
+      ],
+      "dragonboat": [
+        "06-05"
+      ],
+      "midautumn": [
+        "09-12"
+      ]
+    },
+    "2031": {
+      "lny": [
+        "01-23",
+        "01-22",
+        "01-29"
+      ],
+      "lantern": [
+        "02-06"
+      ],
+      "dragonboat": [
+        "06-24"
+      ],
+      "midautumn": [
+        "10-01"
+      ]
+    },
+    "2032": {
+      "lny": [
+        "02-11",
+        "02-10",
+        "02-17"
+      ],
+      "lantern": [
+        "02-25"
+      ],
+      "dragonboat": [
+        "06-12"
+      ],
+      "midautumn": [
+        "09-19"
+      ]
+    },
+    "2033": {
+      "lny": [
+        "01-31",
+        "01-30",
+        "02-06"
+      ],
+      "lantern": [
+        "02-14"
+      ],
+      "dragonboat": [
+        "06-01"
+      ],
+      "midautumn": [
+        "09-08"
+      ]
+    },
+    "2034": {
+      "lny": [
+        "02-19",
+        "02-18",
+        "02-25"
+      ],
+      "lantern": [
+        "03-05"
+      ],
+      "dragonboat": [
+        "06-20"
+      ],
+      "midautumn": [
+        "09-27"
+      ]
+    },
+    "2035": {
+      "lny": [
+        "02-08",
+        "02-07",
+        "02-14"
+      ],
+      "lantern": [
+        "02-22"
+      ],
+      "dragonboat": [
+        "06-10"
+      ],
+      "midautumn": [
+        "09-16"
+      ]
+    },
+    "2036": {
+      "lny": [
+        "01-28",
+        "01-27",
+        "02-03"
+      ],
+      "lantern": [
+        "02-11"
+      ],
+      "dragonboat": [
+        "05-30"
+      ],
+      "midautumn": [
+        "10-04"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "zone": "top",
+      "i": 69,
+      "k": "c-headband",
+      "on": [
+        "cos-db-paddle",
+        "cos-pd-race"
+      ],
+      "t": "<g class=\"c-headband hat\" transform=\"translate(50 {{a.hat}})\"><rect class=\"o-r\" x=\"-19\" y=\"-2.6\" width=\"38\" height=\"5.2\" rx=\"2.6\"></rect><path class=\"s-w th\" d=\"M-18 0H18\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 85,
+      "k": "c-lionhead",
+      "on": [
+        "cos-ln-lion"
+      ],
+      "t": "<g class=\"c-lionhead hat\" transform=\"translate(50 {{a.top}}) scale(1.15)\"><path class=\"o-r\" d=\"M-15 5Q-17 -9 -6 -13Q0 -17 6 -13Q17 -9 15 5Z\"></path><circle class=\"o-y th\" cx=\"0\" cy=\"-13.6\" r=\"2.4\"></circle><circle class=\"o-w th\" cx=\"-6\" cy=\"-5\" r=\"3.2\"></circle><circle class=\"f-k\" cx=\"-6\" cy=\"-5\" r=\"1.4\"></circle><circle class=\"o-w th\" cx=\"6\" cy=\"-5\" r=\"3.2\"></circle><circle class=\"f-k\" cx=\"6\" cy=\"-5\" r=\"1.4\"></circle><path class=\"s-y\" d=\"M-10 -9.6Q-6 -12 -2 -9.6M2 -9.6Q6 -12 10 -9.6\"></path><circle class=\"o-y th\" cx=\"-12.6\" cy=\"-6\" r=\"1.8\"></circle><circle class=\"o-y th\" cx=\"12.6\" cy=\"-6\" r=\"1.8\"></circle><path class=\"s-w tk\" d=\"M-15 5Q0 9 15 5\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 86,
+      "k": "c-zhorse",
+      "on": [
+        "cos-ln-zodiac"
+      ],
+      "t": "<g class=\"c-zhorse hat\" transform=\"translate(50 {{a.top}}) scale(1.15)\"><path class=\"o-m\" d=\"M-12 4L-10 -11L-4.6 0Z\"></path><path class=\"o-m\" d=\"M12 4L10 -11L4.6 0Z\"></path><path class=\"f-n\" d=\"M-10.4 0L-9.6 -7L-6.4 -.6ZM10.4 0L9.6 -7L6.4 -.6Z\"></path><path class=\"o-n\" d=\"M-6 4Q-7 -6 0 -9Q5 -10 9 -6Q4 -6 3 -2Q6 0 6 4Q2 1 0 3Q-3 1 -6 4Z\"></path><rect class=\"o-r th\" x=\"-13\" y=\"3\" width=\"26\" height=\"3.4\" rx=\"1.7\"></rect><circle class=\"o-y th\" cx=\"0\" cy=\"4.7\" r=\"2.2\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 87,
+      "k": "c-zgoat",
+      "on": [
+        "cos-ln-zodiac"
+      ],
+      "t": "<g class=\"c-zgoat hat\" transform=\"translate(50 {{a.top}}) scale(1.15)\"><path class=\"o-m\" d=\"M-6 1Q-14 -3 -14 -10Q-12 -15 -8 -13Q-11 -11 -9.4 -7Q-7.4 -4 -3 -2Z\"></path><path class=\"o-m\" d=\"M6 1Q14 -3 14 -10Q12 -15 8 -13Q11 -11 9.4 -7Q7.4 -4 3 -2Z\"></path><path class=\"s-n th\" d=\"M-12 -11L-10.4 -10M-12.6 -8L-11 -7.6M12 -11L10.4 -10M12.6 -8L11 -7.6\"></path><path class=\"o-e th\" d=\"M-12 3L-19 1L-12 0ZM12 3L19 1L12 0Z\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 88,
+      "k": "c-zmonkey",
+      "on": [
+        "cos-ln-zodiac"
+      ],
+      "t": "<g class=\"c-zmonkey hat\" transform=\"translate(50 {{a.top}})\"><circle class=\"o-n\" cx=\"-16\" cy=\"6\" r=\"4.4\"></circle><circle class=\"f-m\" cx=\"-16\" cy=\"6\" r=\"2.4\"></circle><circle class=\"o-n\" cx=\"16\" cy=\"6\" r=\"4.4\"></circle><circle class=\"f-m\" cx=\"16\" cy=\"6\" r=\"2.4\"></circle><path class=\"o-y th\" d=\"M-12 2Q0 -4 12 2L11 4Q0 -1.6 -11 4Z\"></path><path class=\"o-n th\" d=\"M-2 -1Q0 -8 2 -1Q0 -3 -2 -1Z\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 89,
+      "k": "c-zany",
+      "on": [
+        "cos-ln-zodiac"
+      ],
+      "t": "<g class=\"c-zany hat\" transform=\"translate(50 {{a.top}})\"><circle class=\"o-y\" cx=\"0\" cy=\"-6\" r=\"6.4\"></circle><rect class=\"o-r th\" x=\"-1.7\" y=\"-7.7\" width=\"3.4\" height=\"3.4\"></rect><path class=\"s-r th\" d=\"M-4 -11.4Q0 -14 4 -11.4\"></path><path class=\"s-r\" d=\"M-6 0Q-9 4 -8 8M6 0Q9 4 8 8\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 90,
+      "k": "c-sachet",
+      "on": [
+        "cos-db-sachet"
+      ],
+      "t": "<g class=\"c-sachet\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-r th\" d=\"M-12 -3Q0 5 12 -3\"></path><path class=\"o-p th\" d=\"M-4 4Q-5 12 0 13Q5 12 4 4Q0 2 -4 4Z\"></path><path class=\"s-y th\" d=\"M-3 8Q0 6 3 8\"></path><circle class=\"o-y th\" cx=\"0\" cy=\"3.6\" r=\"1.2\"></circle><path class=\"s-r th\" d=\"M0 13V18M-1 13.5V17.4M1 13.5V17.4\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 146,
+      "k": "x-fullmoon",
+      "on": [
+        "cos-bp-moon",
+        "cos-cs-moon",
+        "cos-ma-moon",
+        "cos-ma-rabbit"
+      ],
+      "t": "<g class=\"x-fullmoon\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 2)\"><circle class=\"a mhalo f-y\" r=\"15\"></circle><circle class=\"o-m\" r=\"9\"></circle><circle class=\"f-e\" cx=\"-3\" cy=\"-2\" r=\"1.7\" opacity=\".6\"></circle><circle class=\"f-e\" cx=\"3\" cy=\"3\" r=\"1.2\" opacity=\".6\"></circle><circle class=\"f-e\" cx=\"2.5\" cy=\"-4\" r=\".9\" opacity=\".6\"></circle></g><g class=\"pt ptwk\"><g transform=\"translate(18 4)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(40 -6)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 149,
+      "k": "x-skylant",
+      "on": [
+        "cos-bp-lanterns",
+        "cos-lf-sky"
+      ],
+      "t": "<g class=\"x-skylant pt prise slowr\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(14 60)\"><g><path class=\"o-o th\" d=\"M-3.5 -5H3.5L4.5 3.5H-4.5Z\"></path><path class=\"f-y\" d=\"M-2.6 .5H2.6L3.2 3.4H-3.2Z\"></path></g></g><g transform=\"translate(86 54)\"><g><path class=\"o-o th\" d=\"M-3.5 -5H3.5L4.5 3.5H-4.5Z\"></path><path class=\"f-y\" d=\"M-2.6 .5H2.6L3.2 3.4H-3.2Z\"></path></g></g><g transform=\"translate(24 36)\"><g><path class=\"o-r th\" d=\"M-3 -4.5H3L4 3H-4Z\"></path><path class=\"f-y\" d=\"M-2.2 .4H2.2L2.8 3H-2.8Z\"></path></g></g><g transform=\"translate(78 30)\"><g><path class=\"o-o th\" d=\"M-3 -4.5H3L4 3H-4Z\"></path><path class=\"f-y\" d=\"M-2.2 .4H2.2L2.8 3H-2.8Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 360,
+      "k": "x-hongbao",
+      "on": [
+        "cos-ln-envelope"
+      ],
+      "t": "<g class=\"x-hongbao\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(91 60)\"><g class=\"a bobs\"><rect class=\"o-r\" x=\"-6\" y=\"-9\" width=\"12\" height=\"17\" rx=\"1\"></rect><path class=\"o-r th\" d=\"M-6 -9L0 -3L6 -9\"></path><circle class=\"o-y th\" cx=\"0\" cy=\"-1\" r=\"2.8\"></circle><rect class=\"s-r th\" x=\"-1\" y=\"-2\" width=\"2\" height=\"2\"></rect></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 361,
+      "k": "x-crackers",
+      "on": [
+        "cos-ln-crackers"
+      ],
+      "t": "<g class=\"x-crackers\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n th\" d=\"M91 22V72\"></path><g transform=\"translate(88.6 28)\"><rect class=\"o-r th\" x=\"-1.8\" y=\"-2.8\" width=\"3.6\" height=\"5.6\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M-1.8 -1.6H1.8M-1.8 1.6H1.8\"></path></g><g transform=\"translate(93.4 34.4)\"><rect class=\"o-r th\" x=\"-1.8\" y=\"-2.8\" width=\"3.6\" height=\"5.6\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M-1.8 -1.6H1.8M-1.8 1.6H1.8\"></path></g><g transform=\"translate(88.6 40.8)\"><rect class=\"o-r th\" x=\"-1.8\" y=\"-2.8\" width=\"3.6\" height=\"5.6\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M-1.8 -1.6H1.8M-1.8 1.6H1.8\"></path></g><g transform=\"translate(93.4 47.2)\"><rect class=\"o-r th\" x=\"-1.8\" y=\"-2.8\" width=\"3.6\" height=\"5.6\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M-1.8 -1.6H1.8M-1.8 1.6H1.8\"></path></g><g transform=\"translate(88.6 53.6)\"><rect class=\"o-r th\" x=\"-1.8\" y=\"-2.8\" width=\"3.6\" height=\"5.6\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M-1.8 -1.6H1.8M-1.8 1.6H1.8\"></path></g><g transform=\"translate(93.4 60)\"><rect class=\"o-r th\" x=\"-1.8\" y=\"-2.8\" width=\"3.6\" height=\"5.6\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M-1.8 -1.6H1.8M-1.8 1.6H1.8\"></path></g><g transform=\"translate(88.6 66.4)\"><rect class=\"o-r th\" x=\"-1.8\" y=\"-2.8\" width=\"3.6\" height=\"5.6\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M-1.8 -1.6H1.8M-1.8 1.6H1.8\"></path></g><g class=\"pt ppop\"><g transform=\"translate(86 78)\"><g><path class=\"f-y\" d=\"M0 -4 L1.08 -1.08 L4 0 L1.08 1.08 L0 4 L-1.08 1.08 L-4 0 L-1.08 -1.08 Z\"></path></g></g><g transform=\"translate(97 76)\"><g><path class=\"f-o\" d=\"M0 -3.4 L0.92 -0.92 L3.4 0 L0.92 0.92 L0 3.4 L-0.92 0.92 L-3.4 0 L-0.92 -0.92 Z\"></path></g></g><g transform=\"translate(91 84)\"><g><path class=\"f-r\" d=\"M0 -3 L0.81 -0.81 L3 0 L0.81 0.81 L0 3 L-0.81 0.81 L-3 0 L-0.81 -0.81 Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 362,
+      "k": "x-redlanterns",
+      "on": [
+        "cos-ln-envelope",
+        "cos-ln-lanterns",
+        "cos-ln-zodiac"
+      ],
+      "t": "<g class=\"x-redlanterns\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M0 -4Q50 8 100 -4\"></path><g class=\"pt pswing\"><g transform=\"translate(16 2)\"><g><path class=\"s-k th\" d=\"M0 0V3\"></path><g transform=\"translate(0 10)\"><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"5.6\" ry=\"4.8\"></ellipse><path class=\"s-y th\" d=\"M-2.4 -4.32Q-3.68 0 -2.4 4.32M0 -4.8V4.8M2.4 -4.32Q3.68 0 2.4 4.32\"></path><rect class=\"o-y th\" x=\"-2.4\" y=\"-6\" width=\"4.8\" height=\"1.6\" rx=\"0.4\"></rect><rect class=\"o-y th\" x=\"-2.4\" y=\"4.4\" width=\"4.8\" height=\"1.6\" rx=\"0.4\"></rect><path class=\"s-y th\" d=\"M0 6V9.6M-1 6.4V9.2M1 6.4V9.2\"></path></g></g></g><g transform=\"translate(84 2)\"><g><path class=\"s-k th\" d=\"M0 0V3\"></path><g transform=\"translate(0 10)\"><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"5.6\" ry=\"4.8\"></ellipse><path class=\"s-y th\" d=\"M-2.4 -4.32Q-3.68 0 -2.4 4.32M0 -4.8V4.8M2.4 -4.32Q3.68 0 2.4 4.32\"></path><rect class=\"o-y th\" x=\"-2.4\" y=\"-6\" width=\"4.8\" height=\"1.6\" rx=\"0.4\"></rect><rect class=\"o-y th\" x=\"-2.4\" y=\"4.4\" width=\"4.8\" height=\"1.6\" rx=\"0.4\"></rect><path class=\"s-y th\" d=\"M0 6V9.6M-1 6.4V9.2M1 6.4V9.2\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 363,
+      "k": "x-roundlantern",
+      "on": [
+        "cos-lf-lantern"
+      ],
+      "t": "<g class=\"x-roundlantern\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M82 80L96 38\"></path><g class=\"pt pswing\"><g transform=\"translate(96 39)\"><g><path class=\"s-k th\" d=\"M0 0V3\"></path><g transform=\"translate(0 10)\"><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"6.3\" ry=\"5.4\"></ellipse><path class=\"s-y th\" d=\"M-2.7 -4.86Q-4.14 0 -2.7 4.86M0 -5.4V5.4M2.7 -4.86Q4.14 0 2.7 4.86\"></path><rect class=\"o-y th\" x=\"-2.7\" y=\"-6.75\" width=\"5.4\" height=\"1.8\" rx=\"0.4\"></rect><rect class=\"o-y th\" x=\"-2.7\" y=\"4.95\" width=\"5.4\" height=\"1.8\" rx=\"0.4\"></rect><path class=\"s-y th\" d=\"M0 6.75V10.8M-1 7.2V10.35M1 7.2V10.35\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 364,
+      "k": "x-rabbitlantern",
+      "on": [
+        "cos-lf-rabbit"
+      ],
+      "t": "<g class=\"x-rabbitlantern\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(90 84)\"><g class=\"a roll\"><ellipse class=\"o-w\" cx=\"0\" cy=\"-7\" rx=\"8\" ry=\"5.6\"></ellipse><circle class=\"o-w\" cx=\"7\" cy=\"-11\" r=\"3.6\"></circle><path class=\"o-w th\" d=\"M5 -14L4 -22L7 -15ZM8 -14.6L9.4 -21L10 -14Z\"></path><path class=\"f-p\" d=\"M5.2 -15.4L4.8 -19.6L6.2 -15.8Z\"></path><circle class=\"f-r\" cx=\"8.4\" cy=\"-11.6\" r=\"0.7\"></circle><g class=\"a fglow\"><ellipse class=\"f-y\" cx=\"0\" cy=\"-7\" rx=\"5\" ry=\"3.4\"></ellipse></g><path class=\"s-r th\" d=\"M-6 -8Q0 -4 6 -8\"></path><circle class=\"o-n th\" cx=\"-4\" cy=\"-1\" r=\"2\"></circle><circle class=\"o-n th\" cx=\"4\" cy=\"-1\" r=\"2\"></circle><path class=\"s-r th\" d=\"M-8 -6L-14 -2\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 365,
+      "k": "x-riddles",
+      "on": [
+        "cos-lf-riddles",
+        "cos-lf-tangyuan"
+      ],
+      "t": "<g class=\"x-riddles\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M4 -2Q50 12 96 -2\"></path><g class=\"pt pswing\"><g transform=\"translate(16 2)\"><g><g transform=\"translate(0 8)\"><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"4.2\" ry=\"3.6\"></ellipse><path class=\"s-y th\" d=\"M-1.8 -3.24Q-2.76 0 -1.8 3.24M0 -3.6V3.6M1.8 -3.24Q2.76 0 1.8 3.24\"></path><rect class=\"o-y th\" x=\"-1.8\" y=\"-4.5\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><rect class=\"o-y th\" x=\"-1.8\" y=\"3.3\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><path class=\"s-y th\" d=\"M0 4.5V7.2M-1 4.8V6.9M1 4.8V6.9\"></path></g><path class=\"s-k th\" d=\"M0 0V3\"></path><rect class=\"o-w th\" x=\"-1.8\" y=\"15\" width=\"3.6\" height=\"6\"></rect><path class=\"s-e th\" d=\"M-.8 17H.8M-.8 19H.8\"></path></g></g><g transform=\"translate(38 6)\"><g><g transform=\"translate(0 8)\"><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"4.2\" ry=\"3.6\"></ellipse><path class=\"s-y th\" d=\"M-1.8 -3.24Q-2.76 0 -1.8 3.24M0 -3.6V3.6M1.8 -3.24Q2.76 0 1.8 3.24\"></path><rect class=\"o-y th\" x=\"-1.8\" y=\"-4.5\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><rect class=\"o-y th\" x=\"-1.8\" y=\"3.3\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><path class=\"s-y th\" d=\"M0 4.5V7.2M-1 4.8V6.9M1 4.8V6.9\"></path></g><path class=\"s-k th\" d=\"M0 0V3\"></path><rect class=\"o-w th\" x=\"-1.8\" y=\"15\" width=\"3.6\" height=\"6\"></rect><path class=\"s-e th\" d=\"M-.8 17H.8M-.8 19H.8\"></path></g></g><g transform=\"translate(62 6)\"><g><g transform=\"translate(0 8)\"><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"4.2\" ry=\"3.6\"></ellipse><path class=\"s-y th\" d=\"M-1.8 -3.24Q-2.76 0 -1.8 3.24M0 -3.6V3.6M1.8 -3.24Q2.76 0 1.8 3.24\"></path><rect class=\"o-y th\" x=\"-1.8\" y=\"-4.5\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><rect class=\"o-y th\" x=\"-1.8\" y=\"3.3\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><path class=\"s-y th\" d=\"M0 4.5V7.2M-1 4.8V6.9M1 4.8V6.9\"></path></g><path class=\"s-k th\" d=\"M0 0V3\"></path><rect class=\"o-w th\" x=\"-1.8\" y=\"15\" width=\"3.6\" height=\"6\"></rect><path class=\"s-e th\" d=\"M-.8 17H.8M-.8 19H.8\"></path></g></g><g transform=\"translate(84 2)\"><g><g transform=\"translate(0 8)\"><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"4.2\" ry=\"3.6\"></ellipse><path class=\"s-y th\" d=\"M-1.8 -3.24Q-2.76 0 -1.8 3.24M0 -3.6V3.6M1.8 -3.24Q2.76 0 1.8 3.24\"></path><rect class=\"o-y th\" x=\"-1.8\" y=\"-4.5\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><rect class=\"o-y th\" x=\"-1.8\" y=\"3.3\" width=\"3.6\" height=\"1.2\" rx=\"0.4\"></rect><path class=\"s-y th\" d=\"M0 4.5V7.2M-1 4.8V6.9M1 4.8V6.9\"></path></g><path class=\"s-k th\" d=\"M0 0V3\"></path><rect class=\"o-w th\" x=\"-1.8\" y=\"15\" width=\"3.6\" height=\"6\"></rect><path class=\"s-e th\" d=\"M-.8 17H.8M-.8 19H.8\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 366,
+      "k": "x-tangyuan",
+      "on": [
+        "cos-lf-tangyuan"
+      ],
+      "t": "<g class=\"x-tangyuan\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 82)\"><circle class=\"o-w th\" cx=\"-3\" cy=\"-9\" r=\"2.6\"></circle><circle class=\"o-p th\" cx=\"2\" cy=\"-9.4\" r=\"2.6\"></circle><circle class=\"o-w th\" cx=\"-0.4\" cy=\"-11\" r=\"2.2\"></circle><path class=\"o-w\" d=\"M-9 -8H9Q8 0 0 0Q-8 0 -9 -8Z\"></path><path class=\"s-b th\" d=\"M-8.4 -5H8.4\"></path><g class=\"pt prise\"><g transform=\"translate(-2 -13)\"><g><path class=\"s-e th\" d=\"M0 0Q-1.5 -2 0 -4Q1.5 -6 0 -8\"></path></g></g><g transform=\"translate(2 -14)\"><g><path class=\"s-e th\" d=\"M0 0Q1.5 -2 0 -4Q-1.5 -6 0 -8\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 367,
+      "k": "x-dboat",
+      "on": [
+        "cos-db-boat"
+      ],
+      "t": "<g class=\"x-dboat\" transform=\"translate(0 {{a.dn}})\"><path class=\"s-c\" d=\"M0 95Q10 92 20 95T40 95T60 95T80 95T100 95\"></path><g class=\"a bobs\"><path class=\"o-g th\" d=\"M10 87Q5 81 9 77Q9 83 13 87Z\"></path><path class=\"o-r\" d=\"M10 86H80Q78 92 70 92H18Q12 92 10 86Z\"></path><path class=\"s-y th\" d=\"M15 89H74\"></path><path class=\"o-g\" d=\"M79 86Q83 76 91 76Q95 78 93 82L89 82Q87 86 83 88Z\"></path><circle class=\"f-y\" cx=\"89\" cy=\"79\" r=\"0.9\"></circle><path class=\"s-y th\" d=\"M93 80L98 79M92 82L97 84\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 368,
+      "k": "x-zongzi",
+      "on": [
+        "cos-db-zongzi"
+      ],
+      "t": "<g class=\"x-zongzi\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(88 82)\"><path class=\"o-g\" d=\"M-6 0L0 -11L6 0Z\"></path><path class=\"s-l th\" d=\"M-3 -5L0 0M3 -5L0 0\"></path><path class=\"s-m th\" d=\"M-4 -4H4M-2.6 -7H2.6\"></path></g><g transform=\"translate(96 82)\"><g transform=\"scale(.8)\"><path class=\"o-g\" d=\"M-6 0L0 -11L6 0Z\"></path><path class=\"s-l th\" d=\"M-3 -5L0 0M3 -5L0 0\"></path><path class=\"s-m th\" d=\"M-4 -4H4M-2.6 -7H2.6\"></path></g></g><path class=\"s-m th\" d=\"M88 71Q90 66 94 64\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 369,
+      "k": "x-ddrum",
+      "on": [
+        "cos-db-drum"
+      ],
+      "t": "<g class=\"x-ddrum\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 66)\"><path class=\"o-r\" d=\"M-8 -6Q-9.4 0 -8 6H8Q9.4 0 8 -6Z\"></path><ellipse class=\"o-m th\" cx=\"0\" cy=\"-6\" rx=\"8\" ry=\"2.4\"></ellipse><circle class=\"f-y\" cx=\"-5\" cy=\"0\" r=\"0.8\"></circle><circle class=\"f-y\" cx=\"0\" cy=\"1\" r=\"0.8\"></circle><circle class=\"f-y\" cx=\"5\" cy=\"0\" r=\"0.8\"></circle><g class=\"a tstick\"><path class=\"s-n tk\" d=\"M-5 -17L-2 -9\"></path></g><g class=\"a tstick tst2\"><path class=\"s-n tk\" d=\"M6 -17L3 -9\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 370,
+      "k": "x-paddle",
+      "on": [
+        "cos-db-paddle"
+      ],
+      "t": "<g class=\"x-paddle\" transform=\"translate({{a.side}} {{a.mo}})\"><g class=\"a rowp\"><path class=\"s-n tk\" d=\"M80 40L95 68\"></path><path class=\"o-n\" d=\"M93 64L99 74L95 76L90 68Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 371,
+      "k": "x-mooncake",
+      "on": [
+        "cos-ma-mooncake",
+        "cos-ma-tea"
+      ],
+      "t": "<g class=\"x-mooncake\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 82)\"><ellipse class=\"o-w th\" cx=\"0\" cy=\"0\" rx=\"10\" ry=\"2\"></ellipse><g transform=\"translate(0 -7)\"><path class=\"o-y\" d=\"M0 -7.8L1.81 -6.76L3.9 -6.75L4.95 -4.95L6.75 -3.9L6.76 -1.81L7.8 0L6.76 1.81L6.75 3.9L4.95 4.95L3.9 6.75L1.81 6.76L0 7.8L-1.81 6.76L-3.9 6.75L-4.95 4.95L-6.75 3.9L-6.76 1.81L-7.8 0L-6.76 -1.81L-6.75 -3.9L-4.95 -4.95L-3.9 -6.75L-1.81 -6.76Z\"></path></g><circle class=\"s-n th\" cx=\"0\" cy=\"-7\" r=\"5\"></circle><path class=\"s-n th\" d=\"M-2.6 -7H2.6M0 -9.6V-4.4\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 372,
+      "k": "x-jaderabbit",
+      "on": [
+        "cos-ma-rabbit"
+      ],
+      "t": "<g class=\"x-jaderabbit\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(10 88)\"><g class=\"a hop\"><ellipse class=\"o-w\" cx=\"0\" cy=\"-5\" rx=\"6\" ry=\"5\"></ellipse><circle class=\"o-w\" cx=\"4\" cy=\"-11\" r=\"3.6\"></circle><path class=\"o-w th\" d=\"M3 -14L1.6 -21L5 -14.6ZM5.4 -14L7.6 -20.4L7 -13.6Z\"></path><path class=\"f-p\" d=\"M3.2 -15L2.6 -18.6L4 -15.4Z\"></path><circle class=\"f-r\" cx=\"5.2\" cy=\"-11.4\" r=\"0.7\"></circle><circle class=\"o-w th\" cx=\"-6\" cy=\"-3\" r=\"1.6\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 373,
+      "k": "x-carplantern",
+      "on": [
+        "cos-ma-lantern"
+      ],
+      "t": "<g class=\"x-carplantern\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M82 80L96 38\"></path><g class=\"pt pswing\"><g transform=\"translate(96 39)\"><g><path class=\"s-k th\" d=\"M0 0V5\"></path><g transform=\"translate(0 10)\"><path class=\"o-o\" d=\"M-8 0Q-2 -6 6 -3L10 -6L9 0L10 6L6 3Q-2 6 -8 0Z\"></path><g class=\"a fglow\"><path class=\"f-y\" d=\"M-5 0Q-1 -3 4 -1.6L4 1.6Q-1 3 -5 0Z\"></path></g><circle class=\"f-k\" cx=\"-5\" cy=\"-0.6\" r=\"0.7\"></circle></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 374,
+      "k": "x-tea",
+      "on": [
+        "cos-ma-tea"
+      ],
+      "t": "<g class=\"x-tea\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(90 82)\"><path class=\"o-c\" d=\"M-7 -2Q-8 -10 0 -11Q8 -10 7 -2Z\"></path><rect class=\"o-c th\" x=\"-7\" y=\"-2.6\" width=\"14\" height=\"2.6\" rx=\"1\"></rect><path class=\"s-c\" d=\"M7 -6L11 -10\"></path><path class=\"s-c\" d=\"M-7 -8Q-11 -7 -9 -3\"></path><ellipse class=\"o-c th\" cx=\"0\" cy=\"-11.4\" rx=\"3\" ry=\"1.2\"></ellipse><rect class=\"o-w th\" x=\"9\" y=\"-4\" width=\"5\" height=\"4\" rx=\"1\"></rect><g class=\"pt prise\"><g transform=\"translate(9.5 -6)\"><g><path class=\"s-e th\" d=\"M0 0Q-1.5 -2 0 -4Q1.5 -6 0 -8\"></path></g></g><g transform=\"translate(13.5 -7)\"><g><path class=\"s-e th\" d=\"M0 0Q1.5 -2 0 -4Q-1.5 -6 0 -8\"></path></g></g></g></g></g>"
+    }
+  ],
+  "moonSources": [
+    "https://www.hko.gov.hk/en/gts/time/calendar/text/files/T2026e.txt (and T2027e..T2036e)",
+    "https://www.timeanddate.com/holidays/china/2026 (and 2027..2036)"
+  ],
+  "moonNotes": [
+    "CN: all years from the Hong Kong Observatory Gregorian-Lunar conversion tables (T2026e-T2036e), cross-checked with timeanddate China (all 11 years identical). Leap months in 2028 (5th), 2033 (11th) and 2036 (6th) do not move these festivals."
+  ],
+  "moonReviewed": "2026-10-26"
+}

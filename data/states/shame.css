@@ -1,0 +1,26 @@
+.aa-av.st-shame .cheeks { display: inline; }
+.aa-av.v-blush .cheeks { animation: aa-bb-blushin 3.6s ease-in-out infinite; }
+.aa-av.v-blush .gz { transform: translate(-2.5px, 3px); }
+.aa-av.v-blush .w { transform: translateY(2px) scale(.96, .96); animation: aa-bb-sigh 3.6s ease-in-out infinite; }
+.aa-av.v-shrink .cheeks { opacity: .7; }
+.aa-av.v-shrink .w { animation: aa-bb-shrink 3.4s ease-in-out infinite; }
+.aa-av.v-shrink .sp { animation: aa-bb-shiver .14s linear infinite; }
+.aa-av.v-shrink .gz { transform: translate(2px, 3px); }
+.aa-av.v-peek .cheeks { opacity: .7; }
+.aa-av.v-peek .e > path { animation: none; }
+.aa-av.v-peek .er { animation: aa-bb-peekeye 3.2s ease-in-out infinite; }
+.aa-av.v-peek .gz { animation: aa-bb-peekgaze 3.2s ease-in-out infinite; }
+.aa-av.v-peek .w { transform: translateY(2px); animation: aa-bb-sigh 3.2s ease-in-out infinite; }
+.aa-av.v-fidget .w { animation: aa-bb-fidget 1.6s ease-in-out infinite; }
+.aa-av.v-fidget .gz { animation: aa-bb-fidgeteyes 1.6s steps(1) infinite; }
+.aa-av.v-awkward .ey { opacity: 0; }
+.aa-av.v-awkward .eg-n { display: inline; }
+.aa-av.v-awkward .sw { display: inline; animation: aa-bb-sweatin 3.2s ease-in-out infinite; }
+.aa-av.v-awkward .w { animation: aa-bb-heh 1.6s infinite; }
+@keyframes aa-bb-blushin { 0%, 100% { opacity: .45; } 50% { opacity: .95; } }
+@keyframes aa-bb-shrink { 0%, 100% { scale: .96 .96; } 50% { scale: .74 .72; } }
+@keyframes aa-bb-peekeye { 0%, 30%, 70%, 100% { scale: 1 1; } 38%, 62% { scale: .75 3.6; } }
+@keyframes aa-bb-peekgaze { 0%, 34%, 66%, 100% { translate: 0 0; } 42%, 58% { translate: 2px -1px; } }
+@keyframes aa-bb-fidget { 0%, 100% { translate: calc(var(--amp, 1) * -2px) 0; rotate: calc(var(--amp, 1) * -3deg); } 25% { translate: 0 calc(var(--amp, 1) * -1.5px); rotate: 0deg; } 50% { translate: calc(var(--amp, 1) * 2px) 0; rotate: calc(var(--amp, 1) * 3deg); } 75% { translate: 0 calc(var(--amp, 1) * -1.5px); rotate: 0deg; } }
+@keyframes aa-bb-fidgeteyes { 0% { translate: -3px 3px; } 50% { translate: 3px 3.5px; } }
+@keyframes aa-bb-heh { 0%, 56%, 100% { translate: 0 0; scale: 1 1; } 8% { translate: 0 -2.5px; scale: .98 1.02; } 16% { translate: 0 0; scale: 1.02 .98; } 24% { translate: 0 -2.5px; scale: .98 1.02; } 32% { translate: 0 0; scale: 1.02 .98; } 40% { translate: 0 -2px; scale: 1 1; } 48% { translate: 0 0; scale: 1 1; } }

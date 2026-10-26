@@ -1,0 +1,99 @@
+{
+  "key": "search",
+  "name": "Searching",
+  "when": "Looking through reports, data or the web",
+  "group": "work",
+  "verb": "searches",
+  "mouth": "osmall",
+  "hands": "visor",
+  "pose": {
+    "sx": 1.15,
+    "sy": 1.1,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "selist",
+      "name": "Scan list",
+      "desc": "Holds up a page and runs a magnifier along each line."
+    },
+    {
+      "key": "seflash",
+      "name": "Flashlight",
+      "desc": "Sweeps a flashlight beam up and down, eyes following it."
+    },
+    {
+      "key": "seradar",
+      "name": "Sonar",
+      "desc": "Sends out sonar rings until a blip pops up and catches its eye."
+    },
+    {
+      "key": "sepeek",
+      "name": "Peek around",
+      "desc": "Leans way out to one side, then the other, looking around.",
+      "pose": {
+        "sx": 1.2,
+        "sy": 1.2,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "sesniff",
+      "name": "Sniff",
+      "desc": "Squints and sniffs along a scent trail like a bloodhound.",
+      "pose": {
+        "sx": 1.2,
+        "sy": 0.5,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "osmall"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 222,
+      "k": "fx-list",
+      "on": [
+        "v-selist"
+      ],
+      "t": "<g class=\"fx-list\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"pw\" x=\"-16\" y=\"-11\" width=\"32\" height=\"22\" rx=\"2\"></rect><path class=\"line2\" d=\"M-10 -6H10M-10 -1H10M-10 4H6\"></path><g transform=\"translate(0 -6)\"><g class=\"a mg\"><circle class=\"mgg\" cx=\"0\" cy=\"0\" r=\"4.6\"></circle><path class=\"mgh\" d=\"M3.4 3.4L7 7\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 223,
+      "k": "fx-flash",
+      "on": [
+        "v-seflash"
+      ],
+      "t": "<g class=\"fx-flash\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(76 58)\"><g class=\"vb0 beam\"><path class=\"cone\" d=\"M4 -2.5L34 -14V14L4 2.5Z\"></path><rect class=\"dk\" x=\"-5\" y=\"-3\" width=\"10\" height=\"6\" rx=\"1.5\"></rect><rect x=\"4\" y=\"-3.5\" width=\"2\" height=\"7\" rx=\"1\" fill=\"#F2D36B\"></rect></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 224,
+      "k": "fx-radar",
+      "on": [
+        "v-seradar"
+      ],
+      "t": "<g class=\"fx-radar\" transform=\"translate(0 {{a.mo}})\"><circle class=\"a ring\" cx=\"50\" cy=\"48\" r=\"32\"></circle><circle class=\"a ring\" cx=\"50\" cy=\"48\" r=\"32\"></circle><circle class=\"a ring\" cx=\"50\" cy=\"48\" r=\"32\"></circle><circle class=\"a blip coral\" cx=\"88\" cy=\"18\" r=\"3.5\"></circle></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 225,
+      "k": "fx-scent",
+      "on": [
+        "v-sesniff"
+      ],
+      "t": "<g class=\"fx-scent\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"a scent\" d=\"M86 58Q89 55 92 58T98 58\"></path><path class=\"a scent\" d=\"M88 66Q91 63 94 66T100 66\"></path></g>"
+    }
+  ]
+}

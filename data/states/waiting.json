@@ -1,0 +1,86 @@
+{
+  "key": "waiting",
+  "name": "Waiting for you",
+  "when": "Your turn: an answer, a choice or more detail",
+  "group": "talk",
+  "verb": "waits",
+  "mouth": "smile",
+  "hands": "tap",
+  "pose": {
+    "sx": 1,
+    "sy": 0.95,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "walook",
+      "name": "Expectant",
+      "desc": "Glances down at the message box, then back up at you."
+    },
+    {
+      "key": "waripple",
+      "name": "Tap tap",
+      "desc": "Taps on the glass, leaving little ripples."
+    },
+    {
+      "key": "wacursor",
+      "name": "Your turn",
+      "desc": "An empty speech bubble with a blinking cursor."
+    },
+    {
+      "key": "wayawn",
+      "name": "Yawn",
+      "desc": "Stretches tall with a big yawn while it waits.",
+      "mouth": "own",
+      "hands": "covermouth"
+    },
+    {
+      "key": "waclock",
+      "name": "Clock",
+      "desc": "Watches a little clock tick round."
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 10,
+      "k": "att-mouth",
+      "on": [
+        "v-qubreath",
+        "v-wayawn",
+        "v-fyawn"
+      ],
+      "t": "<g class=\"att att-mouth\"><ellipse class=\"a mth\" fill=\"{{a.eye}}\" cx=\"{{a.mx}}\" cy=\"{{a.my}}\" rx=\"3.6\" ry=\"4.6\"></ellipse></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 257,
+      "k": "fx-tapglass",
+      "on": [
+        "v-waripple"
+      ],
+      "t": "<g class=\"fx-tapglass\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(85 66)\"><circle class=\"a rip\" cx=\"0\" cy=\"0\" r=\"5\"></circle><circle class=\"a rip\" cx=\"0\" cy=\"0\" r=\"5\"></circle><g class=\"a tp\"><ellipse class=\"hc\" cx=\"0\" cy=\"0\" rx=\"4\" ry=\"3.4\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 258,
+      "k": "fx-cbub",
+      "on": [
+        "v-wacursor"
+      ],
+      "t": "<g class=\"fx-cbub\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(80 6)\"><rect class=\"pw\" x=\"-13\" y=\"-6\" width=\"26\" height=\"12\" rx=\"6\"></rect><rect class=\"a ccur dk\" x=\"-8\" y=\"-3.5\" width=\"1.6\" height=\"7\" rx=\".8\"></rect><circle class=\"head\" cx=\"7\" cy=\"0\" r=\"3.2\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 259,
+      "k": "fx-clock",
+      "on": [
+        "v-waclock"
+      ],
+      "t": "<g class=\"fx-clock\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(85 12)\"><circle class=\"pw\" cx=\"0\" cy=\"0\" r=\"8.5\"></circle><path class=\"line2\" d=\"M0 -6.5V-5M6.5 0H5M0 6.5V5M-6.5 0H-5\"></path><g class=\"vb0 chand\"><path class=\"lnk2\" d=\"M0 0V-5.5\"></path></g><g class=\"vb0 cmin\"><path class=\"lnk2\" d=\"M0 0H3.8\"></path></g><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"1.2\"></circle></g></g>"
+    }
+  ]
+}

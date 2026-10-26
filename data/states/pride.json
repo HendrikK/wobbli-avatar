@@ -1,0 +1,134 @@
+{
+  "key": "pride",
+  "name": "Pride",
+  "when": "Long task done well · report published",
+  "group": "feelings",
+  "verb": "struts",
+  "mouth": "smirk",
+  "hands": "hips",
+  "pose": null,
+  "variants": [
+    {
+      "key": "chinup",
+      "name": "Chin up",
+      "desc": "Chin up, smug eyes, and a little glint of light.",
+      "pose": {
+        "sx": 1.75,
+        "sy": 0.3,
+        "ex": 1,
+        "ey": -1.5,
+        "rot": 8,
+        "lock": 1,
+        "rt2": 16
+      },
+      "hands": "thumbs"
+    },
+    {
+      "key": "crown",
+      "name": "Crown",
+      "desc": "A crown drops onto its head and it bobs proudly.",
+      "pose": {
+        "sx": 1.75,
+        "sy": 0.3,
+        "ex": 1,
+        "ey": -1.5,
+        "rot": 8,
+        "lock": 1,
+        "rt2": 16
+      }
+    },
+    {
+      "key": "medal",
+      "name": "Medal",
+      "desc": "Shows off a gold medal, chest puffed out.",
+      "pose": {
+        "sx": 1.75,
+        "sy": 0.3,
+        "ex": 1,
+        "ey": -1.5,
+        "rot": 8,
+        "lock": 1,
+        "rt2": 16
+      },
+      "mouth": "grin",
+      "hands": "thumbs"
+    },
+    {
+      "key": "strut",
+      "name": "Strut",
+      "desc": "Struts side to side, leaning back, nose in the air.",
+      "pose": {
+        "sx": 1.75,
+        "sy": 0.3,
+        "ex": 1,
+        "ey": -1.5,
+        "rot": 8,
+        "lock": 1,
+        "rt2": 16
+      }
+    },
+    {
+      "key": "sparkle",
+      "name": "Sparkle",
+      "desc": "Eyes closed in a proud smile while sparkles twinkle round it.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "hands": "thumbs"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 1,
+      "k": "medal",
+      "on": [
+        "v-medal"
+      ],
+      "t": "<g class=\"medal\" transform=\"translate(50 {{a.medy}})\"><g class=\"a msw\"><path class=\"rib\" d=\"M-6 -12L-1.5 -5M6 -12L1.5 -5\"></path><circle class=\"gold\" cx=\"0\" cy=\"1\" r=\"6.5\"></circle><path fill=\"#C98A16\" d=\"M0 -2.8L.9 -.4L3.4 -.3L1.4 1.3L2.1 3.8L0 2.4L-2.1 3.8L-1.4 1.3L-3.4 -.3L-.9 -.4Z\"></path></g><g transform=\"translate(4.5 -2.5)\"><path class=\"a mgl\" fill=\"#FFFFFF\" d=\"M0 -4C.6 -1 1 -.6 4 0C1 .6 .6 1 0 4C-.6 1 -1 .6 -4 0C-1 -.6 -.6 -1 0 -4Z\"></path></g></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 4,
+      "k": "eg-n",
+      "on": [
+        "v-awkward",
+        "v-floaty",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-hum",
+        "v-sparkle",
+        "v-squeeze"
+      ],
+      "t": "<g class=\"eg eg-n\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g></g>"
+    },
+    {
+      "zone": "front",
+      "i": 2,
+      "k": "crown",
+      "on": [
+        "v-crown"
+      ],
+      "t": "<g class=\"crown\" transform=\"translate(50 {{a.top}})\"><path class=\"a cw gold\" d=\"M-11 0L-12.5 -12L-5.5 -6L0 -14.5L5.5 -6L12.5 -12L11 0Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 7,
+      "k": "fx-spark",
+      "on": [
+        "v-chinup",
+        "v-puff",
+        "v-sparkle",
+        "v-stareyes"
+      ],
+      "t": "<g class=\"fx-spark\" fill=\"#F2B33D\"><g transform=\"translate(12 24)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(88 18)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(92 64)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(9 68)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g></g>"
+    }
+  ]
+}

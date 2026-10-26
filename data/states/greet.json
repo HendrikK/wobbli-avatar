@@ -1,0 +1,156 @@
+{
+  "key": "greet",
+  "name": "Greeting",
+  "when": "A new chat, or someone coming back",
+  "group": "talk",
+  "verb": "says hi",
+  "mouth": "talk",
+  "hands": "wave",
+  "pose": {
+    "sx": 1.1,
+    "sy": 1.1,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "grwave",
+      "name": "Wave",
+      "desc": "Happy eyes and a big wave."
+    },
+    {
+      "key": "grpop",
+      "name": "Pop in",
+      "desc": "Pops up out of nowhere with a few sparkles.",
+      "pose": {
+        "sx": 1.15,
+        "sy": 1.15,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "hands": "yay"
+    },
+    {
+      "key": "grtip",
+      "name": "Hat tip",
+      "desc": "Lifts a little top hat to say hello.",
+      "hands": "hattip"
+    },
+    {
+      "key": "grpeek",
+      "name": "Peek in",
+      "desc": "Peeks out from behind a wall, then hops in.",
+      "pose": {
+        "sx": 1.15,
+        "sy": 1.2,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "smile"
+    },
+    {
+      "key": "grwink",
+      "name": "Wink",
+      "desc": "Tilts, winks and adds a sparkle.",
+      "mouth": "smirk",
+      "hands": "peace"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 4,
+      "k": "eg-n",
+      "on": [
+        "v-awkward",
+        "v-floaty",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-hum",
+        "v-sparkle",
+        "v-squeeze"
+      ],
+      "t": "<g class=\"eg eg-n\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 270,
+      "k": "fx-hand",
+      "on": [
+        "v-bywave",
+        "v-grwave"
+      ],
+      "t": "<g class=\"fx-hand\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(85 47)\"><g class=\"a hnd\"><path class=\"hc\" d=\"M-4 0C-6 -4 -5.5 -11 0 -11.5C5.5 -11 6 -4 4 0Z\"></path></g><path class=\"a mot grey\" d=\"M-9 -15Q-12 -10 -10 -5M9 -15Q12 -10 10 -5\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 271,
+      "k": "fx-pops",
+      "on": [
+        "v-grpop"
+      ],
+      "t": "<g class=\"fx-pops\" transform=\"translate(0 {{a.mo}})\"><path class=\"a pop gold\" d=\"M16 21L17.5 24.5L21 26L17.5 27.5L16 31L14.5 27.5L11 26L14.5 24.5Z\"></path><path class=\"a pop gold\" d=\"M84 13L85.5 16.5L89 18L85.5 19.5L84 23L82.5 19.5L79 18L82.5 16.5Z\"></path><path class=\"a pop gold\" d=\"M88 58L89.2 60.8L92 62L89.2 63.2L88 66L86.8 63.2L84 62L86.8 60.8Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 272,
+      "k": "fx-tiphat",
+      "on": [
+        "v-grtip"
+      ],
+      "t": "<g class=\"fx-tiphat\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 18)\"><g class=\"a htip\"><rect class=\"dk\" x=\"-8\" y=\"-15\" width=\"16\" height=\"14\" rx=\"1.5\"></rect><rect class=\"coral\" x=\"-7.6\" y=\"-5.5\" width=\"15.2\" height=\"2.8\"></rect><rect class=\"dk\" x=\"-13\" y=\"-2\" width=\"26\" height=\"3.6\" rx=\"1.8\"></rect></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 273,
+      "k": "fx-wall",
+      "on": [
+        "v-grpeek"
+      ],
+      "t": "<g class=\"fx-wall\"><rect x=\"-26\" y=\"4\" width=\"38\" height=\"88\" rx=\"4\" fill=\"#E2DED6\"></rect><path d=\"M12 8V88\" fill=\"none\" stroke=\"#CFC9BE\" stroke-width=\"2\" stroke-linecap=\"round\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 274,
+      "k": "fx-wsparkle",
+      "on": [
+        "v-grwink"
+      ],
+      "t": "<g class=\"fx-wsparkle\"><g transform=\"translate({{a.wkx}} {{a.wky}})\"><path class=\"a wsp gold\" d=\"M0 -4.5L1.3 -1.3L4.5 0L1.3 1.3L0 4.5L-1.3 1.3L-4.5 0L-1.3 -1.3Z\"></path></g></g>"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+.aa-av .mgg { fill: #FFFFFF; fill-opacity: .55; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; }
+.aa-av .mgh { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 3; stroke-linecap: round; }
+.aa-av .cone { fill: #F2D36B; fill-opacity: .5; }
+.aa-av .ring { fill: none; stroke: #9C9488; stroke-width: 1.8; }
+.aa-av .scent { fill: none; stroke: #B5AC9E; stroke-width: 2.2; stroke-linecap: round; }
+.aa-av.v-selist .fx-list { display: inline; }
+.aa-av.v-selist .mg { animation: aa-B-mg 2.4s ease-in-out infinite; }
+.aa-av.v-selist .gz { animation: aa-B-mgeyes 2.4s ease-in-out infinite; }
+.aa-av.v-seflash .fx-flash { display: inline; }
+.aa-av.v-seflash .beam { animation: aa-B-beam 2.4s ease-in-out infinite; }
+.aa-av.v-seflash .gz { animation: aa-B-beameyes 2.4s ease-in-out infinite; }
+.aa-av.v-seflash .w { animation: aa-B-beambody 2.4s ease-in-out infinite; }
+.aa-av.v-seradar .fx-radar { display: inline; }
+.aa-av.v-seradar .ring { opacity: 0; animation: aa-B-ring 2.4s ease-out infinite backwards; }
+.aa-av.v-seradar .ring:nth-of-type(2) { animation-delay: .8s; }
+.aa-av.v-seradar .ring:nth-of-type(3) { animation-delay: 1.6s; }
+.aa-av.v-seradar .blip { animation: aa-B-blip 2.4s infinite; }
+.aa-av.v-seradar .gz { animation: aa-B-blipeyes 2.4s infinite; }
+.aa-av.v-sepeek .w { animation: aa-B-peek 3.2s ease-in-out infinite; }
+.aa-av.v-sepeek .gz { animation: aa-B-peekeyes 3.2s ease-in-out infinite; }
+.aa-av.v-sesniff .fx-scent { display: inline; }
+.aa-av.v-sesniff .scent { opacity: 0; animation: aa-B-scent 1.6s ease-in-out infinite backwards; }
+.aa-av.v-sesniff .scent:nth-of-type(2) { animation-delay: .8s; }
+.aa-av.v-sesniff .w { transform: scale(1.06, .9); animation: aa-B-sniff .8s ease-in-out infinite; }
+.aa-av.v-sesniff .gz { transform: translate(4px, 3px); }
+@keyframes aa-B-mg { 0% { translate: -7px 0; } 25% { translate: 7px 0; } 33% { translate: -7px 5px; } 58% { translate: 7px 5px; } 66% { translate: -7px 10px; } 91% { translate: 7px 10px; } 100% { translate: -7px 0; } }
+@keyframes aa-B-mgeyes { 0% { translate: calc(var(--amp, 1) * -3px) 3px; } 25% { translate: calc(var(--amp, 1) * 3px) 3px; } 33% { translate: calc(var(--amp, 1) * -3px) 3.5px; } 58% { translate: calc(var(--amp, 1) * 3px) 3.5px; } 66% { translate: calc(var(--amp, 1) * -3px) 4px; } 91% { translate: calc(var(--amp, 1) * 3px) 4px; } 100% { translate: calc(var(--amp, 1) * -3px) 3px; } }
+@keyframes aa-B-beam { 0%, 100% { rotate: -22deg; } 50% { rotate: 22deg; } }
+@keyframes aa-B-beameyes { 0%, 100% { translate: calc(var(--amp, 1) * 5px) calc(var(--amp, 1) * -3px); } 50% { translate: calc(var(--amp, 1) * 5px) calc(var(--amp, 1) * 3px); } }
+@keyframes aa-B-beambody { 0%, 100% { rotate: calc(var(--amp, 1) * 2deg); } 50% { rotate: calc(var(--amp, 1) * 4deg); } }
+@keyframes aa-B-ring { 0% { scale: .9; opacity: .7; } 100% { scale: 1.6; opacity: 0; } }
+@keyframes aa-B-blip { 0%, 45% { scale: 0; opacity: 0; } 52% { scale: 1.4; opacity: 1; } 60%, 80% { scale: 1; opacity: 1; } 90%, 100% { scale: 0; opacity: 0; } }
+@keyframes aa-B-blipeyes { 0%, 48%, 92%, 100% { translate: 0 0; } 54%, 86% { translate: calc(var(--amp, 1) * 5px) calc(var(--amp, 1) * -4px); } }
+@keyframes aa-B-peek { 0%, 100% { rotate: 0deg; translate: 0 0; } 15%, 35% { rotate: calc(var(--amp, 1) * -16deg); translate: calc(var(--amp, 1) * -5px) 0; } 50% { rotate: 0deg; translate: 0 0; } 65%, 85% { rotate: calc(var(--amp, 1) * 16deg); translate: calc(var(--amp, 1) * 5px) 0; } }
+@keyframes aa-B-peekeyes { 0%, 50%, 100% { translate: 0 0; } 15%, 35% { translate: calc(var(--amp, 1) * -6px) -1px; } 65%, 85% { translate: calc(var(--amp, 1) * 6px) -1px; } }
+@keyframes aa-B-scent { 0% { translate: 8px 0; opacity: 0; } 30% { opacity: 1; } 100% { translate: -10px 0; opacity: 0; } }
+@keyframes aa-B-sniff { 0%, 100% { translate: calc(var(--amp, 1) * -2px) 0; rotate: calc(var(--amp, 1) * 3deg); } 25% { translate: 0 calc(var(--amp, 1) * -1.5px); } 50% { translate: calc(var(--amp, 1) * 2px) 0; rotate: calc(var(--amp, 1) * 5deg); } 75% { translate: 0 calc(var(--amp, 1) * -1.5px); } }

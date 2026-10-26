@@ -1,0 +1,110 @@
+{
+  "key": "build",
+  "name": "Building",
+  "when": "Assembling a dashboard, report or deck",
+  "group": "work",
+  "verb": "builds",
+  "mouth": "tongue",
+  "hands": "hammer",
+  "pose": {
+    "sx": 1.1,
+    "sy": 0.8,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "bustack",
+      "name": "Stack",
+      "desc": "Blocks drop onto a pile beside it, each one with a thud."
+    },
+    {
+      "key": "buhammer",
+      "name": "Hammer",
+      "desc": "Hard hat on, hammering away with a spark on every hit.",
+      "pose": {
+        "sx": 1.4,
+        "sy": 0.4,
+        "ex": 0,
+        "ey": 0,
+        "rot": 10,
+        "lock": 1
+      }
+    },
+    {
+      "key": "bucards",
+      "name": "Tiles",
+      "desc": "Dashboard tiles pop into a grid above its head."
+    },
+    {
+      "key": "buprint",
+      "name": "Blueprint",
+      "desc": "A plan draws itself out on blueprint paper."
+    },
+    {
+      "key": "bucrane",
+      "name": "Crane",
+      "desc": "Hard hat on, a crane lowers a block into its head.",
+      "hands": "reach"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 6,
+      "k": "att-hard",
+      "on": [
+        "v-bucrane",
+        "v-buhammer"
+      ],
+      "t": "<g class=\"att att-hard\" transform=\"translate(50 {{a.hat}})\"><path class=\"hh\" d=\"M-18 0A18 15 0 0 1 18 0Z\"></path><path class=\"hhb\" d=\"M-22 0H22M0 -14V-4\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 231,
+      "k": "fx-blocks",
+      "on": [
+        "v-bustack"
+      ],
+      "t": "<g class=\"fx-blocks\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(90 0)\"><g><rect class=\"a blk hc\" x=\"-7\" y=\"71\" width=\"14\" height=\"10\" rx=\"1.5\"></rect><rect class=\"a blk gst\" x=\"-7\" y=\"61\" width=\"14\" height=\"10\" rx=\"1.5\"></rect><rect class=\"a blk cst\" x=\"-7\" y=\"51\" width=\"14\" height=\"10\" rx=\"1.5\"></rect></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 232,
+      "k": "fx-hammer",
+      "on": [
+        "v-buhammer"
+      ],
+      "t": "<g class=\"fx-hammer\" transform=\"translate({{a.side}} {{a.dn}})\"><rect class=\"bx\" x=\"84\" y=\"73\" width=\"12\" height=\"8\" rx=\"1.5\"></rect><g transform=\"translate(74 62)\"><g class=\"vb0 hm\"><path d=\"M0 0H17\" fill=\"none\" stroke=\"#B98A4E\" stroke-width=\"3\" stroke-linecap=\"round\"></path><rect class=\"dk\" x=\"15.5\" y=\"-5\" width=\"6.5\" height=\"10.5\" rx=\"1.5\"></rect></g></g><path class=\"a spk\" d=\"M90 65V68.5M83.5 69L86 71M96.5 69L94 71\" fill=\"none\" stroke=\"#E89B1A\" stroke-width=\"2\" stroke-linecap=\"round\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 233,
+      "k": "fx-cards",
+      "on": [
+        "v-bucards"
+      ],
+      "t": "<g class=\"fx-cards\" transform=\"translate(0 {{a.up}})\"><g><rect class=\"a crd pw\" x=\"35\" y=\"-11\" width=\"14\" height=\"10\" rx=\"2\"></rect><rect class=\"a crd gst\" x=\"51\" y=\"-11\" width=\"14\" height=\"10\" rx=\"2\"></rect><rect class=\"a crd hc\" x=\"35\" y=\"1\" width=\"14\" height=\"10\" rx=\"2\"></rect><rect class=\"a crd pw\" x=\"51\" y=\"1\" width=\"14\" height=\"10\" rx=\"2\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 234,
+      "k": "fx-blueprint",
+      "on": [
+        "v-buprint"
+      ],
+      "t": "<g class=\"fx-blueprint\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"bp\" x=\"-17\" y=\"-11\" width=\"34\" height=\"22\" rx=\"2\"></rect><path d=\"M-14 -5H14M-14 1H14M-14 7H14M-9 -10V10M0 -10V10M9 -10V10\" fill=\"none\" stroke=\"#FFFFFF\" stroke-opacity=\".18\" stroke-width=\".8\"></path><path class=\"bpl\" d=\"M-9 8V0L0 -7L9 0V8ZM-2.5 8V2.5H2.5V8\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 235,
+      "k": "fx-crane",
+      "on": [
+        "v-bucrane"
+      ],
+      "t": "<g class=\"fx-crane\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 0)\"><g class=\"a hook\"><path class=\"wire\" d=\"M0 -18V1\"></path><circle cx=\"0\" cy=\"3\" r=\"2\" fill=\"none\" stroke-width=\"1.8\" style=\"stroke: var(--aa-ink, #3A3833)\"></circle><path class=\"wire\" d=\"M-6 6L0 4.5L6 6\"></path></g><g class=\"a cblk\"><rect class=\"gst\" x=\"-7\" y=\"6\" width=\"14\" height=\"9\" rx=\"1.5\"></rect></g></g></g>"
+    }
+  ]
+}

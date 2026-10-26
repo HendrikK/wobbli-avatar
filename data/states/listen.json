@@ -1,0 +1,116 @@
+{
+  "key": "listen",
+  "name": "Listening",
+  "when": "Taking voice input or a long paste",
+  "group": "talk",
+  "verb": "listens",
+  "mouth": "smile",
+  "hands": "ear",
+  "pose": {
+    "sx": 1.05,
+    "sy": 0.85,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "liwaves",
+      "name": "Sound in",
+      "desc": "Sound waves roll in from the side and it pulses along."
+    },
+    {
+      "key": "liphones",
+      "name": "Headphones",
+      "desc": "Headphones on, nodding along.",
+      "pose": {
+        "sx": 1.1,
+        "sy": 0.6,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "limeter",
+      "name": "Level meter",
+      "desc": "A voice meter bounces underneath."
+    },
+    {
+      "key": "lilean",
+      "name": "Lean in",
+      "desc": "Tilts an ear toward you with its eyes half closed.",
+      "pose": {
+        "sx": 1.3,
+        "sy": 0.22,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "limic",
+      "name": "Mic",
+      "desc": "A mic sits in front, picking up rings of sound."
+    }
+  ],
+  "parts": [
+    {
+      "zone": "back",
+      "i": 0,
+      "k": "att-phones",
+      "on": [
+        "v-liphones"
+      ],
+      "t": "<g class=\"att att-phones\"><path class=\"phb\" d=\"{{a.hpd}}\"></path></g>"
+    },
+    {
+      "zone": "front",
+      "i": 3,
+      "k": "att-phones",
+      "on": [
+        "v-liphones"
+      ],
+      "t": "<g class=\"att att-phones\"><path class=\"phc\" d=\"{{a.hpc}}\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 266,
+      "k": "fx-inwaves",
+      "on": [
+        "v-liwaves"
+      ],
+      "t": "<g class=\"fx-inwaves\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(10 48)\"><path class=\"a lw thin\" d=\"M-2 -7Q3 0 -2 7\"></path><path class=\"a lw thin\" d=\"M-2 -7Q3 0 -2 7\"></path><path class=\"a lw thin\" d=\"M-2 -7Q3 0 -2 7\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 267,
+      "k": "fx-meter",
+      "on": [
+        "v-limeter"
+      ],
+      "t": "<g class=\"fx-meter\" transform=\"translate(0 {{a.dn}})\"><g><rect class=\"a mb hc\" x=\"36\" y=\"85\" width=\"4\" height=\"12\" rx=\"2\"></rect><rect class=\"a mb hc\" x=\"42\" y=\"85\" width=\"4\" height=\"12\" rx=\"2\"></rect><rect class=\"a mb hc\" x=\"48\" y=\"85\" width=\"4\" height=\"12\" rx=\"2\"></rect><rect class=\"a mb hc\" x=\"54\" y=\"85\" width=\"4\" height=\"12\" rx=\"2\"></rect><rect class=\"a mb hc\" x=\"60\" y=\"85\" width=\"4\" height=\"12\" rx=\"2\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 268,
+      "k": "fx-ear",
+      "on": [
+        "v-lilean"
+      ],
+      "t": "<g class=\"fx-ear\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(10 40)\"><path class=\"a ea thin\" d=\"M0 -5Q3 0 0 5\"></path><path class=\"a ea thin\" d=\"M-5 -8Q0 0 -5 8\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 269,
+      "k": "fx-mic",
+      "on": [
+        "v-limic"
+      ],
+      "t": "<g class=\"fx-mic\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 80)\"><path class=\"lnk2\" d=\"M-6 -6Q-6 3 0 3Q6 3 6 -6M0 3V8M-4 8H4\"></path><rect class=\"dk\" x=\"-3.6\" y=\"-15\" width=\"7.2\" height=\"13\" rx=\"3.6\"></rect><path d=\"M-1.8 -11.5H1.8M-1.8 -8.5H1.8\" fill=\"none\" stroke=\"#FFFFFF\" stroke-opacity=\".55\" stroke-width=\"1.2\" stroke-linecap=\"round\"></path><g><path class=\"a mr thin\" d=\"M-9 -14Q-12 -8.5 -9 -3M9 -14Q12 -8.5 9 -3\"></path><path class=\"a mr thin\" d=\"M-9 -14Q-12 -8.5 -9 -3M9 -14Q12 -8.5 9 -3\"></path></g></g></g>"
+    }
+  ]
+}

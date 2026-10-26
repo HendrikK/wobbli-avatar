@@ -1,0 +1,105 @@
+{
+  "key": "sad",
+  "name": "Sad",
+  "when": "Error · no results",
+  "group": "chat",
+  "verb": "slumps",
+  "mouth": "frown",
+  "hands": "droop",
+  "pose": null,
+  "variants": [
+    {
+      "key": "sigh",
+      "name": "Sigh",
+      "desc": "Eyes droop low, the body sinks and lets out slow sighs.",
+      "pose": {
+        "sx": 0.62,
+        "sy": 0.5,
+        "ex": 2.4,
+        "ey": 5.4,
+        "rot": -24,
+        "lock": 1
+      },
+      "mouth": "osmall",
+      "hands": "droop"
+    },
+    {
+      "key": "rain",
+      "name": "Rain cloud",
+      "desc": "A little grey cloud parks overhead and drizzles on it.",
+      "pose": {
+        "sx": 0.62,
+        "sy": 0.5,
+        "ex": 2.4,
+        "ey": 5.4,
+        "rot": -24,
+        "lock": 1
+      },
+      "mouth": "wail"
+    },
+    {
+      "key": "deflate",
+      "name": "Deflate",
+      "desc": "Slowly loses air and flattens out, then barely recovers.",
+      "pose": {
+        "sx": 0.7,
+        "sy": 0.45,
+        "ex": 2.6,
+        "ey": 6,
+        "rot": -20,
+        "lock": 1
+      },
+      "mouth": "wobble",
+      "hands": "droop"
+    },
+    {
+      "key": "tear",
+      "name": "Teardrop",
+      "desc": "A single tear wells up, rolls down and drops off.",
+      "pose": {
+        "sx": 0.66,
+        "sy": 0.56,
+        "ex": 2,
+        "ey": 5,
+        "rot": -22,
+        "lock": 1
+      },
+      "mouth": "wail",
+      "hands": "rubeye"
+    },
+    {
+      "key": "shake",
+      "name": "Head shake",
+      "desc": "Eyes shut, it shakes its head slowly. No luck.",
+      "pose": {
+        "sx": 1.3,
+        "sy": 0.22,
+        "ex": 1,
+        "ey": 5,
+        "rot": -10,
+        "lock": 1
+      },
+      "hands": "droop"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 0,
+      "k": "tear",
+      "on": [
+        "v-tear"
+      ],
+      "t": "<g transform=\"translate({{a.tx}} {{a.ty}})\"><path class=\"a tear\" d=\"M0 -6C2.6 -2.2 4.2 0.6 4.2 2.6A4.2 4.2 0 0 1 -4.2 2.6C-4.2 0.6 -2.6 -2.2 0 -6Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 9,
+      "k": "fx-rain",
+      "on": [
+        "v-rain"
+      ],
+      "t": "<g class=\"fx-rain\" transform=\"translate(0 {{a.up}})\"><g class=\"a cloud\" fill=\"#B9B3A9\"><circle cx=\"40\" cy=\"1\" r=\"7\"></circle><circle cx=\"50\" cy=\"-3\" r=\"9\"></circle><circle cx=\"60\" cy=\"1.5\" r=\"6.5\"></circle><rect x=\"35\" y=\"0\" width=\"30\" height=\"8\" rx=\"4\"></rect></g><g><path class=\"a dr rain\" d=\"M42 11V16\"></path><path class=\"a dr rain\" d=\"M50 12V17\"></path><path class=\"a dr rain\" d=\"M58 11V16\"></path></g></g>"
+    }
+  ]
+}

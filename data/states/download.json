@@ -1,0 +1,95 @@
+{
+  "key": "download",
+  "name": "Downloading",
+  "when": "Saving a report, chart or file",
+  "group": "data",
+  "verb": "downloads",
+  "mouth": "smile",
+  "hands": "lift",
+  "pose": {
+    "sx": 1.1,
+    "sy": 1.05,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "dlarrow",
+      "name": "Arrow",
+      "desc": "A bold arrow drops in from above and lands with a little catch."
+    },
+    {
+      "key": "dlcatch",
+      "name": "Catch",
+      "desc": "A parcel falls onto its head and gets swallowed up."
+    },
+    {
+      "key": "dlbar",
+      "name": "Progress",
+      "desc": "A bar fills underneath while its eyes follow the leading edge.",
+      "hands": "type"
+    },
+    {
+      "key": "dlchute",
+      "name": "Parachute",
+      "desc": "A parcel floats down on a parachute and lands on its head."
+    },
+    {
+      "key": "dlgulp",
+      "name": "Gulp",
+      "desc": "A stream of data bits pours in from above and it gulps them down.",
+      "hands": "rest"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 199,
+      "k": "fx-darrow",
+      "on": [
+        "v-dlarrow"
+      ],
+      "t": "<g class=\"fx-darrow\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 0)\"><path class=\"a da dk\" d=\"M-3.2 -11H3.2V-2H8.5L0 7L-8.5 -2H-3.2Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 200,
+      "k": "fx-dbox",
+      "on": [
+        "v-dlcatch",
+        "v-ullift",
+        "v-ultoss"
+      ],
+      "t": "<g class=\"fx-dbox\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 2)\"><g class=\"a db\"><rect class=\"bx\" x=\"-8\" y=\"-7\" width=\"16\" height=\"14\" rx=\"2\"></rect><path class=\"bxl\" d=\"M-8 -2H8M0 -7V-2\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 201,
+      "k": "fx-dbar",
+      "on": [
+        "v-dlbar"
+      ],
+      "t": "<g class=\"fx-dbar\" transform=\"translate(0 {{a.dn}})\"><rect class=\"track\" x=\"24\" y=\"88\" width=\"52\" height=\"6\" rx=\"3\"></rect><rect class=\"a dfill head\" x=\"24\" y=\"88\" width=\"52\" height=\"6\" rx=\"3\"></rect></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 202,
+      "k": "fx-chute",
+      "on": [
+        "v-dlchute"
+      ],
+      "t": "<g class=\"fx-chute\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 4)\"><g class=\"a chute\"><path class=\"coral\" d=\"M-12 -12Q0 -25 12 -12Z\"></path><path class=\"thin\" d=\"M-12 -12L-3 -3M12 -12L3 -3M0 -14V-3\"></path><rect class=\"bx\" x=\"-4.5\" y=\"-4\" width=\"9\" height=\"8\" rx=\"1.5\"></rect></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 203,
+      "k": "fx-dbits",
+      "on": [
+        "v-dlgulp"
+      ],
+      "t": "<g class=\"fx-dbits\" transform=\"translate(0 {{a.up}})\"><rect class=\"a dbit head\" x=\"43.5\" y=\"-2.5\" width=\"5\" height=\"5\" rx=\"1\"></rect><rect class=\"a dbit gold2\" x=\"49.5\" y=\"-2.5\" width=\"5\" height=\"5\" rx=\"1\"></rect><rect class=\"a dbit head\" x=\"46.5\" y=\"-2.5\" width=\"5\" height=\"5\" rx=\"1\"></rect><rect class=\"a dbit coral\" x=\"51.5\" y=\"-2.5\" width=\"5\" height=\"5\" rx=\"1\"></rect></g>"
+    }
+  ]
+}

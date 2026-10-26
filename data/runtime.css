@@ -1,0 +1,16 @@
+/* Written for the package (not from the prototype): sizing, the dark theme, pausing and the live region.
+   Dark theme: theme="dark", or theme="auto" on a dark page (the runtime sets .aa-dark), or a .dark /
+   [data-theme="dark"] ancestor before the runtime has started. */
+:root { --aa-css: 1; }
+wobbli-avatar, .aa-host { display: inline-block; position: relative; vertical-align: middle; line-height: 0; }
+.aa-av { width: 100%; height: 100%; }
+.aa-av.aa-theme-dark, .aa-av.aa-dark, :is(.dark, [data-theme="dark"]) .aa-av:not(.aa-theme-light) { --aa-ink: var(--aa-ink-dark, #E6E1D6); }
+:is(.aa-av.aa-theme-dark, .aa-av.aa-dark, :is(.dark, [data-theme="dark"]) .aa-av:not(.aa-theme-light)) :is(.dk, .f-k, .f-d, .bino, .gear, .codebg, [fill="#3A3833"]) { stroke: var(--aa-ink); stroke-width: 1.6px; stroke-linejoin: round; paint-order: stroke fill; }
+.aa-av .sty-rd, .aa-av .sty-rl { fill: none; stroke: none; stroke-width: 2.6px; stroke-linejoin: round; stroke-linecap: round; }
+.aa-av .sty-rl { stroke: #3A3833; stroke-opacity: .3; }
+:is(.aa-av.aa-theme-dark, .aa-av.aa-dark, :is(.dark, [data-theme="dark"]) .aa-av:not(.aa-theme-light)) .sty-rd { stroke: #E6E1D6; stroke-opacity: .5; }
+:is(.aa-av.aa-theme-dark, .aa-av.aa-dark, :is(.dark, [data-theme="dark"]) .aa-av:not(.aa-theme-light)) .sty-rl { stroke: none; }
+.aa-av.aa-theme-dark .gsh, :is(.dark, [data-theme="dark"]) .aa-av:not(.aa-theme-light) .gsh { opacity: calc(.42 * var(--aa-shadow-strength, 1)); }
+/* off screen or in a hidden tab: every loop holds where it is */
+.aa-av.aa-paused, .aa-av.aa-paused * { animation-play-state: paused !important; }
+.aa-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }

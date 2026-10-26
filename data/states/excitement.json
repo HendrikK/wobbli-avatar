@@ -1,0 +1,140 @@
+{
+  "key": "excitement",
+  "name": "Excitement",
+  "when": "Big win · a record or milestone in the numbers",
+  "group": "feelings",
+  "verb": "buzzes",
+  "mouth": "laugh",
+  "hands": "cheer",
+  "pose": null,
+  "variants": [
+    {
+      "key": "bounce",
+      "name": "Bounce",
+      "desc": "Bounces on the spot, too quick to sit still.",
+      "pose": {
+        "sx": 1.25,
+        "sy": 1.15,
+        "ex": 0.6,
+        "ey": -2,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "stareyes",
+      "name": "Star eyes",
+      "desc": "Spinning gold stars for eyes, buzzing with energy.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "fireworks",
+      "name": "Fireworks",
+      "desc": "Fireworks pop around it and it hops at every one.",
+      "pose": {
+        "sx": 1.25,
+        "sy": 1.15,
+        "ex": 0.6,
+        "ey": -2,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "o"
+    },
+    {
+      "key": "wiggle",
+      "name": "Wiggle",
+      "desc": "A fast happy wiggle, then a hop, with little squeals.",
+      "pose": {
+        "sx": 1.6,
+        "sy": 0.3,
+        "ex": 1.3,
+        "ey": -4,
+        "rot": -6,
+        "lock": 1
+      },
+      "hands": "clap"
+    },
+    {
+      "key": "zoomies",
+      "name": "Zoomies",
+      "desc": "Dashes left and right, spinning round at each end.",
+      "pose": {
+        "sx": 1.2,
+        "sy": 0.8,
+        "ex": 0,
+        "ey": -1,
+        "rot": 0,
+        "lock": 1
+      }
+    }
+  ],
+  "parts": [
+    {
+      "zone": "pre",
+      "i": 0,
+      "k": "spd",
+      "on": [
+        "v-zoomies"
+      ],
+      "t": "<g class=\"spd\"><path class=\"grey\" d=\"{{a.spd}}\"></path></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 1,
+      "k": "eg-star",
+      "on": [
+        "v-stareyes"
+      ],
+      "t": "<g class=\"eg eg-star\" fill=\"#F2B33D\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"a\" d=\"M0 -7L1.82 -2.51L6.66 -2.16L2.95 0.96L4.11 5.66L0 3.1L-4.11 5.66L-2.95 0.96L-6.66 -2.16L-1.82 -2.51Z\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"a\" d=\"M0 -7L1.82 -2.51L6.66 -2.16L2.95 0.96L4.11 5.66L0 3.1L-4.11 5.66L-2.95 0.96L-6.66 -2.16L-1.82 -2.51Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 7,
+      "k": "fx-spark",
+      "on": [
+        "v-chinup",
+        "v-puff",
+        "v-sparkle",
+        "v-stareyes"
+      ],
+      "t": "<g class=\"fx-spark\" fill=\"#F2B33D\"><g transform=\"translate(12 24)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(88 18)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(92 64)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(9 68)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 25,
+      "k": "fx-fw",
+      "on": [
+        "v-fireworks"
+      ],
+      "t": "<g class=\"fx-fw\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 10)\"><path class=\"a fwb fwl\" stroke=\"#F2B33D\" d=\"M3 0L9 0M2.12 2.12L6.36 6.36M0 3L0 9M-2.12 2.12L-6.36 6.36M-3 0L-9 0M-2.12 -2.12L-6.36 -6.36M0 -3L0 -9M2.12 -2.12L6.36 -6.36\"></path></g><g transform=\"translate(86 6)\"><path class=\"a fwb fwl\" stroke=\"#F27863\" d=\"M3 0L9 0M2.12 2.12L6.36 6.36M0 3L0 9M-2.12 2.12L-6.36 6.36M-3 0L-9 0M-2.12 -2.12L-6.36 -6.36M0 -3L0 -9M2.12 -2.12L6.36 -6.36\"></path></g><g transform=\"translate(50 -8)\"><path class=\"a fwb fwl\" stroke=\"currentColor\" d=\"M3 0L9 0M2.12 2.12L6.36 6.36M0 3L0 9M-2.12 2.12L-6.36 6.36M-3 0L-9 0M-2.12 -2.12L-6.36 -6.36M0 -3L0 -9M2.12 -2.12L6.36 -6.36\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 26,
+      "k": "fx-squeal",
+      "on": [
+        "v-bounce",
+        "v-wiggle"
+      ],
+      "t": "<g class=\"fx-squeal\" transform=\"translate(0 {{a.up}})\"><path class=\"a sq thin\" d=\"M14 30Q9 24 14 18M19 28Q16 24 19 20\"></path><path class=\"a sq thin\" d=\"M86 30Q91 24 86 18M81 28Q84 24 81 20\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 27,
+      "k": "fx-shadow",
+      "on": [
+        "v-bounce",
+        "v-float"
+      ],
+      "t": "<g class=\"fx-shadow\" transform=\"translate(0 {{a.dn}})\"><ellipse class=\"a sh shadowc\" cx=\"50\" cy=\"86\" rx=\"22\" ry=\"3.6\"></ellipse></g>"
+    }
+  ]
+}

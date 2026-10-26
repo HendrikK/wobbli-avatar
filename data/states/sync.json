@@ -1,0 +1,96 @@
+{
+  "key": "sync",
+  "name": "Syncing",
+  "when": "Keeping SharePoint, OneDrive or a source up to date",
+  "group": "data",
+  "verb": "syncs",
+  "mouth": "smile",
+  "hands": "reach",
+  "pose": {
+    "sx": 1,
+    "sy": 0.9,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "syarrows",
+      "name": "Circle arrows",
+      "desc": "Two arrows chase each other around it.",
+      "hands": "rest"
+    },
+    {
+      "key": "sypong",
+      "name": "Ping-pong",
+      "desc": "A data dot bounces between it and a cloud.",
+      "hands": "reach"
+    },
+    {
+      "key": "syswap",
+      "name": "Swap",
+      "desc": "Two cards trade places over its head.",
+      "hands": "lift"
+    },
+    {
+      "key": "sytwin",
+      "name": "Twin",
+      "desc": "A ghost twin bobs along with it, linked by a dotted line.",
+      "hands": "wave"
+    },
+    {
+      "key": "sygears",
+      "name": "Gears",
+      "desc": "Two gears mesh and turn beside it.",
+      "hands": "hammer"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 207,
+      "k": "fx-cyc",
+      "on": [
+        "v-syarrows"
+      ],
+      "t": "<g class=\"fx-cyc\" transform=\"translate(0 {{a.mo}})\"><g class=\"a cyc\"><path class=\"lnk\" d=\"M7.71 32.61A45 45 0 0 1 84.47 19.07M83.83 11.78L84.47 19.07L77.4 17.18\"></path><path class=\"lnk\" d=\"M92.29 63.39A45 45 0 0 1 15.53 76.93M16.17 84.22L15.53 76.93L22.6 78.82\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 208,
+      "k": "fx-ppong",
+      "on": [
+        "v-sypong"
+      ],
+      "t": "<g class=\"fx-ppong\" transform=\"translate(0 {{a.up}})\"><g fill=\"#CFC9BE\"><circle cx=\"85\" cy=\"20\" r=\"5\"></circle><circle cx=\"91\" cy=\"17\" r=\"6.5\"></circle><circle cx=\"97\" cy=\"21\" r=\"4.5\"></circle><rect x=\"83\" y=\"19\" width=\"16\" height=\"6\" rx=\"3\"></rect></g><circle class=\"a pp head\" cx=\"52\" cy=\"14\" r=\"3.6\"></circle></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 209,
+      "k": "fx-swap",
+      "on": [
+        "v-syswap"
+      ],
+      "t": "<g class=\"fx-swap\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(38 2)\"><rect class=\"a sw1 pw\" x=\"-6\" y=\"-7.5\" width=\"12\" height=\"15\" rx=\"2\"></rect></g><g transform=\"translate(62 2)\"><rect class=\"a sw2 hc\" x=\"-6\" y=\"-7.5\" width=\"12\" height=\"15\" rx=\"2\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 210,
+      "k": "fx-twin",
+      "on": [
+        "v-sytwin"
+      ],
+      "t": "<g class=\"fx-twin\"><path class=\"tline\" d=\"M78 48H90\"></path><g transform=\"translate(83 30) scale(.42)\"><g class=\"a twn\"><path class=\"twinb\" d=\"{{a.body}}\"></path><path fill=\"{{a.eye}}\" d=\"{{a.ld}}\"></path><path fill=\"{{a.eye}}\" d=\"{{a.rd}}\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 211,
+      "k": "fx-gears",
+      "on": [
+        "v-sygears"
+      ],
+      "t": "<g class=\"fx-gears\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(78 8)\"><path class=\"a g1 gear\" d=\"M8.47 0.67L8.27 1.98L5.64 2.33L5.2 3.19L6.46 5.52L5.52 6.46L3.19 5.2L2.33 5.64L1.98 8.27L0.67 8.47L-0.48 6.08L-1.42 5.93L-3.25 7.85L-4.44 7.25L-3.96 4.64L-4.64 3.96L-7.25 4.44L-7.85 3.25L-5.93 1.42L-6.08 0.48L-8.47 -0.67L-8.27 -1.98L-5.64 -2.33L-5.2 -3.19L-6.46 -5.52L-5.52 -6.46L-3.19 -5.2L-2.33 -5.64L-1.98 -8.27L-0.67 -8.47L0.48 -6.08L1.42 -5.93L3.25 -7.85L4.44 -7.25L3.96 -4.64L4.64 -3.96L7.25 -4.44L7.85 -3.25L5.93 -1.42L6.08 -0.48ZM2.8 0A2.8 2.8 0 1 0 -2.8 0A2.8 2.8 0 1 0 2.8 0Z\"></path></g><g transform=\"translate(88.5 15.5)\"><path class=\"a g2 gear\" d=\"M5.96 0.67L5.66 1.98L3.39 2.13L2.83 2.83L3.19 5.08L1.98 5.66L0.45 3.97L-0.45 3.97L-1.98 5.66L-3.19 5.08L-2.83 2.83L-3.39 2.13L-5.66 1.98L-5.96 0.67L-3.97 -0.45L-3.78 -1.32L-5.08 -3.19L-4.24 -4.24L-2.13 -3.39L-1.32 -3.78L-0.67 -5.96L0.67 -5.96L1.32 -3.78L2.13 -3.39L4.24 -4.24L5.08 -3.19L3.78 -1.32L3.97 -0.45ZM2 0A2 2 0 1 0 -2 0A2 2 0 1 0 2 0Z\"></path></g></g>"
+    }
+  ]
+}

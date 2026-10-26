@@ -1,0 +1,141 @@
+{
+  "key": "shame",
+  "name": "Shame",
+  "when": "The user caught its mistake",
+  "group": "feelings",
+  "verb": "blushes",
+  "mouth": "wobble",
+  "hands": "covereyes",
+  "pose": null,
+  "variants": [
+    {
+      "key": "blush",
+      "name": "Blush",
+      "desc": "Looks down and away while the blush deepens.",
+      "pose": {
+        "sx": 0.8,
+        "sy": 0.55,
+        "ex": 1.2,
+        "ey": 4,
+        "rot": -14,
+        "lock": 1
+      },
+      "hands": "cheeks"
+    },
+    {
+      "key": "shrink",
+      "name": "Shrink",
+      "desc": "Wishes it were smaller, and slowly gets there.",
+      "pose": {
+        "sx": 0.8,
+        "sy": 0.55,
+        "ex": 1.2,
+        "ey": 4,
+        "rot": -14,
+        "lock": 1
+      },
+      "mouth": "frown",
+      "hands": "droop"
+    },
+    {
+      "key": "peek",
+      "name": "Peek",
+      "desc": "Eyes shut tight, then one eye peeks open to check.",
+      "pose": {
+        "sx": 1.3,
+        "sy": 0.2,
+        "ex": 0.6,
+        "ey": 2,
+        "rot": -6,
+        "lock": 1
+      },
+      "hands": "covereyes"
+    },
+    {
+      "key": "fidget",
+      "name": "Fidget",
+      "desc": "Shuffles from side to side, eyes on the floor.",
+      "pose": {
+        "sx": 0.8,
+        "sy": 0.6,
+        "ex": 1,
+        "ey": 3.5,
+        "rot": -12,
+        "lock": 1
+      },
+      "hands": "clasp"
+    },
+    {
+      "key": "awkward",
+      "name": "Awkward laugh",
+      "desc": "A forced smile, a nervous little laugh and a bead of sweat.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "eek",
+      "hands": "scratch"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 4,
+      "k": "eg-n",
+      "on": [
+        "v-awkward",
+        "v-floaty",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-hum",
+        "v-sparkle",
+        "v-squeeze"
+      ],
+      "t": "<g class=\"eg eg-n\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g></g>"
+    },
+    {
+      "zone": "front",
+      "i": 1,
+      "k": "sw",
+      "on": [
+        "v-awkward",
+        "v-qubreath",
+        "v-sweatdrop",
+        "v-tremble"
+      ],
+      "t": "<g transform=\"translate({{a.swx}} {{a.swy}})\"><path class=\"a sw\" d=\"M0 -7C2.6 -2.6 4.3 0 4.3 2.4A4.3 4.3 0 0 1 -4.3 2.4C-4.3 0 -2.6 -2.6 0 -7Z\"></path></g>"
+    }
+  ]
+}

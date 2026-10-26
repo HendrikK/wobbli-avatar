@@ -1,0 +1,40 @@
+.aa-av .ray { fill: none; stroke: #F2B33D; stroke-width: 2.4; stroke-linecap: round; }
+.aa-av .shadowc { fill: #3A3833; opacity: .18; }
+.aa-av.v-purr .ey, .aa-av.v-float .ey, .aa-av.v-bask .ey, .aa-av.v-hum .ey { opacity: 0; }
+.aa-av.v-purr .eg-u, .aa-av.v-purr .cheeks { display: inline; }
+.aa-av.v-purr .cheeks { opacity: .35; }
+.aa-av.v-purr .w { animation: aa-bb-deepbreath 3.4s ease-in-out infinite; }
+.aa-av.v-purr .sp { animation: aa-bb-purr .08s linear infinite; }
+.aa-av.v-doze .e > path { animation: none; }
+.aa-av.v-doze .w { animation: aa-bb-doze 3.6s ease-in-out infinite; }
+.aa-av.v-doze .fx-zz { display: inline; }
+.aa-av.v-doze .z { animation: aa-bb-zz 3.6s ease-out infinite backwards; }
+.aa-av.v-doze .z:nth-child(2) { animation-delay: 1.2s; }
+.aa-av.v-doze .z:nth-child(3) { animation-delay: 2.4s; }
+.aa-av.v-hum .eg-n, .aa-av.v-hum .fx-notes { display: inline; }
+.aa-av.v-hum .w { animation: aa-bb-sway 2.8s ease-in-out infinite; }
+.aa-av.v-hum .nt { animation: aa-bb-note 2.8s ease-out infinite backwards; }
+.aa-av.v-hum .nt:nth-child(2) { animation-delay: 1.4s; }
+.aa-av.v-hum .fx-notes .nt { animation-duration: 2.8s; }
+.aa-av.v-float .eg-u, .aa-av.v-float .fx-shadow { display: inline; }
+.aa-av.v-float .w { animation: aa-bb-levitate 3s ease-in-out infinite; }
+.aa-av.v-float .sh { animation: aa-bb-floatshadow 3s ease-in-out infinite; }
+.aa-av.v-bask .eg-u, .aa-av.v-bask .cheeks, .aa-av.v-bask .fx-sun { display: inline; }
+.aa-av.v-bask .cheeks { opacity: .4; }
+.aa-av.v-bask .w { transform: scale(1.05, .95); animation: aa-bb-deepbreath 4s ease-in-out infinite; }
+.aa-av.v-bask .rays { animation: aa-bb-raysspin 12s linear infinite; }
+.aa-av.v-bask .core { animation: aa-bb-sunpulse 4s ease-in-out infinite; }
+.aa-av.v-bask .gz { transform: translate(-2px, -2px); }
+.aa-av .ray { fill: none; stroke: #F2B33D; stroke-width: 2.4; stroke-linecap: round; }
+.aa-av.v-float .gsh { display: none; }
+.aa-av.v-float .gnd .sh { animation-name: aa-gsh-float; }
+.aa-av.sh-still.v-float .gnd .sh { scale: .74 .9; opacity: calc(.55 * var(--aa-shadow-strength, 1)); }
+@keyframes aa-bb-deepbreath { 0%, 100% { scale: 1 1; translate: 0 0; } 45% { scale: .97 1.05; translate: 0 -1px; } }
+@keyframes aa-bb-purr { 0%, 100% { translate: 0 0; } 50% { translate: .35px 0; } }
+@keyframes aa-bb-doze { 0%, 100% { scale: 1 1; rotate: 0deg; translate: 0 0; } 50% { scale: 1.03 .96; rotate: calc(var(--amp, 1) * 4deg); translate: 0 1px; } }
+@keyframes aa-bb-zz { 0% { translate: 0 4px; scale: .5; opacity: 0; } 15% { opacity: 1; } 100% { translate: 8px -16px; scale: 1.2; opacity: 0; } }
+@keyframes aa-bb-levitate { 0%, 100% { translate: 0 calc(var(--amp, 1) * -5px); } 50% { translate: 0 calc(var(--amp, 1) * -11px); } }
+@keyframes aa-bb-floatshadow { 0%, 100% { scale: .85 1; opacity: .7; } 50% { scale: .62 .8; opacity: .4; } }
+@keyframes aa-bb-raysspin { to { rotate: 360deg; } }
+@keyframes aa-bb-sunpulse { 0%, 100% { scale: 1; } 50% { scale: 1.1; } }
+@keyframes aa-gsh-float { 0%, 100% { scale: .85 1; opacity: calc(.7 * var(--aa-shadow-strength, 1)); } 50% { scale: .62 .8; opacity: calc(.4 * var(--aa-shadow-strength, 1)); } }

@@ -1,0 +1,128 @@
+{
+ "links": [
+  {
+   "why": "Format 1 link: mouth was opt-in, holidays by date",
+   "hash": "#studio~eyJuIjoicGlwIiwibW8iOjEsIm0iOiJmIiwiaCI6ImEiLCJyIjoiSUUiLCJsIjo3fQ",
+   "token": {
+    "n": "pip",
+    "mo": 1,
+    "m": "f",
+    "h": "a",
+    "r": "IE",
+    "l": 7
+   },
+   "expect": {
+    "name": "pip",
+    "mouth": true,
+    "hands": false,
+    "holMode": "auto",
+    "region": "IE",
+    "lead": 7,
+    "shadow": "auto",
+    "dress": "off",
+    "motion": "follow"
+   }
+  },
+  {
+   "why": "Format 1 link with nothing set: mouth and hands were off",
+   "hash": "#studio~eyJuIjoicGlwIiwibSI6ImYiLCJoIjoiLSJ9",
+   "token": {
+    "n": "pip",
+    "m": "f",
+    "h": "-"
+   },
+   "expect": {
+    "name": "pip",
+    "mouth": false,
+    "hands": false,
+    "holMode": "off",
+    "lead": 7,
+    "shadow": "auto",
+    "dress": "off",
+    "motion": "follow"
+   }
+  },
+  {
+   "why": "Format 2 link with defaults",
+   "hash": "#studio~eyIkIjoyLCJnIjoxLCJuIjoibm92YSIsIm0iOiJmIiwiaCI6Ii0ifQ",
+   "token": {
+    "$": 2,
+    "g": 1,
+    "n": "nova",
+    "m": "f",
+    "h": "-"
+   },
+   "expect": {
+    "name": "nova",
+    "mouth": true,
+    "hands": true,
+    "holMode": "off",
+    "lead": 7,
+    "shadow": "auto",
+    "dress": "off",
+    "motion": "follow"
+   }
+  },
+  {
+   "why": "Format 2 link with the mouth switched off and shadow always",
+   "hash": "#studio~eyIkIjoyLCJnIjoxLCJuIjoibm92YSIsIm1vIjowLCJzaCI6InciLCJtIjoiZiIsImgiOiItIn0",
+   "token": {
+    "$": 2,
+    "g": 1,
+    "n": "nova",
+    "mo": 0,
+    "sh": "w",
+    "m": "f",
+    "h": "-"
+   },
+   "expect": {
+    "name": "nova",
+    "mouth": false,
+    "hands": true,
+    "holMode": "off",
+    "lead": 7,
+    "shadow": "always",
+    "dress": "off",
+    "motion": "follow"
+   }
+  }
+ ],
+ "stored": [
+  {
+   "why": "Settings saved before ver 3: the old defaults become the new ones",
+   "key": "agent-avatar-studio:look:v2",
+   "stored": {
+    "name": "nova",
+    "mouth": false,
+    "hands": false,
+    "holMode": "auto"
+   },
+   "shows": {
+    "mouth": true,
+    "hands": true,
+    "costume": false
+   }
+  },
+  {
+   "why": "Settings saved at ver 3 keep an explicit off",
+   "key": "agent-avatar-studio:look:v2",
+   "stored": {
+    "ver": 3,
+    "generator": 1,
+    "name": "nova",
+    "mouth": false,
+    "hands": true,
+    "holMode": "off"
+   },
+   "shows": {
+    "mouth": false,
+    "hands": true,
+    "costume": false
+   }
+  }
+ ],
+ "notes": [
+  "Taken from the prototype on 26 Oct 2026. expect lists the studio settings the link produces.",
+  "region is left out where the link has none: it then comes from the viewer's time zone."
+ ]
+}

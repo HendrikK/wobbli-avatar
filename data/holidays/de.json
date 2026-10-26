@@ -1,0 +1,477 @@
+{
+  "pack": "de",
+  "name": "Germany",
+  "holidays": [
+    {
+      "key": "karneval",
+      "label": "Karneval",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ka-jester",
+          "name": "Jester cap"
+        },
+        {
+          "key": "ka-kamelle",
+          "name": "Kamelle"
+        },
+        {
+          "key": "ka-nose",
+          "name": "Clown nose"
+        },
+        {
+          "key": "ka-tie",
+          "name": "Snipped tie"
+        },
+        {
+          "key": "ka-orden",
+          "name": "Carnival medal"
+        }
+      ]
+    },
+    {
+      "key": "martin",
+      "label": "St Martin's Day",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "sm-lantern",
+          "name": "Lantern walk"
+        },
+        {
+          "key": "sm-goose",
+          "name": "Goose"
+        },
+        {
+          "key": "sm-cloak",
+          "name": "Shared cloak"
+        },
+        {
+          "key": "sm-weckmann",
+          "name": "Weckmann"
+        },
+        {
+          "key": "sm-fire",
+          "name": "Martin's fire"
+        }
+      ]
+    },
+    {
+      "key": "nikolaus",
+      "label": "Nikolaus",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "nk-boot",
+          "name": "Boot"
+        },
+        {
+          "key": "nk-mitre",
+          "name": "Mitre"
+        },
+        {
+          "key": "nk-sack",
+          "name": "Sack"
+        },
+        {
+          "key": "nk-tangerine",
+          "name": "Tangerines and nuts"
+        },
+        {
+          "key": "nk-choc",
+          "name": "Chocolate Nikolaus"
+        }
+      ]
+    },
+    {
+      "key": "advent",
+      "label": "Advent",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ad-wreath",
+          "name": "Advent wreath"
+        },
+        {
+          "key": "ad-calendar",
+          "name": "Advent calendar"
+        },
+        {
+          "key": "ad-star",
+          "name": "Paper star"
+        },
+        {
+          "key": "ad-cookies",
+          "name": "Plätzchen"
+        },
+        {
+          "key": "ad-candle",
+          "name": "Candle"
+        }
+      ]
+    },
+    {
+      "key": "unity",
+      "label": "Day of German Unity",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "du-flag",
+          "name": "Flag"
+        },
+        {
+          "key": "du-fireworks",
+          "name": "Fireworks"
+        },
+        {
+          "key": "du-ribbon",
+          "name": "Ribbon"
+        },
+        {
+          "key": "du-balloons",
+          "name": "Balloons"
+        },
+        {
+          "key": "du-wall",
+          "name": "Open wall"
+        }
+      ]
+    }
+  ],
+  "region": "DE",
+  "shared": [
+    "newyear",
+    "valentines",
+    "easter",
+    "halloween",
+    "christmas",
+    "nye"
+  ],
+  "overrides": {
+    "christmas": {
+      "on": "12-24",
+      "to": 2
+    }
+  },
+  "dates": [
+    {
+      "key": "eastermon",
+      "on": {
+        "easter": 1
+      }
+    },
+    {
+      "key": "karneval",
+      "on": {
+        "easter": -48
+      },
+      "from": -4,
+      "to": 1
+    },
+    {
+      "key": "unity",
+      "on": "10-03"
+    },
+    {
+      "key": "martin",
+      "on": "11-11"
+    },
+    {
+      "key": "nikolaus",
+      "on": "12-06"
+    },
+    {
+      "key": "advent",
+      "on": {
+        "rule": "advent",
+        "n": 0
+      }
+    },
+    {
+      "key": "advent",
+      "on": {
+        "rule": "advent",
+        "n": 1
+      }
+    },
+    {
+      "key": "advent",
+      "on": {
+        "rule": "advent",
+        "n": 2
+      }
+    },
+    {
+      "key": "advent",
+      "on": {
+        "rule": "advent",
+        "n": 3
+      }
+    }
+  ],
+  "parts": [
+    {
+      "zone": "cosb",
+      "i": 8,
+      "k": "b-redcloak",
+      "on": [
+        "cos-sm-cloak"
+      ],
+      "t": "<g class=\"b-redcloak\" transform=\"translate(50 {{a.mid}})\"><path class=\"o-r\" d=\"M-24 -27Q-45 -4 -38 28H2V-29Z\"></path><path class=\"s-w th\" d=\"M-38 26H0\" opacity=\".8\"></path><circle class=\"o-y th\" cx=\"-24\" cy=\"-25\" r=\"2.2\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 96,
+      "k": "c-jester",
+      "on": [
+        "cos-ka-jester",
+        "cos-ka-kamelle"
+      ],
+      "t": "<g class=\"c-jester hat\" transform=\"translate(50 {{a.top}}) scale(1.1)\"><path class=\"o-r\" d=\"M-14 3Q-15 -6 -20 -12Q-11 -12 -6 -6L0 -2L6 -6Q11 -12 20 -12Q15 -6 14 3Z\"></path><path class=\"o-y\" d=\"M-6 -6Q-3 -17 0 -21Q3 -17 6 -6L0 -2Z\"></path><circle class=\"o-y th\" cx=\"-20\" cy=\"-12\" r=\"2\"></circle><circle class=\"o-r th\" cx=\"0\" cy=\"-21\" r=\"2\"></circle><circle class=\"o-y th\" cx=\"20\" cy=\"-12\" r=\"2\"></circle><rect class=\"o-g th\" x=\"-15\" y=\"1\" width=\"30\" height=\"4\" rx=\"2\"></rect></g>"
+    },
+    {
+      "zone": "top",
+      "i": 97,
+      "k": "c-clownnose",
+      "on": [
+        "cos-ka-nose"
+      ],
+      "t": "<g class=\"c-clownnose\" transform=\"translate({{a.mx}} {{a.nsy}})\"><circle class=\"o-r\" cx=\"0\" cy=\"0\" r=\"3\"></circle><circle class=\"f-w\" cx=\"-1\" cy=\"-1\" r=\"0.8\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 98,
+      "k": "c-cuttie",
+      "on": [
+        "cos-ka-tie"
+      ],
+      "t": "<g class=\"c-cuttie\" transform=\"translate(50 {{a.neck}}) scale(1.4)\"><path class=\"o-b th\" d=\"M-2.4 -2H2.4L1.6 1H-1.6Z\"></path><path class=\"o-b th\" d=\"M-2 1L-3.4 7L-1.6 6L0 7.4L1.6 6L3.4 7L2 1Z\"></path><path class=\"s-w th\" d=\"M-2.6 4L2.6 2.6\" opacity=\".7\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 99,
+      "k": "c-orden",
+      "on": [
+        "cos-ka-orden"
+      ],
+      "t": "<g class=\"c-orden\" transform=\"translate({{a.pinx}} {{a.piny}})\"><rect class=\"o-r th\" x=\"-2.6\" y=\"-8\" width=\"5.2\" height=\"6\"></rect><path class=\"s-w th\" d=\"M-1 -8V-2M1 -8V-2\"></path><g transform=\"translate(0 2)\"><path class=\"o-y\" d=\"M0 -5L1.3 -3.14L3.54 -3.54L3.14 -1.3L5 0L3.14 1.3L3.54 3.54L1.3 3.14L0 5L-1.3 3.14L-3.54 3.54L-3.14 1.3L-5 0L-3.14 -1.3L-3.54 -3.54L-1.3 -3.14Z\"></path><circle class=\"f-r\" cx=\"0\" cy=\"0\" r=\"1.4\"></circle></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 100,
+      "k": "c-mitre",
+      "on": [
+        "cos-nk-mitre",
+        "cos-nk-sack"
+      ],
+      "t": "<g class=\"c-mitre hat\" transform=\"translate(50 {{a.top}}) scale(1.1)\"><path class=\"o-r\" d=\"M-10 3V-10Q-6 -18 0 -22Q6 -18 10 -10V3Z\"></path><path class=\"s-y\" d=\"M-10 0H10M0 2V-20\"></path><path class=\"s-y th\" d=\"M-9.6 -9.6Q0 -15 9.6 -9.6\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 101,
+      "k": "c-derosette",
+      "on": [
+        "cos-du-ribbon",
+        "cos-du-wall"
+      ],
+      "t": "<g class=\"c-derosette\" transform=\"translate({{a.pinx}} {{a.piny}})\"><path class=\"o-k th\" d=\"M-2 3L-4 11L-1.5 9.5L0 11.5L1 4Z\"></path><path class=\"o-y th\" d=\"M2 3L4.5 10.5L1.8 9.6L1 4Z\"></path><circle class=\"o-k\" cx=\"0\" cy=\"0\" r=\"5.6\"></circle><circle class=\"o-r th\" cx=\"0\" cy=\"0\" r=\"3.92\"></circle><circle class=\"o-y th\" cx=\"0\" cy=\"0\" r=\"2.24\"></circle></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 56,
+      "k": "x-confetti",
+      "on": [
+        "cos-cv-confetti",
+        "cos-ka-nose",
+        "cos-ne-midnight"
+      ],
+      "t": "<g class=\"x-confetti pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(12 -2)\"><rect class=\"f-r\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(26 -8)\"><rect class=\"f-y\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(40 0)\"><rect class=\"f-b\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(56 -6)\"><rect class=\"f-g\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(68 2)\"><rect class=\"f-p\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(80 -10)\"><rect class=\"f-v\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(94 -2)\"><rect class=\"f-o\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 113,
+      "k": "x-bonfire",
+      "on": [
+        "cos-bn-bonfire",
+        "cos-fj-fogueira",
+        "cos-ms-bonfire",
+        "cos-sm-fire"
+      ],
+      "t": "<g class=\"x-bonfire\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(92 82)\"><g class=\"pt pflick\"><g transform=\"translate(0 -3)\"><path class=\"o-o th\" d=\"M0 0Q-7 -2 -5 -9Q-3 -6 -2 -8Q-2 -14 2 -17Q2 -11 5 -10Q7 -4 0 0Z\"></path></g><g transform=\"translate(0 -3)\"><path class=\"f-y\" d=\"M0 0Q-3 -1 -2 -5Q0 -4 0 -8Q3 -5 3 -3Q3 0 0 0Z\"></path></g></g><path class=\"s-n tk\" d=\"M-9 0L7 -4M9 0L-7 -4\"></path></g><g class=\"pt prise\"><g transform=\"translate(90 66)\"><circle class=\"f-o\" r=\".9\"></circle></g><g transform=\"translate(95 68)\"><circle class=\"f-y\" r=\".9\"></circle></g><g transform=\"translate(92 62)\"><circle class=\"f-o\" r=\".8\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 385,
+      "k": "x-kamelle",
+      "on": [
+        "cos-ka-kamelle",
+        "cos-ka-orden"
+      ],
+      "t": "<g class=\"x-kamelle\" transform=\"translate(0 {{a.up}})\"><g class=\"pt pfall\"><g transform=\"translate(12 -2)\"><g><ellipse class=\"o-r th\" cx=\"0\" cy=\"0\" rx=\"2.4\" ry=\"1.6\"></ellipse><path class=\"o-r th\" d=\"M-2.4 0L-4.4 -1.4V1.4ZM2.4 0L4.4 -1.4V1.4Z\"></path></g></g><g transform=\"translate(30 -8)\"><g><ellipse class=\"o-y th\" cx=\"0\" cy=\"0\" rx=\"2.4\" ry=\"1.6\"></ellipse><path class=\"o-y th\" d=\"M-2.4 0L-4.4 -1.4V1.4ZM2.4 0L4.4 -1.4V1.4Z\"></path></g></g><g transform=\"translate(48 2)\"><g><ellipse class=\"o-p th\" cx=\"0\" cy=\"0\" rx=\"2.4\" ry=\"1.6\"></ellipse><path class=\"o-p th\" d=\"M-2.4 0L-4.4 -1.4V1.4ZM2.4 0L4.4 -1.4V1.4Z\"></path></g></g><g transform=\"translate(66 -6)\"><g><ellipse class=\"o-b th\" cx=\"0\" cy=\"0\" rx=\"2.4\" ry=\"1.6\"></ellipse><path class=\"o-b th\" d=\"M-2.4 0L-4.4 -1.4V1.4ZM2.4 0L4.4 -1.4V1.4Z\"></path></g></g><g transform=\"translate(84 -2)\"><g><ellipse class=\"o-g th\" cx=\"0\" cy=\"0\" rx=\"2.4\" ry=\"1.6\"></ellipse><path class=\"o-g th\" d=\"M-2.4 0L-4.4 -1.4V1.4ZM2.4 0L4.4 -1.4V1.4Z\"></path></g></g><g transform=\"translate(94 6)\"><g><ellipse class=\"o-o th\" cx=\"0\" cy=\"0\" rx=\"2.4\" ry=\"1.6\"></ellipse><path class=\"o-o th\" d=\"M-2.4 0L-4.4 -1.4V1.4ZM2.4 0L4.4 -1.4V1.4Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 386,
+      "k": "x-scissors",
+      "on": [
+        "cos-ka-tie"
+      ],
+      "t": "<g class=\"x-scissors\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(92 52)\"><g class=\"a snip\"><path class=\"s-e\" d=\"M0 0L-10 -3\"></path><circle class=\"s-r\" cx=\"3\" cy=\"-2\" r=\"2.4\"></circle><path class=\"s-e\" d=\"M0 0L-10 3\"></path><circle class=\"s-r\" cx=\"3\" cy=\"2\" r=\"2.4\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 387,
+      "k": "x-martinlantern",
+      "on": [
+        "cos-sm-lantern",
+        "cos-sm-weckmann"
+      ],
+      "t": "<g class=\"x-martinlantern\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M82 80L96 36\"></path><g class=\"pt pswing\"><g transform=\"translate(96 37)\"><g><path class=\"s-k th\" d=\"M-5 6Q0 0 5 6\"></path><rect class=\"o-o\" x=\"-5\" y=\"6\" width=\"10\" height=\"10\" rx=\"2\"></rect><g class=\"a fglow\"><circle class=\"f-y\" cx=\"0\" cy=\"11\" r=\"2.6\"></circle></g><path class=\"s-k th\" d=\"M-5 6H5M-5 16H5\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 388,
+      "k": "x-goose",
+      "on": [
+        "cos-sm-fire",
+        "cos-sm-goose"
+      ],
+      "t": "<g class=\"x-goose\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(8 88)\"><g class=\"a wad\"><path class=\"o-w\" d=\"M-8 -4Q-8 -10 0 -10Q4 -10 5 -14Q5 -20 9 -20Q12 -20 12 -17L15 -16L12 -15Q10 -14 9 -10Q12 -6 9 -2Q4 2 -4 1Q-9 0 -8 -4Z\"></path><path class=\"s-e th\" d=\"M-4 -6Q2 -4 6 -7\"></path><circle class=\"f-k\" cx=\"10\" cy=\"-17.6\" r=\"0.6\"></circle><path class=\"s-o\" d=\"M-1 1V5M3 1V5\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 389,
+      "k": "x-weckmann",
+      "on": [
+        "cos-sm-weckmann"
+      ],
+      "t": "<g class=\"x-weckmann\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 84)\"><path class=\"o-n\" d=\"M0 -20Q3 -20 3 -17Q3 -15 1.6 -14.6L6 -12Q7 -11 6 -10L2 -11V-6L4 0H1L0 -4L-1 0H-4L-2 -6V-11L-6 -10Q-7 -11 -6 -12L-1.6 -14.6Q-3 -15 -3 -17Q-3 -20 0 -20Z\"></path><circle class=\"f-k\" cx=\"-1\" cy=\"-17.6\" r=\"0.5\"></circle><circle class=\"f-k\" cx=\"1\" cy=\"-17.6\" r=\"0.5\"></circle><circle class=\"f-k\" cx=\"0\" cy=\"-10\" r=\"0.55\"></circle><circle class=\"f-k\" cx=\"0\" cy=\"-8\" r=\"0.55\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 390,
+      "k": "x-boot",
+      "on": [
+        "cos-nk-boot",
+        "cos-nk-tangerine"
+      ],
+      "t": "<g class=\"x-boot\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(10 88)\"><path class=\"s-r\" d=\"M-4 -14V-20Q-4 -22.6 -1.6 -22.6Q.8 -22.6 .8 -20\"></path><rect class=\"o-n th\" x=\"-0.6\" y=\"-19\" width=\"3\" height=\"5\"></rect><circle class=\"o-o th\" cx=\"2.6\" cy=\"-15.4\" r=\"2\"></circle><path class=\"o-r\" d=\"M-6 0V-12H2V-4Q8 -4 8 0Z\"></path><rect class=\"o-w\" x=\"-7\" y=\"-14\" width=\"10\" height=\"3\" rx=\"1.5\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 391,
+      "k": "x-sack",
+      "on": [
+        "cos-nk-sack"
+      ],
+      "t": "<g class=\"x-sack\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 84)\"><rect class=\"o-r th\" x=\"-2.6\" y=\"-19\" width=\"5\" height=\"5\" rx=\"0.6\"></rect><path class=\"s-y th\" d=\"M0 -19V-14\"></path><path class=\"o-n\" d=\"M-8 0Q-10 -8 -5 -12L-3 -14H3L5 -12Q10 -8 8 0Z\"></path><path class=\"s-y\" d=\"M-3.4 -13H3.4\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 392,
+      "k": "x-tangerines",
+      "on": [
+        "cos-nk-tangerine"
+      ],
+      "t": "<g class=\"x-tangerines\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 84)\"><ellipse class=\"o-w th\" cx=\"0\" cy=\"0\" rx=\"10\" ry=\"2\"></ellipse><circle class=\"o-o\" cx=\"-4\" cy=\"-4\" r=\"3.6\"></circle><circle class=\"o-o\" cx=\"3\" cy=\"-4.4\" r=\"3.4\"></circle><path class=\"o-g th\" d=\"M3 -8Q5 -10 7 -9Q5 -7 3 -8Z\"></path><ellipse class=\"o-n th\" cx=\"-0.4\" cy=\"-9\" rx=\"2.6\" ry=\"2.2\"></ellipse><path class=\"s-m th\" d=\"M-.4 -11V-7\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 393,
+      "k": "x-chocnik",
+      "on": [
+        "cos-nk-choc"
+      ],
+      "t": "<g class=\"x-chocnik\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 84)\"><path class=\"o-r\" d=\"M0 -20Q4 -20 4 -15Q6 -10 6 0H-6Q-6 -10 -4 -15Q-4 -20 0 -20Z\"></path><ellipse class=\"o-m th\" cx=\"0\" cy=\"-14\" rx=\"2.6\" ry=\"2.2\"></ellipse><path class=\"o-w th\" d=\"M-3 -13Q0 -8 3 -13Q2 -10 0 -9Q-2 -10 -3 -13Z\"></path><rect class=\"f-y\" x=\"-6\" y=\"-6\" width=\"12\" height=\"1.4\"></rect><path class=\"s-w th\" d=\"M-3 -4V-1\" opacity=\".7\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 394,
+      "k": "x-advwreath",
+      "on": [
+        "cos-ad-candle",
+        "cos-ad-wreath"
+      ],
+      "t": "<g class=\"x-advwreath\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(12 90)\"><g transform=\"translate(-7 -1)\"><rect class=\"o-r th\" x=\"-1.2\" y=\"-7\" width=\"2.4\" height=\"7\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -7.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g></g><g transform=\"translate(-2.4 -1)\"><rect class=\"o-r th\" x=\"-1.2\" y=\"-7\" width=\"2.4\" height=\"7\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -7.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g></g><g transform=\"translate(2.4 -1)\"><rect class=\"o-r th\" x=\"-1.2\" y=\"-7\" width=\"2.4\" height=\"7\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -7.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g></g><g transform=\"translate(7 -1)\"><rect class=\"o-r th\" x=\"-1.2\" y=\"-7\" width=\"2.4\" height=\"7\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -7.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g></g><ellipse class=\"o-g\" cx=\"0\" cy=\"0\" rx=\"11\" ry=\"3.4\"></ellipse><circle class=\"f-r\" cx=\"-8\" cy=\"1\" r=\"0.9\"></circle><circle class=\"f-r\" cx=\"-2\" cy=\"2\" r=\"0.9\"></circle><circle class=\"f-r\" cx=\"5\" cy=\"1.6\" r=\"0.9\"></circle><path class=\"s-l th\" d=\"M-10 -1Q-4 2 0 1M2 1Q6 2 10 -1\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 395,
+      "k": "x-advcal",
+      "on": [
+        "cos-ad-calendar"
+      ],
+      "t": "<g class=\"x-advcal\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 60)\"><rect class=\"o-r\" x=\"-8\" y=\"-10\" width=\"16\" height=\"20\" rx=\"1\"></rect><rect class=\"s-y th\" x=\"-6.4\" y=\"-7.6\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"-6.4\" y=\"-3\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"-6.4\" y=\"1.6\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"-6.4\" y=\"6.2\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"-1.8\" y=\"-7.6\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"-1.8\" y=\"-3\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"-1.8\" y=\"1.6\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"-1.8\" y=\"6.2\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"2.8\" y=\"-7.6\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"2.8\" y=\"-3\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"s-y th\" x=\"2.8\" y=\"6.2\" width=\"3.6\" height=\"3.6\" rx=\"0.4\"></rect><rect class=\"o-w th\" x=\"2.8\" y=\"1.6\" width=\"3.6\" height=\"3.6\"></rect><circle class=\"f-n\" cx=\"4.6\" cy=\"3.4\" r=\"0.9\"></circle><path class=\"o-y th\" d=\"M2.8 1.6L.4 2.6V6.2L2.8 5.2Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 396,
+      "k": "x-herrnhut",
+      "on": [
+        "cos-ad-cookies",
+        "cos-ad-star"
+      ],
+      "t": "<g class=\"x-herrnhut\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M84 -14V-6\"></path><g class=\"pt pswing\"><g transform=\"translate(84 -6)\"><g><g transform=\"translate(0 7)\"><path class=\"o-y\" d=\"M0 -7.4L1.45 -3.51L5.23 -5.23L3.51 -1.45L7.4 0L3.51 1.45L5.23 5.23L1.45 3.51L0 7.4L-1.45 3.51L-5.23 5.23L-3.51 1.45L-7.4 0L-3.51 -1.45L-5.23 -5.23L-1.45 -3.51Z\"></path><path class=\"f-w\" d=\"M0 -3.4L0.77 -1.85L2.4 -2.4L1.85 -0.77L3.4 0L1.85 0.77L2.4 2.4L0.77 1.85L0 3.4L-0.77 1.85L-2.4 2.4L-1.85 0.77L-3.4 0L-1.85 -0.77L-2.4 -2.4L-0.77 -1.85Z\"></path></g></g></g></g><g class=\"pt ptwk\"><g transform=\"translate(70 6)\"><g><path class=\"f-y\" d=\"M0 -2 L0.54 -0.54 L2 0 L0.54 0.54 L0 2 L-0.54 0.54 L-2 0 L-0.54 -0.54 Z\"></path></g></g><g transform=\"translate(96 12)\"><g><path class=\"f-y\" d=\"M0 -1.8 L0.49 -0.49 L1.8 0 L0.49 0.49 L0 1.8 L-0.49 0.49 L-1.8 0 L-0.49 -0.49 Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 397,
+      "k": "x-cookies",
+      "on": [
+        "cos-ad-cookies"
+      ],
+      "t": "<g class=\"x-cookies\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 84)\"><ellipse class=\"o-w th\" cx=\"0\" cy=\"0\" rx=\"10\" ry=\"2\"></ellipse><g transform=\"translate(-4 -4)\"><path class=\"o-m\" d=\"M0 -4L1.29 -1.78L3.8 -1.24L2.09 0.68L2.35 3.24L0 2.2L-2.35 3.24L-2.09 0.68L-3.8 -1.24L-1.29 -1.78Z\"></path></g><g transform=\"translate(3.6 -2.4)\"><g transform=\"scale(0.7)\"><path class=\"o-n\" d=\"M0 0C-4.5 -2 -4.5 -7.5 -1.6 -7.5Q0 -7.5 0 -5.5Q0 -7.5 1.6 -7.5C4.5 -7.5 4.5 -2 0 0Z\"></path></g></g><circle class=\"f-w\" cx=\"-4\" cy=\"-4\" r=\"0.6\"></circle><circle class=\"f-r\" cx=\"3.6\" cy=\"-5\" r=\"0.5\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 398,
+      "k": "x-advcandle",
+      "on": [
+        "cos-ad-candle"
+      ],
+      "t": "<g class=\"x-advcandle\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 76)\"><rect class=\"o-r th\" x=\"-2\" y=\"-18\" width=\"4\" height=\"18\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -18.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g><path class=\"o-g th\" d=\"M-2 0Q-8 -2 -9 2Q-5 1 -2 3ZM2 0Q8 -2 9 2Q5 1 2 3Z\"></path><circle class=\"f-r\" cx=\"-1\" cy=\"1\" r=\"0.9\"></circle><circle class=\"f-r\" cx=\"1\" cy=\"1.4\" r=\"0.9\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 399,
+      "k": "x-deflag",
+      "on": [
+        "cos-du-flag"
+      ],
+      "t": "<g class=\"x-deflag\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M85 78V36\"></path><g class=\"pt pwave\"><g transform=\"translate(85.5 37)\"><g><rect class=\"f-k\" x=\"0\" y=\"0\" width=\"18\" height=\"4\"></rect><rect class=\"f-r\" x=\"0\" y=\"4\" width=\"18\" height=\"4\"></rect><rect class=\"f-y\" x=\"0\" y=\"8\" width=\"18\" height=\"4\"></rect><rect class=\"s-k th\" x=\"0\" y=\"0\" width=\"18\" height=\"12\"></rect></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 400,
+      "k": "x-defire",
+      "on": [
+        "cos-du-fireworks",
+        "cos-du-ribbon"
+      ],
+      "t": "<g class=\"x-defire\" transform=\"translate(0 {{a.up}})\"><g class=\"pt pburst\"><g transform=\"translate(18 6)\"><g><path class=\"s-y\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g><g transform=\"translate(84 0)\"><g><path class=\"s-r\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g><g transform=\"translate(54 -10)\"><g><path class=\"s-o\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 401,
+      "k": "x-deballoons",
+      "on": [
+        "cos-du-balloons"
+      ],
+      "t": "<g class=\"x-deballoons\" transform=\"translate({{a.side}} {{a.mo}})\"><g class=\"pt pbob\"><g transform=\"translate(86 40)\"><g><path class=\"s-e th\" d=\"M0 6.4Q-1.6 12 0 18\"></path><ellipse class=\"o-k\" cx=\"0\" cy=\"0\" rx=\"4\" ry=\"5\"></ellipse><path class=\"o-k th\" d=\"M-1 5L0 6.4L1 5Z\"></path><path class=\"s-w th\" d=\"M-2 -2.4Q-1.4 -3.6 0 -3.8\" opacity=\".7\"></path></g></g><g transform=\"translate(95 46)\"><g><path class=\"s-e th\" d=\"M0 6.4Q-1.6 12 0 18\"></path><ellipse class=\"o-r\" cx=\"0\" cy=\"0\" rx=\"4\" ry=\"5\"></ellipse><path class=\"o-r th\" d=\"M-1 5L0 6.4L1 5Z\"></path><path class=\"s-w th\" d=\"M-2 -2.4Q-1.4 -3.6 0 -3.8\" opacity=\".7\"></path></g></g><g transform=\"translate(90 32)\"><g><path class=\"s-e th\" d=\"M0 6.4Q-1.6 12 0 18\"></path><ellipse class=\"o-y\" cx=\"0\" cy=\"0\" rx=\"4\" ry=\"5\"></ellipse><path class=\"o-y th\" d=\"M-1 5L0 6.4L1 5Z\"></path><path class=\"s-w th\" d=\"M-2 -2.4Q-1.4 -3.6 0 -3.8\" opacity=\".7\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 402,
+      "k": "x-wall",
+      "on": [
+        "cos-du-wall"
+      ],
+      "t": "<g class=\"x-wall\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(10 90)\"><rect class=\"o-e\" x=\"-11\" y=\"-13\" width=\"8\" height=\"13\"></rect><rect class=\"o-e\" x=\"4\" y=\"-10\" width=\"8\" height=\"10\"></rect><path class=\"s-k th\" d=\"M-11 -8.6H-3M-11 -4.3H-3M-7 -13V-8.6M-9 -8.6V-4.3M-6 -4.3V0M4 -5H12M8 -10V-5M6 -5V0\" opacity=\".35\"></path><path class=\"s-g\" d=\"M.4 0V-7\"></path><g transform=\"translate(0.4 -8)\"><g transform=\"rotate(0)\"><ellipse class=\"o-p th\" cx=\"0\" cy=\"-1.8\" rx=\"1.4\" ry=\"1.9\"></ellipse></g><g transform=\"rotate(72)\"><ellipse class=\"o-p th\" cx=\"0\" cy=\"-1.8\" rx=\"1.4\" ry=\"1.9\"></ellipse></g><g transform=\"rotate(144)\"><ellipse class=\"o-p th\" cx=\"0\" cy=\"-1.8\" rx=\"1.4\" ry=\"1.9\"></ellipse></g><g transform=\"rotate(216)\"><ellipse class=\"o-p th\" cx=\"0\" cy=\"-1.8\" rx=\"1.4\" ry=\"1.9\"></ellipse></g><g transform=\"rotate(288)\"><ellipse class=\"o-p th\" cx=\"0\" cy=\"-1.8\" rx=\"1.4\" ry=\"1.9\"></ellipse></g><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"0.7\"></circle></g></g></g>"
+    }
+  ]
+}

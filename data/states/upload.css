@@ -1,0 +1,41 @@
+.aa-av .bxl { fill: none; stroke: #B98A4E; stroke-width: 1.6; }
+.aa-av .smoke { fill: #CFC8BC; }
+.aa-av .bal { transform-origin: 50% 0%; }
+.aa-av .flame { transform-origin: 50% 0%; }
+.aa-av.v-ultoss .fx-dbox, .aa-av.v-ullift .fx-dbox { display: inline; }
+.aa-av.v-ularrow .fx-uarrow { display: inline; }
+.aa-av.v-ularrow .ua { animation: aa-A-uarrow 1.3s ease-out infinite; }
+.aa-av.v-ularrow .w { animation: aa-A-push 1.3s infinite; }
+.aa-av.v-ularrow .gz { animation: aa-A-uplook 1.3s ease-out infinite; }
+.aa-av.v-ultoss .db { animation: aa-A-toss 1.8s infinite; }
+.aa-av.v-ultoss .w { animation: aa-A-tossbody 1.8s infinite; }
+.aa-av.v-ultoss .gz { animation: aa-A-tosseyes 1.8s infinite; }
+.aa-av.v-ullift .db { animation: aa-A-lift 2.4s infinite; }
+.aa-av.v-ullift .w { transform: scale(1.04, .95); }
+.aa-av.v-ullift .sp { animation: aa-bb-shiver .1s linear infinite; }
+.aa-av.v-ullift .e > path { animation: none; }
+.aa-av.v-ulballoon .fx-balloon { display: inline; }
+.aa-av.v-ulballoon .bal { animation: aa-A-balloon 2.6s ease-in-out infinite; }
+.aa-av.v-ulballoon .gz { animation: aa-A-balloneyes 2.6s ease-in-out infinite; }
+.aa-av.v-ulballoon .w { animation: aa-A-release 2.6s infinite; }
+.aa-av.v-ulrocket .fx-rocket { display: inline; }
+.aa-av.v-ulrocket .rk { animation: aa-A-rocket 2.4s infinite; }
+.aa-av.v-ulrocket .flame { animation: aa-A-flame .12s linear infinite alternate; }
+.aa-av.v-ulrocket .pf2 { animation: aa-A-smoke 2.4s ease-out infinite; }
+.aa-av.v-ulrocket .gz { animation: aa-A-rocketeyes 2.4s infinite; }
+.aa-av.v-ulrocket .w { animation: aa-A-rocketbody 2.4s infinite; }
+@keyframes aa-A-uarrow { 0% { translate: 0 8px; opacity: 0; scale: .5; } 20% { opacity: 1; scale: 1; translate: 0 0; } 75% { translate: 0 -20px; opacity: 1; } 100% { translate: 0 -26px; opacity: 0; scale: 1; } }
+@keyframes aa-A-push { 0%, 100% { scale: 1.06 .92; translate: 0 0; } 15% { scale: .95 1.07; translate: 0 calc(var(--amp, 1) * -3px); } 35% { scale: 1 1; translate: 0 0; } 85% { scale: 1 1; } }
+@keyframes aa-A-uplook { 0% { translate: 0 -2px; } 60%, 100% { translate: 0 calc(var(--amp, 1) * -5.5px); } }
+@keyframes aa-A-toss { 0%, 22% { translate: 0 7px; opacity: 1; scale: 1; rotate: 0deg; } 25% { translate: 0 9px; } 32% { translate: 0 -6px; animation-timing-function: cubic-bezier(.2,.7,.4,1); } 58% { translate: 0 -34px; opacity: 0; rotate: 40deg; } 60%, 72% { translate: 0 7px; opacity: 0; scale: 0; rotate: 0deg; } 82% { opacity: 1; scale: 1.1; } 90%, 100% { translate: 0 7px; scale: 1; opacity: 1; } }
+@keyframes aa-A-tossbody { 0%, 14%, 46%, 76%, 90%, 100% { scale: 1 1; translate: 0 0; } 24% { scale: 1.1 .86; translate: 0 1px; } 32% { scale: .93 1.1; translate: 0 calc(var(--amp, 1) * -3px); } 82% { scale: 1.04 .95; } }
+@keyframes aa-A-tosseyes { 0%, 24%, 70%, 100% { translate: 0 -3.5px; } 40%, 56% { translate: 0 calc(var(--amp, 1) * -6px); } }
+@keyframes aa-A-lift { 0% { translate: 0 7px; } 20% { translate: 0 4px; } 28% { translate: 0 5px; } 45% { translate: 0 -2px; } 53% { translate: 0 -1px; } 70%, 86% { translate: 0 -9px; } 94% { translate: 0 7px; animation-timing-function: ease-in; } 100% { translate: 0 7px; } }
+@keyframes aa-A-balloon { 0% { translate: 0 4px; opacity: 0; scale: .6; rotate: 0deg; } 12% { opacity: 1; scale: 1; translate: 0 2px; } 40% { translate: 2px -8px; rotate: 6deg; } 70% { translate: -2px -22px; rotate: -6deg; opacity: 1; } 100% { translate: 1px -36px; rotate: 4deg; opacity: 0; scale: 1; } }
+@keyframes aa-A-balloneyes { 0% { translate: 0 -3px; } 70%, 100% { translate: 1px calc(var(--amp, 1) * -6px); } }
+@keyframes aa-A-release { 0%, 4%, 22%, 100% { translate: 0 0; scale: 1 1; } 10% { translate: 0 calc(var(--amp, 1) * -3px); scale: .97 1.04; } }
+@keyframes aa-A-rocket { 0%, 25% { translate: 0 0; opacity: 1; } 27% { translate: .6px 0; } 29% { translate: -.6px 0; } 31% { translate: 0 0; animation-timing-function: cubic-bezier(.5,0,.9,.6); } 75% { translate: 0 -70px; opacity: 1; } 76%, 88% { translate: 0 0; opacity: 0; } 100% { translate: 0 0; opacity: 1; } }
+@keyframes aa-A-flame { from { scale: 1 .7; } to { scale: 1 1.4; } }
+@keyframes aa-A-smoke { 0%, 28% { scale: .2; opacity: 0; } 32% { opacity: .9; } 60%, 100% { scale: 1.9; opacity: 0; } }
+@keyframes aa-A-rocketeyes { 0%, 30% { translate: calc(var(--amp, 1) * 4px) 1px; } 70% { translate: calc(var(--amp, 1) * 4px) calc(var(--amp, 1) * -5.5px); } 90%, 100% { translate: calc(var(--amp, 1) * 4px) 1px; } }
+@keyframes aa-A-rocketbody { 0%, 30%, 100% { rotate: calc(var(--amp, 1) * 2deg); scale: 1 1; } 50% { rotate: calc(var(--amp, 1) * 4deg); scale: .97 1.04; } 75% { rotate: calc(var(--amp, 1) * 2deg); scale: 1 1; } }

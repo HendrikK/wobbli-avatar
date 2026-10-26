@@ -1,0 +1,43 @@
+.aa-av .budb { fill: #9BD08F; }
+.aa-av .person { fill: #B5AC9E; }
+.aa-av .arw2 { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 60; stroke-dashoffset: 60; }
+.aa-av .arh { stroke-width: 2.2; stroke-linejoin: round; }
+.aa-av .bdy, .aa-av .prs { transform-origin: 50% 100%; }
+.aa-av.v-hobaton .fx-buddy, .aa-av.v-hobaton .fx-baton { display: inline; }
+.aa-av.v-hobaton .btn { animation: aa-C-baton 2.4s ease-in-out infinite; }
+.aa-av.v-hobaton .bdy, .aa-av.v-hoenv .bdy { animation: aa-C-catch 2.4s infinite; }
+.aa-av.v-hobaton .w { animation: aa-C-throw 2.4s ease-in-out infinite; }
+.aa-av.v-hobaton .gz, .aa-av.v-hoenv .gz { animation: aa-C-throweyes 2.4s ease-in-out infinite; }
+.aa-av.v-hoenv .fx-buddy, .aa-av.v-hoenv .fx-env { display: inline; }
+.aa-av.v-hoenv .env { animation: aa-C-env 2.4s ease-in-out infinite; }
+.aa-av.v-hoenv .w { animation: aa-C-throw 2.4s ease-in-out infinite; }
+.aa-av.v-hoarrow .fx-buddy, .aa-av.v-hoarrow .fx-parrow { display: inline; }
+.aa-av.v-hoarrow .arw2 { animation: aa-C-draw 2.6s ease-in-out infinite; }
+.aa-av.v-hoarrow .arh { opacity: 0; animation: aa-C-arh 2.6s infinite; }
+.aa-av.v-hoarrow .bdy { animation: aa-C-hop 2.6s infinite; }
+.aa-av.v-hoarrow .gz { animation: aa-C-arroweyes 2.6s ease-in-out infinite; }
+.aa-av.v-hotag .fx-buddy, .aa-av.v-hotag .fx-tagstar { display: inline; }
+.aa-av.v-hotag .w { animation: aa-C-tagme 2.4s ease-in-out infinite; }
+.aa-av.v-hotag .bdy { animation: aa-C-tagged 2.4s ease-out infinite; }
+.aa-av.v-hotag .tstar { opacity: 0; animation: aa-C-pow 2.4s infinite; }
+.aa-av.v-hotag .gz { transform: translate(4px, 0.5px); }
+.aa-av.v-hoperson .fx-person { display: inline; }
+.aa-av.v-hoperson .pcard { animation: aa-C-pcard 2.6s ease-in-out infinite; }
+.aa-av.v-hoperson .pbadge { animation: aa-C-badge 2.6s infinite; }
+.aa-av.v-hoperson .gz { animation: aa-C-throweyes 2.6s ease-in-out infinite; }
+.aa-av.v-hoperson .w { animation: aa-C-offer 2.6s ease-in-out infinite; }
+@keyframes aa-C-catch { 0%, 42%, 60%, 100% { scale: 1 1; translate: 0 0; } 47% { scale: 1.12 .86; } 53% { scale: .95 1.08; translate: 0 -3px; } }
+@keyframes aa-C-throweyes { 0%, 15%, 90%, 100% { translate: calc(var(--amp, 1) * 2px) 0; } 30%, 80% { translate: calc(var(--amp, 1) * 5px) 1px; } }
+@keyframes aa-C-baton { 0% { translate: 0 0; rotate: 0deg; opacity: 0; } 8%, 15% { translate: 0 0; rotate: 0deg; opacity: 1; } 30% { translate: 12px -12px; rotate: 200deg; } 45%, 75% { translate: 23px 0; rotate: 360deg; opacity: 1; } 85%, 100% { translate: 23px 0; rotate: 360deg; opacity: 0; } }
+@keyframes aa-C-throw { 0%, 100% { rotate: 0deg; } 12% { rotate: calc(var(--amp, 1) * -5deg); } 20% { rotate: calc(var(--amp, 1) * 6deg); } 32% { rotate: 0deg; } }
+@keyframes aa-C-env { 0% { translate: 0 0; rotate: 0deg; opacity: 0; scale: .5; } 10% { opacity: 1; scale: 1; } 20% { translate: 0 0; rotate: -10deg; } 45% { translate: 22px -6px; rotate: 12deg; } 55%, 75% { translate: 26px 2px; rotate: 0deg; opacity: 1; scale: 1; } 85%, 100% { translate: 28px 6px; rotate: 0deg; opacity: 0; scale: .4; } }
+@keyframes aa-C-draw { 0%, 5% { stroke-dashoffset: 60; opacity: 1; } 40% { stroke-dashoffset: 0; } 80% { stroke-dashoffset: 0; opacity: 1; } 90%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-C-arh { 0%, 38% { opacity: 0; } 42%, 80% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes aa-C-hop { 0%, 42%, 62%, 100% { translate: 0 0; scale: 1 1; } 46% { scale: 1.1 .9; } 52% { translate: 0 -5px; scale: .95 1.06; } 58% { translate: 0 0; scale: 1.06 .94; } }
+@keyframes aa-C-arroweyes { 0%, 5%, 95%, 100% { translate: 0 0; } 20% { translate: calc(var(--amp, 1) * 3px) calc(var(--amp, 1) * -4px); } 40%, 80% { translate: calc(var(--amp, 1) * 5px) 1px; } }
+@keyframes aa-C-tagme { 0%, 100% { translate: 0 0; rotate: 0deg; } 20% { translate: -3px 0; rotate: calc(var(--amp, 1) * -4deg); } 32% { translate: 11px 0; rotate: calc(var(--amp, 1) * 6deg); } 45%, 80% { translate: 0 0; rotate: 0deg; } }
+@keyframes aa-C-tagged { 0%, 31%, 100% { translate: 0 0; rotate: 0deg; scale: 1 1; } 40% { translate: 8px -6px; rotate: 15deg; } 52% { translate: 10px 0; rotate: 0deg; scale: 1 1; } 56% { scale: 1.08 .92; } 62%, 80% { translate: 10px 0; scale: 1 1; } }
+@keyframes aa-C-pow { 0%, 30% { scale: 0; opacity: 0; } 34% { scale: 1.4; opacity: 1; } 48%, 100% { scale: 0; opacity: 0; } }
+@keyframes aa-C-pcard { 0% { translate: 0 0; opacity: 0; scale: .5; } 10% { opacity: 1; scale: 1; } 20% { translate: 0 0; } 45%, 70% { translate: 18px 6px; opacity: 1; scale: 1; } 80%, 100% { translate: 20px 8px; opacity: 0; scale: .5; } }
+@keyframes aa-C-badge { 0%, 46% { scale: 0; } 52% { scale: 1.4; } 58%, 88% { scale: 1; } 95%, 100% { scale: 0; } }
+@keyframes aa-C-offer { 0%, 100% { rotate: 0deg; } 15%, 45% { rotate: calc(var(--amp, 1) * 5deg); } 60% { rotate: 0deg; } }

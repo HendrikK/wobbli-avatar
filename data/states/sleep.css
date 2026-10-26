@@ -1,0 +1,38 @@
+.aa-av .nc { fill: #5B6CCF; }
+.aa-av .ncw { fill: #FFFFFF; }
+.aa-av .ncb { fill: none; stroke: #FFFFFF; stroke-width: 5; stroke-linecap: round; }
+.aa-av .ncap { transform-origin: 50% 100%; }
+.aa-av .zz { font-size: 10px; }
+.aa-av .snot { fill: #DDF0FF; fill-opacity: .75; stroke: #8FB8DD; stroke-width: 1.1; }
+.aa-av.v-slcap .att-night, .aa-av.v-slcap .fx-zzz, .aa-av.v-slcap .eg-u, .aa-av.v-sldream .fx-dream, .aa-av.v-sldream .eg-u, .aa-av.v-slloaf .att-snot, .aa-av.v-slloaf .eg-u, .aa-av.v-slmoon .fx-night, .aa-av.v-slmoon .eg-u { display: inline; }
+.aa-av.v-slcap .ey, .aa-av.v-sldream .ey, .aa-av.v-slloaf .ey, .aa-av.v-slmoon .ey { opacity: 0; }
+.aa-av.v-slcap .zz { opacity: 0; animation: aa-D-z 3s ease-out infinite backwards; }
+.aa-av.v-slcap .zz:nth-of-type(2) { animation-delay: 1s; }
+.aa-av.v-slcap .zz:nth-of-type(3) { animation-delay: 2s; }
+.aa-av.v-slcap .w, .aa-av.v-sldream .w { animation: aa-D-sleepbreathe 3s ease-in-out infinite; }
+.aa-av.v-slcap .ncap { animation: aa-ap-wob 3s ease-in-out infinite; }
+.aa-av.v-slpause .fx-pause { display: inline; }
+.aa-av.v-slpause .pse { animation: aa-D-pausepulse 2s ease-in-out infinite; }
+.aa-av.v-slpause .e > path { animation: none; }
+.aa-av.v-slpause .w { scale: 1.03 .97; }
+.aa-av.v-slpause .sp { rotate: calc(var(--amp, 1) * 6deg); }
+.aa-av.v-slpause .gz { transform: translate(2px, -1px); }
+.aa-av.v-sldream .drm { animation: aa-D-drift 3s ease-in-out infinite; }
+.aa-av.v-sldream .dst { animation: aa-D-tw 1.5s ease-in-out infinite; }
+.aa-av.v-sldream .sp { rotate: calc(var(--amp, 1) * -5deg); }
+.aa-av.v-slloaf .w { animation: aa-D-loaf 3s ease-in-out infinite; }
+.aa-av.v-slloaf .snot { animation: aa-D-snot 3s ease-in-out infinite; }
+.aa-av.v-slmoon .mn { animation: aa-D-rock 4s ease-in-out infinite; }
+.aa-av.v-slmoon .nst { animation: aa-D-tw 1.8s ease-in-out infinite; }
+.aa-av.v-slmoon .nst:nth-of-type(3) { animation-delay: -.6s; }
+.aa-av.v-slmoon .nst:nth-of-type(4) { animation-delay: -1.2s; }
+.aa-av.v-slmoon .w { animation: aa-D-lull 4s ease-in-out infinite; }
+.aa-av.v-slcap .cos .hat { display: none !important; }
+@keyframes aa-D-sleepbreathe { 0%, 100% { scale: 1 1; } 50% { scale: 1.035 .97; } }
+@keyframes aa-D-tw { 0%, 100% { scale: .6; opacity: .5; } 50% { scale: 1.2; opacity: 1; } }
+@keyframes aa-D-z { 0% { translate: 0 0; scale: .5; opacity: 0; } 15% { opacity: 1; } 100% { translate: 12px -20px; scale: 1.3; opacity: 0; } }
+@keyframes aa-D-pausepulse { 0%, 100% { opacity: .55; scale: .95; } 50% { opacity: 1; scale: 1; } }
+@keyframes aa-D-loaf { 0%, 100% { scale: 1.12 .8; } 50% { scale: 1.15 .77; } }
+@keyframes aa-D-snot { 0%, 100% { scale: .3; } 50% { scale: 1; } }
+@keyframes aa-D-rock { 0%, 100% { rotate: -8deg; } 50% { rotate: 8deg; } }
+@keyframes aa-D-lull { 0%, 100% { rotate: calc(var(--amp, 1) * -3deg); } 50% { rotate: calc(var(--amp, 1) * 3deg); } }

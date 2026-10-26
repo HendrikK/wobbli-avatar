@@ -1,0 +1,28 @@
+.aa-av .smoke { fill: #CFC8BC; }
+.aa-av .hnd { transform-origin: 50% 100%; }
+.aa-av.v-bywave .fx-hand { display: inline; }
+.aa-av.v-bywave .ey { opacity: 0; }
+.aa-av.v-bywave .hnd { animation: aa-C-wave .8s ease-in-out infinite alternate; }
+.aa-av.v-bywave .mot { animation: aa-C-mot 1.6s infinite; }
+.aa-av.v-bywave .eg-u, .aa-av.v-bywave .cheeks { display: inline; }
+.aa-av.v-bywave .sp { rotate: calc(var(--amp, 1) * 5deg); }
+.aa-av.v-bywave .w { animation: aa-bb-bob 1.6s ease-in-out infinite alternate; }
+.aa-av.v-bydot .w { animation: aa-C-todot 3s ease-in-out infinite; }
+.aa-av.v-byhop .w { animation: aa-C-hopoff 3.2s infinite; }
+.aa-av.v-byhop .gz { transform: translate(4px, 0px); }
+.aa-av.v-bypoof .fx-poof { display: inline; }
+.aa-av.v-bypoof .w { animation: aa-C-poofbody 3s infinite; }
+.aa-av.v-bypoof .pf { opacity: 0; animation: aa-C-puff 3s ease-out infinite; }
+.aa-av.v-bypoof .pf:nth-of-type(2) { animation-delay: .04s; }
+.aa-av.v-bypoof .pf:nth-of-type(3) { animation-delay: .08s; }
+.aa-av.v-bypoof .pf:nth-of-type(4) { animation-delay: .12s; }
+.aa-av.v-bybow .w { animation: aa-C-bow 2.8s ease-in-out infinite; }
+.aa-av.v-bybow .gz { animation: aa-C-boweyes 2.8s ease-in-out infinite; }
+.aa-av.v-bybow .e > path { animation: aa-C-bowclose 2.8s ease-in-out infinite; }
+@keyframes aa-C-todot { 0%, 15% { scale: 1 1; } 22% { scale: 1.08 .92; } 45%, 72% { scale: .12 .12; } 80% { scale: 1.1 1.1; } 86%, 100% { scale: 1 1; } }
+@keyframes aa-C-hopoff { 0%, 10% { translate: 0 0; scale: 1 1; opacity: 1; } 14% { translate: 0 0; scale: 1.1 .9; } 22% { translate: 14px -12px; scale: .95 1.05; } 30% { translate: 28px 0; scale: 1.08 .92; } 38% { translate: 42px -12px; scale: .95 1.05; } 46% { translate: 56px 0; scale: 1 1; opacity: 1; } 52% { translate: 64px -6px; scale: 1 1; opacity: 0; } 70% { translate: 0 0; scale: 0 0; opacity: 0; } 78% { translate: 0 0; scale: 1.1 1.1; opacity: 1; } 84%, 100% { translate: 0 0; scale: 1 1; opacity: 1; } }
+@keyframes aa-C-poofbody { 0%, 30% { scale: 1 1; opacity: 1; } 36% { scale: 1.12 .9; opacity: 1; } 40% { scale: .2 .2; opacity: 0; } 76% { scale: .2 .2; opacity: 0; animation-timing-function: cubic-bezier(.2,1.6,.4,1); } 86%, 100% { scale: 1 1; opacity: 1; } }
+@keyframes aa-C-puff { 0%, 36% { scale: 0; opacity: 0; } 42% { scale: 1; opacity: 1; } 70%, 100% { scale: 1.3; opacity: 0; } }
+@keyframes aa-C-bow { 0%, 15%, 85%, 100% { scale: 1 1; } 35%, 65% { scale: 1.06 .8; } }
+@keyframes aa-C-boweyes { 0%, 15%, 85%, 100% { translate: 0 0; } 35%, 65% { translate: 0 6px; } }
+@keyframes aa-C-bowclose { 0%, 20%, 80%, 100% { scale: 1 1; } 32%, 68% { scale: 1.1 .15; } }

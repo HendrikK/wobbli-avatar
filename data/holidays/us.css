@@ -1,0 +1,28 @@
+.aa-av .hh { fill: #F2B33D; stroke: #C98A16; stroke-width: 1.6; stroke-linejoin: round; }
+.aa-av .hhb { fill: none; stroke: #C98A16; stroke-width: 3; stroke-linecap: round; }
+.aa-av.cos-mk-dove .x-dove, .aa-av.cos-mk-candle .x-candle, .aa-av.cos-mk-unity .c-hchain, .aa-av.cos-mk-service .x-sapling, .aa-av.cos-mk-march .x-steps, .aa-av.cos-mk-march .x-sign, .aa-av.cos-pr-stovepipe .c-stovepipe, .aa-av.cos-pr-stovepipe .c-bowk, .aa-av.cos-pr-tricorn .c-tricorn, .aa-av.cos-pr-tricorn .x-quill, .aa-av.cos-pr-flag .c-flagpin, .aa-av.cos-pr-flag .x-bunting, .aa-av.cos-pr-podium .c-tie, .aa-av.cos-pr-podium .x-podium, .aa-av.cos-pr-coin .x-coin, .aa-av.cos-jf-hat .c-unclesam, .aa-av.cos-jf-sparkler .x-sparkler, .aa-av.cos-jf-fireworks .x-fw2, .aa-av.cos-jf-flag .x-flag, .aa-av.cos-jf-shades .c-starglass, .aa-av.cos-jf-shades .x-pop, .aa-av.cos-lb-hardhat .c-hardhat, .aa-av.cos-lb-hardhat .x-pail, .aa-av.cos-lb-hammock .x-hammock, .aa-av.cos-lb-hammock .x-zz, .aa-av.cos-lb-bbq .c-apron, .aa-av.cos-lb-bbq .x-grill, .aa-av.cos-lb-toolbelt .c-belt, .aa-av.cos-lb-lemonade .c-sunhat, .aa-av.cos-lb-lemonade .x-lemonade, .aa-av.cos-ip-sisters .x-sisters, .aa-av.cos-ip-sunrise .x-hills, .aa-av.cos-ip-river .x-river, .aa-av.cos-ip-turtle .x-turtle, .aa-av.cos-ip-tree .x-tree, .aa-av.cos-tg-leaves .c-ascarf, .aa-av.cos-tg-leaves .x-leaves, .aa-av.cos-tg-pie .x-pie, .aa-av.cos-tg-turkey .b-turkey, .aa-av.cos-tg-turkey .c-wattle, .aa-av.cos-tg-harvest .x-horn, .aa-av.cos-tg-feast .c-bib, .aa-av.cos-tg-feast .x-cutlery { display: inline; }
+.aa-av .dwing { transform-origin: 50% 100%; animation: aa-H2-wing .3s ease-in-out infinite alternate; }
+.aa-av .halo { animation: aa-H2-halo 1.8s ease-in-out infinite alternate; }
+.aa-av .quill { transform-origin: 0% 100%; animation: aa-H2-write .5s ease-in-out infinite alternate; }
+.aa-av .toss { animation: aa-H2-toss 1.6s ease-in-out infinite; }
+.aa-av .cflip { animation: aa-H2-flip .4s linear infinite; }
+.aa-av .ipop { transform-origin: 50% 100%; animation: aa-H2-lick 1.2s ease-in-out infinite alternate; }
+.aa-av .sunrise2 { animation: aa-H2-rise 4s ease-in-out infinite alternate; }
+.aa-av .wv2 { animation: aa-H2-wv 1.8s linear infinite; }
+.aa-av .fish { animation: aa-H2-jump 2.6s ease-in-out infinite; }
+.aa-av .trt { animation: aa-H2-walk 9s linear infinite; }
+.aa-av .trl { transform-origin: 50% 0%; animation: aa-H2-step .45s ease-in-out infinite alternate; }
+.aa-av .canopy { transform-origin: 50% 100%; animation: aa-H2-sway 2.4s ease-in-out infinite alternate; }
+.aa-av .knf > g > * { animation-delay: -.8s; }
+@keyframes aa-H2-wing { from { scale: 1 1; } to { scale: 1 -.5; } }
+@keyframes aa-H2-halo { from { opacity: .12; scale: .85; } to { opacity: .35; scale: 1.1; } }
+@keyframes aa-H2-write { from { translate: -4px 0; rotate: -4deg; } to { translate: 3px 2px; rotate: 4deg; } }
+@keyframes aa-H2-toss { 0%, 100% { translate: 0 10px; } 50% { translate: 0 -6px; } }
+@keyframes aa-H2-flip { 0% { scale: 1 1; } 25% { scale: .1 1; } 50% { scale: -1 1; } 75% { scale: -.1 1; } 100% { scale: 1 1; } }
+@keyframes aa-H2-lick { from { rotate: -6deg; } to { rotate: 6deg; } }
+@keyframes aa-H2-rise { from { translate: 0 8px; } to { translate: 0 -2px; } }
+@keyframes aa-H2-wv { from { translate: 0 0; } to { translate: -12px 0; } }
+@keyframes aa-H2-jump { 0%, 30% { translate: -14px 6px; rotate: -40deg; opacity: 0; } 35% { opacity: 1; } 50% { translate: -4px -10px; rotate: 0deg; } 65% { translate: 6px 4px; rotate: 50deg; opacity: 1; } 70%, 100% { translate: 6px 4px; rotate: 50deg; opacity: 0; } }
+@keyframes aa-H2-walk { 0% { translate: 0 0; opacity: 0; } 8% { opacity: 1; } 88% { opacity: 1; } 100% { translate: 62px 0; opacity: 0; } }
+@keyframes aa-H2-step { from { rotate: -25deg; } to { rotate: 25deg; } }
+@keyframes aa-H2-sway { from { rotate: -4deg; } to { rotate: 4deg; } }

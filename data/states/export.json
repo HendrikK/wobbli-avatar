@@ -1,0 +1,105 @@
+{
+  "key": "export",
+  "name": "Exporting",
+  "when": "Making a PowerPoint, PDF or Excel copy",
+  "group": "data",
+  "verb": "exports",
+  "mouth": "smile",
+  "hands": "offer",
+  "pose": {
+    "sx": 1.05,
+    "sy": 0.8,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "exprint",
+      "name": "Print",
+      "desc": "A page slides out of its side while it buzzes like a printer.",
+      "hands": "type"
+    },
+    {
+      "key": "exstamp",
+      "name": "Stamp",
+      "desc": "Hops up and stamps the page with a green tick.",
+      "pose": {
+        "sx": 1.4,
+        "sy": 0.45,
+        "ex": 0.3,
+        "ey": 0,
+        "rot": 10,
+        "lock": 1
+      },
+      "hands": "hammer"
+    },
+    {
+      "key": "explane",
+      "name": "Paper plane",
+      "desc": "Throws a paper plane that glides off to the right.",
+      "hands": "reach"
+    },
+    {
+      "key": "exdeck",
+      "name": "Deal slides",
+      "desc": "Deals three slides out into a fan.",
+      "hands": "offer"
+    },
+    {
+      "key": "exbox",
+      "name": "Box up",
+      "desc": "A page drops into a box, the flaps fold shut and it bounces.",
+      "hands": "stop"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 212,
+      "k": "fx-print",
+      "on": [
+        "v-exprint"
+      ],
+      "t": "<g class=\"fx-print\"><g transform=\"translate(74 50)\"><g class=\"a prt\"><rect class=\"pw\" x=\"0\" y=\"-11\" width=\"17\" height=\"22\" rx=\"1.5\"></rect><path class=\"line2\" d=\"M4 -5H13M4 -1H13M4 3H10\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 213,
+      "k": "fx-stamp",
+      "on": [
+        "v-exstamp"
+      ],
+      "t": "<g class=\"fx-stamp\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 82)\"><g class=\"a stp\"><rect class=\"pw\" x=\"-12\" y=\"-7\" width=\"24\" height=\"14\" rx=\"1.5\"></rect><path class=\"line2\" d=\"M-8 -2H2M-8 2H5\"></path><g transform=\"translate(7 0)\"><path class=\"a stck ok\" d=\"M-4 0L-1 3L4 -3\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 214,
+      "k": "fx-plane",
+      "on": [
+        "v-explane"
+      ],
+      "t": "<g class=\"fx-plane\" transform=\"translate(0 {{a.up}})\"><path class=\"ptrail\" d=\"M64 34Q74 30 82 22Q88 14 98 10\"></path><g transform=\"translate(68 30)\"><g class=\"a pln\"><path class=\"pw\" d=\"M-9 1L9 -6L1 7L-1 2Z\"></path><path class=\"thin\" d=\"M9 -6L-1 2\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 215,
+      "k": "fx-deck",
+      "on": [
+        "v-exdeck"
+      ],
+      "t": "<g class=\"fx-deck\"><g transform=\"translate(62 48)\"><g class=\"a dk1\"><rect class=\"pw\" x=\"-8\" y=\"-5.5\" width=\"16\" height=\"11\" rx=\"1.2\"></rect><rect class=\"head\" x=\"-5.5\" y=\"-3\" width=\"7\" height=\"2.2\" rx=\".8\"></rect><path class=\"line2\" d=\"M-5.5 1.5H4\"></path></g><g class=\"a dk2\"><rect class=\"pw\" x=\"-8\" y=\"-5.5\" width=\"16\" height=\"11\" rx=\"1.2\"></rect><rect class=\"head\" x=\"-5.5\" y=\"-3\" width=\"7\" height=\"2.2\" rx=\".8\"></rect><path class=\"line2\" d=\"M-5.5 1.5H4\"></path></g><g class=\"a dk3\"><rect class=\"pw\" x=\"-8\" y=\"-5.5\" width=\"16\" height=\"11\" rx=\"1.2\"></rect><rect class=\"head\" x=\"-5.5\" y=\"-3\" width=\"7\" height=\"2.2\" rx=\".8\"></rect><path class=\"line2\" d=\"M-5.5 1.5H4\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 216,
+      "k": "fx-xbox",
+      "on": [
+        "v-exbox",
+        "v-imunpack"
+      ],
+      "t": "<g class=\"fx-xbox\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 84)\"><g transform=\"translate(0 -36)\"><g class=\"a xpg\"><rect class=\"pw\" x=\"-6\" y=\"-8\" width=\"12\" height=\"16\" rx=\"1\"></rect><path class=\"line2\" d=\"M-3 -3H3M-3 1H3\"></path></g></g><g class=\"a xb\"><path class=\"a flp bx\" d=\"M-13 -7L-17 -15H-2L0 -7Z\"></path><path class=\"a flp2 bx\" d=\"M13 -7L17 -15H2L0 -7Z\"></path><rect class=\"bx\" x=\"-13\" y=\"-7\" width=\"26\" height=\"14\" rx=\"1.5\"></rect></g></g></g>"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Generator 1 is frozen for all of version 1: a pull request that changes the golden fixtures or the vendored
+# Blobatar geometry fails, whatever else it does (docs/DESIGN.md, The name contract).
+name: Golden fixtures
+on: pull_request
+permissions:
+  contents: read
+jobs:
+  frozen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Fail when generator-1.json or the vendored Blobatar changed
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git diff --name-only "origin/$BASE_REF"...HEAD -- test/fixtures/generator-1.json src/vendor > changed.txt
+          if [ -s changed.txt ]; then echo "Generator 1 is frozen for version 1. Changed:"; cat changed.txt; exit 1; fi

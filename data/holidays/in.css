@@ -1,0 +1,106 @@
+.aa-av .o-s, .aa-av .f-s { fill: #FF9933; }
+.aa-av .s-s { stroke: #FF9933; }
+.aa-av .o-i, .aa-av .f-i { fill: #138808; }
+.aa-av .s-i { stroke: #138808; }
+.aa-av.cos-ms-kite .x-kite, .aa-av.cos-ms-kitefight .x-kites2, .aa-av.cos-ms-tilgul .x-tilgul, .aa-av.cos-ms-sugarcane .x-canes, .aa-av.cos-ms-bonfire .x-bonfire, .aa-av.cos-pg-pot .x-pongalpot, .aa-av.cos-pg-kolam .x-kolam, .aa-av.cos-pg-sun .x-surya, .aa-av.cos-pg-sugarcane .b-cane, .aa-av.cos-pg-bell .c-garland, .aa-av.cos-rd-flag .x-trflag, .aa-av.cos-rd-flypast .x-flypast, .aa-av.cos-rd-badge .c-tribadge, .aa-av.cos-rd-badge .x-tripetals, .aa-av.cos-rd-drum .x-drum, .aa-av.cos-rd-chakra .x-chakra, .aa-av.cos-sh-moon .x-moon, .aa-av.cos-sh-diyas .x-diyas, .aa-av.cos-sh-bel .x-bel, .aa-av.cos-sh-mala .c-mala, .aa-av.cos-sh-bell .x-tbell, .aa-av.cos-ho-cloud .x-gulal, .aa-av.cos-ho-pichkari .x-pichkari, .aa-av.cos-ho-splash .c-splats, .aa-av.cos-ho-balloon .x-wballoon, .aa-av.cos-ho-thali .x-thali, .aa-av.cos-ef-moon .x-crescent, .aa-av.cos-ef-lantern .x-lantern, .aa-av.cos-ef-sweets .x-sheer, .aa-av.cos-ef-eidi .x-eidi, .aa-av.cos-ef-lights .x-lights2, .aa-av.cos-mj-lotus .x-lotus, .aa-av.cos-mj-petals .x-wpetals, .aa-av.cos-mj-diya .x-diya1, .aa-av.cos-mj-butterflies .x-bflies, .aa-av.cos-mj-flags .x-jbunting { display: inline; }
+.aa-av .k1 { transform-origin: 50% 0%; animation: aa-H4-k1 3s ease-in-out infinite; }
+.aa-av .k2 { transform-origin: 50% 0%; animation: aa-H4-k2 3s ease-in-out infinite; }
+.aa-av .cane2 { transform-origin: 50% 100%; animation: aa-H4-sway 2.6s ease-in-out infinite alternate; }
+.aa-av .cane3 { animation-delay: -1.3s; }
+.aa-av .foam { transform-origin: 50% 100%; animation: aa-H4-foam 1.2s ease-in-out infinite alternate; }
+.aa-av .kol { stroke-dasharray: 100; animation: aa-H4-draw 4s ease-in-out infinite; }
+.aa-av .surya { animation: aa-H4-surya 4s ease-in-out infinite alternate; }
+.aa-av .ftrl { stroke-dasharray: 100; animation: aa-H4-trail 3.2s ease-out infinite; }
+.aa-av .stk1 { animation: aa-H4-stick .3s ease-in-out infinite alternate; }
+.aa-av .stk2 { animation: aa-H4-stick2 .3s ease-in-out infinite alternate; animation-delay: -.15s; }
+.aa-av .chak { animation: aa-H-spin 12s linear infinite; }
+.aa-av .spray { animation: aa-H4-spray .5s linear infinite; }
+.aa-av .wbal { animation: aa-H4-throw 2.4s ease-in infinite; }
+.aa-av .wsplash { animation: aa-H4-splash 2.4s ease-out infinite; }
+.aa-av .lglow { animation: aa-H4-glow .7s ease-in-out infinite alternate; }
+.aa-av .lotus { transform-origin: 50% 100%; animation: aa-H4-bloom 3s ease-in-out infinite alternate; }
+.aa-av .bflp { animation: aa-H-flap .25s ease-in-out infinite alternate; }
+.aa-av.cos-vk-wheat .x-wheat, .aa-av.cos-vk-dhol .x-dhol, .aa-av.cos-vk-phulkari .c-phulkari, .aa-av.cos-vk-sun .x-hsun, .aa-av.cos-vk-sun .x-grains, .aa-av.cos-vk-mela .x-pinwheel, .aa-av.cos-vk-mela .x-mballoons, .aa-av.cos-bp-moon .x-fullmoon, .aa-av.cos-bp-lotus .x-pond, .aa-av.cos-bp-leaf .x-bodhi, .aa-av.cos-bp-lanterns .x-skylant, .aa-av.cos-bp-candle .x-candles3, .aa-av.cos-ed-lanterns .x-lant3, .aa-av.cos-ed-star .x-star8, .aa-av.cos-ed-feast .x-feast, .aa-av.cos-ed-gifts .x-gifts, .aa-av.cos-ed-crescent .x-crescent2, .aa-av.cos-id-kites .x-tkites, .aa-av.cos-id-hoist .x-hoist, .aa-av.cos-id-balloons .x-tballoons, .aa-av.cos-id-scarf .c-tricscarf, .aa-av.cos-id-sweets .x-jalebi, .aa-av.cos-jm-feather .c-feather, .aa-av.cos-jm-flute .c-flute, .aa-av.cos-jm-flute .x-fnotes, .aa-av.cos-jm-butter .x-makhan, .aa-av.cos-jm-handi .x-handi, .aa-av.cos-jm-cradle .x-cradle, .aa-av.cos-gc-modak .x-modaks, .aa-av.cos-gc-marigold .c-garland2, .aa-av.cos-gc-marigold .x-mpetals, .aa-av.cos-gc-mouse .x-mouse, .aa-av.cos-gc-hibiscus .c-hibiscus, .aa-av.cos-gc-cymbals .x-cymbals, .aa-av.cos-on-pookalam .x-pookalam, .aa-av.cos-on-boat .x-boat, .aa-av.cos-on-umbrella .x-olakkuda, .aa-av.cos-on-kasavu .c-kasavu, .aa-av.cos-on-sadhya .x-sadhya { display: inline; }
+.aa-av .lglow { animation: aa-H5-glow .7s ease-in-out infinite alternate; }
+.aa-av .whs { transform-origin: 50% 100%; animation: aa-H5-sway 2.4s ease-in-out infinite alternate; }
+.aa-av .whs2 { animation-delay: -1.2s; }
+.aa-av .db1 { animation: aa-H5-db1 .25s ease-in-out infinite alternate; }
+.aa-av .db2 { animation: aa-H5-db2 .5s ease-in-out infinite alternate; }
+.aa-av .hrays { animation: aa-H-spin 16s linear infinite; }
+.aa-av .ripl { animation: aa-H5-ripple 2.2s ease-out infinite; }
+.aa-av .ripl2 { animation-delay: -1.1s; }
+.aa-av .st8 { animation: aa-H-spin 10s linear infinite; }
+.aa-av .kt { transform-origin: 50% 100%; animation: aa-H5-kite 2.4s ease-in-out infinite alternate; }
+.aa-av .kt2 { animation-delay: -.8s; }
+.aa-av .kt3 { animation-delay: -1.6s; }
+.aa-av .hoist { animation: aa-H5-hoist 4s ease-in-out infinite; }
+.aa-av .hpet > g > * { transform-box: fill-box; transform-origin: center; animation: aa-H5-hpet 4s ease-out infinite; }
+.aa-av .hpet > g:nth-child(2) > * { animation-name: aa-H5-hpet2; }
+.aa-av .hpet > g:nth-child(3) > * { animation-name: aa-H5-hpet3; }
+.aa-av .fthr { transform-origin: 50% 100%; animation: aa-H5-sway 1.8s ease-in-out infinite alternate; }
+.aa-av .mouse { animation: aa-H5-nib .4s ease-in-out infinite alternate; }
+.aa-av .cym1 { animation: aa-H5-cym1 .6s ease-in infinite alternate; }
+.aa-av .cym2 { animation: aa-H5-cym2 .6s ease-in infinite alternate; }
+.aa-av .clash { animation: aa-H5-clash 1.2s infinite; }
+.aa-av .pook { animation: aa-H-spin 20s linear infinite; }
+.aa-av .boatg { animation: aa-H5-boat 1.2s ease-in-out infinite alternate; }
+.aa-av .oars { animation: aa-H5-oar .6s ease-in-out infinite alternate; }
+.aa-av .umb2 { transform-origin: 50% 100%; animation: aa-H5-umb 2s ease-in-out infinite alternate; }
+.aa-av.cos-gj-charkha .x-charkha, .aa-av.cos-gj-dove .c-dove, .aa-av.cos-gj-khadi .c-khadi, .aa-av.cos-gj-tribute .c-jasmine, .aa-av.cos-gj-tribute .x-lamp, .aa-av.cos-gj-walk .x-steps2, .aa-av.cos-gj-walk .x-stick2, .aa-av.cos-nv-dandiya .x-dandiya, .aa-av.cos-nv-garbo .x-garbo, .aa-av.cos-nv-mirror .c-mirror, .aa-av.cos-nv-colours .x-nine, .aa-av.cos-nv-twirl .b-ghagra, .aa-av.cos-dp-dhunuchi .x-dhunuchi, .aa-av.cos-dp-dhak .x-dhak, .aa-av.cos-dp-kash .x-kash, .aa-av.cos-dp-conch .x-conch, .aa-av.cos-dp-lights .x-pandal, .aa-av.cos-ds-bow .x-bowarrow, .aa-av.cos-ds-effigy .x-effigy, .aa-av.cos-ds-fireworks .x-fw3, .aa-av.cos-ds-leaves .x-goldleaves, .aa-av.cos-ds-crown .c-mukut, .aa-av.cos-ds-crown .x-sparkle2, .aa-av.cos-dw-diyas .x-diyarow, .aa-av.cos-dw-rangoli .x-rangoli, .aa-av.cos-dw-sparkler .x-phuljhadi, .aa-av.cos-dw-lantern .x-kandil, .aa-av.cos-dw-sweets .x-mithai, .aa-av.cos-gn-lights .x-gnlights, .aa-av.cos-gn-candles .x-gncandles, .aa-av.cos-gn-kirtan .x-harmonium, .aa-av.cos-gn-langar .x-langar, .aa-av.cos-gn-petals .x-rpetals { display: inline; }
+.aa-av .clash { animation: aa-H6-clash 1.2s infinite; }
+.aa-av .chw { animation: aa-H-spin 2.4s linear infinite; }
+.aa-av .perch { transform-origin: 50% 100%; animation: aa-H6-peck 2.4s ease-in-out infinite; }
+.aa-av .dd1 { animation: aa-H6-dd1 .6s ease-in infinite alternate; }
+.aa-av .dd2 { animation: aa-H6-dd2 .6s ease-in infinite alternate; }
+.aa-av .skirt { transform-origin: 50% 0%; animation: aa-H6-twirl .9s ease-in-out infinite alternate; }
+.aa-av .plume { transform-origin: 50% 100%; animation: aa-H6-plume 1.4s ease-in-out infinite alternate; }
+.aa-av .dkb { animation: aa-H6-beat .35s ease-in-out infinite alternate; }
+.aa-av .kgr { transform-origin: 50% 100%; animation: aa-H6-sway 2.4s ease-in-out infinite alternate; }
+.aa-av .kgr2 { animation-delay: -1.2s; }
+.aa-av .smk > g > * { animation-duration: 3.2s; }
+.aa-av .rgl { animation: aa-H-spin 24s linear infinite; }
+.aa-av .bel2 { transform-origin: 100% 50%; animation: aa-H6-bellows .8s ease-in-out infinite alternate; }
+.aa-av .lglow2 { animation: aa-H6-glow .7s ease-in-out infinite alternate; }
+.aa-av.cos-bp-lotus .gsh { display: none; }
+.aa-av .x-pond > g > ellipse:first-child { opacity: calc(.7 * var(--aa-shadow-strength, 1)); }
+@keyframes aa-H4-k1 { 0%, 100% { translate: 0 0; rotate: -10deg; } 50% { translate: 8px 4px; rotate: 15deg; } }
+@keyframes aa-H4-k2 { 0%, 100% { translate: 0 0; rotate: 10deg; } 50% { translate: -8px -3px; rotate: -12deg; } }
+@keyframes aa-H4-sway { from { rotate: -4deg; } to { rotate: 4deg; } }
+@keyframes aa-H4-foam { from { scale: 1 1; } to { scale: 1.08 1.3; } }
+@keyframes aa-H4-draw { 0% { stroke-dashoffset: 100; opacity: 1; } 60% { stroke-dashoffset: 0; } 88% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-H4-surya { from { translate: 0 6px; } to { translate: 0 -1px; } }
+@keyframes aa-H4-trail { 0% { stroke-dashoffset: 100; opacity: 1; } 55% { stroke-dashoffset: 0; opacity: 1; } 85%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-H4-stick { from { rotate: -22deg; } to { rotate: 4deg; } }
+@keyframes aa-H4-stick2 { from { rotate: 22deg; } to { rotate: -4deg; } }
+@keyframes aa-H4-spray { from { stroke-dashoffset: 12; } to { stroke-dashoffset: 0; } }
+@keyframes aa-H4-throw { 0% { translate: -80px -60px; rotate: 0deg; opacity: 0; scale: 1; } 8% { opacity: 1; } 50% { translate: -40px -78px; rotate: 160deg; } 78% { translate: 0 0; rotate: 300deg; opacity: 1; scale: 1; } 82%, 100% { translate: 0 0; rotate: 300deg; opacity: 0; scale: 1.4; } }
+@keyframes aa-H4-splash { 0%, 78% { scale: 0; opacity: 0; } 84% { scale: 1.2; opacity: 1; } 96%, 100% { scale: 1.3; opacity: 0; } }
+@keyframes aa-H4-glow { from { opacity: .45; } to { opacity: 1; } }
+@keyframes aa-H4-bloom { from { scale: .85 .8; } to { scale: 1.05 1.05; } }
+@keyframes aa-H5-sway { from { rotate: -5deg; } to { rotate: 5deg; } }
+@keyframes aa-H5-glow { from { opacity: .45; } to { opacity: 1; } }
+@keyframes aa-H5-db1 { from { rotate: -20deg; } to { rotate: 8deg; } }
+@keyframes aa-H5-db2 { from { rotate: 20deg; } to { rotate: -8deg; } }
+@keyframes aa-H5-ripple { 0% { scale: .3; opacity: 0; } 15% { opacity: 1; } 100% { scale: 1.4; opacity: 0; } }
+@keyframes aa-H5-kite { from { rotate: -10deg; translate: -2px 1px; } to { rotate: 10deg; translate: 2px -2px; } }
+@keyframes aa-H5-hoist { 0% { translate: 0 34px; opacity: 0; } 8% { opacity: 1; } 45%, 90% { translate: 0 0; opacity: 1; } 100% { translate: 0 0; opacity: 0; } }
+@keyframes aa-H5-hpet { 0%, 45% { translate: 0 0; opacity: 0; scale: .5; } 50% { opacity: 1; scale: 1; } 90% { opacity: 1; } 100% { translate: 3px 22px; opacity: 0; } }
+@keyframes aa-H5-hpet2 { 0%, 45% { translate: 0 0; opacity: 0; scale: .5; } 50% { opacity: 1; scale: 1; } 90% { opacity: 1; } 100% { translate: -5px 24px; opacity: 0; } }
+@keyframes aa-H5-hpet3 { 0%, 45% { translate: 0 0; opacity: 0; scale: .5; } 50% { opacity: 1; scale: 1; } 90% { opacity: 1; } 100% { translate: 8px 18px; opacity: 0; } }
+@keyframes aa-H5-nib { from { rotate: 0deg; translate: 0 0; } to { rotate: 6deg; translate: .6px 0; } }
+@keyframes aa-H5-cym1 { from { translate: -3px 0; } to { translate: 2.5px 0; } }
+@keyframes aa-H5-cym2 { from { translate: 3px 0; } to { translate: -2.5px 0; } }
+@keyframes aa-H5-clash { 0%, 40% { opacity: 0; scale: .6; } 50% { opacity: 1; scale: 1; } 70%, 100% { opacity: 0; scale: 1.2; } }
+@keyframes aa-H5-boat { from { translate: -3px 0; rotate: -1deg; } to { translate: 3px -1px; rotate: 1deg; } }
+@keyframes aa-H5-oar { from { translate: -2px 0; } to { translate: 2px 0; } }
+@keyframes aa-H5-umb { from { rotate: -3deg; } to { rotate: 3deg; } }
+@keyframes aa-H6-sway { from { rotate: -5deg; } to { rotate: 5deg; } }
+@keyframes aa-H6-clash { 0%, 40% { opacity: 0; scale: .6; } 50% { opacity: 1; scale: 1; } 70%, 100% { opacity: 0; scale: 1.2; } }
+@keyframes aa-H6-peck { 0%, 30%, 60%, 100% { rotate: 0deg; } 40% { rotate: 12deg; } 50% { rotate: 0deg; } 70% { rotate: -6deg; } }
+@keyframes aa-H6-dd1 { from { rotate: -6deg; } to { rotate: 10deg; } }
+@keyframes aa-H6-dd2 { from { rotate: 6deg; } to { rotate: -10deg; } }
+@keyframes aa-H6-twirl { from { scale: .9 1; } to { scale: 1.12 1.05; } }
+@keyframes aa-H6-plume { from { rotate: -8deg; } to { rotate: 8deg; } }
+@keyframes aa-H6-beat { from { rotate: -20deg; } to { rotate: 10deg; } }
+@keyframes aa-H6-bellows { from { scale: .6 1; } to { scale: 1.1 1; } }
+@keyframes aa-H6-glow { from { opacity: .45; } to { opacity: 1; } }

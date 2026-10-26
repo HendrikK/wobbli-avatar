@@ -1,0 +1,121 @@
+{
+  "key": "still",
+  "name": "Still working",
+  "when": "Taking longer than expected, still on it",
+  "group": "work",
+  "verb": "keeps going",
+  "mouth": "flat",
+  "hands": "brow",
+  "pose": {
+    "sx": 1.1,
+    "sy": 0.8,
+    "ex": 0,
+    "ey": 0,
+    "rot": 5,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "stcoffee",
+      "name": "Coffee",
+      "desc": "Takes a sip from a steaming mug, then gets back to it.",
+      "pose": {
+        "sx": 1.05,
+        "sy": 0.85,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "hands": "rest"
+    },
+    {
+      "key": "stpush",
+      "name": "Push on",
+      "desc": "Leans into a heavy block and inches it along.",
+      "pose": {
+        "sx": 1.25,
+        "sy": 0.45,
+        "ex": 0,
+        "ey": 0,
+        "rot": 10,
+        "lock": 1
+      },
+      "mouth": "grit",
+      "hands": "fists"
+    },
+    {
+      "key": "stsweat",
+      "name": "Second wind",
+      "desc": "A sweat drop rolls off, a quick shake, and it is wide awake again.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "nervous"
+    },
+    {
+      "key": "stwatch",
+      "name": "Stopwatch",
+      "desc": "A stopwatch ticks round overhead; it glances up each lap, then back to work.",
+      "hands": "tap"
+    },
+    {
+      "key": "stroad",
+      "name": "Long road",
+      "desc": "Trudges along a road toward a flag that is still a way off.",
+      "hands": "rest"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 248,
+      "k": "fx-stmug",
+      "on": [
+        "v-stcoffee"
+      ],
+      "t": "<g class=\"fx-stmug\" transform=\"translate({{a.side}} {{a.dn}})\"><g class=\"a stmug\"><path class=\"stmh\" d=\"M95 70.5Q100 70.5 100 74Q100 77.5 95 77.5\"></path><rect class=\"cst\" x=\"85\" y=\"68\" width=\"10\" height=\"13\" rx=\"2\"></rect><path class=\"ststm\" d=\"M88 64Q86.5 61.5 88 59Q89.5 56.5 88 54\"></path><path class=\"ststm\" d=\"M92 64Q90.5 61.5 92 59Q93.5 56.5 92 54\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 249,
+      "k": "fx-stblock",
+      "on": [
+        "v-stpush"
+      ],
+      "t": "<g class=\"fx-stblock\" transform=\"translate({{a.side}} {{a.dn}})\"><path class=\"stgnd\" d=\"M10 82H104\"></path><g class=\"a stblk\"><rect class=\"gst\" x=\"83\" y=\"63\" width=\"18\" height=\"18\" rx=\"2\"></rect><path class=\"stlines\" d=\"M87 68.5H97M87 73H93.5\"></path></g><g><circle class=\"a stpuf\" cx=\"16\" cy=\"79\" r=\"2.2\"></circle><circle class=\"a stpuf\" cx=\"11\" cy=\"77\" r=\"1.6\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 250,
+      "k": "fx-stdrop",
+      "on": [
+        "v-stsweat"
+      ],
+      "t": "<g class=\"fx-stdrop\" transform=\"translate({{a.side}} {{a.up}})\"><g class=\"a stdrop\"><path class=\"stdr\" d=\"M76 22Q79.5 27 79.5 29.5A3.5 3.5 0 0 1 72.5 29.5Q72.5 27 76 22Z\"></path></g><path class=\"stshk\" d=\"M86 34L90 32M87 40H91.5M86 46L90 48\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 251,
+      "k": "fx-stwatch",
+      "on": [
+        "v-stwatch"
+      ],
+      "t": "<g class=\"fx-stwatch\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 3)\"><rect class=\"dk\" x=\"-1.8\" y=\"-13\" width=\"3.6\" height=\"3\" rx=\"1\"></rect><circle class=\"pw\" cx=\"0\" cy=\"0\" r=\"9.5\"></circle><path class=\"sttk\" d=\"M0 -7V-5.6M7 0H5.6M0 7V5.6M-7 0H-5.6\"></path><g class=\"a sthand\"><circle cx=\"0\" cy=\"0\" r=\"7\" fill=\"none\"></circle><path class=\"stnd\" d=\"M0 0V-6.2\"></path></g><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"1.2\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 252,
+      "k": "fx-stroad",
+      "on": [
+        "v-stroad"
+      ],
+      "t": "<g class=\"fx-stroad\" transform=\"translate(0 {{a.dn}})\"><path class=\"strd\" d=\"M8 86H92\"></path><g transform=\"translate({{a.side}} 0)\"><path class=\"stpole\" d=\"M96 86V70\"></path><path class=\"cst stflag\" d=\"M96 70L104 73L96 76Z\"></path></g></g>"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "key": "idle",
+  "name": "Idle",
+  "when": "Waiting for you",
+  "group": "chat",
+  "verb": "rests",
+  "mouth": "smile",
+  "hands": "rest",
+  "pose": null,
+  "variants": [
+    {
+      "key": "idle",
+      "name": "Resting",
+      "desc": "Breathes and blinks. In Follow mode it watches the pointer.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 0
+      }
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 10,
+      "k": "att-mouth",
+      "on": [
+        "v-qubreath",
+        "v-wayawn",
+        "v-fyawn"
+      ],
+      "t": "<g class=\"att att-mouth\"><ellipse class=\"a mth\" fill=\"{{a.eye}}\" cx=\"{{a.mx}}\" cy=\"{{a.my}}\" rx=\"3.6\" ry=\"4.6\"></ellipse></g>"
+    }
+  ],
+  "fidgets": [
+    {
+      "key": "fglance",
+      "name": "Glance",
+      "ms": 2800
+    },
+    {
+      "key": "fstretch",
+      "name": "Stretch",
+      "ms": 2400,
+      "hands": "yay"
+    },
+    {
+      "key": "fblink",
+      "name": "Blink twice",
+      "ms": 900
+    },
+    {
+      "key": "flook",
+      "name": "Look up",
+      "ms": 2600
+    },
+    {
+      "key": "fshuffle",
+      "name": "Shuffle",
+      "ms": 2000
+    },
+    {
+      "key": "fyawn",
+      "name": "Yawn",
+      "ms": 3600,
+      "mouth": "own",
+      "hands": "covermouth"
+    },
+    {
+      "key": "fwake",
+      "name": "Wake up",
+      "ms": 1200,
+      "mouth": "osmall",
+      "hands": "rubeye"
+    }
+  ]
+}

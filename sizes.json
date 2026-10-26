@@ -1,0 +1,34 @@
+{
+  "note": "Gzipped bytes per entry with its up-front imports. Update with: pnpm size --record",
+  "entries": {
+    "index.js": 40964,
+    "element.js": 45359,
+    "dom.js": 44471,
+    "react.js": 44894,
+    "holidays.js": 32186,
+    "formats.js": 42583,
+    "styles.css": 6224
+  },
+  "lazy": {
+    "group-data": 6353,
+    "group-feelings": 8298,
+    "group-status": 6341,
+    "group-talk": 7242,
+    "group-work": 8285,
+    "hol-au": 1238,
+    "hol-br": 2844,
+    "hol-ca": 1114,
+    "hol-cn": 3821,
+    "hol-de": 4027,
+    "hol-fr": 1570,
+    "hol-gb": 4557,
+    "hol-ie": 5160,
+    "hol-in": 14276,
+    "hol-jp": 4413,
+    "hol-kr": 2172,
+    "hol-mx": 3421,
+    "hol-se": 2249,
+    "hol-shared": 6284,
+    "hol-us": 5543
+  }
+}

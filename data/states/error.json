@@ -1,0 +1,134 @@
+{
+  "key": "error",
+  "name": "Error",
+  "when": "Something failed and it is dealing with it",
+  "group": "status",
+  "verb": "trips up",
+  "mouth": "wobble",
+  "hands": "facepalm",
+  "pose": {
+    "sx": 1.15,
+    "sy": 0.8,
+    "ex": 0,
+    "ey": 0,
+    "rot": 10,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "erwarn",
+      "name": "Warning",
+      "desc": "A warning sign pops up: a jolt, then a determined look.",
+      "pose": {
+        "sx": 1.15,
+        "sy": 0.95,
+        "ex": 0,
+        "ey": 0,
+        "rot": 6,
+        "lock": 1
+      },
+      "mouth": "osmall",
+      "hands": "cheeks"
+    },
+    {
+      "key": "erwrench",
+      "name": "Fixing",
+      "desc": "Gets a wrench on it, looking determined.",
+      "mouth": "grit",
+      "hands": "hammer"
+    },
+    {
+      "key": "erband",
+      "name": "Bandage",
+      "desc": "Plaster on, shakes it off and gets ready again.",
+      "mouth": "frown",
+      "hands": "droop"
+    },
+    {
+      "key": "erglitch",
+      "name": "Glitch",
+      "desc": "Jitters with glitch bars and flashes of x eyes.",
+      "pose": {
+        "sx": 1.1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "ersmoke",
+      "name": "Smoke",
+      "desc": "A puff of smoke and dazed x eyes, then shakes it off.",
+      "mouth": "osmall",
+      "hands": "covermouth"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "glyph",
+      "i": 5,
+      "k": "eg-x",
+      "on": [
+        "v-erglitch",
+        "v-ersmoke"
+      ],
+      "t": "<g class=\"eg eg-x\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-4 -4L4 4M4 -4L-4 4\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-4 -4L4 4M4 -4L-4 4\"></path></g></g>"
+    },
+    {
+      "zone": "front",
+      "i": 8,
+      "k": "att-band",
+      "on": [
+        "v-erband"
+      ],
+      "t": "<g class=\"att att-band\" transform=\"translate({{a.bandx}} {{a.bandy}})\"><g class=\"a bdg\"><rect class=\"plaster\" x=\"-9\" y=\"-3\" width=\"18\" height=\"6\" rx=\"3\" transform=\"rotate(40)\"></rect><rect class=\"plaster\" x=\"-9\" y=\"-3\" width=\"18\" height=\"6\" rx=\"3\" transform=\"rotate(-40)\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 297,
+      "k": "fx-warn",
+      "on": [
+        "v-erwarn"
+      ],
+      "t": "<g class=\"fx-warn\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 4)\"><g class=\"a wrn\"><path class=\"wtri\" d=\"M0 -10L10 7H-10Z\"></path><path class=\"wex\" d=\"M0 -4V1.5\"></path><circle class=\"dk\" cx=\"0\" cy=\"4.2\" r=\"1.3\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 298,
+      "k": "fx-wrench",
+      "on": [
+        "v-erwrench"
+      ],
+      "t": "<g class=\"fx-wrench\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(94 62)\"><g class=\"a nt\"><path class=\"nut\" d=\"M-4 -6.9H4L8 0L4 6.9H-4L-8 0Z\"></path><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"1.8\"></circle></g><g class=\"vb0 wr\"><circle class=\"wrc\" cx=\"0\" cy=\"0\" r=\"9.5\" stroke-dasharray=\"52.2 7.5\" stroke-dashoffset=\"48.5\"></circle><path class=\"wrh\" d=\"M-6.7 -6.7L-16 -16\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 299,
+      "k": "fx-bump",
+      "on": [
+        "v-erband"
+      ],
+      "t": "<g class=\"fx-bump\"><g transform=\"translate({{a.bkx}} {{a.bky}})\"><path class=\"a bst gold\" d=\"M0 -4.5L1.3 -1.3L4.5 0L1.3 1.3L0 4.5L-1.3 1.3L-4.5 0L-1.3 -1.3Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 300,
+      "k": "fx-slices",
+      "on": [
+        "v-erglitch"
+      ],
+      "t": "<g class=\"fx-slices\" transform=\"translate(0 {{a.mo}})\"><rect class=\"a slc\" x=\"18\" y=\"34\" width=\"44\" height=\"4\" fill=\"#F27863\"></rect><rect class=\"a slc\" x=\"38\" y=\"58\" width=\"44\" height=\"3\" fill=\"#00BDCF\"></rect></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 301,
+      "k": "fx-smoke2",
+      "on": [
+        "v-ersmoke"
+      ],
+      "t": "<g class=\"fx-smoke2\" transform=\"translate(0 {{a.up}})\"><circle class=\"a sm2 smoke\" cx=\"46\" cy=\"14\" r=\"4.5\"></circle><circle class=\"a sm2 smoke\" cx=\"54\" cy=\"12\" r=\"4\"></circle><circle class=\"a sm2 smoke\" cx=\"50\" cy=\"10\" r=\"5\"></circle></g>"
+    }
+  ]
+}

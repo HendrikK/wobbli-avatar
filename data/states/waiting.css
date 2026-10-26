@@ -1,0 +1,34 @@
+.aa-av .rip { fill: none; stroke: #9C9488; stroke-width: 1.6; }
+.aa-av.v-walook .gz { animation: aa-C-look 4s ease-in-out infinite; }
+.aa-av.v-walook .w { animation: aa-C-lookbody 4s ease-in-out infinite; }
+.aa-av.v-waripple .fx-tapglass { display: inline; }
+.aa-av.v-waripple .rip { opacity: 0; animation: aa-C-rip 2s ease-out infinite; }
+.aa-av.v-waripple .rip:nth-of-type(2) { animation-name: aa-C-rip2; }
+.aa-av.v-waripple .tp { animation: aa-C-tp 2s ease-in-out infinite; }
+.aa-av.v-waripple .gz { transform: translate(0px, -1.5px); }
+.aa-av.v-waripple .w { animation: aa-C-tapbody 2s infinite; }
+.aa-av.v-wacursor .fx-cbub { display: inline; }
+.aa-av.v-wacursor .ccur { animation: aa-C-blinkc 1s infinite; }
+.aa-av.v-wacursor .gz { animation: aa-C-cureyes 4s ease-in-out infinite; }
+.aa-av.v-wacursor .w { animation: aa-bb-breathe 1.6s ease-in-out infinite alternate; }
+.aa-av.v-wayawn .att-mouth { display: inline; }
+.aa-av.v-wayawn .mth { animation: aa-C-yawnmouth 4.5s ease-in-out infinite; }
+.aa-av.v-wayawn .w { animation: aa-C-yawn 4.5s ease-in-out infinite; }
+.aa-av.v-wayawn .e > path { animation: aa-C-yawneyes 4.5s ease-in-out infinite; }
+.aa-av.v-wayawn .gz { animation: aa-C-yawngz 4.5s ease-in-out infinite; }
+.aa-av.v-waclock .fx-clock { display: inline; }
+.aa-av.v-waclock .chand { animation: aa-C-spin 3s steps(12) infinite; }
+.aa-av.v-waclock .cmin { animation: aa-C-spin 36s steps(12) infinite; }
+.aa-av.v-waclock .gz { animation: aa-C-clockeyes 3s ease-in-out infinite; }
+.aa-av.v-waclock .sp { animation: aa-C-tock 1s ease-in-out infinite alternate; }
+@keyframes aa-C-look { 0%, 35%, 100% { translate: calc(var(--amp, 1) * -3px) calc(var(--amp, 1) * 4.5px); } 45%, 88% { translate: 0 -1px; } }
+@keyframes aa-C-lookbody { 0%, 35%, 100% { rotate: calc(var(--amp, 1) * -3deg); scale: 1 1; translate: 0 0; } 42% { rotate: 0deg; scale: 1.03 .97; translate: 0 0; } 46% { translate: 0 -2px; scale: .98 1.02; } 52%, 88% { rotate: 0deg; scale: 1 1; translate: 0 0; } }
+@keyframes aa-C-rip { 0%, 10% { scale: .6; opacity: 0; } 12% { opacity: 1; } 40%, 100% { scale: 2.4; opacity: 0; } }
+@keyframes aa-C-rip2 { 0%, 30% { scale: .6; opacity: 0; } 32% { opacity: 1; } 60%, 100% { scale: 2.4; opacity: 0; } }
+@keyframes aa-C-tp { 0%, 60%, 100% { scale: 1; } 10%, 30% { scale: 1.45; } 20% { scale: 1.1; } }
+@keyframes aa-C-tapbody { 0%, 60%, 100% { scale: 1 1; } 10%, 30% { scale: 1.03 1.03; } 20% { scale: 1 1; } }
+@keyframes aa-C-blinkc { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes aa-C-cureyes { 0%, 40%, 100% { translate: calc(var(--amp, 1) * 3px) calc(var(--amp, 1) * -4px); } 50%, 90% { translate: 0 0; } }
+@keyframes aa-C-spin { to { rotate: 360deg; } }
+@keyframes aa-C-clockeyes { 0%, 45%, 100% { translate: calc(var(--amp, 1) * 3.5px) calc(var(--amp, 1) * -4px); } 55%, 90% { translate: 0 0; } }
+@keyframes aa-C-tock { from { rotate: -2deg; } to { rotate: 2deg; } }

@@ -1,0 +1,100 @@
+{
+  "key": "monitor",
+  "name": "Monitoring",
+  "when": "Watching a metric, alert or scheduled job",
+  "group": "status",
+  "verb": "keeps watch",
+  "mouth": "flat",
+  "hands": "visor",
+  "pose": {
+    "sx": 1.1,
+    "sy": 1,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "mobino",
+      "name": "Binoculars",
+      "desc": "Sweeps the horizon with binoculars.",
+      "hands": "bino"
+    },
+    {
+      "key": "mobeacon",
+      "name": "Beacon",
+      "desc": "A beacon on its head turns and flashes."
+    },
+    {
+      "key": "mopulse",
+      "name": "Pulse",
+      "desc": "A heartbeat line runs underneath, eyes following.",
+      "pose": {
+        "sx": 1.05,
+        "sy": 0.85,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "mocam",
+      "name": "Camera",
+      "desc": "A security camera pans in step with its eyes."
+    },
+    {
+      "key": "mogauge",
+      "name": "Gauge",
+      "desc": "Keeps an eye on a gauge that twitches into amber."
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 5,
+      "k": "att-bino",
+      "on": [
+        "v-mobino"
+      ],
+      "t": "<g class=\"att att-bino\"><path class=\"bino\" d=\"{{a.bnd}}\"></path><circle cx=\"{{a.shx1}}\" cy=\"{{a.shy1}}\" r=\"1.8\" fill=\"#FFFFFF\"></circle><circle cx=\"{{a.shx2}}\" cy=\"{{a.shy2}}\" r=\"1.8\" fill=\"#FFFFFF\"></circle></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 293,
+      "k": "fx-beacon",
+      "on": [
+        "v-mobeacon"
+      ],
+      "t": "<g class=\"fx-beacon\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 16)\"><g transform=\"translate(0 -6)\"><g class=\"vb0 bms\"><path class=\"beam2\" d=\"M0 0L32 -9V7Z\"></path></g></g><rect class=\"dk\" x=\"-6.5\" y=\"-2.5\" width=\"13\" height=\"3.5\" rx=\"1.2\"></rect><path class=\"bcn\" d=\"M-4.5 -2.5V-6A4.5 4.5 0 0 1 4.5 -6V-2.5Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 294,
+      "k": "fx-ecg",
+      "on": [
+        "v-mopulse"
+      ],
+      "t": "<g class=\"fx-ecg\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 91)\"><path class=\"ecgb\" d=\"M-30 0H-12L-9 -6L-5 7L-2 -10L1 4L3 0H30\"></path><path class=\"ecg\" d=\"M-30 0H-12L-9 -6L-5 7L-2 -10L1 4L3 0H30\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 295,
+      "k": "fx-cam",
+      "on": [
+        "v-mocam"
+      ],
+      "t": "<g class=\"fx-cam\" transform=\"translate({{a.side}} {{a.up}})\"><g transform=\"translate(94 8) scale(1.3)\"><path class=\"dk2\" d=\"M3.5 -5V5M3.5 0H0\"></path><g class=\"vb0 cam\"><rect class=\"pw\" x=\"-14\" y=\"-4\" width=\"13\" height=\"8\" rx=\"1.5\"></rect><rect class=\"dk\" x=\"-17\" y=\"-3\" width=\"3.5\" height=\"6\" rx=\"1\"></rect><circle class=\"a led2\" cx=\"-4\" cy=\"-1\" r=\"1.2\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 296,
+      "k": "fx-gauge",
+      "on": [
+        "v-mogauge"
+      ],
+      "t": "<g class=\"fx-gauge\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(94 60)\"><path class=\"pw\" d=\"M-11.5 1A11.5 11.5 0 0 1 11.5 1Z\"></path><path class=\"ga1\" d=\"M-8 0A8 8 0 0 1 -4 -6.9\"></path><path class=\"ga2\" d=\"M-4 -6.9A8 8 0 0 1 4 -6.9\"></path><path class=\"ga3\" d=\"M4 -6.9A8 8 0 0 1 8 0\"></path><g class=\"vb0 ndl\"><path class=\"dk2\" d=\"M0 0V-7\"></path></g><circle class=\"dk\" cx=\"0\" cy=\"0\" r=\"1.8\"></circle></g></g>"
+    }
+  ]
+}

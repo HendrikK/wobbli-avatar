@@ -1,0 +1,93 @@
+{
+  "key": "analyze",
+  "name": "Analyzing",
+  "when": "Forecasts, anomalies, drivers and what-ifs",
+  "group": "work",
+  "verb": "analyzes",
+  "mouth": "flat",
+  "hands": "chin",
+  "pose": {
+    "sx": 1.05,
+    "sy": 0.72,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "anline",
+      "name": "Line chart",
+      "desc": "A line draws across a chart while its eyes trace it."
+    },
+    {
+      "key": "anbars",
+      "name": "Bars",
+      "desc": "Bars rise and fall as it compares the numbers."
+    },
+    {
+      "key": "anglass",
+      "name": "Glasses",
+      "desc": "Puts on glasses and leans in to study, with a glint.",
+      "pose": {
+        "sx": 1.1,
+        "sy": 0.55,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "hands": "chin"
+    },
+    {
+      "key": "anpie",
+      "name": "Pie",
+      "desc": "A pie chart turns and one slice pops out."
+    },
+    {
+      "key": "anscatter",
+      "name": "Scatter",
+      "desc": "Points land on a chart, then a trend line cuts through."
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 4,
+      "k": "att-glasses",
+      "on": [
+        "v-anglass"
+      ],
+      "t": "<g class=\"att att-glasses\"><path class=\"gls\" d=\"{{a.gd}}\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 236,
+      "k": "fx-chart",
+      "on": [
+        "v-anbars",
+        "v-anline",
+        "v-anscatter"
+      ],
+      "t": "<g class=\"fx-chart\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(50 78)\"><rect class=\"pw\" x=\"-17\" y=\"-12\" width=\"34\" height=\"24\" rx=\"2\"></rect><path class=\"lnk2\" d=\"M-12 -8V8H13\"></path><path class=\"a cline\" d=\"M-10 4L-4 -1L1 2L6 -4L11 -7\"></path><g><rect class=\"a vbar hc\" x=\"-9.5\" y=\"-6\" width=\"4\" height=\"13\" rx=\"1\"></rect><rect class=\"a vbar hc\" x=\"-4\" y=\"-6\" width=\"4\" height=\"13\" rx=\"1\"></rect><rect class=\"a vbar hc\" x=\"1.5\" y=\"-6\" width=\"4\" height=\"13\" rx=\"1\"></rect><rect class=\"a vbar hc\" x=\"7\" y=\"-6\" width=\"4\" height=\"13\" rx=\"1\"></rect></g><g><circle class=\"a sdot dk\" cx=\"-8\" cy=\"4\" r=\"1.6\"></circle><circle class=\"a sdot dk\" cx=\"-4.5\" cy=\"1\" r=\"1.6\"></circle><circle class=\"a sdot dk\" cx=\"-1\" cy=\"3\" r=\"1.6\"></circle><circle class=\"a sdot dk\" cx=\"3\" cy=\"-2\" r=\"1.6\"></circle><circle class=\"a sdot dk\" cx=\"6.5\" cy=\"0\" r=\"1.6\"></circle><circle class=\"a sdot dk\" cx=\"10\" cy=\"-5\" r=\"1.6\"></circle></g><path class=\"trend\" d=\"M-10 5L11 -6\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 237,
+      "k": "fx-glint",
+      "on": [
+        "v-anglass"
+      ],
+      "t": "<g class=\"fx-glint\"><g transform=\"translate({{a.shx2}} {{a.shy2}})\"><path class=\"a gln\" fill=\"#FFFFFF\" d=\"M0 -4.5L1 -1L4.5 0L1 1L0 4.5L-1 1L-4.5 0L-1 -1Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 238,
+      "k": "fx-pie",
+      "on": [
+        "v-anpie"
+      ],
+      "t": "<g class=\"fx-pie\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 12)\"><g class=\"vb0 pie\"><circle class=\"hc\" cx=\"0\" cy=\"0\" r=\"9\"></circle><path class=\"a wedge gst\" d=\"M0 0V-9A9 9 0 0 1 9 0Z\"></path></g></g></g>"
+    }
+  ]
+}

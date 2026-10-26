@@ -1,0 +1,96 @@
+{
+  "key": "upload",
+  "name": "Uploading",
+  "when": "Sending a file, image or dataset",
+  "group": "data",
+  "verb": "uploads",
+  "mouth": "smile",
+  "hands": "yay",
+  "pose": {
+    "sx": 1.05,
+    "sy": 1,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "ularrow",
+      "name": "Arrow",
+      "desc": "An arrow launches up out of its head with a push."
+    },
+    {
+      "key": "ultoss",
+      "name": "Toss",
+      "desc": "Crouches and tosses a parcel up and out of sight.",
+      "hands": "yay"
+    },
+    {
+      "key": "ullift",
+      "name": "Lift",
+      "desc": "Strains to lift a parcel higher, step by step.",
+      "pose": {
+        "sx": 1.5,
+        "sy": 0.28,
+        "ex": 0.3,
+        "ey": 0.5,
+        "rot": 20,
+        "lock": 1
+      },
+      "hands": "lift"
+    },
+    {
+      "key": "ulballoon",
+      "name": "Balloon",
+      "desc": "A parcel floats away on a balloon while it watches.",
+      "hands": "reach"
+    },
+    {
+      "key": "ulrocket",
+      "name": "Rocket",
+      "desc": "A little rocket launches beside it in a puff of smoke.",
+      "hands": "cheer"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 200,
+      "k": "fx-dbox",
+      "on": [
+        "v-dlcatch",
+        "v-ullift",
+        "v-ultoss"
+      ],
+      "t": "<g class=\"fx-dbox\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 2)\"><g class=\"a db\"><rect class=\"bx\" x=\"-8\" y=\"-7\" width=\"16\" height=\"14\" rx=\"2\"></rect><path class=\"bxl\" d=\"M-8 -2H8M0 -7V-2\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 204,
+      "k": "fx-uarrow",
+      "on": [
+        "v-ularrow"
+      ],
+      "t": "<g class=\"fx-uarrow\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 6)\"><path class=\"a ua dk\" d=\"M-3.2 11H3.2V2H8.5L0 -7L-8.5 2H-3.2Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 205,
+      "k": "fx-balloon",
+      "on": [
+        "v-ulballoon"
+      ],
+      "t": "<g class=\"fx-balloon\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 -6)\"><g class=\"a bal\"><circle class=\"coral\" cx=\"0\" cy=\"0\" r=\"7.5\"></circle><path class=\"coral\" d=\"M-1.6 7.3H1.6L0 9Z\"></path><path class=\"thin\" d=\"M0 9Q2 12 0 15\"></path><rect class=\"bx\" x=\"-4\" y=\"15\" width=\"8\" height=\"7\" rx=\"1.5\"></rect></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 206,
+      "k": "fx-rocket",
+      "on": [
+        "v-ulrocket"
+      ],
+      "t": "<g class=\"fx-rocket\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(86 66)\"><g class=\"a rk\"><path class=\"a coral flame\" d=\"M-2.2 6Q0 13 2.2 6Z\"></path><path class=\"pw\" d=\"M0 -10C3.4 -6 3.4 2 2.4 6H-2.4C-3.4 2 -3.4 -6 0 -10Z\"></path><path class=\"dk\" d=\"M-2.6 1L-5.5 7L-2.4 6ZM2.6 1L5.5 7L2.4 6Z\"></path><circle cx=\"0\" cy=\"-3\" r=\"1.6\" fill=\"#7FB2F0\"></circle></g><circle class=\"a pf2 smoke\" cx=\"-5\" cy=\"9\" r=\"3.5\"></circle><circle class=\"a pf2 smoke\" cx=\"5\" cy=\"9\" r=\"3.5\"></circle></g></g>"
+    }
+  ]
+}

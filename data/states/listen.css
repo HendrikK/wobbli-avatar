@@ -1,0 +1,40 @@
+.aa-av .phb { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 3.6; stroke-linecap: round; }
+.aa-av .phc { fill: #F27863; stroke: var(--aa-ink, #3A3833); stroke-width: 1.6; stroke-linejoin: round; }
+.aa-av.v-liwaves .fx-inwaves { display: inline; }
+.aa-av.v-liwaves .lw { opacity: 0; animation: aa-C-inwave 1.5s linear infinite backwards; }
+.aa-av.v-liwaves .lw:nth-of-type(2) { animation-delay: .5s; }
+.aa-av.v-liwaves .lw:nth-of-type(3) { animation-delay: 1s; }
+.aa-av.v-liwaves .gz { transform: translate(-3.5px, 0px); }
+.aa-av.v-liwaves .sp { rotate: calc(var(--amp, 1) * -4deg); }
+.aa-av.v-liwaves .w { animation: aa-C-pulse .5s ease-in-out infinite alternate; }
+.aa-av.v-liphones .att-phones { display: inline; }
+.aa-av.v-liphones .w { animation: aa-C-nodbeat .8s ease-in-out infinite; }
+.aa-av.v-liphones .gz { animation: aa-C-nodeyes .8s ease-in-out infinite; }
+.aa-av.v-limeter .fx-meter { display: inline; }
+.aa-av.v-limeter .mb { animation: aa-C-mb .5s ease-in-out infinite alternate; }
+.aa-av.v-limeter .mb:nth-of-type(2) { animation-duration: .35s; }
+.aa-av.v-limeter .mb:nth-of-type(3) { animation-duration: .45s; animation-delay: -.2s; }
+.aa-av.v-limeter .mb:nth-of-type(4) { animation-duration: .3s; }
+.aa-av.v-limeter .mb:nth-of-type(5) { animation-duration: .55s; animation-delay: -.3s; }
+.aa-av.v-limeter .gz { transform: translate(0px, 1px); }
+.aa-av.v-limeter .w { animation: aa-C-pulse .45s ease-in-out infinite alternate; }
+.aa-av.v-lilean .fx-ear { display: inline; }
+.aa-av.v-lilean .sp { rotate: calc(var(--amp, 1) * -12deg); translate: calc(var(--amp, 1) * -2px) 0; }
+.aa-av.v-lilean .w { animation: aa-C-hmm 2.2s ease-in-out infinite; }
+.aa-av.v-lilean .gz { transform: translate(-2px, 0.5px); }
+.aa-av.v-lilean .ea { animation: aa-C-ear 1.2s ease-in-out infinite; }
+.aa-av.v-lilean .ea:nth-of-type(2) { animation-delay: .3s; }
+.aa-av.v-limic .fx-mic { display: inline; }
+.aa-av.v-limic .mr { opacity: 0; animation: aa-C-micring 1.2s ease-out infinite backwards; }
+.aa-av.v-limic .mr:nth-of-type(2) { animation-delay: .6s; }
+.aa-av.v-limic .gz { transform: translate(0px, 2.5px); }
+.aa-av.v-limic .w { animation: aa-C-pulse .4s ease-in-out infinite alternate; }
+.aa-av.v-liphones .cos .hat { display: none !important; }
+@keyframes aa-C-pulse { from { scale: 1 1; } to { scale: 1.025 1.025; } }
+@keyframes aa-C-inwave { 0% { translate: -12px 0; opacity: 0; scale: 1.3; } 25% { opacity: 1; } 100% { translate: 4px 0; opacity: 0; scale: .7; } }
+@keyframes aa-C-nodbeat { 0%, 100% { translate: 0 0; scale: 1 1; } 50% { translate: 0 calc(var(--amp, 1) * 1.5px); scale: 1.02 .97; } }
+@keyframes aa-C-nodeyes { 0%, 100% { translate: 0 0; } 50% { translate: 0 1.5px; } }
+@keyframes aa-C-mb { from { scale: 1 .3; } to { scale: 1 1; } }
+@keyframes aa-C-hmm { 0%, 60%, 100% { translate: 0 0; } 70% { translate: 0 1.5px; } 80% { translate: 0 0; } 88% { translate: 0 1.5px; } }
+@keyframes aa-C-ear { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
+@keyframes aa-C-micring { 0% { scale: .8; opacity: 1; } 100% { scale: 1.7; opacity: 0; } }

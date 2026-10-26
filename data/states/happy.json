@@ -1,0 +1,144 @@
+{
+  "key": "happy",
+  "name": "Happy",
+  "when": "Answer done · thumbs-up",
+  "group": "chat",
+  "verb": "celebrates",
+  "mouth": "grin",
+  "hands": "yay",
+  "pose": null,
+  "variants": [
+    {
+      "key": "hop",
+      "name": "Double hop",
+      "desc": "Two hops with squash and stretch, eyes squeezed with joy.",
+      "pose": {
+        "sx": 1.7,
+        "sy": 0.3,
+        "ex": 1.4,
+        "ey": -4.4,
+        "rot": -6,
+        "lock": 1
+      },
+      "ms": 1600
+    },
+    {
+      "key": "spin",
+      "name": "Spin jump",
+      "desc": "Crouches, leaps into a full spin and lands in a puff of dust.",
+      "pose": {
+        "sx": 1.7,
+        "sy": 0.3,
+        "ex": 1.4,
+        "ey": -4.4,
+        "rot": -6,
+        "lock": 1
+      },
+      "ms": 1950
+    },
+    {
+      "key": "puff",
+      "name": "Puff up",
+      "desc": "Swells up with pride while sparkles pop around it.",
+      "pose": {
+        "sx": 1.5,
+        "sy": 0.34,
+        "ex": 1.2,
+        "ey": -3.6,
+        "rot": -8,
+        "lock": 1
+      },
+      "mouth": "bigsmile",
+      "ms": 1950
+    },
+    {
+      "key": "dance",
+      "name": "Dance",
+      "desc": "Waddles side to side with rosy cheeks.",
+      "pose": {
+        "sx": 1.6,
+        "sy": 0.3,
+        "ex": 1.3,
+        "ey": -4,
+        "rot": -6,
+        "lock": 1
+      },
+      "ms": 2450
+    },
+    {
+      "key": "tada",
+      "name": "Ta-da",
+      "desc": "Stretches tall, eyes wide, and fires off a burst of confetti.",
+      "pose": {
+        "sx": 1.25,
+        "sy": 1.15,
+        "ex": 0.6,
+        "ey": -2,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "laugh",
+      "hands": "clap",
+      "ms": 2150
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 5,
+      "k": "fx-dust",
+      "on": [
+        "v-spin",
+        "v-stomp"
+      ],
+      "t": "<g class=\"fx-dust\" fill=\"#BDB5A8\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(32 84)\"><g class=\"a pf pl\"><circle cx=\"-4\" cy=\"0\" r=\"4.5\"></circle><circle cx=\"2\" cy=\"-3\" r=\"5.5\"></circle><circle cx=\"6.5\" cy=\"1\" r=\"3.5\"></circle></g></g><g transform=\"translate(68 84)\"><g class=\"a pf pr\"><circle cx=\"4\" cy=\"0\" r=\"4.5\"></circle><circle cx=\"-2\" cy=\"-3\" r=\"5.5\"></circle><circle cx=\"-6.5\" cy=\"1\" r=\"3.5\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 7,
+      "k": "fx-spark",
+      "on": [
+        "v-chinup",
+        "v-puff",
+        "v-sparkle",
+        "v-stareyes"
+      ],
+      "t": "<g class=\"fx-spark\" fill=\"#F2B33D\"><g transform=\"translate(12 24)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(88 18)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(92 64)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g><g transform=\"translate(9 68)\"><path class=\"a s\" d=\"M0 -8C1.2 -2 2 -1.2 8 0C2 1.2 1.2 2 0 8C-1.2 2 -2 1.2 -8 0C-2 -1.2 -1.2 -2 0 -8Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 8,
+      "k": "fx-conf",
+      "on": [
+        "v-tada"
+      ],
+      "t": "<g class=\"fx-conf\" transform=\"translate(0 {{a.up}})\"><g class=\"cf\"><g transform=\"rotate(-82 50 18)\"><g class=\"cs\"><rect class=\"a cr\" x=\"47.5\" y=\"14\" width=\"5\" height=\"8\" rx=\"1\" fill=\"currentColor\"></rect></g></g></g><g class=\"cf far\"><g transform=\"rotate(-58 50 18)\"><g class=\"cs\"><circle class=\"a cr\" cx=\"50\" cy=\"18\" r=\"3\" fill=\"#F2B33D\"></circle></g></g></g><g class=\"cf\"><g transform=\"rotate(-34 50 18)\"><g class=\"cs\"><rect class=\"a cr\" x=\"47.5\" y=\"14\" width=\"5\" height=\"8\" rx=\"1\" fill=\"#F27863\"></rect></g></g></g><g class=\"cf far\"><g transform=\"rotate(-12 50 18)\"><g class=\"cs\"><circle class=\"a cr\" cx=\"50\" cy=\"18\" r=\"3\" fill=\"currentColor\"></circle></g></g></g><g class=\"cf\"><g transform=\"rotate(8 50 18)\"><g class=\"cs\"><rect class=\"a cr\" x=\"47.5\" y=\"14\" width=\"5\" height=\"8\" rx=\"1\" fill=\"#F2B33D\"></rect></g></g></g><g class=\"cf far\"><g transform=\"rotate(30 50 18)\"><g class=\"cs\"><circle class=\"a cr\" cx=\"50\" cy=\"18\" r=\"3\" fill=\"#F27863\"></circle></g></g></g><g class=\"cf\"><g transform=\"rotate(54 50 18)\"><g class=\"cs\"><rect class=\"a cr\" x=\"47.5\" y=\"14\" width=\"5\" height=\"8\" rx=\"1\" fill=\"currentColor\"></rect></g></g></g><g class=\"cf\"><g transform=\"rotate(78 50 18)\"><g class=\"cs\"><circle class=\"a cr\" cx=\"50\" cy=\"18\" r=\"3\" fill=\"#F2B33D\"></circle></g></g></g><g class=\"cf\"><g transform=\"rotate(-4 50 18)\"><g class=\"cs\"><rect class=\"a cr\" x=\"47.5\" y=\"14\" width=\"5\" height=\"8\" rx=\"1\" fill=\"#7FB2F0\"></rect></g></g></g></g>"
+    }
+  ]
+}

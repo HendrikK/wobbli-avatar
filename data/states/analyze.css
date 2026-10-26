@@ -1,0 +1,43 @@
+.aa-av .gls { fill: #FFFFFF; fill-opacity: .25; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; }
+.aa-av .cline { fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 40; stroke-dashoffset: 40; }
+.aa-av .trend { fill: none; stroke: #F27863; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 32; stroke-dashoffset: 32; }
+.aa-av .vbar { transform-origin: 50% 100%; }
+.aa-av .fx-chart .cline, .aa-av .fx-chart .vbar, .aa-av .fx-chart .sdot, .aa-av .fx-chart .trend { display: none; }
+.aa-av.v-anline .fx-chart, .aa-av.v-anbars .fx-chart, .aa-av.v-anscatter .fx-chart { display: inline; }
+.aa-av.v-anline .cline { display: inline; animation: aa-B-cline 2.4s ease-in-out infinite; }
+.aa-av.v-anline .gz { animation: aa-B-linefollow 2.4s ease-in-out infinite; }
+.aa-av.v-anbars .vbar { display: inline; animation: aa-B-bars 2.4s ease-in-out infinite; }
+.aa-av.v-anbars .vbar:nth-of-type(2) { animation-name: aa-B-bars2; }
+.aa-av.v-anbars .vbar:nth-of-type(3) { animation-name: aa-B-bars3; }
+.aa-av.v-anbars .vbar:nth-of-type(4) { animation-name: aa-B-bars4; }
+.aa-av.v-anbars .gz { animation: aa-B-scan 1.2s ease-in-out infinite alternate; }
+.aa-av.v-anglass .att-glasses { display: inline; }
+.aa-av.v-anglass .w { animation: aa-B-leanin 3s ease-in-out infinite; }
+.aa-av.v-anglass .gz { animation: aa-B-scan 1s ease-in-out infinite alternate; }
+.aa-av.v-anglass .fx-glint { display: inline; }
+.aa-av.v-anglass .gln { animation: aa-bb-twinkle 3s ease-out infinite backwards; animation-delay: 1s; }
+.aa-av.v-anpie .fx-pie { display: inline; }
+.aa-av.v-anpie .pie { animation: aa-B-pie 6s linear infinite; }
+.aa-av.v-anpie .wedge { animation: aa-B-wedge 1.5s ease-in-out infinite; }
+.aa-av.v-anpie .gz { transform: translate(4px, -3.5px); }
+.aa-av.v-anpie .w { animation: aa-B-pienod 1.5s ease-in-out infinite; }
+.aa-av.v-anscatter .sdot { display: inline; opacity: 0; animation: aa-B-sdot 2.6s infinite backwards; }
+.aa-av.v-anscatter .sdot:nth-of-type(2) { animation-delay: .15s; }
+.aa-av.v-anscatter .sdot:nth-of-type(3) { animation-delay: .3s; }
+.aa-av.v-anscatter .sdot:nth-of-type(4) { animation-delay: .45s; }
+.aa-av.v-anscatter .sdot:nth-of-type(5) { animation-delay: .6s; }
+.aa-av.v-anscatter .sdot:nth-of-type(6) { animation-delay: .75s; }
+.aa-av.v-anscatter .trend { display: inline; animation: aa-B-trend 2.6s ease-out infinite; }
+.aa-av.v-anscatter .gz { animation: aa-B-linefollow 2.6s ease-in-out infinite; }
+@keyframes aa-B-cline { 0% { stroke-dashoffset: 40; opacity: 1; } 65% { stroke-dashoffset: 0; } 85% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-B-linefollow { 0%, 100% { translate: calc(var(--amp, 1) * -3.5px) 4px; } 65%, 85% { translate: calc(var(--amp, 1) * 3.5px) 2.5px; } }
+@keyframes aa-B-bars { 0%, 100% { scale: 1 .3; } 33% { scale: 1 .9; } 66% { scale: 1 .5; } }
+@keyframes aa-B-bars2 { 0%, 100% { scale: 1 .7; } 33% { scale: 1 .4; } 66% { scale: 1 1; } }
+@keyframes aa-B-bars3 { 0%, 100% { scale: 1 .5; } 33% { scale: 1 1; } 66% { scale: 1 .35; } }
+@keyframes aa-B-bars4 { 0%, 100% { scale: 1 .9; } 33% { scale: 1 .6; } 66% { scale: 1 .8; } }
+@keyframes aa-B-leanin { 0%, 100% { scale: 1 1; translate: 0 0; } 50% { scale: 1.05 1.05; translate: 0 -1px; } }
+@keyframes aa-B-pie { to { rotate: 360deg; } }
+@keyframes aa-B-wedge { 0%, 30%, 100% { translate: 0 0; } 50%, 80% { translate: 2.6px -1.5px; } }
+@keyframes aa-B-pienod { 0%, 30%, 100% { rotate: 0deg; } 50%, 80% { rotate: calc(var(--amp, 1) * 3deg); } }
+@keyframes aa-B-sdot { 0% { scale: 0; opacity: 0; } 6% { scale: 1.4; opacity: 1; } 12% { scale: 1; } 75% { opacity: 1; } 85%, 100% { opacity: 0; } }
+@keyframes aa-B-trend { 0%, 40% { stroke-dashoffset: 32; opacity: 1; } 65% { stroke-dashoffset: 0; } 80% { opacity: 1; stroke-dashoffset: 0; } 90%, 100% { opacity: 0; stroke-dashoffset: 0; } }

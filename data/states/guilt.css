@@ -1,0 +1,19 @@
+.aa-av.v-whistle .nt { animation: aa-bb-note 2.8s ease-out infinite backwards; }
+.aa-av.v-whistle .nt:nth-child(2) { animation-delay: 1.4s; }
+.aa-av.v-avoid .gz { animation: aa-bb-avoid 3.4s ease-in-out infinite; }
+.aa-av.v-avoid .w { animation: aa-bb-avoidbody 3.4s ease-in-out infinite; }
+.aa-av.v-sweatdrop .sw { display: inline; animation: aa-bb-bigsweat 3s ease-in-out infinite; }
+.aa-av.v-sweatdrop .sp { animation: aa-bb-shiver .2s linear infinite; }
+.aa-av.v-whistle .gz { transform: translate(4px, -4px); }
+.aa-av.v-whistle .w { animation: aa-bb-sway 2.8s ease-in-out infinite; }
+.aa-av.v-whistle .fx-notes { display: inline; }
+.aa-av.v-bow .w { animation: aa-bb-bow 2.8s ease-in-out infinite; }
+.aa-av.v-bow .gz { animation: aa-bb-bowgaze 2.8s ease-in-out infinite; }
+.aa-av.v-shifty .gz { animation: aa-bb-shifty 1.4s infinite; }
+.aa-av.v-shifty .w { transform: translateY(1px) scale(1.02, .97); }
+@keyframes aa-bb-avoid { 0%, 40%, 64%, 100% { translate: calc(var(--amp, 1) * -6px) 2px; } 48%, 56% { translate: calc(var(--amp, 1) * 1px) 0; } }
+@keyframes aa-bb-avoidbody { 0%, 40%, 64%, 100% { rotate: calc(var(--amp, 1) * -4deg); } 48%, 56% { rotate: 0deg; } }
+@keyframes aa-bb-bigsweat { 0% { scale: 0; translate: 0 0; opacity: 1; } 15% { scale: 1.5; } 75% { translate: 0 6px; scale: 1.5; opacity: 1; } 90%, 100% { translate: 0 8px; scale: 1.5; opacity: 0; } }
+@keyframes aa-bb-bow { 0%, 100% { scale: 1 1; translate: 0 0; } 30%, 55% { scale: 1.06 .84; translate: 0 2px; } }
+@keyframes aa-bb-bowgaze { 0%, 100% { translate: 0 0; } 30%, 55% { translate: 0 4px; } }
+@keyframes aa-bb-shifty { 0%, 20% { translate: calc(var(--amp, 1) * -5px) 0; } 25%, 45% { translate: calc(var(--amp, 1) * 5px) 0; } 50%, 70% { translate: calc(var(--amp, 1) * -5px) 0; } 75%, 100% { translate: calc(var(--amp, 1) * 5px) 0; } }

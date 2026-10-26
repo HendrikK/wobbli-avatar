@@ -1,0 +1,31 @@
+.aa-av .stink { fill: none; stroke: #7FB04E; stroke-width: 2.6; stroke-linecap: round; }
+.aa-av.v-ew .ey, .aa-av.v-gag .ey { opacity: 0; }
+.aa-av.v-ew .eg-chev, .aa-av.v-gag .eg-chev { display: inline; }
+.aa-av.v-ew .w { animation: aa-bb-recoil 2.8s ease-in-out infinite; }
+.aa-av.v-ew .sp { animation: aa-bb-shiver .14s linear infinite; }
+.aa-av.v-ew .fx-stink { display: inline; }
+.aa-av.v-ew .wf { animation: aa-bb-stink 1.8s ease-in-out infinite backwards; }
+.aa-av.v-ew .wf:nth-child(2) { animation-delay: .6s; }
+.aa-av.v-ew .wf:nth-child(3) { animation-delay: 1.2s; }
+.aa-av.v-gag .w { animation: aa-bb-gag 2.4s infinite; }
+.aa-av.v-gag .cheeks { display: inline; fill: #9BCB6A; animation: aa-bb-cheekpuff 2.4s infinite; }
+.aa-av.v-eyeroll .gz { animation: aa-bb-roll 3.4s ease-in-out infinite; }
+.aa-av.v-eyeroll .w { animation: aa-bb-sass 3.4s ease-in-out infinite; }
+.aa-av.v-shudder .e > path { animation: none; }
+.aa-av.v-shudder .w { animation: aa-bb-shudder 2.2s infinite; }
+.aa-av.v-shudder .fx-shiver { display: inline; }
+.aa-av.v-shudder .sv { animation: aa-bb-shivfade 2.2s infinite; }
+.aa-av.v-nope .gz { animation: aa-bb-nopegaze 3.2s ease-in-out infinite; }
+.aa-av.v-nope .e { animation: aa-bb-nopeeye 3.2s ease-in-out infinite; }
+.aa-av.v-nope .w { animation: aa-bb-nopebody 3.2s ease-in-out infinite; }
+@keyframes aa-bb-recoil { 0%, 100% { translate: 0 0; rotate: 0deg; scale: 1 1; } 12%, 70% { translate: calc(var(--amp, 1) * -5px) 0; rotate: calc(var(--amp, 1) * -9deg); scale: .97 1.02; } }
+@keyframes aa-bb-stink { 0% { translate: 0 6px; opacity: 0; } 25% { opacity: .9; } 100% { translate: 0 -12px; opacity: 0; } }
+@keyframes aa-bb-gag { 0%, 30%, 100% { scale: 1 1; translate: 0 0; } 36% { scale: 1.08 .86; translate: 0 2px; } 42% { scale: .94 1.08; translate: 0 -2px; } 48% { scale: 1.06 .9; translate: 0 1px; } 54% { scale: .97 1.04; translate: 0 0; } 60% { scale: 1 1; translate: 0 0; } }
+@keyframes aa-bb-cheekpuff { 0%, 30%, 64%, 100% { opacity: 0; } 36%, 56% { opacity: .8; } }
+@keyframes aa-bb-roll { 0%, 20% { translate: calc(var(--amp, 1) * 5px) .5px; } 32% { translate: calc(var(--amp, 1) * 3px) calc(var(--amp, 1) * -4.5px); } 42% { translate: 0 calc(var(--amp, 1) * -5.5px); } 52%, 64% { translate: calc(var(--amp, 1) * -4px) calc(var(--amp, 1) * -4px); } 78%, 100% { translate: calc(var(--amp, 1) * 5px) .5px; } }
+@keyframes aa-bb-sass { 0%, 20%, 78%, 100% { rotate: calc(var(--amp, 1) * -4deg); translate: 0 0; } 42%, 64% { rotate: calc(var(--amp, 1) * 3deg); translate: 0 -1px; } }
+@keyframes aa-bb-shudder { 0%, 45%, 100% { scale: 1 1; } 5% { scale: 1.07 .95; } 10% { scale: .94 1.04; } 15% { scale: 1.06 .96; } 20% { scale: .95 1.03; } 25% { scale: 1.04 .97; } 30% { scale: .97 1.02; } 35% { scale: 1.02 .99; } 40% { scale: 1 1; } }
+@keyframes aa-bb-shivfade { 0% { opacity: 0; } 5%, 35% { opacity: 1; } 45%, 100% { opacity: 0; } }
+@keyframes aa-bb-nopegaze { 0%, 8%, 92%, 100% { translate: 0 0; } 24%, 48% { translate: calc(var(--amp, 1) * -15px) 0; } 56%, 62% { translate: calc(var(--amp, 1) * -7px) 0; } 70%, 84% { translate: calc(var(--amp, 1) * -15px) 0; } }
+@keyframes aa-bb-nopeeye { 0%, 8%, 92%, 100% { scale: 1 1; } 24%, 48% { scale: .15 1; } 56%, 62% { scale: .75 1; } 70%, 84% { scale: .15 1; } }
+@keyframes aa-bb-nopebody { 0%, 8%, 92%, 100% { scale: 1 1; rotate: 0deg; } 24%, 48%, 70%, 84% { scale: .93 1.03; rotate: calc(var(--amp, 1) * -3deg); } 56%, 62% { scale: .97 1; rotate: 0deg; } }

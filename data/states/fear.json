@@ -1,0 +1,137 @@
+{
+  "key": "fear",
+  "name": "Fear",
+  "when": "Risky action · about to delete or overwrite",
+  "group": "feelings",
+  "verb": "trembles",
+  "mouth": "nervous",
+  "hands": "tremble",
+  "pose": null,
+  "variants": [
+    {
+      "key": "tremble",
+      "name": "Tremble",
+      "desc": "Shrinks a little and shivers, with a bead of sweat on its head.",
+      "pose": {
+        "sx": 0.85,
+        "sy": 1.12,
+        "ex": -0.6,
+        "ey": -1.5,
+        "rot": -10,
+        "lock": 1
+      }
+    },
+    {
+      "key": "hide",
+      "name": "Hide",
+      "desc": "Ducks down flat, peeks left and right, then ducks again.",
+      "pose": {
+        "sx": 0.9,
+        "sy": 1,
+        "ex": -0.4,
+        "ey": -2,
+        "rot": -8,
+        "lock": 1
+      },
+      "hands": "covereyes"
+    },
+    {
+      "key": "scare",
+      "name": "Jump scare",
+      "desc": "Leaps in fright with a double !!, then lands still trembling.",
+      "pose": {
+        "sx": 1,
+        "sy": 1.2,
+        "ex": -0.3,
+        "ey": -2,
+        "rot": -6,
+        "lock": 1
+      },
+      "mouth": "scream",
+      "hands": "cheeks"
+    },
+    {
+      "key": "sweat",
+      "name": "Nervous sweat",
+      "desc": "Eyes dart side to side, sweat flies off and it gulps.",
+      "pose": {
+        "sx": 0.85,
+        "sy": 1.12,
+        "ex": -0.6,
+        "ey": -1.5,
+        "rot": -10,
+        "lock": 1
+      },
+      "mouth": "eek",
+      "hands": "tremble"
+    },
+    {
+      "key": "backaway",
+      "name": "Back away",
+      "desc": "Leans back and slides away from something off to its right.",
+      "pose": {
+        "sx": 0.9,
+        "sy": 1.15,
+        "ex": -0.4,
+        "ey": -1.5,
+        "rot": -8,
+        "lock": 1
+      },
+      "hands": "stop"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 1,
+      "k": "sw",
+      "on": [
+        "v-awkward",
+        "v-qubreath",
+        "v-sweatdrop",
+        "v-tremble"
+      ],
+      "t": "<g transform=\"translate({{a.swx}} {{a.swy}})\"><path class=\"a sw\" d=\"M0 -7C2.6 -2.6 4.3 0 4.3 2.4A4.3 4.3 0 0 1 -4.3 2.4C-4.3 0 -2.6 -2.6 0 -7Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 11,
+      "k": "fx-bang",
+      "on": [
+        "v-gasp",
+        "v-lean",
+        "v-scare"
+      ],
+      "t": "<g class=\"fx-bang\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(80 4)\"><g class=\"a q\"><path class=\"ink\" d=\"M0 -10V0\"></path><circle cx=\"0\" cy=\"7\" r=\"2.4\" fill=\"#3A3833\"></circle></g></g><g class=\"b2\" transform=\"translate(90 7)\"><g class=\"a q\"><path class=\"ink\" d=\"M0 -10V0\"></path><circle cx=\"0\" cy=\"7\" r=\"2.4\" fill=\"#3A3833\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 18,
+      "k": "fx-shock",
+      "on": [
+        "v-pop",
+        "v-scare"
+      ],
+      "t": "<g class=\"fx-shock\" transform=\"translate(0 {{a.mo}})\"><path class=\"sk thin\" d=\"M86.96 63.31L93.42 65.99M65.31 84.96L67.99 91.42M34.69 84.96L32.01 91.42M13.04 63.31L6.58 65.99M13.04 32.69L6.58 30.01M34.69 11.04L32.01 4.58M65.31 11.04L67.99 4.58M86.96 32.69L93.42 30.01\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 20,
+      "k": "fx-shiver",
+      "on": [
+        "v-backaway",
+        "v-shudder"
+      ],
+      "t": "<g class=\"fx-shiver\" transform=\"translate(0 {{a.mo}})\"><path class=\"a sv svl thin\" d=\"M10 38Q7 44 10 50M5 42Q2 47 5 52\"></path><path class=\"a sv svr thin\" d=\"M90 38Q93 44 90 50M95 42Q98 47 95 52\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 22,
+      "k": "fx-flings",
+      "on": [
+        "v-sweat"
+      ],
+      "t": "<g class=\"fx-flings\" fill=\"#8EC9F5\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(22 30)\"><path class=\"a fl\" d=\"M0 -4.5C1.7 -1.7 2.8 0 2.8 1.6A2.8 2.8 0 0 1 -2.8 1.6C-2.8 0 -1.7 -1.7 0 -4.5Z\"></path></g><g transform=\"translate(78 30)\"><path class=\"a fr\" d=\"M0 -4.5C1.7 -1.7 2.8 0 2.8 1.6A2.8 2.8 0 0 1 -2.8 1.6C-2.8 0 -1.7 -1.7 0 -4.5Z\"></path></g></g>"
+    }
+  ]
+}

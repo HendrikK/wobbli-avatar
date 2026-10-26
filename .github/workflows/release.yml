@@ -1,0 +1,24 @@
+# Publishes to npm when a GitHub release is published (tag vX.Y.Z matching package.json), with provenance.
+# Uses npm trusted publishing: on npmjs.com, package wobbli > Settings > Trusted publishing, add this
+# repository and the workflow file release.yml. No npm token is stored here.
+name: Release
+on:
+  release:
+    types: [published]
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm, registry-url: 'https://registry.npmjs.org' }
+      - run: pnpm install --frozen-lockfile
+      - name: The tag matches package.json
+        run: test "v$(node -p "require('./package.json').version")" = "${{ github.event.release.tag_name }}"
+      - run: npm install -g npm@latest
+      - run: npm publish --provenance --access public

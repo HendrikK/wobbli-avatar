@@ -1,0 +1,45 @@
+.aa-av .hh { fill: #F2B33D; stroke: #C98A16; stroke-width: 1.6; stroke-linejoin: round; }
+.aa-av .hhb { fill: none; stroke: #C98A16; stroke-width: 3; stroke-linecap: round; }
+.aa-av .bp { fill: #3C6FD6; }
+.aa-av .bpl { fill: none; stroke: #FFFFFF; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 90; stroke-dashoffset: 90; }
+.aa-av .wire { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; stroke-linecap: round; }
+.aa-av.v-bustack .fx-blocks { display: inline; }
+.aa-av.v-bustack .blk { opacity: 0; animation: aa-B-drop 2.7s infinite backwards; }
+.aa-av.v-bustack .blk:nth-of-type(2) { animation-delay: .5s; }
+.aa-av.v-bustack .blk:nth-of-type(3) { animation-delay: 1s; }
+.aa-av.v-bustack .gz { transform: translate(4.5px, 1px); }
+.aa-av.v-bustack .w { animation: aa-B-stackbody .9s infinite; }
+.aa-av.v-buhammer .att-hard, .aa-av.v-bucrane .att-hard { display: inline; }
+.aa-av.v-buhammer .fx-hammer { display: inline; }
+.aa-av.v-buhammer .hm { animation: aa-B-hammer .7s infinite; }
+.aa-av.v-buhammer .spk { animation: aa-B-spark .7s infinite; }
+.aa-av.v-buhammer .w { animation: aa-B-hammerbody .7s infinite; }
+.aa-av.v-buhammer .gz { transform: translate(4px, 3px); }
+.aa-av.v-bucards .fx-cards { display: inline; }
+.aa-av.v-bucards .crd { opacity: 0; animation: aa-B-card 2.6s infinite backwards; }
+.aa-av.v-bucards .crd:nth-of-type(2) { animation-delay: .3s; }
+.aa-av.v-bucards .crd:nth-of-type(3) { animation-delay: .6s; }
+.aa-av.v-bucards .crd:nth-of-type(4) { animation-delay: .9s; }
+.aa-av.v-bucards .gz { animation: aa-B-cardeyes 2.6s steps(4) infinite; }
+.aa-av.v-bucards .w { animation: aa-B-stackbody .65s infinite; }
+.aa-av.v-buprint .fx-blueprint { display: inline; }
+.aa-av.v-buprint .bpl { animation: aa-B-draw 2.8s ease-in-out infinite; }
+.aa-av.v-buprint .gz { animation: aa-B-scan 1.4s ease-in-out infinite alternate; }
+.aa-av.v-bucrane .fx-crane { display: inline; }
+.aa-av.v-bucrane .hook { animation: aa-B-hook 2.8s ease-in-out infinite; }
+.aa-av.v-bucrane .cblk { animation: aa-B-cblock 2.8s ease-in-out infinite; }
+.aa-av.v-bucrane .gz { animation: aa-B-craneeyes 2.8s ease-in-out infinite; }
+.aa-av.v-bucrane .w { animation: aa-B-cranebody 2.8s infinite; }
+.aa-av .wire { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; stroke-linecap: round; }
+.aa-av.v-buhammer .cos .hat, .aa-av.v-bucrane .cos .hat { display: none !important; }
+@keyframes aa-B-drop { 0% { translate: 0 -22px; opacity: 0; scale: 1 1; animation-timing-function: cubic-bezier(.5,0,.9,.5); } 5% { opacity: 1; } 16% { translate: 0 0; scale: 1.15 .8; } 22% { scale: 1 1; } 60% { translate: 0 0; opacity: 1; } 66%, 100% { translate: 0 0; opacity: 0; } }
+@keyframes aa-B-hammer { 0% { rotate: -50deg; animation-timing-function: cubic-bezier(.6,0,1,.6); } 40% { rotate: 18deg; } 50% { rotate: 12deg; animation-timing-function: ease-out; } 100% { rotate: -50deg; } }
+@keyframes aa-B-spark { 0%, 36% { opacity: 0; scale: .5; } 42% { opacity: 1; scale: 1; } 70%, 100% { opacity: 0; scale: 1.3; } }
+@keyframes aa-B-hammerbody { 0%, 30%, 100% { scale: 1 1; translate: 0 0; } 42% { scale: 1.04 .95; translate: 0 1px; } 60% { scale: 1 1; } }
+@keyframes aa-B-card { 0% { scale: 0; opacity: 0; } 8% { scale: 1.15; opacity: 1; } 14% { scale: 1; } 60% { scale: 1; opacity: 1; } 68%, 100% { scale: .8; opacity: 0; } }
+@keyframes aa-B-cardeyes { 0% { translate: -2px -4.5px; } 25% { translate: 2px -4.5px; } 50% { translate: -2px -3px; } 75% { translate: 2px -3px; } }
+@keyframes aa-B-draw { 0% { stroke-dashoffset: 90; opacity: 1; } 65% { stroke-dashoffset: 0; } 85% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-B-hook { 0% { translate: 0 -24px; } 40%, 55% { translate: 0 0; } 75%, 100% { translate: 0 -24px; } }
+@keyframes aa-B-cblock { 0% { translate: 0 -24px; opacity: 1; scale: 1; } 40%, 70% { translate: 0 0; opacity: 1; scale: 1; } 85%, 100% { translate: 0 10px; opacity: 0; scale: .3; } }
+@keyframes aa-B-craneeyes { 0%, 100% { translate: 0 calc(var(--amp, 1) * -5.5px); } 45%, 70% { translate: 0 -3px; } }
+@keyframes aa-B-cranebody { 0%, 38%, 50%, 74%, 90%, 100% { scale: 1 1; } 44% { scale: 1.05 .93; } 82% { scale: .97 1.04; } }

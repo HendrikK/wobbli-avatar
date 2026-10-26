@@ -1,0 +1,25 @@
+# Every pull request and push to main: types, the unit suites (generator, behaviour, formats, calendar,
+# render, DOM), the build, the bundle sizes, and what npm would publish.
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+      - name: Size check (each entry within 10% of its recorded size; no holiday code in the core)
+        run: pnpm size
+      - run: npm pack --dry-run

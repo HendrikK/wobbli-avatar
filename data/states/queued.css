@@ -1,0 +1,53 @@
+.aa-av .dk2 { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.2; stroke-linecap: round; }
+.aa-av .sndf { fill: none; stroke: #F2B33D; stroke-width: 1.4; stroke-dasharray: 1.5 1.5; }
+.aa-av .snd1, .aa-av .snd2 { transform-origin: 50% 100%; }
+.aa-av .tkn { font-size: 8.5px; }
+.aa-av .tl { fill: #5A5750; }
+.aa-av .ctrk { fill: none; stroke: #E2DED6; stroke-width: 3; }
+.aa-av .cdn { fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 50.3 60; }
+.aa-av.v-quhour .fx-hour { display: inline; }
+.aa-av.v-quhour .hgl { animation: aa-D-flip 3.2s ease-in-out infinite; }
+.aa-av.v-quhour .snd1 { animation: aa-D-sand1 3.2s linear infinite; }
+.aa-av.v-quhour .snd2 { animation: aa-D-sand2 3.2s linear infinite; }
+.aa-av.v-quhour .sndf { animation: aa-D-stream 3.2s linear infinite; }
+.aa-av.v-quhour .gz { animation: aa-D-houreyes 3.2s ease-in-out infinite; }
+.aa-av.v-quticket .fx-ticket { display: inline; }
+.aa-av.v-quticket .tkn { opacity: 0; }
+.aa-av.v-quticket .tn3 { animation: aa-D-t3 4.5s steps(1) infinite; }
+.aa-av.v-quticket .tn2 { animation: aa-D-t2 4.5s steps(1) infinite; }
+.aa-av.v-quticket .tn1 { animation: aa-D-t1 4.5s steps(1) infinite; }
+.aa-av.v-quticket .tkt { animation: aa-D-tkt 1.5s infinite; }
+.aa-av.v-quticket .gz { transform: translate(3.5px, -3.5px); }
+.aa-av.v-quticket .w { animation: aa-bb-bob 1.5s ease-in-out infinite alternate; }
+.aa-av.v-qulight .fx-traffic { display: inline; }
+.aa-av.v-qulight .tlr { animation: aa-D-red 4s steps(1) infinite; }
+.aa-av.v-qulight .tla { animation: aa-D-amb 4s steps(1) infinite; }
+.aa-av.v-qulight .tlg { animation: aa-D-grn 4s steps(1) infinite; }
+.aa-av.v-qulight .w { animation: aa-D-ready 4s infinite; }
+.aa-av.v-qulight .gz { transform: translate(4px, -1.5px); }
+.aa-av.v-qucount .fx-cring { display: inline; }
+.aa-av.v-qucount .cdn { animation: aa-D-cd 3.6s linear infinite; }
+.aa-av.v-qucount .gz { transform: translate(0px, -4.5px); }
+.aa-av.v-qucount .w { animation: aa-D-cdhop 3.6s infinite; }
+.aa-av.v-qubreath .sw { display: inline; animation: aa-bb-sweatin 2s ease-in infinite; }
+.aa-av.v-qubreath .att-mouth { display: inline; }
+.aa-av.v-qubreath .mth { animation: aa-D-pant .35s ease-in-out infinite alternate; }
+.aa-av.v-qubreath .w { animation: aa-D-panting .35s ease-in-out infinite alternate; }
+.aa-av.v-qubreath .sp { rotate: calc(var(--amp, 1) * -4deg); }
+@keyframes aa-D-flip { 0%, 80% { rotate: 0deg; } 100% { rotate: 180deg; } }
+@keyframes aa-D-sand1 { 0% { scale: 1 1; } 78%, 100% { scale: 1 0; } }
+@keyframes aa-D-sand2 { 0% { scale: 1 0; } 78%, 100% { scale: 1 1; } }
+@keyframes aa-D-stream { 0%, 76% { opacity: 1; stroke-dashoffset: 0; } 77%, 100% { opacity: 0; stroke-dashoffset: -12; } }
+@keyframes aa-D-houreyes { 0%, 70%, 100% { translate: calc(var(--amp, 1) * 4px) 1px; } 85% { translate: calc(var(--amp, 1) * 4px) -2px; } }
+@keyframes aa-D-t3 { 0% { opacity: 1; } 33.3%, 100% { opacity: 0; } }
+@keyframes aa-D-t2 { 0% { opacity: 0; } 33.3% { opacity: 1; } 66.6%, 100% { opacity: 0; } }
+@keyframes aa-D-t1 { 0% { opacity: 0; } 66.6%, 100% { opacity: 1; } }
+@keyframes aa-D-tkt { 0%, 14%, 100% { scale: 1; rotate: 0deg; } 5% { scale: 1.15; rotate: -6deg; } }
+@keyframes aa-D-red { 0% { fill: #F25C54; } 60%, 100% { fill: #5A5750; } }
+@keyframes aa-D-amb { 0% { fill: #5A5750; } 60% { fill: #F2B33D; } 75%, 100% { fill: #5A5750; } }
+@keyframes aa-D-grn { 0% { fill: #5A5750; } 75%, 100% { fill: #4CC27A; } }
+@keyframes aa-D-ready { 0%, 58%, 100% { scale: 1 1; translate: 0 0; } 64%, 72% { scale: 1.04 .93; translate: 0 0; } 78% { scale: .97 1.05; translate: 0 calc(var(--amp, 1) * -3px); } 86% { scale: 1 1; translate: 0 0; } }
+@keyframes aa-D-cd { 0% { stroke-dashoffset: 0; } 90%, 100% { stroke-dashoffset: 50.3; } }
+@keyframes aa-D-cdhop { 0%, 88%, 100% { scale: 1 1; translate: 0 0; } 92% { scale: 1.04 .94; } 96% { scale: .97 1.04; translate: 0 calc(var(--amp, 1) * -2px); } }
+@keyframes aa-D-pant { from { scale: .55 .45; } to { scale: .7 .75; } }
+@keyframes aa-D-panting { from { scale: 1 1; } to { scale: 1.035 .97; } }

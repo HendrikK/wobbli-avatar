@@ -1,0 +1,108 @@
+{
+  "name": "wobbli",
+  "version": "1.0.0",
+  "description": "Wobbli: an avatar that acts out what your AI agent is doing. 39 states, 191 ways to act them, 74 holidays. React, web component and plain JS. Built on Blobatar.",
+  "keywords": [
+    "wobbli",
+    "avatar",
+    "ai",
+    "agent",
+    "chat",
+    "assistant",
+    "animation",
+    "svg",
+    "react",
+    "web-component",
+    "shadcn"
+  ],
+  "homepage": "https://wobbli.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HendrikK/wobbli-avatar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HendrikK/wobbli-avatar/issues"
+  },
+  "author": "Hendrik Kleine",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "./dist/element.js",
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "registry",
+    "THIRD_PARTY_NOTICES.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./element": {
+      "types": "./dist/element.d.ts",
+      "import": "./dist/element.js"
+    },
+    "./dom": {
+      "types": "./dist/dom.d.ts",
+      "import": "./dist/dom.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    },
+    "./holidays": {
+      "types": "./dist/holidays.d.ts",
+      "import": "./dist/holidays.js"
+    },
+    "./formats": {
+      "types": "./dist/formats.d.ts",
+      "import": "./dist/formats.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "build": "node scripts/build-data.mjs && tsup && node scripts/after-build.mjs && node scripts/registry.mjs",
+    "test": "node scripts/build-data.mjs && vitest run",
+    "test:watch": "node scripts/build-data.mjs && vitest",
+    "typecheck": "node scripts/build-data.mjs && tsc --noEmit",
+    "size": "node scripts/size.mjs",
+    "registry": "node scripts/registry.mjs",
+    "prepublishOnly": "pnpm typecheck && pnpm test && pnpm build && pnpm size"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "jsdom": "^30.1.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12"
+  },
+  "packageManager": "pnpm@10.34.7",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

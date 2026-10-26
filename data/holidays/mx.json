@@ -1,0 +1,346 @@
+{
+  "pack": "mx",
+  "name": "Mexico",
+  "holidays": [
+    {
+      "key": "muertos",
+      "label": "Día de Muertos",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "dm-calavera",
+          "name": "Calavera"
+        },
+        {
+          "key": "dm-marigold",
+          "name": "Marigold crown"
+        },
+        {
+          "key": "dm-papel",
+          "name": "Papel picado"
+        },
+        {
+          "key": "dm-ofrenda",
+          "name": "Ofrenda candles"
+        },
+        {
+          "key": "dm-monarch",
+          "name": "Monarchs"
+        }
+      ]
+    },
+    {
+      "key": "mxindep",
+      "label": "Independence Day",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "mi-flag",
+          "name": "Flag"
+        },
+        {
+          "key": "mi-grito",
+          "name": "El Grito bell"
+        },
+        {
+          "key": "mi-fireworks",
+          "name": "Fireworks"
+        },
+        {
+          "key": "mi-rosette",
+          "name": "Rosette"
+        },
+        {
+          "key": "mi-papel",
+          "name": "Papel picado"
+        }
+      ]
+    },
+    {
+      "key": "posadas",
+      "label": "Las Posadas",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "lp-pinata",
+          "name": "Star piñata"
+        },
+        {
+          "key": "lp-candle",
+          "name": "Candle"
+        },
+        {
+          "key": "lp-farol",
+          "name": "Farolitos"
+        },
+        {
+          "key": "lp-ponche",
+          "name": "Ponche"
+        },
+        {
+          "key": "lp-nochebuena",
+          "name": "Nochebuena"
+        }
+      ]
+    },
+    {
+      "key": "reyes",
+      "label": "Día de Reyes",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "dr-crown",
+          "name": "Kings' crown"
+        },
+        {
+          "key": "dr-rosca",
+          "name": "Rosca"
+        },
+        {
+          "key": "dr-star",
+          "name": "Guiding star"
+        },
+        {
+          "key": "dr-camel",
+          "name": "Camel"
+        },
+        {
+          "key": "dr-shoes",
+          "name": "Shoes out"
+        }
+      ]
+    }
+  ],
+  "region": "MX",
+  "shared": [
+    "newyear",
+    "valentines",
+    "easter",
+    "christmas",
+    "nye"
+  ],
+  "dates": [
+    {
+      "key": "reyes",
+      "on": "01-06",
+      "from": -1
+    },
+    {
+      "key": "mxindep",
+      "on": "09-16",
+      "from": -1
+    },
+    {
+      "key": "muertos",
+      "on": "11-01",
+      "from": -1,
+      "to": 1
+    },
+    {
+      "key": "posadas",
+      "on": "12-16",
+      "to": 8
+    }
+  ],
+  "parts": [
+    {
+      "zone": "top",
+      "i": 73,
+      "k": "c-calavera",
+      "on": [
+        "cos-dm-calavera"
+      ],
+      "t": "<g class=\"c-calavera\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><circle class=\"s-w\" cx=\"0\" cy=\"0\" r=\"8.6\"></circle><g class=\"pt ptwk\"><g transform=\"translate(0 -11.2)\"><g><circle class=\"f-p\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(9.7 -5.6)\"><g><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(9.7 5.6)\"><g><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(0 11.2)\"><g><circle class=\"f-p\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(-9.7 5.6)\"><g><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(-9.7 -5.6)\"><g><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g></g></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><circle class=\"s-w\" cx=\"0\" cy=\"0\" r=\"8.6\"></circle><g class=\"pt ptwk\"><g transform=\"translate(0 -11.2)\"><g><circle class=\"f-p\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(9.7 -5.6)\"><g><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(9.7 5.6)\"><g><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(0 11.2)\"><g><circle class=\"f-p\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(-9.7 5.6)\"><g><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g><g transform=\"translate(-9.7 -5.6)\"><g><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.3\"></circle></g></g></g></g><g transform=\"translate({{a.mx}} {{a.nsy}})\"><path class=\"f-k\" d=\"M0 2.4L-2 -.4Q-2 -2 0 -1Q2 -2 2 -.4Z\"></path></g><g transform=\"translate(50 {{a.hat}})\"><g transform=\"scale(0.8)\"><path class=\"o-p th\" d=\"M0 -4.2L1.19 -2.86L2.97 -2.97L2.86 -1.19L4.2 0L2.86 1.19L2.97 2.97L1.19 2.86L0 4.2L-1.19 2.86L-2.97 2.97L-2.86 1.19L-4.2 0L-2.86 -1.19L-2.97 -2.97L-1.19 -2.86Z\"></path><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.7\"></circle></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 74,
+      "k": "c-cempasuchil",
+      "on": [
+        "cos-dm-marigold",
+        "cos-dm-monarch"
+      ],
+      "t": "<g class=\"c-cempasuchil hat\" transform=\"translate(50 {{a.top}})\"><path class=\"s-g\" d=\"M-17 6Q0 -4 17 6\"></path><g transform=\"translate(-14 4.2)\"><g transform=\"scale(1)\"><path class=\"o-o th\" d=\"M0 -4.2L1.19 -2.86L2.97 -2.97L2.86 -1.19L4.2 0L2.86 1.19L2.97 2.97L1.19 2.86L0 4.2L-1.19 2.86L-2.97 2.97L-2.86 1.19L-4.2 0L-2.86 -1.19L-2.97 -2.97L-1.19 -2.86Z\"></path><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.7\"></circle></g></g><g transform=\"translate(-7 1.6)\"><g transform=\"scale(1)\"><path class=\"o-y th\" d=\"M0 -4.2L1.19 -2.86L2.97 -2.97L2.86 -1.19L4.2 0L2.86 1.19L2.97 2.97L1.19 2.86L0 4.2L-1.19 2.86L-2.97 2.97L-2.86 1.19L-4.2 0L-2.86 -1.19L-2.97 -2.97L-1.19 -2.86Z\"></path><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.7\"></circle></g></g><g transform=\"translate(0 0.8)\"><g transform=\"scale(1)\"><path class=\"o-o th\" d=\"M0 -4.2L1.19 -2.86L2.97 -2.97L2.86 -1.19L4.2 0L2.86 1.19L2.97 2.97L1.19 2.86L0 4.2L-1.19 2.86L-2.97 2.97L-2.86 1.19L-4.2 0L-2.86 -1.19L-2.97 -2.97L-1.19 -2.86Z\"></path><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.7\"></circle></g></g><g transform=\"translate(7 1.6)\"><g transform=\"scale(1)\"><path class=\"o-y th\" d=\"M0 -4.2L1.19 -2.86L2.97 -2.97L2.86 -1.19L4.2 0L2.86 1.19L2.97 2.97L1.19 2.86L0 4.2L-1.19 2.86L-2.97 2.97L-2.86 1.19L-4.2 0L-2.86 -1.19L-2.97 -2.97L-1.19 -2.86Z\"></path><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.7\"></circle></g></g><g transform=\"translate(14 4.2)\"><g transform=\"scale(1)\"><path class=\"o-o th\" d=\"M0 -4.2L1.19 -2.86L2.97 -2.97L2.86 -1.19L4.2 0L2.86 1.19L2.97 2.97L1.19 2.86L0 4.2L-1.19 2.86L-2.97 2.97L-2.86 1.19L-4.2 0L-2.86 -1.19L-2.97 -2.97L-1.19 -2.86Z\"></path><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.7\"></circle></g></g><g transform=\"translate(-10.5 6)\"><path class=\"o-g th\" d=\"M0 0Q3 -3 6 -1Q3 1 0 0Z\"></path></g><g transform=\"translate(4 4.6)\"><path class=\"o-g th\" d=\"M0 0Q3 -3 6 -1Q3 1 0 0Z\"></path></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 75,
+      "k": "c-mxrosette",
+      "on": [
+        "cos-mi-grito",
+        "cos-mi-rosette"
+      ],
+      "t": "<g class=\"c-mxrosette\" transform=\"translate({{a.pinx}} {{a.piny}})\"><path class=\"o-g th\" d=\"M-2 3L-4 11L-1.5 9.5L0 11.5L1 4Z\"></path><path class=\"o-r th\" d=\"M2 3L4.5 10.5L1.8 9.6L1 4Z\"></path><circle class=\"o-g\" cx=\"0\" cy=\"0\" r=\"5.6\"></circle><circle class=\"o-w th\" cx=\"0\" cy=\"0\" r=\"3.92\"></circle><circle class=\"o-r th\" cx=\"0\" cy=\"0\" r=\"2.24\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 76,
+      "k": "c-poinsettia",
+      "on": [
+        "cos-lp-nochebuena"
+      ],
+      "t": "<g class=\"c-poinsettia hat\" transform=\"translate(50 {{a.top}})\"><g transform=\"translate(13 1)\"><g transform=\"scale(1.15)\"><g transform=\"rotate(36)\"><path class=\"o-g th\" d=\"M0 0Q-3 -4.6 0 -9Q3 -4.6 0 0Z\"></path></g><g transform=\"rotate(108)\"><path class=\"o-g th\" d=\"M0 0Q-3 -4.6 0 -9Q3 -4.6 0 0Z\"></path></g><g transform=\"rotate(180)\"><path class=\"o-g th\" d=\"M0 0Q-3 -4.6 0 -9Q3 -4.6 0 0Z\"></path></g><g transform=\"rotate(252)\"><path class=\"o-g th\" d=\"M0 0Q-3 -4.6 0 -9Q3 -4.6 0 0Z\"></path></g><g transform=\"rotate(324)\"><path class=\"o-g th\" d=\"M0 0Q-3 -4.6 0 -9Q3 -4.6 0 0Z\"></path></g><g transform=\"rotate(0)\"><path class=\"o-r th\" d=\"M0 0Q-3.6 -4.4 0 -9.6Q3.6 -4.4 0 0Z\"></path></g><g transform=\"rotate(60)\"><path class=\"o-r th\" d=\"M0 0Q-3.6 -4.4 0 -9.6Q3.6 -4.4 0 0Z\"></path></g><g transform=\"rotate(120)\"><path class=\"o-r th\" d=\"M0 0Q-3.6 -4.4 0 -9.6Q3.6 -4.4 0 0Z\"></path></g><g transform=\"rotate(180)\"><path class=\"o-r th\" d=\"M0 0Q-3.6 -4.4 0 -9.6Q3.6 -4.4 0 0Z\"></path></g><g transform=\"rotate(240)\"><path class=\"o-r th\" d=\"M0 0Q-3.6 -4.4 0 -9.6Q3.6 -4.4 0 0Z\"></path></g><g transform=\"rotate(300)\"><path class=\"o-r th\" d=\"M0 0Q-3.6 -4.4 0 -9.6Q3.6 -4.4 0 0Z\"></path></g><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.1\"></circle><circle class=\"f-y\" cx=\"1.6\" cy=\"0.7\" r=\"0.8\"></circle><circle class=\"f-y\" cx=\"-1.4\" cy=\"0.9\" r=\"0.8\"></circle></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 77,
+      "k": "c-reyescrown",
+      "on": [
+        "cos-dr-crown"
+      ],
+      "t": "<g class=\"c-reyescrown hat\" transform=\"translate(50 {{a.top}}) scale(1.15)\"><path class=\"o-y\" d=\"M-14 5V-7L-9 -2L-5 -10L0 -3L5 -10L9 -2L14 -7V5Z\"></path><circle class=\"o-y th\" cx=\"-14\" cy=\"-7\" r=\"1.4\"></circle><circle class=\"o-y th\" cx=\"-5\" cy=\"-10\" r=\"1.4\"></circle><circle class=\"o-y th\" cx=\"5\" cy=\"-10\" r=\"1.4\"></circle><circle class=\"o-y th\" cx=\"14\" cy=\"-7\" r=\"1.4\"></circle><circle class=\"f-r\" cx=\"0\" cy=\"1\" r=\"1.7\"></circle><circle class=\"f-b\" cx=\"-8\" cy=\"1.4\" r=\"1.2\"></circle><circle class=\"f-g\" cx=\"8\" cy=\"1.4\" r=\"1.2\"></circle></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 52,
+      "k": "x-gift",
+      "on": [
+        "cos-dr-shoes",
+        "cos-xm-gift"
+      ],
+      "t": "<g class=\"x-gift\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81)\"><rect class=\"o-r\" x=\"-8\" y=\"-12\" width=\"16\" height=\"12\" rx=\"1\"></rect><path class=\"f-y\" d=\"M-1.5 -12H1.5V0H-1.5Z\"></path><g class=\"a lid\"><rect class=\"o-r\" x=\"-9\" y=\"-15.5\" width=\"18\" height=\"4\" rx=\"1\"></rect><path class=\"f-y\" d=\"M-1.5 -15.5H1.5V-11.5H-1.5Z\"></path><path class=\"s-y\" d=\"M0 -15.5Q-5 -20 -5 -16.5Q-4 -15 0 -15.5Q4 -15 5 -16.5Q5 -20 0 -15.5\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 322,
+      "k": "x-dmpapel",
+      "on": [
+        "cos-dm-papel"
+      ],
+      "t": "<g class=\"x-dmpapel\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M8 2Q50 8 92 2\"></path><g class=\"pt pswing\"><g transform=\"translate(15 2.92)\"><g><rect class=\"o-p th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-p th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(29 4.25)\"><g><rect class=\"o-o th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-o th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(43 4.92)\"><g><rect class=\"o-v th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-v th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(57 4.92)\"><g><rect class=\"o-y th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-y th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(71 4.25)\"><g><rect class=\"o-c th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-c th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(85 2.92)\"><g><rect class=\"o-p th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-p th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 323,
+      "k": "x-ofrenda",
+      "on": [
+        "cos-dm-ofrenda"
+      ],
+      "t": "<g class=\"x-ofrenda\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(12 92)\"><rect class=\"o-w th\" x=\"-1.6\" y=\"-11\" width=\"3.2\" height=\"11\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -11.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g></g><g transform=\"translate(24 94)\"><rect class=\"o-m th\" x=\"-1.6\" y=\"-8\" width=\"3.2\" height=\"8\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -8.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g></g><g transform=\"translate(88 92)\"><rect class=\"o-w th\" x=\"-1.6\" y=\"-12\" width=\"3.2\" height=\"12\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -12.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g></g><g class=\"pt ptwk\"><g transform=\"translate(32 94)\"><g><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.2\"></circle></g></g><g transform=\"translate(76 95)\"><g><circle class=\"f-y\" cx=\"0\" cy=\"0\" r=\"1.1\"></circle></g></g><g transform=\"translate(6 95)\"><g><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1\"></circle></g></g><g transform=\"translate(96 95)\"><g><circle class=\"f-o\" cx=\"0\" cy=\"0\" r=\"1.2\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 324,
+      "k": "x-monarchs",
+      "on": [
+        "cos-dm-monarch"
+      ],
+      "t": "<g class=\"x-monarchs\" transform=\"translate(0 {{a.mo}})\"><g class=\"pt pdrift\"><g transform=\"translate(12 30)\"><g><g transform=\"scale(1.25)\"><g class=\"a mflap\"><path class=\"o-o th\" d=\"M0 0Q-6 -7 -8 -2Q-7 1 0 0ZM0 0Q6 -7 8 -2Q7 1 0 0Z\"></path><path class=\"o-o th\" d=\"M0 0Q-5 5 -3 6Q0 5 0 0ZM0 0Q5 5 3 6Q0 5 0 0Z\"></path><path class=\"s-k th\" d=\"M0 -2.4V3.6M-4 -2.6L-6 -1.2M4 -2.6L6 -1.2\"></path></g></g></g></g><g transform=\"translate(90 42)\"><g><g transform=\"scale(1.25)\"><g class=\"a mflap\"><path class=\"o-o th\" d=\"M0 0Q-6 -7 -8 -2Q-7 1 0 0ZM0 0Q6 -7 8 -2Q7 1 0 0Z\"></path><path class=\"o-o th\" d=\"M0 0Q-5 5 -3 6Q0 5 0 0ZM0 0Q5 5 3 6Q0 5 0 0Z\"></path><path class=\"s-k th\" d=\"M0 -2.4V3.6M-4 -2.6L-6 -1.2M4 -2.6L6 -1.2\"></path></g></g></g></g><g transform=\"translate(20 66)\"><g><g class=\"a mflap\"><path class=\"o-o th\" d=\"M0 0Q-6 -7 -8 -2Q-7 1 0 0ZM0 0Q6 -7 8 -2Q7 1 0 0Z\"></path><path class=\"o-o th\" d=\"M0 0Q-5 5 -3 6Q0 5 0 0ZM0 0Q5 5 3 6Q0 5 0 0Z\"></path><path class=\"s-k th\" d=\"M0 -2.4V3.6M-4 -2.6L-6 -1.2M4 -2.6L6 -1.2\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 325,
+      "k": "x-mxflag",
+      "on": [
+        "cos-mi-flag"
+      ],
+      "t": "<g class=\"x-mxflag\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"s-n\" d=\"M85 78V36\"></path><g class=\"pt pwave\"><g transform=\"translate(85.5 37)\"><g><rect class=\"f-g\" x=\"0\" y=\"0\" width=\"6\" height=\"12\"></rect><rect class=\"f-w\" x=\"6\" y=\"0\" width=\"6\" height=\"12\"></rect><rect class=\"f-r\" x=\"12\" y=\"0\" width=\"6\" height=\"12\"></rect><rect class=\"s-k th\" x=\"0\" y=\"0\" width=\"18\" height=\"12\"></rect><circle class=\"o-n th\" cx=\"9\" cy=\"6\" r=\"1.7\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 326,
+      "k": "x-grito",
+      "on": [
+        "cos-mi-grito"
+      ],
+      "t": "<g class=\"x-grito\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(86 6)\"><g class=\"a gbell\"><path class=\"s-n th\" d=\"M0 -7V-13\"></path><path class=\"o-y\" d=\"M-6 6Q-6 -6 0 -7Q6 -6 6 6Z\"></path><rect class=\"o-y th\" x=\"-7\" y=\"5\" width=\"14\" height=\"2.4\" rx=\"1.2\"></rect><circle class=\"o-n th\" cx=\"0\" cy=\"9\" r=\"1.6\"></circle></g></g><g class=\"pt ptwk\"><g transform=\"translate(74 4)\"><g><path class=\"s-y th\" d=\"M0 -3Q-2 0 0 3\"></path></g></g><g transform=\"translate(98 4)\"><g><path class=\"s-y th\" d=\"M0 -3Q2 0 0 3\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 327,
+      "k": "x-mxfire",
+      "on": [
+        "cos-mi-fireworks"
+      ],
+      "t": "<g class=\"x-mxfire\" transform=\"translate(0 {{a.up}})\"><g class=\"pt pburst\"><g transform=\"translate(16 4)\"><g><path class=\"s-g\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g><g transform=\"translate(84 -2)\"><g><path class=\"s-r\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g><g transform=\"translate(50 -12)\"><g><path class=\"s-y\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 328,
+      "k": "x-mxpapel",
+      "on": [
+        "cos-mi-papel",
+        "cos-mi-rosette"
+      ],
+      "t": "<g class=\"x-mxpapel\" transform=\"translate(0 {{a.up}})\"><path class=\"s-k th\" d=\"M8 2Q50 8 92 2\"></path><g class=\"pt pswing\"><g transform=\"translate(15 2.92)\"><g><rect class=\"o-g th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-g th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(29 4.25)\"><g><rect class=\"o-w th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-w th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(43 4.92)\"><g><rect class=\"o-r th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-r th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(57 4.92)\"><g><rect class=\"o-g th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-g th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(71 4.25)\"><g><rect class=\"o-w th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-w th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g><g transform=\"translate(85 2.92)\"><g><rect class=\"o-r th\" x=\"-4.5\" y=\"0\" width=\"9\" height=\"10.5\"></rect><path class=\"f-w\" d=\"M-1.6 2.6h3.2v1.4h-3.2zM-2.6 5.6l1 1.4l-1 1.4zM2.6 5.6l-1 1.4l1 1.4zM-.8 6.2h1.6v1.6h-1.6z\"></path><path class=\"s-r th\" d=\"M-4.5 10.5l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6l1.5 1.6l1.5 -1.6\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 329,
+      "k": "x-pinata",
+      "on": [
+        "cos-lp-pinata"
+      ],
+      "t": "<g class=\"x-pinata\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(82 0)\"><g class=\"a pswg\"><path class=\"s-n th\" d=\"M0 -12V-1\"></path><g transform=\"translate(0 8) scale(.8)\"><g transform=\"rotate(0)\"><path class=\"o-r th\" d=\"M-2.6 -4.6L0 -13L2.6 -4.6Z\"></path><path class=\"s-r th\" d=\"M0 -13Q1 -16 -.5 -18\"></path></g><g transform=\"rotate(51.43)\"><path class=\"o-o th\" d=\"M-2.6 -4.6L0 -13L2.6 -4.6Z\"></path><path class=\"s-o th\" d=\"M0 -13Q1 -16 -.5 -18\"></path></g><g transform=\"rotate(102.86)\"><path class=\"o-y th\" d=\"M-2.6 -4.6L0 -13L2.6 -4.6Z\"></path><path class=\"s-y th\" d=\"M0 -13Q1 -16 -.5 -18\"></path></g><g transform=\"rotate(154.29)\"><path class=\"o-p th\" d=\"M-2.6 -4.6L0 -13L2.6 -4.6Z\"></path><path class=\"s-p th\" d=\"M0 -13Q1 -16 -.5 -18\"></path></g><g transform=\"rotate(205.71)\"><path class=\"o-v th\" d=\"M-2.6 -4.6L0 -13L2.6 -4.6Z\"></path><path class=\"s-v th\" d=\"M0 -13Q1 -16 -.5 -18\"></path></g><g transform=\"rotate(257.14)\"><path class=\"o-b th\" d=\"M-2.6 -4.6L0 -13L2.6 -4.6Z\"></path><path class=\"s-b th\" d=\"M0 -13Q1 -16 -.5 -18\"></path></g><g transform=\"rotate(308.57)\"><path class=\"o-g th\" d=\"M-2.6 -4.6L0 -13L2.6 -4.6Z\"></path><path class=\"s-g th\" d=\"M0 -13Q1 -16 -.5 -18\"></path></g><circle class=\"o-y\" cx=\"0\" cy=\"0\" r=\"5.4\"></circle><path class=\"s-r th\" d=\"M-4 -1.6H4M-4 1.6H4\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 330,
+      "k": "x-pcandle",
+      "on": [
+        "cos-lp-candle"
+      ],
+      "t": "<g class=\"x-pcandle\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 70)\"><rect class=\"o-w th\" x=\"-1.6\" y=\"-14\" width=\"3.2\" height=\"14\" rx=\"0.6\"></rect><g class=\"pt pflick\"><g transform=\"translate(0 -14.6)\"><path class=\"o-y th\" d=\"M0 0Q-1.92 -2 0 -5.6Q1.92 -2 0 0Z\"></path></g></g><path class=\"o-p th\" d=\"M-5 -4H5L3 2H-3Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 331,
+      "k": "x-farolitos",
+      "on": [
+        "cos-lp-farol",
+        "cos-lp-nochebuena"
+      ],
+      "t": "<g class=\"x-farolitos\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(8 92)\"><rect class=\"o-m th\" x=\"-3.5\" y=\"-8\" width=\"7\" height=\"8\" rx=\"0.5\"></rect><g class=\"a fglow\"><ellipse class=\"f-y\" cx=\"0\" cy=\"-3.4\" rx=\"1.8\" ry=\"2.4\"></ellipse></g><path class=\"s-n th\" d=\"M-3.5 -8L-2.6 -9.2H2.6L3.5 -8\"></path></g><g transform=\"translate(20 94)\"><rect class=\"o-m th\" x=\"-3.5\" y=\"-8\" width=\"7\" height=\"8\" rx=\"0.5\"></rect><g class=\"a fglow\"><ellipse class=\"f-y\" cx=\"0\" cy=\"-3.4\" rx=\"1.8\" ry=\"2.4\"></ellipse></g><path class=\"s-n th\" d=\"M-3.5 -8L-2.6 -9.2H2.6L3.5 -8\"></path></g><g transform=\"translate(82 94)\"><rect class=\"o-m th\" x=\"-3.5\" y=\"-8\" width=\"7\" height=\"8\" rx=\"0.5\"></rect><g class=\"a fglow\"><ellipse class=\"f-y\" cx=\"0\" cy=\"-3.4\" rx=\"1.8\" ry=\"2.4\"></ellipse></g><path class=\"s-n th\" d=\"M-3.5 -8L-2.6 -9.2H2.6L3.5 -8\"></path></g><g transform=\"translate(94 92)\"><rect class=\"o-m th\" x=\"-3.5\" y=\"-8\" width=\"7\" height=\"8\" rx=\"0.5\"></rect><g class=\"a fglow\"><ellipse class=\"f-y\" cx=\"0\" cy=\"-3.4\" rx=\"1.8\" ry=\"2.4\"></ellipse></g><path class=\"s-n th\" d=\"M-3.5 -8L-2.6 -9.2H2.6L3.5 -8\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 332,
+      "k": "x-ponche",
+      "on": [
+        "cos-lp-ponche"
+      ],
+      "t": "<g class=\"x-ponche\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 82)\"><path class=\"o-n\" d=\"M-6 -10H6Q7 -4 5 0H-5Q-7 -4 -6 -10Z\"></path><path class=\"s-n\" d=\"M6 -8Q10 -7 9 -3Q8.5 -1 6 -2\"></path><circle class=\"f-o\" cx=\"-2\" cy=\"-10.6\" r=\"1.3\"></circle><circle class=\"f-r\" cx=\"1.6\" cy=\"-10.6\" r=\"1.1\"></circle><g class=\"pt prise\"><g transform=\"translate(-2 -13)\"><g><path class=\"s-e th\" d=\"M0 0Q-1.5 -2 0 -4Q1.5 -6 0 -8\"></path></g></g><g transform=\"translate(2 -14)\"><g><path class=\"s-e th\" d=\"M0 0Q1.5 -2 0 -4Q-1.5 -6 0 -8\"></path></g></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 333,
+      "k": "x-rosca",
+      "on": [
+        "cos-dr-rosca"
+      ],
+      "t": "<g class=\"x-rosca\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(10 86)\"><ellipse class=\"o-m\" cx=\"0\" cy=\"0\" rx=\"11\" ry=\"4.6\"></ellipse><ellipse class=\"o-w th\" cx=\"0\" cy=\"-0.4\" rx=\"5\" ry=\"1.8\"></ellipse><rect class=\"o-r th\" x=\"-9\" y=\"-2.4\" width=\"3.2\" height=\"1.4\" rx=\"0.6\"></rect><rect class=\"o-g th\" x=\"-3.5\" y=\"-4.4\" width=\"3.2\" height=\"1.4\" rx=\"0.6\"></rect><rect class=\"o-y th\" x=\"4\" y=\"-3.6\" width=\"3.2\" height=\"1.4\" rx=\"0.6\"></rect><rect class=\"o-r th\" x=\"6\" y=\"-0.4\" width=\"3.2\" height=\"1.4\" rx=\"0.6\"></rect><circle class=\"f-w\" cx=\"-6\" cy=\"1.6\" r=\"0.7\"></circle><circle class=\"f-w\" cx=\"1\" cy=\"3\" r=\"0.7\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 334,
+      "k": "x-guidestar",
+      "on": [
+        "cos-dr-camel",
+        "cos-dr-star"
+      ],
+      "t": "<g class=\"x-guidestar\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(80 0)\"><path class=\"s-y\" d=\"M-5 3Q-16 9 -28 7\"></path><path class=\"o-y\" d=\"M0 -6L1.59 -2.18L5.71 -1.85L2.57 0.83L3.53 4.85L0 2.7L-3.53 4.85L-2.57 0.83L-5.71 -1.85L-1.59 -2.18Z\"></path></g><g class=\"pt ptwk\"><g transform=\"translate(44 6)\"><g><path class=\"f-y\" d=\"M0 -2.4 L0.65 -0.65 L2.4 0 L0.65 0.65 L0 2.4 L-0.65 0.65 L-2.4 0 L-0.65 -0.65 Z\"></path></g></g><g transform=\"translate(60 -4)\"><g><path class=\"f-y\" d=\"M0 -2 L0.54 -0.54 L2 0 L0.54 0.54 L0 2 L-0.54 0.54 L-2 0 L-0.54 -0.54 Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 335,
+      "k": "x-camel",
+      "on": [
+        "cos-dr-camel"
+      ],
+      "t": "<g class=\"x-camel\" transform=\"translate({{a.ls}} {{a.dn}})\"><g class=\"pt pdrift\"><g transform=\"translate(10 84)\"><g><path class=\"o-n th\" d=\"M-9 -5Q-9 -9 -6 -9Q-4 -14 -1 -10Q1 -13 4 -9Q6 -9 6.5 -7L9 -13Q10 -15 12 -14L13 -12L11 -11L8.5 -4Q8 -2 6 -2H-7Q-9 -2 -9 -5Z\"></path><path class=\"s-n\" d=\"M-6 -2V3M-3 -2V3M2 -2V3M5 -2V3\"></path><rect class=\"o-r th\" x=\"-4.5\" y=\"-10.6\" width=\"6\" height=\"2.4\" rx=\"0.6\"></rect><circle class=\"f-k\" cx=\"11.2\" cy=\"-12.6\" r=\"0.5\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 336,
+      "k": "x-shoes",
+      "on": [
+        "cos-dr-shoes"
+      ],
+      "t": "<g class=\"x-shoes\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(10 88)\"><path class=\"o-b th\" d=\"M-9 0V-3Q-9 -5 -6 -5H-4Q-3 -3 0 -2.5Q2 -2 2 0Z\"></path><path class=\"o-p th\" d=\"M3 0V-3Q3 -5 6 -5H8Q9 -3 12 -2.5Q14 -2 14 0Z\"></path><path class=\"s-y th\" d=\"M-6 -6L-7 -10M-4 -6L-3 -10.5M6 -6L5 -10M8 -6L9.5 -9.5\"></path></g></g>"
+    }
+  ]
+}

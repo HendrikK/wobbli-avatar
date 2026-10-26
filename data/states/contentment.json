@@ -1,0 +1,181 @@
+{
+  "key": "contentment",
+  "name": "Contentment",
+  "when": "All clear · nothing needs attention",
+  "group": "feelings",
+  "verb": "purrs",
+  "mouth": "smile",
+  "hands": "fold",
+  "pose": null,
+  "variants": [
+    {
+      "key": "purr",
+      "name": "Purr",
+      "desc": "Eyes closed, slow deep breaths and a soft purr.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "cat",
+      "hands": "fold"
+    },
+    {
+      "key": "doze",
+      "name": "Doze",
+      "desc": "Nods off with little moons floating up.",
+      "pose": {
+        "sx": 1.3,
+        "sy": 0.2,
+        "ex": 0.6,
+        "ey": 2.5,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "hum",
+      "name": "Hum",
+      "desc": "Sways to itself, humming notes into the air.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "hum"
+    },
+    {
+      "key": "float",
+      "name": "Float",
+      "desc": "Drifts gently up and down above its own shadow.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      }
+    },
+    {
+      "key": "bask",
+      "name": "Bask",
+      "desc": "Settles in the sun, relaxed and a little rosy.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "bigsmile",
+      "hands": "yay"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 3,
+      "k": "eg-u",
+      "on": [
+        "v-bask",
+        "v-bywave",
+        "v-float",
+        "v-purr",
+        "v-slcap",
+        "v-sldream",
+        "v-slloaf",
+        "v-slmoon"
+      ],
+      "t": "<g class=\"eg eg-u\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 -1.5Q0 4 5 -1.5\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 -1.5Q0 4 5 -1.5\"></path></g></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 4,
+      "k": "eg-n",
+      "on": [
+        "v-awkward",
+        "v-floaty",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-hum",
+        "v-sparkle",
+        "v-squeeze"
+      ],
+      "t": "<g class=\"eg eg-n\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 2Q0 -4 5 2\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 27,
+      "k": "fx-shadow",
+      "on": [
+        "v-bounce",
+        "v-float"
+      ],
+      "t": "<g class=\"fx-shadow\" transform=\"translate(0 {{a.dn}})\"><ellipse class=\"a sh shadowc\" cx=\"50\" cy=\"86\" rx=\"22\" ry=\"3.6\"></ellipse></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 28,
+      "k": "fx-notes",
+      "on": [
+        "v-hum",
+        "v-whistle"
+      ],
+      "t": "<g class=\"fx-notes\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(80 18)\"><g class=\"a nt\"><ellipse cx=\"-1.4\" cy=\"3.6\" rx=\"3.4\" ry=\"2.5\" fill=\"#3A3833\"></ellipse><path class=\"thin\" d=\"M1.7 3.2V-8.5Q4.5 -5.5 7 -4.6\"></path></g><g class=\"a nt\"><ellipse cx=\"-1.4\" cy=\"3.6\" rx=\"3.4\" ry=\"2.5\" fill=\"#3A3833\"></ellipse><path class=\"thin\" d=\"M1.7 3.2V-8.5Q4.5 -5.5 7 -4.6\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 29,
+      "k": "fx-zz",
+      "on": [
+        "v-doze"
+      ],
+      "t": "<g class=\"fx-zz\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(74 12)\"><path class=\"a z\" style=\"fill: #F2B33D; stroke: #C98A16; stroke-width: 1\" d=\"M-2.2 -2.75A4.4 4.4 0 1 0 2.2 2.75A3.6 3.6 0 1 1 -2.2 -2.75Z\"></path><path class=\"a z\" style=\"fill: #F2B33D; stroke: #C98A16; stroke-width: 1\" d=\"M-2.2 -2.75A4.4 4.4 0 1 0 2.2 2.75A3.6 3.6 0 1 1 -2.2 -2.75Z\"></path><path class=\"a z\" style=\"fill: #F2B33D; stroke: #C98A16; stroke-width: 1\" d=\"M-2.2 -2.75A4.4 4.4 0 1 0 2.2 2.75A3.6 3.6 0 1 1 -2.2 -2.75Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 30,
+      "k": "fx-sun",
+      "on": [
+        "v-bask"
+      ],
+      "t": "<g class=\"fx-sun\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(13 8)\"><path class=\"a rays ray\" d=\"M7.85 3.25L10.62 4.4M3.25 7.85L4.4 10.62M-3.25 7.85L-4.4 10.62M-7.85 3.25L-10.62 4.4M-7.85 -3.25L-10.62 -4.4M-3.25 -7.85L-4.4 -10.62M3.25 -7.85L4.4 -10.62M7.85 -3.25L10.62 -4.4\"></path><circle class=\"a core\" r=\"6\" fill=\"#F2B33D\"></circle></g></g>"
+    }
+  ]
+}

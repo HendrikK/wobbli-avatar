@@ -1,0 +1,112 @@
+{
+  "key": "bye",
+  "name": "Goodbye",
+  "when": "Closing a chat or signing out",
+  "group": "talk",
+  "verb": "says bye",
+  "mouth": "talk",
+  "hands": "wave",
+  "pose": {
+    "sx": 1.05,
+    "sy": 0.95,
+    "ex": 0,
+    "ey": 0,
+    "rot": 0,
+    "lock": 1
+  },
+  "variants": [
+    {
+      "key": "bywave",
+      "name": "Wave bye",
+      "desc": "A slow, content wave with closed eyes."
+    },
+    {
+      "key": "bydot",
+      "name": "Shrink away",
+      "desc": "Shrinks down to a dot, then pops back.",
+      "mouth": "smile",
+      "hands": "wave"
+    },
+    {
+      "key": "byhop",
+      "name": "Hop off",
+      "desc": "Hops off to the right and out of sight."
+    },
+    {
+      "key": "bypoof",
+      "name": "Poof",
+      "desc": "Vanishes in a puff of smoke.",
+      "mouth": "smile"
+    },
+    {
+      "key": "bybow",
+      "name": "Bow",
+      "desc": "A polite little bow.",
+      "mouth": "smile",
+      "hands": "droop"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "glyph",
+      "i": 3,
+      "k": "eg-u",
+      "on": [
+        "v-bask",
+        "v-bywave",
+        "v-float",
+        "v-purr",
+        "v-slcap",
+        "v-sldream",
+        "v-slloaf",
+        "v-slmoon"
+      ],
+      "t": "<g class=\"eg eg-u\" stroke=\"{{a.eye}}\"><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"gl\" d=\"M-5 -1.5Q0 4 5 -1.5\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"gl\" d=\"M-5 -1.5Q0 4 5 -1.5\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 270,
+      "k": "fx-hand",
+      "on": [
+        "v-bywave",
+        "v-grwave"
+      ],
+      "t": "<g class=\"fx-hand\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(85 47)\"><g class=\"a hnd\"><path class=\"hc\" d=\"M-4 0C-6 -4 -5.5 -11 0 -11.5C5.5 -11 6 -4 4 0Z\"></path></g><path class=\"a mot grey\" d=\"M-9 -15Q-12 -10 -10 -5M9 -15Q12 -10 10 -5\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 275,
+      "k": "fx-poof",
+      "on": [
+        "v-bypoof"
+      ],
+      "t": "<g class=\"fx-poof\" transform=\"translate(0 {{a.mo}})\"><circle class=\"a pf smoke\" cx=\"36\" cy=\"52\" r=\"10\"></circle><circle class=\"a pf smoke\" cx=\"60\" cy=\"44\" r=\"12\"></circle><circle class=\"a pf smoke\" cx=\"52\" cy=\"62\" r=\"11\"></circle><circle class=\"a pf smoke\" cx=\"40\" cy=\"36\" r=\"8\"></circle><circle class=\"a pf smoke\" cx=\"67\" cy=\"60\" r=\"8\"></circle></g>"
+    }
+  ]
+}

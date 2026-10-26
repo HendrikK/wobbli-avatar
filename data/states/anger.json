@@ -1,0 +1,137 @@
+{
+  "key": "anger",
+  "name": "Anger",
+  "when": "Repeated failures · blocked by a permission",
+  "group": "feelings",
+  "verb": "fumes",
+  "mouth": "grit",
+  "hands": "fists",
+  "pose": null,
+  "variants": [
+    {
+      "key": "fume",
+      "name": "Fume",
+      "desc": "Steam blows out of both sides of its head while it shakes.",
+      "pose": {
+        "sx": 1.5,
+        "sy": 0.32,
+        "ex": 0.2,
+        "ey": 0.8,
+        "rot": 28,
+        "lock": 1
+      }
+    },
+    {
+      "key": "throb",
+      "name": "Throb",
+      "desc": "An anger mark pulses on its head in time with a throbbing body.",
+      "pose": {
+        "sx": 1.5,
+        "sy": 0.32,
+        "ex": 0.2,
+        "ey": 0.8,
+        "rot": 28,
+        "lock": 1
+      }
+    },
+    {
+      "key": "stomp",
+      "name": "Stomp",
+      "desc": "Stomps left, right, left, with a puff of dust at every slam.",
+      "pose": {
+        "sx": 1.5,
+        "sy": 0.32,
+        "ex": 0.2,
+        "ey": 0.8,
+        "rot": 28,
+        "lock": 1
+      }
+    },
+    {
+      "key": "tantrum",
+      "name": "Tantrum",
+      "desc": "Thrashes side to side under a spinning scribble of curses.",
+      "pose": {
+        "sx": 1.6,
+        "sy": 0.24,
+        "ex": 0.2,
+        "ey": 0.8,
+        "rot": 30,
+        "lock": 1
+      },
+      "mouth": "yell"
+    },
+    {
+      "key": "erupt",
+      "name": "Erupt",
+      "desc": "Swells and shakes until it blows its top, then catches its breath.",
+      "pose": {
+        "sx": 1.5,
+        "sy": 0.32,
+        "ex": 0.2,
+        "ey": 0.8,
+        "rot": 28,
+        "lock": 1
+      },
+      "mouth": "yell",
+      "hands": "fists"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 5,
+      "k": "fx-dust",
+      "on": [
+        "v-spin",
+        "v-stomp"
+      ],
+      "t": "<g class=\"fx-dust\" fill=\"#BDB5A8\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(32 84)\"><g class=\"a pf pl\"><circle cx=\"-4\" cy=\"0\" r=\"4.5\"></circle><circle cx=\"2\" cy=\"-3\" r=\"5.5\"></circle><circle cx=\"6.5\" cy=\"1\" r=\"3.5\"></circle></g></g><g transform=\"translate(68 84)\"><g class=\"a pf pr\"><circle cx=\"4\" cy=\"0\" r=\"4.5\"></circle><circle cx=\"-2\" cy=\"-3\" r=\"5.5\"></circle><circle cx=\"-6.5\" cy=\"1\" r=\"3.5\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 6,
+      "k": "fx-impact",
+      "on": [
+        "v-stomp"
+      ],
+      "t": "<g class=\"fx-impact\" transform=\"translate(0 {{a.dn}})\"><path class=\"a im grey\" d=\"M19 80L12 76M17 86L9 87\"></path><path class=\"a im grey\" d=\"M81 80L88 76M83 86L91 87\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 14,
+      "k": "fx-steam",
+      "on": [
+        "v-fume"
+      ],
+      "t": "<g class=\"fx-steam\" fill=\"#ADA597\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(25 22)\"><circle class=\"a pf sl\" r=\"5\"></circle><circle class=\"a pf sl\" r=\"5\"></circle><circle class=\"a pf sl\" r=\"5\"></circle></g><g transform=\"translate(75 22)\"><circle class=\"a pf sr\" r=\"5\"></circle><circle class=\"a pf sr\" r=\"5\"></circle><circle class=\"a pf sr\" r=\"5\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 15,
+      "k": "fx-vein",
+      "on": [
+        "v-throb"
+      ],
+      "t": "<g class=\"fx-vein\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(76 20)\"><path class=\"a vm vein\" d=\"M-7 -2.5Q-2.5 -2.5 -2.5 -7M2.5 -7Q2.5 -2.5 7 -2.5M7 2.5Q2.5 2.5 2.5 7M-2.5 7Q-2.5 2.5 -7 2.5\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 16,
+      "k": "fx-scribble",
+      "on": [
+        "v-tantrum"
+      ],
+      "t": "<g class=\"fx-scribble\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 3)\"><path class=\"a scr thin\" d=\"M-9 2C-12 -6 -2 -10 2 -6C7 -2 -6 4 -2 6C3 9 11 1 7 -5C4 -10 -4 -3 0 0C3 3 9 -2 10 3\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 17,
+      "k": "fx-burst",
+      "on": [
+        "v-erupt"
+      ],
+      "t": "<g class=\"fx-burst\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(50 12)\"><path class=\"a bst hot\" d=\"M-5.2 -3L-12.12 -7M-3.86 -4.6L-9 -10.72M-2.05 -5.64L-4.79 -13.16M0 -6L0 -14M2.05 -5.64L4.79 -13.16M3.86 -4.6L9 -10.72M5.2 -3L12.12 -7\"></path></g></g>"
+    }
+  ]
+}

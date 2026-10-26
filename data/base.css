@@ -1,0 +1,145 @@
+.aa-av .fol { transform-box: view-box; }
+.aa-av.mo-follow:not(.st-idle) .fol { transform: translate(calc(var(--gx, 0) * .6px), calc(var(--gy, 0) * .6px)); transition: transform .18s ease-out; }
+.aa-av .mz .ma { transform-box: fill-box; transform-origin: 50% 0%; }
+.aa-av.sm .mz .ma { stroke-width: 2.9px; }
+.aa-av .mz .ma-talk { animation: aa-M-talk .44s ease-in-out infinite alternate; }
+.aa-av .mz .ma-hum { transform-origin: 50% 50%; animation: aa-M-hum 1.8s ease-in-out infinite; }
+.aa-av .mz .ma-sleepo { transform-origin: 50% 50%; animation: aa-M-breathe 3.4s ease-in-out infinite; }
+.aa-av .mz .ma-scream, .aa-av .mz .ma-yell { transform-origin: 50% 50%; animation: aa-M-shout .36s ease-in-out infinite alternate; }
+.aa-av .mz .ma-laugh { transform-origin: 50% 0%; animation: aa-M-laugh .32s ease-in-out infinite alternate; }
+.aa-av .mz .ma-nervous { transform-origin: 50% 50%; animation: aa-M-chatter .09s linear infinite alternate; }
+.aa-av .hz .ha { transform-box: fill-box; transform-origin: 50% 100%; }
+.aa-av .hz .h-sway { animation: aa-HD-sway 2.6s ease-in-out infinite alternate; }
+.aa-av .hz .h-tap { animation: aa-HD-tap .22s ease-in-out infinite alternate; }
+.aa-av .hz .h-tap2 { animation: aa-HD-tap .22s ease-in-out -.11s infinite alternate; }
+.aa-av .hz .h-wave { animation: aa-HD-wave .45s ease-in-out infinite alternate; }
+.aa-av .hz .h-pump { animation: aa-HD-pump .45s ease-in-out infinite alternate; }
+.aa-av .hz .h-clap { animation: aa-HD-clap .28s ease-in-out infinite alternate; }
+.aa-av .hz .h-bob { animation: aa-HD-bob 1s ease-in-out infinite alternate; }
+.aa-av .hz .h-shake { animation: aa-HD-shake .16s ease-in-out infinite alternate; }
+.aa-av .hz .h-jitter { animation: aa-HD-jitter .07s linear infinite alternate; }
+.aa-av .hz .h-push { animation: aa-HD-push .7s ease-in-out infinite alternate; }
+.aa-av .hz .h-peek { animation: aa-HD-peek 2.6s ease-in-out infinite; }
+.aa-av .hz .h-look { animation: aa-HD-look 1.4s ease-in-out infinite alternate; }
+.aa-av .hz .h-cup { animation: aa-HD-cup 1.2s ease-in-out infinite alternate; }
+.aa-av .hz .h-shrug { animation: aa-HD-shrug 1.1s ease-in-out infinite alternate; }
+.aa-av .hz .h-rubhands { animation: aa-HD-rub .3s ease-in-out infinite alternate; }
+.aa-av .hz .h-tapf { animation: aa-HD-tapf .28s ease-in-out infinite alternate; }
+.aa-av .hz .h-hammer { animation: aa-HD-hammer .42s ease-in infinite alternate; }
+.aa-av .hz .h-wipe { animation: aa-HD-wipe .9s ease-in-out infinite alternate; }
+.aa-av .hz .h-rub { animation: aa-HD-rub .22s ease-in-out infinite alternate; }
+.aa-av .hz .h-scratch { animation: aa-HD-scratch .18s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion: reduce) { .aa-av .hz .ha { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { .aa-av .mz .ma { animation: none !important; } }
+.aa-av { position: relative; flex: none; }
+.aa-av .bb, .aa-av .fx { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; display: block; }
+.aa-av .fx { pointer-events: none; }
+.aa-av .fx > g, .aa-av .cheeks, .aa-av .sw, .aa-av .eg { display: none; }
+.aa-av .w, .aa-av .sp, .aa-av .gz, .aa-av .e { transform-box: view-box; }
+.aa-av .w { transition: transform .5s cubic-bezier(.3,.7,.3,1), translate .4s ease, rotate .4s ease, scale .4s ease; }
+.aa-av .sp { transition: rotate .4s ease, translate .4s ease, scale .4s ease; }
+.aa-av .gz { transition: transform .45s cubic-bezier(.3,.7,.3,1), translate .4s ease; }
+.aa-av .e { transition: transform .45s cubic-bezier(.34,1.3,.5,1), translate .4s ease, scale .4s ease; }
+.aa-av .ey { transition: opacity .2s ease; }
+.aa-av .e > path { transform-box: view-box; transform-origin: inherit; animation: aa-bb-blink 5.2s infinite; }
+.aa-av .a { transform-box: fill-box; transform-origin: center; }
+.aa-av .sw { transform-origin: 50% 0%; }
+.aa-av.sm { --amp: 1.35; }
+.aa-av.sm .fx { scale: 1.3; }
+.aa-av .cheeks { fill: #FF7E96; opacity: .55; }
+.aa-av .sw { fill: #8EC9F5; }
+.aa-av .thin { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.aa-av .grey { fill: none; stroke: #B5AC9E; stroke-width: 3; stroke-linecap: round; }
+.aa-av .gl { fill: none; stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; }
+.aa-av .gold { fill: #F2B33D; stroke: #C98A16; stroke-width: 1.5; stroke-linejoin: round; }
+@media (prefers-reduced-motion: reduce) { .aa-av * { animation: none !important; } }
+.aa-av .att { display: none; }
+.aa-av .pw { fill: #FFFFFF; stroke: var(--aa-ink, #3A3833); stroke-width: 1.8; stroke-linejoin: round; }
+.aa-av .hc { fill: currentColor; stroke: var(--aa-ink, #3A3833); stroke-width: 1.8; stroke-linejoin: round; }
+.aa-av .dk { fill: #3A3833; }
+.aa-av .bx { fill: #E6BE85; stroke: #B98A4E; stroke-width: 1.6; stroke-linejoin: round; }
+.aa-av .okf { fill: #3E9B5F; }
+.aa-av .line2 { fill: none; stroke: #CFC9BE; stroke-width: 2; stroke-linecap: round; }
+.aa-av .gold2 { fill: #F2B33D; }
+.aa-av .coral { fill: #F27863; }
+.aa-av .head { fill: currentColor; }
+.aa-av .txt { font-family: 'Geist', system-ui, sans-serif; font-weight: 700; fill: #3A3833; }
+.aa-av .gst { fill: #F2B33D; stroke: var(--aa-ink, #3A3833); stroke-width: 1.6; }
+.aa-av .cst { fill: #F27863; stroke: var(--aa-ink, #3A3833); stroke-width: 1.6; }
+.aa-av .lnk2 { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 1.8; stroke-linecap: round; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .bar1, .aa-av .bar2, .aa-av .bar3, .aa-av .bar4 { transform-origin: 0% 50%; }
+.aa-av .lnk2 { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 1.8; stroke-linecap: round; }
+.aa-av .gst { fill: #F2B33D; stroke: var(--aa-ink, #3A3833); stroke-width: 1.6; }
+.aa-av .cst { fill: #F27863; stroke: var(--aa-ink, #3A3833); stroke-width: 1.6; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .lnk2 { fill: none; stroke: var(--aa-ink, #3A3833); stroke-width: 1.8; stroke-linecap: round; }
+.aa-av .gst { fill: #F2B33D; stroke: var(--aa-ink, #3A3833); stroke-width: 1.6; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .cos > g, .aa-av .cosb > g { display: none; }
+.aa-av [class^="o-"], .aa-av [class*=" o-"] { stroke: var(--aa-ink, #3A3833); stroke-width: 1.5; stroke-linejoin: round; }
+.aa-av [class^="s-"], .aa-av [class*=" s-"] { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.aa-av .tx { font-family: 'Geist', system-ui, sans-serif; font-weight: 700; fill: #3A3833; }
+.aa-av .pspin > g > * { animation: aa-H-spin 5s linear infinite; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .vb0 { transform-box: view-box; transform-origin: 0px 0px; }
+.aa-av .gnd-in > g { display: none; }
+.aa-av .gsh { fill: #3A3833; opacity: calc(.2 * var(--aa-shadow-strength, 1)); transform-box: fill-box; transform-origin: 50% 50%; animation: aa-gsh-rest 3.4s ease-in-out infinite; }
+.aa-av.aa-dark .gsh, .aa-av.aa-dark .gsh { opacity: calc(.42 * var(--aa-shadow-strength, 1)); }
+.aa-av.sh-tint .gnd .shadowc, .aa-av.sh-tint .gsh, .aa-av.sh-tint .x-puddle > g > ellipse:first-child, .aa-av.sh-tint .x-pond > g > ellipse:first-child { fill: var(--aa-shadow-color); }
+.aa-av.sh-off .gnd { display: none; }
+.aa-av.sh-still .gsh, .aa-av.sh-still .gnd .sh { animation: none; }
+.aa-av.sh-still .gnd .ripple, .aa-av.sh-still .gnd .ripl { display: none; }
+@keyframes aa-M-talk { from { scale: 1 .3; } to { scale: 1 1; } }
+@keyframes aa-M-hum { 0%, 100% { scale: 1 1; } 50% { scale: 1.2 .75; } }
+@keyframes aa-M-breathe { 0%, 100% { scale: .8; } 50% { scale: 1.3; } }
+@keyframes aa-M-shout { from { scale: .9 .85; } to { scale: 1.05 1.05; } }
+@keyframes aa-M-laugh { from { scale: 1 .78; } to { scale: 1 1.04; } }
+@keyframes aa-M-chatter { from { translate: -.4px 0; } to { translate: .4px 0; } }
+@keyframes aa-HD-sway { from { rotate: -5deg; } to { rotate: 5deg; } }
+@keyframes aa-HD-tap { from { translate: 0 0; } to { translate: 0 -1.6px; } }
+@keyframes aa-HD-wave { from { rotate: -20deg; } to { rotate: 18deg; } }
+@keyframes aa-HD-pump { from { translate: 0 0; rotate: -4deg; } to { translate: 0 -3px; rotate: 6deg; } }
+@keyframes aa-HD-clap { from { translate: 0 0; } to { translate: -2.6px 0; } }
+@keyframes aa-HD-bob { from { translate: 0 0; } to { translate: 0 -1.4px; } }
+@keyframes aa-HD-peek { 0%, 35%, 100% { translate: 0 0; } 50%, 80% { translate: 0 6px; } }
+@keyframes aa-HD-shake { from { rotate: -10deg; } to { rotate: 10deg; } }
+@keyframes aa-HD-jitter { from { translate: -.6px 0; } to { translate: .6px 0; } }
+@keyframes aa-HD-push { from { translate: 0 0; } to { translate: 2px 0; } }
+@keyframes aa-HD-look { from { translate: 0 0; } to { translate: 1.5px 0; } }
+@keyframes aa-HD-cup { from { scale: 1; } to { scale: .92; } }
+@keyframes aa-HD-shrug { from { translate: 0 0; } to { translate: 0 -2.4px; } }
+@keyframes aa-HD-rub { from { translate: -.9px 0; } to { translate: .9px 0; } }
+@keyframes aa-HD-tapf { from { rotate: 0deg; } to { rotate: -14deg; } }
+@keyframes aa-HD-hammer { from { rotate: -34deg; } to { rotate: 8deg; } }
+@keyframes aa-HD-wipe { from { translate: -5px 0; } to { translate: 2px 0; } }
+@keyframes aa-HD-scratch { from { translate: 0 0; } to { translate: 0 1.2px; } }
+@keyframes aa-bb-blink { 0%, 93%, 100% { scale: 1 1; } 95.5% { scale: 1 .08; } }
+@keyframes aa-bb-pop { 0% { scale: 0; rotate: -25deg; opacity: 0; } 8% { scale: 1.2; rotate: 10deg; opacity: 1; } 14% { scale: 1; rotate: -5deg; } 20% { rotate: 0deg; translate: 0 0; } 50% { translate: 0 -2.5px; } 80% { translate: 0 0; scale: 1; opacity: 1; } 90%, 100% { scale: 0; opacity: 0; } }
+@keyframes aa-bb-twinkle { 0%, 100% { scale: 0; rotate: 0deg; opacity: 0; } 6% { opacity: 1; } 16% { scale: 1.15; rotate: 45deg; opacity: 1; } 32% { scale: 0; rotate: 90deg; opacity: 0; } }
+@keyframes aa-bb-shiver { 0%, 100% { translate: calc(var(--amp, 1) * -.9px) 0; } 50% { translate: calc(var(--amp, 1) * .9px) 0; } }
+@keyframes aa-bb-sigh { 0%, 100% { scale: 1 1; translate: 0 0; } 38% { scale: .985 1.035; translate: 0 -1.6px; } 58% { scale: 1.02 .97; translate: 0 .9px; } }
+@keyframes aa-bb-sweatin { 0% { scale: 0; translate: 0 0; opacity: 1; } 20% { scale: 1; } 70% { translate: 0 5px; opacity: 1; } 85%, 100% { translate: 0 8px; scale: 1; opacity: 0; } }
+@keyframes aa-bb-shock { 0% { scale: .6; opacity: 0; } 4% { opacity: 1; } 26%, 100% { scale: 1.25; opacity: 0; } }
+@keyframes aa-bb-note { 0% { translate: 0 6px; opacity: 0; rotate: -10deg; } 15% { opacity: 1; } 50% { translate: 5px -6px; rotate: 10deg; } 100% { translate: 0 -18px; opacity: 0; rotate: -10deg; } }
+@keyframes aa-bb-sway { 0%, 100% { rotate: calc(var(--amp, 1) * -6deg); } 50% { rotate: calc(var(--amp, 1) * 6deg); } }
+@keyframes aa-bb-breathe { from { scale: 1 1; } to { scale: 1.022 .982; } }
+@keyframes aa-bb-bob { from { translate: 0 0; } to { translate: 0 -1.6px; } }
+@keyframes aa-bb-chase { 0% { translate: calc(var(--amp, 1) * 1.49px) calc(var(--amp, 1) * 4.36px); } 12.5% { translate: calc(var(--amp, 1) * -3.05px) calc(var(--amp, 1) * 3.87px); } 25% { translate: calc(var(--amp, 1) * -5.81px) calc(var(--amp, 1) * 1.12px); } 37.5% { translate: calc(var(--amp, 1) * -5.16px) calc(var(--amp, 1) * -2.29px); } 50% { translate: calc(var(--amp, 1) * -1.49px) calc(var(--amp, 1) * -4.36px); } 62.5% { translate: calc(var(--amp, 1) * 3.05px) calc(var(--amp, 1) * -3.87px); } 75% { translate: calc(var(--amp, 1) * 5.81px) calc(var(--amp, 1) * -1.12px); } 87.5% { translate: calc(var(--amp, 1) * 5.16px) calc(var(--amp, 1) * 2.29px); } 100% { translate: calc(var(--amp, 1) * 1.49px) calc(var(--amp, 1) * 4.36px); } }
+@keyframes aa-ap-wob { 0%, 100% { rotate: -8deg; } 50% { rotate: 8deg; } }
+@keyframes aa-ap-fadeloop { 0%, 100% { opacity: 0; } 15%, 85% { opacity: 1; } }
+@keyframes aa-A-sip { from { scale: 1 1; } to { scale: 1.03 .97; } }
+@keyframes aa-B-scan { from { translate: calc(var(--amp, 1) * -3px) 3.5px; } to { translate: calc(var(--amp, 1) * 3px) 3.5px; } }
+@keyframes aa-B-stackbody { 0%, 12%, 30%, 100% { scale: 1 1; } 18% { scale: 1.03 .97; } }
+@keyframes aa-C-wave { from { rotate: -25deg; } to { rotate: 20deg; } }
+@keyframes aa-C-mot { 0%, 100% { opacity: 0; } 30%, 60% { opacity: 1; } }
+@keyframes aa-C-yawnmouth { 0%, 18%, 62%, 100% { scale: .2 0; } 30%, 48% { scale: 1 1; } }
+@keyframes aa-C-yawn { 0%, 18%, 62%, 100% { scale: 1 1; } 30%, 48% { scale: .96 1.09; } 56% { scale: 1.03 .96; } }
+@keyframes aa-C-yawneyes { 0%, 18%, 62%, 100% { scale: 1 1; } 28%, 50% { scale: 1.1 .12; } }
+@keyframes aa-C-yawngz { 0%, 18%, 62%, 100% { translate: 0 0; } 30%, 48% { translate: 0 -2.5px; } }
+@keyframes aa-D-drift { 0%, 100% { translate: -1.5px 0; } 50% { translate: 1.5px -2px; } }
+@keyframes aa-H-spin { to { rotate: 360deg; } }
+@keyframes aa-gsh-rest { 0%, 100% { scale: 1; } 50% { scale: .92 .88; } }

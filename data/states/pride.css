@@ -1,0 +1,34 @@
+.aa-av .crown, .aa-av .medal { display: none; }
+.aa-av .cw { transform-origin: 50% 100%; }
+.aa-av .msw { transform-origin: 50% 0%; }
+.aa-av .rib { fill: none; stroke: #F27863; stroke-width: 3.6; stroke-linecap: round; }
+.aa-av.v-chinup .w { animation: aa-bb-chinup 3s ease-in-out infinite; }
+.aa-av.v-chinup .gz { transform: translate(-1px, -2.5px); }
+.aa-av.v-chinup .fx-spark { display: inline; }
+.aa-av.v-chinup .fx-spark g:not(:nth-child(2)) { display: none; }
+.aa-av.v-chinup .fx-spark .s { animation: aa-bb-twinkle 3s ease-out infinite backwards; animation-delay: .9s; }
+.aa-av.v-crown .crown { display: inline; }
+.aa-av.v-crown .cw { animation: aa-bb-crowndrop 3s infinite; }
+.aa-av.v-crown .w { animation: aa-bb-proudbob 1.5s ease-in-out infinite; }
+.aa-av.v-crown .gz { transform: translate(0px, -1.5px); }
+.aa-av.v-medal .medal { display: inline; }
+.aa-av.v-medal .msw { animation: aa-bb-medalswing 3s ease-in-out infinite; }
+.aa-av.v-medal .mgl { animation: aa-bb-twinkle 1.5s ease-out infinite backwards; animation-delay: .3s; }
+.aa-av.v-medal .w { animation: aa-bb-puffchest 3s ease-in-out infinite; }
+.aa-av.v-medal .gz { transform: translate(0px, -2px); }
+.aa-av.v-strut .w { animation: aa-bb-strut 1.6s ease-in-out infinite; }
+.aa-av.v-strut .gz { transform: translate(0px, -2.5px); }
+.aa-av.v-sparkle .ey { opacity: 0; }
+.aa-av.v-sparkle .eg-n, .aa-av.v-sparkle .fx-spark { display: inline; }
+.aa-av.v-sparkle .fx-spark .s { animation: aa-bb-twinkle 2.4s ease-out infinite backwards; }
+.aa-av.v-sparkle .fx-spark g:nth-child(2) .s { animation-delay: .6s; }
+.aa-av.v-sparkle .fx-spark g:nth-child(3) .s { animation-delay: 1.2s; }
+.aa-av.v-sparkle .fx-spark g:nth-child(4) .s { animation-delay: 1.8s; }
+.aa-av.v-sparkle .w { animation: aa-bb-proudbob 2.4s ease-in-out infinite; }
+.aa-av.v-crown .cos .hat { display: none !important; }
+@keyframes aa-bb-proudbob { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: 0 -2px; rotate: calc(var(--amp, 1) * -2deg); } }
+@keyframes aa-bb-chinup { 0%, 100% { rotate: 0deg; scale: 1 1; translate: 0 0; } 30%, 80% { rotate: calc(var(--amp, 1) * -7deg); scale: .98 1.05; translate: 0 -1px; } }
+@keyframes aa-bb-crowndrop { 0% { translate: 0 -26px; opacity: 0; scale: 1 1; } 8% { opacity: 1; } 18% { translate: 0 0; scale: 1.15 .8; animation-timing-function: ease-out; } 26% { scale: .95 1.08; translate: 0 -2px; } 34%, 86% { scale: 1 1; translate: 0 0; opacity: 1; } 96%, 100% { translate: 0 -10px; opacity: 0; scale: 1 1; } }
+@keyframes aa-bb-medalswing { 0%, 100% { rotate: -6deg; } 50% { rotate: 6deg; } }
+@keyframes aa-bb-puffchest { 0%, 100% { scale: 1 1; translate: 0 0; } 40%, 70% { scale: 1.06 1.04; translate: 0 -1.5px; } }
+@keyframes aa-bb-strut { 0%, 100% { translate: calc(var(--amp, 1) * -6px) 0; rotate: calc(var(--amp, 1) * -6deg); } 25% { translate: 0 calc(var(--amp, 1) * -4px); rotate: calc(var(--amp, 1) * -3deg); } 50% { translate: calc(var(--amp, 1) * 6px) 0; rotate: calc(var(--amp, 1) * -6deg); } 75% { translate: 0 calc(var(--amp, 1) * -4px); rotate: calc(var(--amp, 1) * -3deg); } }

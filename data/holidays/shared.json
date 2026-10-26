@@ -1,0 +1,714 @@
+{
+  "pack": "shared",
+  "name": "Shared by many regions",
+  "holidays": [
+    {
+      "key": "newyear",
+      "label": "New Year's Day",
+      "kind": "civic",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ny-sunrise",
+          "name": "First sunrise"
+        },
+        {
+          "key": "ny-calendar",
+          "name": "New page"
+        },
+        {
+          "key": "ny-list",
+          "name": "Resolutions"
+        },
+        {
+          "key": "ny-plunge",
+          "name": "Polar plunge"
+        },
+        {
+          "key": "ny-fresh",
+          "name": "Fresh start"
+        }
+      ]
+    },
+    {
+      "key": "valentines",
+      "label": "Valentine's Day",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "va-boppers",
+          "name": "Heart boppers"
+        },
+        {
+          "key": "va-cupid",
+          "name": "Cupid"
+        },
+        {
+          "key": "va-letter",
+          "name": "Love letter"
+        },
+        {
+          "key": "va-roses",
+          "name": "Roses"
+        },
+        {
+          "key": "va-glasses",
+          "name": "Heart glasses"
+        }
+      ]
+    },
+    {
+      "key": "easter",
+      "label": "Easter",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ea-bunny",
+          "name": "Bunny ears"
+        },
+        {
+          "key": "ea-basket",
+          "name": "Egg hunt"
+        },
+        {
+          "key": "ea-chick",
+          "name": "Chick"
+        },
+        {
+          "key": "ea-egg",
+          "name": "Painted egg"
+        },
+        {
+          "key": "ea-tulips",
+          "name": "Spring flowers"
+        }
+      ]
+    },
+    {
+      "key": "halloween",
+      "label": "Halloween",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "hw-witch",
+          "name": "Witch hat"
+        },
+        {
+          "key": "hw-pumpkin",
+          "name": "Jack-o'-lantern"
+        },
+        {
+          "key": "hw-bat",
+          "name": "Bat"
+        },
+        {
+          "key": "hw-cat",
+          "name": "Black cat"
+        },
+        {
+          "key": "hw-ghost",
+          "name": "Ghost friend"
+        }
+      ]
+    },
+    {
+      "key": "christmas",
+      "label": "Christmas",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "xm-santa",
+          "name": "Santa hat"
+        },
+        {
+          "key": "xm-antlers",
+          "name": "Reindeer"
+        },
+        {
+          "key": "xm-elf",
+          "name": "Elf"
+        },
+        {
+          "key": "xm-lights",
+          "name": "Fairy lights"
+        },
+        {
+          "key": "xm-gift",
+          "name": "Gift"
+        }
+      ]
+    },
+    {
+      "key": "nye",
+      "label": "New Year's Eve",
+      "kind": "cultural",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "ne-party",
+          "name": "Party hat"
+        },
+        {
+          "key": "ne-fireworks",
+          "name": "Fireworks"
+        },
+        {
+          "key": "ne-toast",
+          "name": "Toast"
+        },
+        {
+          "key": "ne-midnight",
+          "name": "Midnight"
+        },
+        {
+          "key": "ne-disco",
+          "name": "Disco"
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "newyear": {
+      "on": "01-01"
+    },
+    "valentines": {
+      "on": "02-14"
+    },
+    "easter": {
+      "on": {
+        "easter": 0
+      },
+      "from": -2
+    },
+    "halloween": {
+      "on": "10-31"
+    },
+    "christmas": {
+      "on": "12-25",
+      "from": -1
+    },
+    "nye": {
+      "on": "12-31"
+    }
+  },
+  "parts": [
+    {
+      "zone": "cosb",
+      "i": 0,
+      "k": "b-wings",
+      "on": [
+        "cos-va-cupid"
+      ],
+      "t": "<g class=\"b-wings\" transform=\"translate(50 {{a.mid}})\"><g transform=\"translate(-25 -9) scale(1.3)\"><g class=\"a wgl\"><path class=\"o-w\" d=\"M0 0Q-13 -15 -18 -5Q-14 -1 -16 3Q-10 6 0 4Z\"></path></g></g><g transform=\"translate(25 -9) scale(1.3)\"><g class=\"a wgr\"><path class=\"o-w\" d=\"M0 0Q13 -15 18 -5Q14 -1 16 3Q10 6 0 4Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "cosb",
+      "i": 1,
+      "k": "b-batwings",
+      "on": [
+        "cos-hw-bat"
+      ],
+      "t": "<g class=\"b-batwings\" transform=\"translate(50 {{a.mid}})\"><g transform=\"translate(-24 -8)\"><g class=\"a wgl\"><path class=\"o-k\" d=\"M0 0Q-8 -16 -23 -11Q-19 -7 -21 -3Q-16 -4 -15 1Q-10 -2 -8 3Q-4 0 0 4Z\"></path></g></g><g transform=\"translate(24 -8)\"><g class=\"a wgr\"><path class=\"o-k\" d=\"M0 0Q8 -16 23 -11Q19 -7 21 -3Q16 -4 15 1Q10 -2 8 3Q4 0 0 4Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "cosb",
+      "i": 2,
+      "k": "b-tail",
+      "on": [
+        "cos-hw-cat"
+      ],
+      "t": "<g class=\"b-tail\" transform=\"translate(50 {{a.base}})\"><g transform=\"translate(20 -7)\"><g class=\"a tail\"><path class=\"s-k\" style=\"stroke-width: 4\" d=\"M0 0Q15 2 15 -10Q15 -19 21 -21\"></path></g></g></g>"
+    },
+    {
+      "zone": "mid",
+      "i": 0,
+      "k": "cheeks",
+      "on": [
+        "cos-va-letter",
+        "st-shame",
+        "v-appuppy",
+        "v-bask",
+        "v-bywave",
+        "v-dance",
+        "v-floaty",
+        "v-gag",
+        "v-giding",
+        "v-ginod",
+        "v-grtip",
+        "v-grwave",
+        "v-grwink",
+        "v-heartbeat",
+        "v-hearteyes",
+        "v-purr",
+        "v-squeeze",
+        "v-swoon"
+      ],
+      "t": "<g class=\"cheeks\"><ellipse cx=\"{{a.ck1}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse><ellipse cx=\"{{a.ck2}}\" cy=\"{{a.cky}}\" rx=\"6\" ry=\"3.4\"></ellipse></g>"
+    },
+    {
+      "zone": "top",
+      "i": 0,
+      "k": "c-sprout",
+      "on": [
+        "cos-ny-fresh"
+      ],
+      "t": "<g class=\"c-sprout hat\" transform=\"translate(50 {{a.top}}) scale(1.4)\"><g class=\"a spr\"><path class=\"s-g\" d=\"M0 2V-7\"></path><path class=\"o-l\" d=\"M0 -5Q-7 -11 -10 -5Q-5 -2 0 -5Z\"></path><path class=\"o-l\" d=\"M0 -7Q6 -14 10 -8Q5 -4 0 -7Z\"></path></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 1,
+      "k": "c-swimcap",
+      "on": [
+        "cos-ny-plunge"
+      ],
+      "t": "<g class=\"c-swimcap hat\" transform=\"translate(50 {{a.top}})\"><path class=\"o-c\" d=\"M-18 9Q-18 -6 0 -6Q18 -6 18 9Q0 4 -18 9Z\"></path><path class=\"s-w\" d=\"M-13 2Q0 -3 13 2\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 2,
+      "k": "c-boppers",
+      "on": [
+        "cos-va-boppers"
+      ],
+      "t": "<g class=\"c-boppers hat\" transform=\"translate(50 {{a.top}})\"><path class=\"s-r\" d=\"M-16 8Q-15 -2 0 -2Q15 -2 16 8\"></path><g transform=\"translate(-7 -2)\"><g class=\"a bop1\"><path class=\"s-k th\" d=\"M0 0Q-3 -4 0 -7Q3 -10 0 -13\"></path><g transform=\"translate(0 -17)\"><path class=\"o-r\" d=\"M0 4C-7 -1 -6 -6 -3 -6Q-1 -6 0 -4Q1 -6 3 -6C6 -6 7 -1 0 4Z\"></path></g></g></g><g transform=\"translate(7 -2)\"><g class=\"a bop2\"><path class=\"s-k th\" d=\"M0 0Q3 -4 0 -7Q-3 -10 0 -13\"></path><g transform=\"translate(0 -17)\"><path class=\"o-r\" d=\"M0 4C-7 -1 -6 -6 -3 -6Q-1 -6 0 -4Q1 -6 3 -6C6 -6 7 -1 0 4Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 3,
+      "k": "c-hglass",
+      "on": [
+        "cos-va-glasses"
+      ],
+      "t": "<g class=\"c-hglass\"><path class=\"s-r\" d=\"{{a.hgb}}\"></path><g transform=\"translate({{a.lex}} {{a.ley}})\"><path class=\"o-r\" fill-opacity=\".8\" d=\"M0 6C-9.5 -1 -8 -8 -4 -8Q-1.3 -8 0 -5Q1.3 -8 4 -8C8 -8 9.5 -1 0 6Z\"></path></g><g transform=\"translate({{a.rex}} {{a.rey}})\"><path class=\"o-r\" fill-opacity=\".8\" d=\"M0 6C-9.5 -1 -8 -8 -4 -8Q-1.3 -8 0 -5Q1.3 -8 4 -8C8 -8 9.5 -1 0 6Z\"></path></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 4,
+      "k": "c-rose",
+      "on": [
+        "cos-sg-rose",
+        "cos-va-roses"
+      ],
+      "t": "<g class=\"c-rose hat\" transform=\"translate(50 {{a.top}})\"><g transform=\"translate(13 3) rotate(20)\"><path class=\"o-g th\" d=\"M0 0Q-6 -1 -7 -5Q-2 -5 0 0Z\"></path><circle class=\"o-r\" cx=\"0\" cy=\"-3\" r=\"4\"></circle><path class=\"s-k th\" d=\"M-2 -3.5Q0 -5.5 2 -3.5Q1.5 -1 -1 -1.5\"></path></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 5,
+      "k": "c-bunny",
+      "on": [
+        "cos-ea-bunny"
+      ],
+      "t": "<g class=\"c-bunny hat\" transform=\"translate(50 {{a.top}})\"><g transform=\"translate(-7 1) rotate(-14)\"><path class=\"o-w\" d=\"M-4.5 0Q-6 -22 0 -24Q6 -22 4.5 0Z\"></path><path class=\"f-p\" d=\"M-2 -2Q-3 -17 0 -19Q3 -17 2 -2Z\"></path></g><g transform=\"translate(7 1) rotate(14)\"><g class=\"a ear2\"><path class=\"o-w\" d=\"M-4.5 0Q-6 -22 0 -24Q6 -22 4.5 0Z\"></path><path class=\"f-p\" d=\"M-2 -2Q-3 -17 0 -19Q3 -17 2 -2Z\"></path></g></g><path class=\"s-p\" d=\"M-16 8Q-15 -1 0 -1Q15 -1 16 8\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 6,
+      "k": "c-chick",
+      "on": [
+        "cos-ea-chick"
+      ],
+      "t": "<g class=\"c-chick hat\" transform=\"translate(50 {{a.top}}) scale(1.35)\"><g class=\"a chk\"><circle class=\"o-y\" cx=\"0\" cy=\"-6\" r=\"6\"></circle><circle class=\"f-k\" cx=\"-2.2\" cy=\"-7\" r=\"1\"></circle><circle class=\"f-k\" cx=\"2.2\" cy=\"-7\" r=\"1\"></circle><path class=\"o-o th\" d=\"M-1.6 -4.6L0 -2.6L1.6 -4.6Z\"></path></g><path class=\"o-w\" d=\"M-9 -3L-6 0L-3 -3L0 0L3 -3L6 0L9 -3Q9 5 0 5Q-9 5 -9 -3Z\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 7,
+      "k": "c-fcrown",
+      "on": [
+        "cos-ea-tulips"
+      ],
+      "t": "<g class=\"c-fcrown hat\" transform=\"translate(50 {{a.top}})\"><path class=\"s-g\" d=\"M-17 6Q0 -4 17 6\"></path><g transform=\"translate(-13.6 4.2)\"><circle class=\"o-p\" r=\"2.8\"></circle><circle class=\"f-y\" r=\"1\"></circle></g><g transform=\"translate(-6.8 1.8)\"><circle class=\"o-y\" r=\"2.8\"></circle><circle class=\"f-o\" r=\"1\"></circle></g><g transform=\"translate(0 1)\"><circle class=\"o-w\" r=\"3\"></circle><circle class=\"f-y\" r=\"1.1\"></circle></g><g transform=\"translate(6.8 1.8)\"><circle class=\"o-v\" r=\"2.8\"></circle><circle class=\"f-y\" r=\"1\"></circle></g><g transform=\"translate(13.6 4.2)\"><circle class=\"o-p\" r=\"2.8\"></circle><circle class=\"f-y\" r=\"1\"></circle></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 8,
+      "k": "c-witch",
+      "on": [
+        "cos-hw-witch"
+      ],
+      "t": "<g class=\"c-witch hat\" transform=\"translate(50 {{a.top}}) scale(1.2)\"><path class=\"o-k\" d=\"M-10 2Q-5 -8 0 -20Q2 -26 8 -25Q4 -22 4 -16Q5 -6 10 2Z\"></path><path class=\"f-v\" d=\"M-8.8 -1.5H9.2L8 -4.5H-7.4Z\"></path><ellipse class=\"o-k\" cx=\"0\" cy=\"2.5\" rx=\"19\" ry=\"3.6\"></ellipse></g>"
+    },
+    {
+      "zone": "top",
+      "i": 9,
+      "k": "c-fangs",
+      "on": [
+        "cos-hw-bat"
+      ],
+      "t": "<g class=\"c-fangs\"><path class=\"o-w th\" d=\"{{a.fg}}\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 10,
+      "k": "c-cat",
+      "on": [
+        "cos-hw-cat"
+      ],
+      "t": "<g class=\"c-cat hat\"><g transform=\"translate(50 {{a.top}})\"><path class=\"o-k\" d=\"M-17 7L-13 -9L-4 2Z\"></path><path class=\"f-p\" d=\"M-13.5 3L-12.3 -3.5L-8 1Z\"></path><path class=\"o-k\" d=\"M17 7L13 -9L4 2Z\"></path><path class=\"f-p\" d=\"M13.5 3L12.3 -3.5L8 1Z\"></path></g><path class=\"s-k th\" d=\"{{a.wsk}}\"></path><ellipse class=\"f-p\" cx=\"{{a.mx}}\" cy=\"{{a.nsy}}\" rx=\"2\" ry=\"1.3\"></ellipse></g>"
+    },
+    {
+      "zone": "top",
+      "i": 11,
+      "k": "c-santa",
+      "on": [
+        "cos-xa-bbq",
+        "cos-xa-shades",
+        "cos-xa-surf",
+        "cos-xm-santa"
+      ],
+      "t": "<g class=\"c-santa hat\" transform=\"translate(50 {{a.top}}) scale(1.2)\"><path class=\"o-r\" d=\"M-15 3C-14 -10 -4 -17 6 -16C14 -15 19 -10 21 -4L16 -3C14 -7 11 -9 8 -9C12 -5 14 -1 15 3Z\"></path><circle class=\"o-w\" cx=\"21\" cy=\"-3\" r=\"4\"></circle><rect class=\"o-w\" x=\"-17\" y=\"0\" width=\"34\" height=\"6\" rx=\"3\"></rect></g>"
+    },
+    {
+      "zone": "top",
+      "i": 12,
+      "k": "c-antlers",
+      "on": [
+        "cos-xm-antlers"
+      ],
+      "t": "<g class=\"c-antlers hat\" transform=\"translate(50 {{a.top}})\"><path class=\"s-n tk\" d=\"M-9 3L-10 -9M-10 -4L-15 -9M-10 -7L-6 -13M9 3L10 -9M10 -4L15 -9M10 -7L6 -13\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 13,
+      "k": "c-bells",
+      "on": [
+        "cos-xm-antlers"
+      ],
+      "t": "<g class=\"c-bells\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-r tk\" d=\"M-26 -4Q0 6 26 -4\"></path><g class=\"pt pswing\"><g transform=\"translate(-12 0)\"><g><circle class=\"o-y\" cx=\"0\" cy=\"3\" r=\"3\"></circle><path class=\"s-k th\" d=\"M-1.6 3.6H1.6\"></path></g></g><g transform=\"translate(0 1)\"><g><circle class=\"o-y\" cx=\"0\" cy=\"3\" r=\"3\"></circle><path class=\"s-k th\" d=\"M-1.6 3.6H1.6\"></path></g></g><g transform=\"translate(12 0)\"><g><circle class=\"o-y\" cx=\"0\" cy=\"3\" r=\"3\"></circle><path class=\"s-k th\" d=\"M-1.6 3.6H1.6\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 14,
+      "k": "c-elf",
+      "on": [
+        "cos-xm-elf"
+      ],
+      "t": "<g class=\"c-elf hat\" transform=\"translate(50 {{a.top}}) scale(1.2)\"><path class=\"o-g\" d=\"M-13 2Q-8 -14 8 -16Q16 -17 21 -12Q12 -11 9 -6Q7 -2 13 2Z\"></path><g transform=\"translate(21 -12)\"><g class=\"a ebel\"><circle class=\"o-y\" cx=\"0\" cy=\"3\" r=\"2.6\"></circle></g></g><rect class=\"o-r\" x=\"-16\" y=\"0\" width=\"32\" height=\"5.5\" rx=\"2.5\"></rect></g>"
+    },
+    {
+      "zone": "top",
+      "i": 15,
+      "k": "c-lights",
+      "on": [
+        "cos-xm-lights"
+      ],
+      "t": "<g class=\"c-lights\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"s-k th\" d=\"M-28 -6Q0 8 28 -6\"></path><g class=\"pt pflash\"><g transform=\"translate(-22.4 -3.5)\"><ellipse class=\"o-r th\" cx=\"0\" cy=\"3\" rx=\"2.5\" ry=\"3.4\"></ellipse></g><g transform=\"translate(-11.2 -0.1)\"><ellipse class=\"o-y th\" cx=\"0\" cy=\"3\" rx=\"2.5\" ry=\"3.4\"></ellipse></g><g transform=\"translate(0 1)\"><ellipse class=\"o-g th\" cx=\"0\" cy=\"3\" rx=\"2.5\" ry=\"3.4\"></ellipse></g><g transform=\"translate(11.2 -0.1)\"><ellipse class=\"o-b th\" cx=\"0\" cy=\"3\" rx=\"2.5\" ry=\"3.4\"></ellipse></g><g transform=\"translate(22.4 -3.5)\"><ellipse class=\"o-o th\" cx=\"0\" cy=\"3\" rx=\"2.5\" ry=\"3.4\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 16,
+      "k": "c-scarf",
+      "on": [
+        "cos-bn-cocoa",
+        "cos-xm-gift"
+      ],
+      "t": "<g class=\"c-scarf\" transform=\"translate(50 {{a.neck}}) scale({{a.nws}} 1)\"><path class=\"o-r\" d=\"M8 4L12 19H5L3 5Z\"></path><path class=\"s-w th\" d=\"M6.5 10H10.5M7.5 14H11.5\"></path><path class=\"o-r\" d=\"M-27 -4Q0 4 27 -4V2Q0 10 -27 2Z\"></path><path class=\"s-w th\" d=\"M-18 -1V5M-9 0V6.5M0 0V7M9 0V6.5M18 -1V5\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 17,
+      "k": "c-party",
+      "on": [
+        "cos-ne-party"
+      ],
+      "t": "<g class=\"c-party hat\" transform=\"translate(52 {{a.top}}) rotate(12) scale(1.35)\"><path class=\"o-v\" d=\"M-8 4L0 -17L8 4Z\"></path><path class=\"s-y th\" d=\"M-5.5 -3L4.5 0M-3 -9.5L2.8 -7.5\"></path><circle class=\"o-y\" cx=\"0\" cy=\"-18\" r=\"2.6\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 18,
+      "k": "c-horn",
+      "on": [
+        "cos-ne-party"
+      ],
+      "t": "<g class=\"c-horn\" transform=\"translate({{a.mx}} {{a.my}})\"><path class=\"o-y th\" d=\"M-1 -1.6H5V1.6H-1Z\"></path><g transform=\"translate(5 0)\"><g class=\"a hrn\"><path class=\"o-p th\" d=\"M0 -2H16Q19 -2 19 1Q19 4 16 4H14V2H16Q17 2 17 1Q17 0 16 0H0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "top",
+      "i": 19,
+      "k": "c-bowtie",
+      "on": [
+        "cos-ne-toast"
+      ],
+      "t": "<g class=\"c-bowtie\" transform=\"translate({{a.mx}} {{a.bty}})\"><path class=\"o-y\" d=\"M0 0L-7 -4.5V4.5ZM0 0L7 -4.5V4.5Z\"></path><circle class=\"o-y\" r=\"2\"></circle></g>"
+    },
+    {
+      "zone": "top",
+      "i": 20,
+      "k": "c-tophat",
+      "on": [
+        "cos-ne-midnight"
+      ],
+      "t": "<g class=\"c-tophat hat\" transform=\"translate(50 {{a.top}}) rotate(-6) scale(1.25)\"><rect class=\"o-k\" x=\"-8.5\" y=\"-15\" width=\"17\" height=\"15.5\" rx=\"1.5\"></rect><rect class=\"f-e\" x=\"-8\" y=\"-4.5\" width=\"16\" height=\"3\"></rect><rect class=\"o-k\" x=\"-13\" y=\"0\" width=\"26\" height=\"4\" rx=\"2\"></rect></g>"
+    },
+    {
+      "zone": "top",
+      "i": 21,
+      "k": "c-shades",
+      "on": [
+        "cos-bh-june",
+        "cos-ne-disco",
+        "cos-xa-shades"
+      ],
+      "t": "<g class=\"c-shades\"><path class=\"s-k\" d=\"{{a.sgb}}\"></path><path class=\"f-k\" d=\"{{a.sgd}}\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 31,
+      "k": "x-sun",
+      "on": [
+        "cos-ny-sunrise"
+      ],
+      "t": "<g class=\"x-sun\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 6)\"><g class=\"a sunr\"><circle class=\"f-y\" r=\"11\" opacity=\".25\"></circle><g class=\"a nyrays\"><path class=\"s-y\" d=\"M0 -9.5V-12.5M6.7 -6.7L8.8 -8.8M9.5 0H12.5M6.7 6.7L8.8 8.8M0 9.5V12.5M-6.7 6.7L-8.8 8.8M-9.5 0H-12.5M-6.7 -6.7L-8.8 -8.8\"></path></g><circle class=\"o-y\" r=\"7\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 32,
+      "k": "x-cal",
+      "on": [
+        "cos-ny-calendar"
+      ],
+      "t": "<g class=\"x-cal\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(92 52)\"><rect class=\"o-w\" x=\"-9\" y=\"-9\" width=\"18\" height=\"19\" rx=\"2\"></rect><path class=\"s-e\" d=\"M-1.8 0h.01M1.8 0h.01M5.5 0h.01M-5.5 3.5h.01M-1.8 3.5h.01M1.8 3.5h.01M5.5 3.5h.01M-5.5 7h.01M-1.8 7h.01M1.8 7h.01M5.5 7h.01\"></path><circle class=\"o-r th\" cx=\"-5.5\" cy=\"0\" r=\"2\"></circle><g class=\"a pgf\"><rect class=\"o-w\" x=\"-9\" y=\"-5\" width=\"18\" height=\"15\" rx=\"1.5\"></rect><path class=\"s-e\" opacity=\".55\" d=\"M-5.5 0h.01M-1.8 0h.01M1.8 0h.01M5.5 0h.01M-5.5 3.5h.01M-1.8 3.5h.01M1.8 3.5h.01M5.5 3.5h.01M-5.5 7h.01M-1.8 7h.01M1.8 7h.01M5.5 7h.01\"></path><circle class=\"o-e th\" cx=\"5.5\" cy=\"7\" r=\"2\"></circle></g><rect class=\"o-r\" x=\"-9\" y=\"-9\" width=\"18\" height=\"5\" rx=\"2\"></rect><path class=\"s-k th\" d=\"M-4 -11V-7M4 -11V-7\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 33,
+      "k": "x-list",
+      "on": [
+        "cos-ny-list"
+      ],
+      "t": "<g class=\"x-list\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(92 54)\"><rect class=\"o-w\" x=\"-9\" y=\"-12\" width=\"18\" height=\"24\" rx=\"2\"></rect><rect class=\"o-e\" x=\"-4\" y=\"-14\" width=\"8\" height=\"4\" rx=\"1\"></rect><path class=\"s-e th\" d=\"M-1.5 -5H6M-1.5 1H6M-1.5 7H4\"></path><g class=\"pt ppop\"><g transform=\"translate(-5 6.5)\"><path class=\"s-g\" d=\"M-2 0L-.5 1.5L2 -1.5\"></path></g><g transform=\"translate(-5 .5)\"><path class=\"s-g\" d=\"M-2 0L-.5 1.5L2 -1.5\"></path></g><g transform=\"translate(-5 -5.5)\"><path class=\"s-g\" d=\"M-2 0L-.5 1.5L2 -1.5\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 34,
+      "k": "x-bubbles",
+      "on": [
+        "cos-ny-plunge"
+      ],
+      "t": "<g class=\"x-bubbles pt prise\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(26 84)\"><circle class=\"s-c th\" r=\"2.2\"></circle></g><g transform=\"translate(40 88)\"><circle class=\"s-c th\" r=\"1.6\"></circle></g><g transform=\"translate(58 86)\"><circle class=\"s-c th\" r=\"2.6\"></circle></g><g transform=\"translate(70 89)\"><circle class=\"s-c th\" r=\"1.8\"></circle></g><g transform=\"translate(82 85)\"><circle class=\"s-c th\" r=\"2\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 35,
+      "k": "x-wave",
+      "on": [
+        "cos-ny-plunge"
+      ],
+      "t": "<g class=\"x-wave\" transform=\"translate(0 {{a.dn}})\"><path class=\"a nywv s-c\" d=\"M6 88Q12 85 18 88T30 88T42 88T54 88T66 88T78 88T90 88T102 88\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 36,
+      "k": "x-sparkle",
+      "on": [
+        "cos-ny-fresh"
+      ],
+      "t": "<g class=\"x-sparkle pt ptwk\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(14 24)\"><path class=\"f-y\" d=\"M0 -4.5L1.2 -1.2L4.5 0L1.2 1.2L0 4.5L-1.2 1.2L-4.5 0L-1.2 -1.2Z\"></path></g><g transform=\"translate(86 18)\"><path class=\"f-y\" d=\"M0 -4.5L1.2 -1.2L4.5 0L1.2 1.2L0 4.5L-1.2 1.2L-4.5 0L-1.2 -1.2Z\"></path></g><g transform=\"translate(90 60)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(10 62)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g><g transform=\"translate(64 2)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 37,
+      "k": "x-arrow",
+      "on": [
+        "cos-va-cupid"
+      ],
+      "t": "<g class=\"x-arrow pt pfly\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(30 6)\"><g><path class=\"s-n\" d=\"M-8 0H6\"></path><path class=\"o-r th\" d=\"M9 0L5 -3V3Z\"></path><path class=\"s-p th\" d=\"M-8 0L-11 -3M-8 0L-11 3M-5.5 0L-8.5 -3M-5.5 0L-8.5 3\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 38,
+      "k": "x-letter",
+      "on": [
+        "cos-va-letter"
+      ],
+      "t": "<g class=\"x-letter\" transform=\"translate({{a.side}} {{a.mo}})\"><g class=\"pt pbob\"><g transform=\"translate(92 58)\"><g><rect class=\"o-w\" x=\"-9\" y=\"-6\" width=\"18\" height=\"12\" rx=\"1.5\"></rect><path class=\"s-k th\" d=\"M-8.5 -5.5L0 1L8.5 -5.5\"></path><g transform=\"translate(0 1.5)\"><path class=\"o-r th\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g></g></g></g><g class=\"pt prise\"><g transform=\"translate(88 48)\"><path class=\"f-p\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g><g transform=\"translate(96 46)\"><path class=\"f-r\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g><g transform=\"translate(91 44)\"><path class=\"f-p\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 39,
+      "k": "x-roses",
+      "on": [
+        "cos-va-roses"
+      ],
+      "t": "<g class=\"x-roses\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(91 62)\"><path class=\"s-g\" d=\"M0 12L-5 -4M0 12L0 -7M0 12L5 -3\"></path><g transform=\"translate(-5 -5)\"><circle class=\"o-r\" r=\"3.6\"></circle><path class=\"s-k th\" d=\"M-1.6 -.6Q0 -2.2 1.6 -.6Q1 1.4 -1 1\"></path></g><g transform=\"translate(5 -4)\"><circle class=\"o-r\" r=\"3.6\"></circle><path class=\"s-k th\" d=\"M-1.6 -.6Q0 -2.2 1.6 -.6Q1 1.4 -1 1\"></path></g><g transform=\"translate(0 -8)\"><circle class=\"o-p\" r=\"3.6\"></circle><path class=\"s-k th\" d=\"M-1.6 -.6Q0 -2.2 1.6 -.6Q1 1.4 -1 1\"></path></g><path class=\"o-m\" d=\"M-7 2H7L2 14H-2Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 40,
+      "k": "x-petals",
+      "on": [
+        "cos-sg-rose",
+        "cos-va-roses"
+      ],
+      "t": "<g class=\"x-petals pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(18 2)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(34 -6)\"><ellipse class=\"f-r\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(52 0)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(70 -4)\"><ellipse class=\"f-r\" rx=\"2\" ry=\"1.3\"></ellipse></g><g transform=\"translate(84 4)\"><ellipse class=\"f-p\" rx=\"2\" ry=\"1.3\"></ellipse></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 41,
+      "k": "x-hearts",
+      "on": [
+        "cos-va-glasses"
+      ],
+      "t": "<g class=\"x-hearts pt prise\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(16 46)\"><path class=\"f-r\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g><g transform=\"translate(84 40)\"><path class=\"f-p\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g><g transform=\"translate(22 68)\"><path class=\"f-p\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g><g transform=\"translate(80 66)\"><path class=\"f-r\" d=\"M0 2.5C-4.5 -.5 -4 -4 -2 -4Q-.7 -4 0 -2.7Q.7 -4 2 -4C4 -4 4.5 -.5 0 2.5Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 42,
+      "k": "x-basket",
+      "on": [
+        "cos-ea-basket"
+      ],
+      "t": "<g class=\"x-basket\" transform=\"translate({{a.ls}} {{a.dn}})\"><g transform=\"translate(9 74)\"><ellipse class=\"o-p\" cx=\"-4\" cy=\"-3\" rx=\"3\" ry=\"4\"></ellipse><ellipse class=\"o-c\" cx=\"1.5\" cy=\"-4\" rx=\"3\" ry=\"4\"></ellipse><ellipse class=\"o-y\" cx=\"6\" cy=\"-2.5\" rx=\"2.6\" ry=\"3.6\"></ellipse><path class=\"s-n\" d=\"M-8 -1Q0 -16 8 -1\"></path><path class=\"o-n\" d=\"M-10 -1H10L7.5 7H-7.5Z\"></path><path class=\"s-m th\" d=\"M-9 2H9M-8 4.8H8\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 43,
+      "k": "x-eggs",
+      "on": [
+        "cos-ea-basket"
+      ],
+      "t": "<g class=\"x-eggs pt ppop\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 77)\"><ellipse class=\"o-l\" rx=\"3\" ry=\"4\"></ellipse></g><g transform=\"translate(84 85)\"><ellipse class=\"o-v\" rx=\"2.6\" ry=\"3.4\"></ellipse></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 44,
+      "k": "x-bigegg",
+      "on": [
+        "cos-ea-egg"
+      ],
+      "t": "<g class=\"x-bigegg\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(92 71)\"><g class=\"a wob\"><ellipse class=\"o-c\" rx=\"7.5\" ry=\"9.5\"></ellipse><path class=\"s-p\" d=\"M-7 -2L-3.5 -5L0 -2L3.5 -5L7 -2\"></path><path class=\"s-y\" d=\"M-7.3 3H7.3\"></path><circle class=\"f-w\" cx=\"-3\" cy=\"6\" r=\"1.2\"></circle><circle class=\"f-w\" cx=\"3\" cy=\"6\" r=\"1.2\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 45,
+      "k": "x-tulips",
+      "on": [
+        "cos-ea-tulips"
+      ],
+      "t": "<g class=\"x-tulips pt pgrow\" transform=\"translate(0 {{a.dn}})\"><g transform=\"translate(9 82)\"><g><path class=\"s-g\" d=\"M0 0V-14\"></path><path class=\"f-g\" d=\"M0 -5Q-6 -9 -6 -3Q-3 -2 0 -5Z\"></path><path class=\"o-p\" d=\"M-4 -19Q-4.5 -12 0 -12Q4.5 -12 4 -19L2 -16.5L0 -19.5L-2 -16.5Z\"></path></g></g><g transform=\"translate(91 82)\"><g><path class=\"s-g\" d=\"M0 0V-14\"></path><path class=\"f-g\" d=\"M0 -5Q6 -9 6 -3Q3 -2 0 -5Z\"></path><path class=\"o-y\" d=\"M-4 -19Q-4.5 -12 0 -12Q4.5 -12 4 -19L2 -16.5L0 -19.5L-2 -16.5Z\"></path></g></g><g transform=\"translate(83 86)\"><g><path class=\"s-g\" d=\"M0 0V-10\"></path><path class=\"o-v\" d=\"M-3.4 -14Q-3.8 -8 0 -8Q3.8 -8 3.4 -14L1.7 -12L0 -14.5L-1.7 -12Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 46,
+      "k": "x-bfly",
+      "on": [
+        "cos-ea-tulips"
+      ],
+      "t": "<g class=\"x-bfly pt pflap\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(84 10)\"><path class=\"o-c th\" d=\"M0 0Q-6 -7 -7 -2Q-7 2 0 0ZM0 0Q6 -7 7 -2Q7 2 0 0ZM0 0Q-4 5 -2 6Q0 5 0 0ZM0 0Q4 5 2 6Q0 5 0 0Z\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 47,
+      "k": "x-bats",
+      "on": [
+        "cos-hw-witch"
+      ],
+      "t": "<g class=\"x-bats pt pfly\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(30 4)\"><g><path class=\"a bflap f-k\" d=\"M0 0Q-2 -3 -5 -2Q-6 -4 -9 -3Q-7 0 -8 2Q-5 1 -4 3Q-2 1 0 2Q2 1 4 3Q5 1 8 2Q7 0 9 -3Q6 -4 5 -2Q2 -3 0 0Z\"></path></g></g><g transform=\"translate(14 -6)\"><g><path class=\"a bflap f-k\" d=\"M0 0Q-2 -3 -5 -2Q-6 -4 -9 -3Q-7 0 -8 2Q-5 1 -4 3Q-2 1 0 2Q2 1 4 3Q5 1 8 2Q7 0 9 -3Q6 -4 5 -2Q2 -3 0 0Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 48,
+      "k": "x-pumpkin",
+      "on": [
+        "cos-hw-pumpkin"
+      ],
+      "t": "<g class=\"x-pumpkin\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(92 74)\"><path class=\"o-g th\" d=\"M-1 -6L-.5 -10.5L2.5 -9.5L1.5 -6Z\"></path><ellipse class=\"o-o\" rx=\"9.5\" ry=\"7\"></ellipse><path class=\"s-n th\" d=\"M-3.5 -6.6Q-6 0 -3.5 6.6M3.5 -6.6Q6 0 3.5 6.6\"></path><g class=\"a glow\"><path class=\"f-y\" d=\"M-5.5 -1.5L-3.5 -4.5L-1.5 -1.5ZM1.5 -1.5L3.5 -4.5L5.5 -1.5ZM-5.5 1.5Q0 6.5 5.5 1.5L3.5 2.5L2 1.5L0 2.8L-2 1.5L-3.5 2.5Z\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 49,
+      "k": "x-ghost",
+      "on": [
+        "cos-hw-ghost"
+      ],
+      "t": "<g class=\"x-ghost pt pbob\" transform=\"translate({{a.ls}} {{a.mo}})\"><g transform=\"translate(8 40) scale(1.35)\"><g><path class=\"o-w\" d=\"M-7 6V-2Q-7 -9 0 -9Q7 -9 7 -2V6L4.5 4L2.3 6L0 4L-2.3 6L-4.5 4Z\"></path><circle class=\"f-k\" cx=\"-2.5\" cy=\"-2\" r=\"1.2\"></circle><circle class=\"f-k\" cx=\"2.5\" cy=\"-2\" r=\"1.2\"></circle><ellipse class=\"f-k\" cx=\"0\" cy=\"1.8\" rx=\"1.1\" ry=\"1.5\"></ellipse></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 50,
+      "k": "x-snow",
+      "on": [
+        "cos-xm-santa"
+      ],
+      "t": "<g class=\"x-snow pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(14 -4)\"><path class=\"s-c th\" d=\"M0 -3V3M-2.6 -1.5L2.6 1.5M-2.6 1.5L2.6 -1.5\"></path></g><g transform=\"translate(30 2)\"><circle class=\"f-w\" r=\"1.8\"></circle></g><g transform=\"translate(46 -8)\"><path class=\"s-c th\" d=\"M0 -3V3M-2.6 -1.5L2.6 1.5M-2.6 1.5L2.6 -1.5\"></path></g><g transform=\"translate(62 0)\"><circle class=\"f-w\" r=\"1.6\"></circle></g><g transform=\"translate(78 -6)\"><path class=\"s-c th\" d=\"M0 -3V3M-2.6 -1.5L2.6 1.5M-2.6 1.5L2.6 -1.5\"></path></g><g transform=\"translate(90 4)\"><circle class=\"f-w\" r=\"1.8\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 51,
+      "k": "x-cane",
+      "on": [
+        "cos-xm-elf"
+      ],
+      "t": "<g class=\"x-cane\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(88 48)\"><g class=\"a cane\"><path class=\"s-k\" style=\"stroke-width: 5\" d=\"M0 22V4Q0 -2 5 -2Q10 -2 10 4\"></path><path class=\"s-w tk\" d=\"M0 22V4Q0 -2 5 -2Q10 -2 10 4\"></path><path class=\"s-r tk\" stroke-dasharray=\"2.6 2.6\" d=\"M0 22V4Q0 -2 5 -2Q10 -2 10 4\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 52,
+      "k": "x-gift",
+      "on": [
+        "cos-dr-shoes",
+        "cos-xm-gift"
+      ],
+      "t": "<g class=\"x-gift\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 81)\"><rect class=\"o-r\" x=\"-8\" y=\"-12\" width=\"16\" height=\"12\" rx=\"1\"></rect><path class=\"f-y\" d=\"M-1.5 -12H1.5V0H-1.5Z\"></path><g class=\"a lid\"><rect class=\"o-r\" x=\"-9\" y=\"-15.5\" width=\"18\" height=\"4\" rx=\"1\"></rect><path class=\"f-y\" d=\"M-1.5 -15.5H1.5V-11.5H-1.5Z\"></path><path class=\"s-y\" d=\"M0 -15.5Q-5 -20 -5 -16.5Q-4 -15 0 -15.5Q4 -15 5 -16.5Q5 -20 0 -15.5\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 53,
+      "k": "x-fireworks",
+      "on": [
+        "cos-ne-fireworks"
+      ],
+      "t": "<g class=\"x-fireworks pt pburst\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(18 6)\"><path class=\"s-r\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g><g transform=\"translate(84 0)\"><path class=\"s-y\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g><g transform=\"translate(54 -10)\"><path class=\"s-b\" d=\"M0 -3V-8M0 3V8M-3 0H-8M3 0H8M2.1 -2.1L5.7 -5.7M-2.1 -2.1L-5.7 -5.7M2.1 2.1L5.7 5.7M-2.1 2.1L-5.7 5.7\"></path></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 54,
+      "k": "x-glass",
+      "on": [
+        "cos-ne-toast"
+      ],
+      "t": "<g class=\"x-glass\" transform=\"translate({{a.side}} {{a.mo}})\"><g transform=\"translate(90 54)\"><g class=\"a flute\"><path class=\"f-y\" d=\"M-4.2 -6H4.2L3.5 -1Q2.7 2.3 0 2.3Q-2.7 2.3 -3.5 -1Z\"></path><g class=\"fz\"><circle class=\"f-w\" cx=\"-1.5\" cy=\"0\" r=\".8\"></circle><circle class=\"f-w\" cx=\"1.2\" cy=\"-1\" r=\".7\"></circle><circle class=\"f-w\" cx=\"0\" cy=\"-2\" r=\".6\"></circle></g><path class=\"o-w\" fill-opacity=\".3\" d=\"M-5 -11H5L4 -1Q3 3 0 3Q-3 3 -4 -1Z\"></path><path class=\"s-k th\" d=\"M0 3V12M-4 12H4\"></path></g><g class=\"pt ptwk\"><g transform=\"translate(-8 -15)\"><path class=\"f-y\" d=\"M0 -3.2L.9 -.9L3.2 0L.9 .9L0 3.2L-.9 .9L-3.2 0L-.9 -.9Z\"></path></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 55,
+      "k": "x-clock",
+      "on": [
+        "cos-ne-midnight"
+      ],
+      "t": "<g class=\"x-clock\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(86 4)\"><circle class=\"o-w\" r=\"8.5\"></circle><path class=\"s-e th\" d=\"M0 -6.5V-5M6.5 0H5M0 6.5V5M-6.5 0H-5\"></path><path class=\"s-k\" d=\"M0 0V-4.5\"></path><g class=\"vb0 cmn\"><path class=\"s-k th\" d=\"M0 0V-6.5\"></path></g><circle class=\"f-k\" r=\"1.2\"></circle></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 56,
+      "k": "x-confetti",
+      "on": [
+        "cos-cv-confetti",
+        "cos-ka-nose",
+        "cos-ne-midnight"
+      ],
+      "t": "<g class=\"x-confetti pt pfall\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(12 -2)\"><rect class=\"f-r\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(26 -8)\"><rect class=\"f-y\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(40 0)\"><rect class=\"f-b\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(56 -6)\"><rect class=\"f-g\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(68 2)\"><rect class=\"f-p\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(80 -10)\"><rect class=\"f-v\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g><g transform=\"translate(94 -2)\"><rect class=\"f-o\" x=\"-1.6\" y=\"-.9\" width=\"3.2\" height=\"1.8\"></rect></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 57,
+      "k": "x-disco",
+      "on": [
+        "cos-ne-disco"
+      ],
+      "t": "<g class=\"x-disco\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(80 -4) scale(1.4)\"><path class=\"s-k th\" d=\"M0 -14V-6\"></path><g class=\"a dball\"><circle class=\"o-e\" r=\"6\"></circle><path class=\"s-w th\" d=\"M-6 0H6M-5.2 -3H5.2M-5.2 3H5.2M0 -6V6M-3 -5.2V5.2M3 -5.2V5.2\"></path></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 58,
+      "k": "x-dots",
+      "on": [
+        "cos-ne-disco"
+      ],
+      "t": "<g class=\"x-dots pt ptwk\" transform=\"translate(0 {{a.mo}})\"><g transform=\"translate(12 30)\"><circle class=\"f-p\" r=\"2.2\"></circle></g><g transform=\"translate(88 42)\"><circle class=\"f-c\" r=\"2.2\"></circle></g><g transform=\"translate(18 70)\"><circle class=\"f-y\" r=\"2\"></circle></g><g transform=\"translate(84 74)\"><circle class=\"f-v\" r=\"2.2\"></circle></g><g transform=\"translate(30 6)\"><circle class=\"f-l\" r=\"1.8\"></circle></g></g>"
+    }
+  ]
+}

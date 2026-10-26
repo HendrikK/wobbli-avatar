@@ -1,0 +1,110 @@
+{
+  "key": "guilt",
+  "name": "Guilt",
+  "when": "Apologising · a change was rolled back",
+  "group": "feelings",
+  "verb": "squirms",
+  "mouth": "eek",
+  "hands": "scratch",
+  "pose": null,
+  "variants": [
+    {
+      "key": "avoid",
+      "name": "Avoid gaze",
+      "desc": "Won’t meet your eyes. A quick glance back, then away again.",
+      "pose": {
+        "sx": 0.9,
+        "sy": 0.75,
+        "ex": 0,
+        "ey": 1,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "flat",
+      "hands": "scratch"
+    },
+    {
+      "key": "sweatdrop",
+      "name": "Sweat drop",
+      "desc": "A big drop of sweat slides down while it holds very still.",
+      "pose": {
+        "sx": 1,
+        "sy": 0.55,
+        "ex": 0,
+        "ey": 1,
+        "rot": 0,
+        "lock": 1
+      },
+      "hands": "scratch"
+    },
+    {
+      "key": "whistle",
+      "name": "Whistle",
+      "desc": "Looks up and away, whistling. Nothing to see here.",
+      "pose": {
+        "sx": 0.95,
+        "sy": 0.8,
+        "ex": 0,
+        "ey": -1,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "pucker",
+      "hands": "droop"
+    },
+    {
+      "key": "bow",
+      "name": "Bow",
+      "desc": "Bows low again and again, eyes down. Sorry.",
+      "pose": {
+        "sx": 0.7,
+        "sy": 0.55,
+        "ex": 2,
+        "ey": 4,
+        "rot": -20,
+        "lock": 1
+      },
+      "mouth": "flat",
+      "hands": "droop"
+    },
+    {
+      "key": "shifty",
+      "name": "Shifty eyes",
+      "desc": "Narrowed eyes darting left and right.",
+      "pose": {
+        "sx": 1.1,
+        "sy": 0.45,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "flat",
+      "hands": "droop"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "front",
+      "i": 1,
+      "k": "sw",
+      "on": [
+        "v-awkward",
+        "v-qubreath",
+        "v-sweatdrop",
+        "v-tremble"
+      ],
+      "t": "<g transform=\"translate({{a.swx}} {{a.swy}})\"><path class=\"a sw\" d=\"M0 -7C2.6 -2.6 4.3 0 4.3 2.4A4.3 4.3 0 0 1 -4.3 2.4C-4.3 0 -2.6 -2.6 0 -7Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 28,
+      "k": "fx-notes",
+      "on": [
+        "v-hum",
+        "v-whistle"
+      ],
+      "t": "<g class=\"fx-notes\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(80 18)\"><g class=\"a nt\"><ellipse cx=\"-1.4\" cy=\"3.6\" rx=\"3.4\" ry=\"2.5\" fill=\"#3A3833\"></ellipse><path class=\"thin\" d=\"M1.7 3.2V-8.5Q4.5 -5.5 7 -4.6\"></path></g><g class=\"a nt\"><ellipse cx=\"-1.4\" cy=\"3.6\" rx=\"3.4\" ry=\"2.5\" fill=\"#3A3833\"></ellipse><path class=\"thin\" d=\"M1.7 3.2V-8.5Q4.5 -5.5 7 -4.6\"></path></g></g></g>"
+    }
+  ]
+}

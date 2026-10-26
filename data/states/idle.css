@@ -1,0 +1,27 @@
+.aa-av.st-idle.v-fglance .ey { animation: aa-f-glance 2.8s ease-in-out both; }
+.aa-av.st-idle.v-fglance .sp { animation: aa-f-glance-body 2.8s ease-in-out both; }
+.aa-av.st-idle.v-fstretch .w { animation: aa-f-stretch 2.4s ease-in-out both; }
+.aa-av.st-idle.v-fstretch .e > path { animation: aa-f-squint 2.4s ease-in-out both; }
+.aa-av.st-idle.v-fblink .e > path { animation: aa-f-blink2 .9s ease-in-out both; }
+.aa-av.st-idle.v-flook .ey { animation: aa-f-lookup 2.6s ease-in-out both; }
+.aa-av.st-idle.v-flook .sp { animation: aa-f-lookup-body 2.6s ease-in-out both; }
+.aa-av.st-idle.v-fshuffle .w { animation: aa-f-shuffle 2s ease-in-out both; }
+.aa-av.st-idle.v-fyawn .att-mouth { display: inline; }
+.aa-av.st-idle.v-fyawn .mth { animation: aa-C-yawnmouth 3.6s ease-in-out both; }
+.aa-av.st-idle.v-fyawn .w { animation: aa-C-yawn 3.6s ease-in-out both; }
+.aa-av.st-idle.v-fyawn .e > path { animation: aa-C-yawneyes 3.6s ease-in-out both; }
+.aa-av.st-idle.v-fyawn .gz { animation: aa-C-yawngz 3.6s ease-in-out both; }
+.aa-av.st-idle.v-fwake .e > path { animation: aa-f-wake-eyes 1.2s ease-out both; }
+.aa-av.st-idle.v-fwake .w { animation: aa-f-wake-body 1.2s ease-out both; }
+.aa-av.st-idle .w { transform: translate(calc(var(--gx, 0) * .25px), calc(var(--gy, 0) * .25px)); animation: aa-bb-breathe 2.8s ease-in-out infinite alternate, aa-bb-bob 3.4s ease-in-out infinite alternate; }
+.aa-av.st-idle .gz { transform: translate(calc(var(--gx, 0) * 1px), calc(var(--gy, 0) * 1px)); transition-duration: .18s; }
+@keyframes aa-f-glance { 0%, 100% { translate: 0 0; } 18%, 42% { translate: calc(var(--amp, 1) * -4.5px) 0; } 58%, 82% { translate: calc(var(--amp, 1) * 4.5px) 0; } }
+@keyframes aa-f-glance-body { 0%, 100% { rotate: 0deg; } 18%, 42% { rotate: calc(var(--amp, 1) * -2.5deg); } 58%, 82% { rotate: calc(var(--amp, 1) * 2.5deg); } }
+@keyframes aa-f-stretch { 0%, 100% { scale: 1 1; } 30%, 55% { scale: calc(1 - var(--amp, 1) * .06) calc(1 + var(--amp, 1) * .12); } 72% { scale: calc(1 + var(--amp, 1) * .05) calc(1 - var(--amp, 1) * .05); } 86% { scale: 1 1; } }
+@keyframes aa-f-squint { 0%, 22%, 64%, 100% { scale: 1 1; } 32%, 54% { scale: 1.08 .2; } }
+@keyframes aa-f-blink2 { 0%, 100% { scale: 1 1; } 12% { scale: 1 .08; } 24% { scale: 1 1; } 40% { scale: 1 .08; } 52% { scale: 1 1; } }
+@keyframes aa-f-lookup { 0%, 100% { translate: 0 0; } 25%, 70% { translate: calc(var(--amp, 1) * 1.5px) calc(var(--amp, 1) * -4.5px); } }
+@keyframes aa-f-lookup-body { 0%, 100% { rotate: 0deg; } 25%, 70% { rotate: calc(var(--amp, 1) * -3deg); } }
+@keyframes aa-f-shuffle { 0%, 100% { rotate: 0deg; translate: 0 0; } 20% { rotate: calc(var(--amp, 1) * -4deg); translate: calc(var(--amp, 1) * -1.5px) 0; } 45% { rotate: calc(var(--amp, 1) * 4deg); translate: calc(var(--amp, 1) * 1.5px) 0; } 70% { rotate: calc(var(--amp, 1) * -2deg); translate: 0 0; } 85% { rotate: 0deg; } }
+@keyframes aa-f-wake-eyes { 0% { scale: 1.1 .1; } 35% { scale: 1.15 1.3; } 60% { scale: .95 .95; } 100% { scale: 1 1; } }
+@keyframes aa-f-wake-body { 0%, 100% { translate: 0 0; scale: 1 1; } 30% { translate: 0 calc(var(--amp, 1) * -5px); scale: .96 1.06; } 55% { translate: 0 0; scale: 1.05 .95; } 75% { scale: 1 1; } }

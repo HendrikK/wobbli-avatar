@@ -1,0 +1,129 @@
+{
+  "pack": "au",
+  "name": "Australia",
+  "holidays": [
+    {
+      "key": "xmasau",
+      "label": "Christmas (summer)",
+      "kind": "religious",
+      "reviewed": false,
+      "costumes": [
+        {
+          "key": "xa-surf",
+          "name": "Surfing Santa"
+        },
+        {
+          "key": "xa-shades",
+          "name": "Santa in shades"
+        },
+        {
+          "key": "xa-bbq",
+          "name": "Christmas barbecue"
+        },
+        {
+          "key": "xa-beach",
+          "name": "Beach"
+        },
+        {
+          "key": "xa-pavlova",
+          "name": "Pavlova"
+        }
+      ]
+    }
+  ],
+  "region": "AU",
+  "shared": [
+    "newyear",
+    "valentines",
+    "easter",
+    "nye"
+  ],
+  "dates": [
+    {
+      "key": "eastermon",
+      "on": {
+        "easter": 1
+      }
+    },
+    {
+      "key": "xmasau",
+      "on": "12-25",
+      "from": -1
+    },
+    {
+      "key": "boxing",
+      "on": "12-26"
+    }
+  ],
+  "parts": [
+    {
+      "zone": "top",
+      "i": 11,
+      "k": "c-santa",
+      "on": [
+        "cos-xa-bbq",
+        "cos-xa-shades",
+        "cos-xa-surf",
+        "cos-xm-santa"
+      ],
+      "t": "<g class=\"c-santa hat\" transform=\"translate(50 {{a.top}}) scale(1.2)\"><path class=\"o-r\" d=\"M-15 3C-14 -10 -4 -17 6 -16C14 -15 19 -10 21 -4L16 -3C14 -7 11 -9 8 -9C12 -5 14 -1 15 3Z\"></path><circle class=\"o-w\" cx=\"21\" cy=\"-3\" r=\"4\"></circle><rect class=\"o-w\" x=\"-17\" y=\"0\" width=\"34\" height=\"6\" rx=\"3\"></rect></g>"
+    },
+    {
+      "zone": "top",
+      "i": 21,
+      "k": "c-shades",
+      "on": [
+        "cos-bh-june",
+        "cos-ne-disco",
+        "cos-xa-shades"
+      ],
+      "t": "<g class=\"c-shades\"><path class=\"s-k\" d=\"{{a.sgb}}\"></path><path class=\"f-k\" d=\"{{a.sgd}}\"></path></g>"
+    },
+    {
+      "zone": "top",
+      "i": 33,
+      "k": "c-sunhat",
+      "on": [
+        "cos-lb-lemonade",
+        "cos-xa-beach"
+      ],
+      "t": "<g class=\"c-sunhat hat\" transform=\"translate(50 {{a.top}}) scale(1.2)\"><ellipse class=\"o-m\" cx=\"0\" cy=\"3\" rx=\"20\" ry=\"4\"></ellipse><path class=\"o-m\" d=\"M-10 3Q-10 -9 0 -9Q10 -9 10 3Z\"></path><path class=\"f-r\" d=\"M-10 0.6H10L9.6 -2.4H-9.6Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 425,
+      "k": "x-surfboard",
+      "on": [
+        "cos-xa-surf"
+      ],
+      "t": "<g class=\"x-surfboard\" transform=\"translate({{a.side}} {{a.mo}})\"><path class=\"o-y\" d=\"M88 82Q81 60 90 28Q99 60 92 82Z\"></path><path class=\"s-r\" d=\"M90 32Q86.6 58 90 80\"></path><path class=\"o-b th\" d=\"M86 76L82 80L87 80Z\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 426,
+      "k": "x-ausbbq",
+      "on": [
+        "cos-xa-bbq"
+      ],
+      "t": "<g class=\"x-ausbbq\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 82)\"><path class=\"s-k\" d=\"M-6 0L-3 -8M6 0L3 -8\"></path><path class=\"o-k\" d=\"M-9.5 -14H9.5Q9.5 -7 0 -7Q-9.5 -7 -9.5 -14Z\"></path><path class=\"s-p tk\" d=\"M-7 -16Q-6 -19.6 -2.6 -18.6\"></path><path class=\"s-p tk\" d=\"M1 -16Q2 -19.6 5.4 -18.6\"></path><rect class=\"o-r th\" x=\"-2.4\" y=\"-17.6\" width=\"5\" height=\"2.4\" rx=\"1.2\"></rect><path class=\"s-e\" d=\"M-10.5 -14.5H10.5\"></path><path class=\"s-y th\" d=\"M-9 -10Q-4.6 -8 0 -10Q4.6 -8 9 -10\"></path></g><g class=\"pt prise\"><g transform=\"translate(87 60)\"><g><circle class=\"f-e\" cx=\"0\" cy=\"0\" r=\"2.6\"></circle></g></g><g transform=\"translate(93 58)\"><g><circle class=\"f-e\" cx=\"0\" cy=\"0\" r=\"3\"></circle></g></g><g transform=\"translate(97 62)\"><g><circle class=\"f-e\" cx=\"0\" cy=\"0\" r=\"2.2\"></circle></g></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 427,
+      "k": "x-beachbrolly",
+      "on": [
+        "cos-xa-beach"
+      ],
+      "t": "<g class=\"x-beachbrolly\" transform=\"translate({{a.ls}} {{a.mo}})\"><ellipse class=\"f-m\" cx=\"10\" cy=\"84\" rx=\"16\" ry=\"2.4\"></ellipse><path class=\"s-n\" d=\"M10 84V50\"></path><path class=\"o-r\" d=\"M-4 52Q10 36 24 52Q17 48 10 52Q3 48 -4 52Z\"></path><path class=\"o-w th\" d=\"M3 50Q8 41 10 40Q12 41 17 50Q14 48.4 10 50Q6 48.4 3 50Z\"></path><path class=\"s-y th\" d=\"M-4 52Q2 50 6 53Q10 50 14 53Q18 50 24 52\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 428,
+      "k": "x-pavlova",
+      "on": [
+        "cos-xa-pavlova"
+      ],
+      "t": "<g class=\"x-pavlova\" transform=\"translate({{a.side}} {{a.dn}})\"><g transform=\"translate(91 84)\"><ellipse class=\"o-w th\" cx=\"0\" cy=\"0\" rx=\"10\" ry=\"2\"></ellipse><path class=\"o-w\" d=\"M-8 0Q-9 -6 -6 -8Q0 -10 6 -8Q9 -6 8 0Z\"></path><path class=\"o-w th\" d=\"M-7 -8Q-5 -11 -2 -9Q0 -12 2 -9Q5 -11 7 -8Z\"></path><circle class=\"f-r\" cx=\"-3\" cy=\"-10\" r=\"1.4\"></circle><circle class=\"o-l th\" cx=\"2.4\" cy=\"-10\" r=\"1.7\"></circle><circle class=\"f-k\" cx=\"2.4\" cy=\"-10\" r=\"0.35\"></circle><circle class=\"f-y\" cx=\"0\" cy=\"-11.4\" r=\"0.8\"></circle><circle class=\"f-v\" cx=\"5\" cy=\"-9\" r=\"1\"></circle></g></g>"
+    }
+  ]
+}

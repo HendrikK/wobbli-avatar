@@ -1,0 +1,26 @@
+.aa-av.cos-br-cross .x-bcross, .aa-av.cos-br-snowdrops .x-snowdrops, .aa-av.cos-br-lamb .x-lamb, .aa-av.cos-br-cloak .b-cloak, .aa-av.cos-br-cloak .c-brooch, .aa-av.cos-br-rushes .x-rushes, .aa-av.cos-sp-hat .c-leprechaun, .aa-av.cos-sp-shamrocks .c-shclip, .aa-av.cos-sp-shamrocks .x-shamrocks, .aa-av.cos-sp-gold .x-gold, .aa-av.cos-sp-facepaint .c-cheekpaint, .aa-av.cos-sp-facepaint .c-bowler, .aa-av.cos-sp-parade .x-irflag, .aa-av.cos-sp-parade .x-notes, .aa-av.cos-em-lily .c-lily, .aa-av.cos-em-roll .x-egghill, .aa-av.cos-em-choc .c-smudge, .aa-av.cos-em-choc .x-choc, .aa-av.cos-em-hike .c-bobble, .aa-av.cos-em-hike .x-stick, .aa-av.cos-em-hike .x-clouds, .aa-av.cos-em-bonnet .c-bonnet, .aa-av.cos-bh-may .c-daisy, .aa-av.cos-bh-may .x-blossom, .aa-av.cos-bh-june .c-shades, .aa-av.cos-bh-june .x-bigsun, .aa-av.cos-bh-august .x-icecream, .aa-av.cos-bh-august .x-bucket, .aa-av.cos-bh-october .x-octleaves, .aa-av.cos-bh-october .x-puddle, .aa-av.cos-bh-rain .x-umbrella, .aa-av.cos-bh-rain .x-rain, .aa-av.cos-ss-wren .c-wren, .aa-av.cos-ss-wrenboys .c-strawhat, .aa-av.cos-ss-bodhran .x-bodhran, .aa-av.cos-ss-bodhran .x-notes, .aa-av.cos-ss-leftovers .c-crown, .aa-av.cos-ss-leftovers .x-sandwich, .aa-av.cos-ss-races .c-rosette, .aa-av.cos-ss-races .c-flatcap, .aa-av.cos-ss-races .x-horses { display: inline; }
+.aa-av .clk { transform-origin: 50% 0%; animation: aa-H3-billow 2.4s ease-in-out infinite alternate; }
+.aa-av .rush { transform-origin: 50% 100%; animation: aa-H3-rush 2.2s ease-in-out infinite alternate; }
+.aa-av .rush2 { animation-delay: -1.1s; }
+.aa-av .roll2 { animation-delay: -1.4s; }
+.aa-av .cegg { transform-origin: 50% 100%; animation: aa-H3-nibble 1.6s ease-in-out infinite; }
+.aa-av .bigrays { animation: aa-H-spin 16s linear infinite; }
+.aa-av .icone { transform-origin: 50% 100%; animation: aa-H3-lick 1.4s ease-in-out infinite alternate; }
+.aa-av .ripple { animation: aa-H3-ripple 2s ease-out infinite; }
+.aa-av .ripple2 { animation-delay: -1s; }
+.aa-av .umb { transform-origin: 50% 100%; animation: aa-H3-umb 2s ease-in-out infinite alternate; }
+.aa-av .wren { animation: aa-H3-hop 1.6s ease-in-out infinite; }
+.aa-av .beat { animation: aa-H3-beat .35s ease-in-out infinite alternate; }
+.aa-av .gallop > g > * { animation: aa-H3-gallop 5s linear infinite; }
+.aa-av .gallop > g:nth-child(2) > * { animation-delay: -2.5s; }
+.aa-av.cos-bh-october .gsh { display: none; }
+.aa-av .x-puddle > g > ellipse:first-child { opacity: calc(.6 * var(--aa-shadow-strength, 1)); }
+@keyframes aa-H3-billow { from { scale: 1 1; } to { scale: 1.04 1.02; } }
+@keyframes aa-H3-rush { from { rotate: -6deg; } to { rotate: 6deg; } }
+@keyframes aa-H3-nibble { 0%, 60%, 100% { rotate: 0deg; } 70% { rotate: -10deg; } 80% { rotate: 4deg; } }
+@keyframes aa-H3-lick { from { rotate: -5deg; } to { rotate: 5deg; } }
+@keyframes aa-H3-ripple { 0% { scale: .3; opacity: 0; } 15% { opacity: 1; } 100% { scale: 1.3; opacity: 0; } }
+@keyframes aa-H3-umb { from { rotate: -3deg; } to { rotate: 3deg; } }
+@keyframes aa-H3-hop { 0%, 40%, 100% { translate: 0 0; rotate: 0deg; } 15% { translate: -3px -4px; rotate: -8deg; } 30% { translate: -6px 0; rotate: 0deg; } 55% { translate: -6px 0; } 70% { translate: -3px -4px; rotate: 8deg; } 85% { translate: 0 0; } }
+@keyframes aa-H3-beat { from { rotate: -14deg; } to { rotate: 12deg; } }
+@keyframes aa-H3-gallop { 0% { translate: -30px 0; opacity: 0; } 8% { opacity: 1; } 25% { translate: 2px -2px; } 50% { translate: 34px 0; } 75% { translate: 66px -2px; } 92% { opacity: 1; } 100% { translate: 98px 0; opacity: 0; } }

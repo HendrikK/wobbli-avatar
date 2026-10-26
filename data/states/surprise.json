@@ -1,0 +1,114 @@
+{
+  "key": "surprise",
+  "name": "Surprise",
+  "when": "Unexpected result · an outlier in the data",
+  "group": "feelings",
+  "verb": "gasps",
+  "mouth": "o",
+  "hands": "cheeks",
+  "pose": null,
+  "variants": [
+    {
+      "key": "gasp",
+      "name": "Gasp",
+      "desc": "Sucks in a breath, stretches tall and its eyes pop wide.",
+      "pose": {
+        "sx": 1.34,
+        "sy": 1.2,
+        "ex": 0.5,
+        "ey": -1.05,
+        "rot": -6,
+        "lock": 1
+      },
+      "hands": "covermouth"
+    },
+    {
+      "key": "jumpback",
+      "name": "Jump back",
+      "desc": "Jumps up and back in shock, then lands with a squash.",
+      "pose": {
+        "sx": 1.34,
+        "sy": 1.2,
+        "ex": 0.5,
+        "ey": -1.05,
+        "rot": -6,
+        "lock": 1
+      },
+      "hands": "stop"
+    },
+    {
+      "key": "doubletake",
+      "name": "Double take",
+      "desc": "Glances, looks away, then snaps back with huge eyes.",
+      "pose": {
+        "sx": 1,
+        "sy": 1,
+        "ex": 0,
+        "ey": 0,
+        "rot": 0,
+        "lock": 1
+      },
+      "mouth": "osmall",
+      "hands": "rubeye"
+    },
+    {
+      "key": "boing",
+      "name": "Boing",
+      "desc": "Stretches tall like a spring and wobbles back into shape.",
+      "pose": {
+        "sx": 1.3,
+        "sy": 1.3,
+        "ex": 0.4,
+        "ey": -1,
+        "rot": 0,
+        "lock": 1
+      },
+      "hands": "yay"
+    },
+    {
+      "key": "pop",
+      "name": "Pop",
+      "desc": "Pops bigger in a flash with shock lines all around.",
+      "pose": {
+        "sx": 1.4,
+        "sy": 1.25,
+        "ex": 0.6,
+        "ey": -1.2,
+        "rot": 0,
+        "lock": 1
+      }
+    }
+  ],
+  "parts": [
+    {
+      "zone": "fx",
+      "i": 11,
+      "k": "fx-bang",
+      "on": [
+        "v-gasp",
+        "v-lean",
+        "v-scare"
+      ],
+      "t": "<g class=\"fx-bang\" transform=\"translate(0 {{a.up}})\"><g transform=\"translate(80 4)\"><g class=\"a q\"><path class=\"ink\" d=\"M0 -10V0\"></path><circle cx=\"0\" cy=\"7\" r=\"2.4\" fill=\"#3A3833\"></circle></g></g><g class=\"b2\" transform=\"translate(90 7)\"><g class=\"a q\"><path class=\"ink\" d=\"M0 -10V0\"></path><circle cx=\"0\" cy=\"7\" r=\"2.4\" fill=\"#3A3833\"></circle></g></g></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 18,
+      "k": "fx-shock",
+      "on": [
+        "v-pop",
+        "v-scare"
+      ],
+      "t": "<g class=\"fx-shock\" transform=\"translate(0 {{a.mo}})\"><path class=\"sk thin\" d=\"M86.96 63.31L93.42 65.99M65.31 84.96L67.99 91.42M34.69 84.96L32.01 91.42M13.04 63.31L6.58 65.99M13.04 32.69L6.58 30.01M34.69 11.04L32.01 4.58M65.31 11.04L67.99 4.58M86.96 32.69L93.42 30.01\"></path></g>"
+    },
+    {
+      "zone": "fx",
+      "i": 19,
+      "k": "fx-speed",
+      "on": [
+        "v-jumpback"
+      ],
+      "t": "<g class=\"fx-speed\" transform=\"translate(0 {{a.dn}})\"><path class=\"a spl grey\" d=\"M40 86V94M50 88V97M60 86V94\"></path></g>"
+    }
+  ]
+}

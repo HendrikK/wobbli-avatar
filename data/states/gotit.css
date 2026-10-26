@@ -1,0 +1,43 @@
+.aa-av .ray { fill: none; stroke: #F2B33D; stroke-width: 2.4; stroke-linecap: round; }
+.aa-av .tkm { fill: none; stroke: #FFFFFF; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 16; stroke-dashoffset: 16; }
+.aa-av .nck { fill: none; stroke: #3E9B5F; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 9; stroke-dashoffset: 9; }
+.aa-av .bulb { fill: #FFFFFF; stroke: var(--aa-ink, #3A3833); stroke-width: 1.8; stroke-linejoin: round; }
+.aa-av .ray { fill: none; stroke: #F2B33D; stroke-width: 2.4; stroke-linecap: round; }
+.aa-av.v-ginod .ey, .aa-av.v-giding .ey { opacity: 0; }
+.aa-av.v-ginod .eg-n, .aa-av.v-ginod .cheeks { display: inline; }
+.aa-av.v-ginod .w { animation: aa-C-nod2 1.8s ease-in-out infinite; }
+.aa-av.v-ginod .gz { animation: aa-C-nodgz 1.8s ease-in-out infinite; }
+.aa-av.v-gitick .fx-tick { display: inline; }
+.aa-av.v-gitick .tkc { animation: aa-C-tkc 2.4s infinite; }
+.aa-av.v-gitick .tkm { animation: aa-C-tkm 2.4s infinite; }
+.aa-av.v-gitick .gz { animation: aa-C-tickeyes 2.4s ease-in-out infinite; }
+.aa-av.v-gitick .w { animation: aa-C-tickhop 2.4s infinite; }
+.aa-av.v-giding .fx-dburst, .aa-av.v-giding .eg-n, .aa-av.v-giding .cheeks { display: inline; }
+.aa-av.v-giding .brst { opacity: 0; animation: aa-C-burst 1.8s ease-out infinite; }
+.aa-av.v-giding .w { animation: aa-C-dinghop 1.8s infinite; }
+.aa-av.v-ginote .fx-notepad { display: inline; }
+.aa-av.v-ginote .nck1 { animation: aa-C-nck 2.8s infinite; }
+.aa-av.v-ginote .nck2 { animation: aa-C-nck2 2.8s infinite; }
+.aa-av.v-ginote .gz { animation: aa-C-noteeyes 2.8s ease-in-out infinite; }
+.aa-av.v-ginote .w { animation: aa-C-notenod 2.8s ease-in-out infinite; }
+.aa-av.v-gibulb .fx-bulb { display: inline; }
+.aa-av.v-gibulb .blb { animation: aa-C-bulb 2.4s infinite; }
+.aa-av.v-gibulb .brays { opacity: 0; animation: aa-C-rays 2.4s infinite; }
+.aa-av.v-gibulb .gz { animation: aa-C-bulbeyes 2.4s ease-in-out infinite; }
+.aa-av.v-gibulb .w { animation: aa-C-bulbhop 2.4s infinite; }
+@keyframes aa-C-nod2 { 0%, 50%, 100% { translate: 0 0; scale: 1 1; } 12%, 36% { translate: 0 calc(var(--amp, 1) * 2px); scale: 1.03 .95; } 24% { translate: 0 0; scale: 1 1; } }
+@keyframes aa-C-nodgz { 0%, 50%, 100% { translate: 0 0; } 12%, 36% { translate: 0 calc(var(--amp, 1) * 4px); } 24% { translate: 0 0; } }
+@keyframes aa-C-tkc { 0% { scale: 0; opacity: 1; animation-timing-function: cubic-bezier(.2,1.6,.4,1); } 12%, 80% { scale: 1; opacity: 1; } 90%, 100% { scale: .6; opacity: 0; } }
+@keyframes aa-C-tkm { 0%, 12% { stroke-dashoffset: 16; opacity: 1; } 30% { stroke-dashoffset: 0; } 80% { stroke-dashoffset: 0; opacity: 1; } 90%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-C-tickeyes { 0%, 40%, 100% { translate: calc(var(--amp, 1) * 3.5px) calc(var(--amp, 1) * -3.5px); } 50%, 85% { translate: 0 0; } }
+@keyframes aa-C-tickhop { 0%, 28%, 46%, 100% { translate: 0 0; scale: 1 1; } 32% { scale: 1.05 .94; } 38% { translate: 0 calc(var(--amp, 1) * -3px); scale: .97 1.04; } }
+@keyframes aa-C-burst { 0%, 8% { scale: .8; opacity: 0; } 12% { opacity: 1; } 40%, 100% { scale: 1.2; opacity: 0; } }
+@keyframes aa-C-dinghop { 0%, 30%, 100% { translate: 0 0; scale: 1 1; } 5% { scale: 1.06 .92; } 12% { translate: 0 calc(var(--amp, 1) * -5px); scale: .95 1.06; } 22% { translate: 0 0; scale: 1.05 .95; } }
+@keyframes aa-C-nck { 0%, 10% { stroke-dashoffset: 9; opacity: 1; } 20% { stroke-dashoffset: 0; } 80% { stroke-dashoffset: 0; opacity: 1; } 90%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-C-nck2 { 0%, 28% { stroke-dashoffset: 9; opacity: 1; } 38% { stroke-dashoffset: 0; } 80% { stroke-dashoffset: 0; opacity: 1; } 90%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes aa-C-noteeyes { 0%, 45%, 100% { translate: 0 calc(var(--amp, 1) * 4px); } 55%, 88% { translate: 0 -1px; } }
+@keyframes aa-C-notenod { 0%, 55%, 75%, 100% { translate: 0 0; } 62% { translate: 0 calc(var(--amp, 1) * 2px); } 68% { translate: 0 0; } }
+@keyframes aa-C-bulb { 0%, 20% { fill: #FFFFFF; scale: 1; } 24% { fill: #FFE07A; scale: 1.12; } 30%, 85% { fill: #FFE07A; scale: 1; } 92%, 100% { fill: #FFFFFF; scale: 1; } }
+@keyframes aa-C-rays { 0%, 22% { opacity: 0; scale: .7; } 28% { opacity: 1; scale: 1.05; } 34%, 85% { opacity: 1; scale: 1; } 92%, 100% { opacity: 0; scale: 1; } }
+@keyframes aa-C-bulbeyes { 0%, 18%, 100% { translate: 0 0; } 26%, 50% { translate: 0 calc(var(--amp, 1) * -5px); } 60%, 90% { translate: 0 0; } }
+@keyframes aa-C-bulbhop { 0%, 20%, 40%, 100% { translate: 0 0; scale: 1 1; } 26% { scale: .96 1.06; translate: 0 calc(var(--amp, 1) * -3px); } 33% { scale: 1.04 .96; translate: 0 0; } }

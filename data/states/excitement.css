@@ -1,0 +1,44 @@
+.aa-av .spd { display: none; }
+.aa-av .fwl { fill: none; stroke-width: 2.6; stroke-linecap: round; }
+.aa-av .shadowc { fill: #3A3833; opacity: .18; }
+.aa-av.v-bounce .w { animation: aa-bb-bouncy .5s infinite; }
+.aa-av.v-bounce .fx-squeal, .aa-av.v-bounce .fx-shadow { display: inline; }
+.aa-av.v-bounce .sq { animation: aa-bb-squeal .5s ease-out infinite; }
+.aa-av.v-bounce .sh { animation: aa-bb-hopshadow .5s infinite; }
+.aa-av.v-stareyes .ey { opacity: 0; }
+.aa-av.v-stareyes .eg-star { display: inline; }
+.aa-av.v-stareyes .eg-star .a { animation: aa-bb-starspin 1.6s linear infinite; }
+.aa-av.v-stareyes .w { animation: aa-bb-vibe .1s linear infinite; }
+.aa-av.v-stareyes .fx-spark { display: inline; }
+.aa-av.v-stareyes .fx-spark .s { animation: aa-bb-twinkle 1.6s ease-out infinite backwards; }
+.aa-av.v-stareyes .fx-spark g:nth-child(2) .s { animation-delay: .4s; }
+.aa-av.v-stareyes .fx-spark g:nth-child(3) .s { animation-delay: .8s; }
+.aa-av.v-stareyes .fx-spark g:nth-child(4) .s { animation-delay: 1.2s; }
+.aa-av.v-fireworks .fx-fw { display: inline; }
+.aa-av.v-fireworks .fwb { animation: aa-bb-firework 2.4s ease-out infinite backwards; }
+.aa-av.v-fireworks .fx-fw g:nth-child(2) .fwb { animation-delay: .8s; }
+.aa-av.v-fireworks .fx-fw g:nth-child(3) .fwb { animation-delay: 1.6s; }
+.aa-av.v-fireworks .gz { animation: aa-bb-fweyes 2.4s steps(1) infinite; }
+.aa-av.v-fireworks .w { animation: aa-bb-fwbody .8s ease-out infinite; }
+.aa-av.v-wiggle .w { animation: aa-bb-wiggle 1.2s infinite; }
+.aa-av.v-wiggle .fx-squeal { display: inline; }
+.aa-av.v-wiggle .sq { animation: aa-bb-squeal .6s ease-out infinite; }
+.aa-av.v-zoomies .spd { display: inline; }
+.aa-av.v-zoomies .gz { transform: translate(3px, -1px); }
+.aa-av.v-zoomies .w { animation: aa-bb-zoom 1.6s infinite; }
+.aa-av.v-zoomies .sp { animation: aa-bb-run .2s ease-in-out infinite alternate; }
+.aa-av.v-bounce .gsh { display: none; }
+.aa-av.v-bounce .gnd .sh { animation-name: aa-gsh-hop; }
+.aa-av.sh-still.v-bounce .gnd .sh { opacity: calc(.4 * var(--aa-shadow-strength, 1)); }
+@keyframes aa-bb-squeal { 0% { opacity: 0; scale: .6; } 20% { opacity: 1; } 60%, 100% { opacity: 0; scale: 1.2; } }
+@keyframes aa-bb-bouncy { 0%, 100% { translate: 0 0; scale: 1.1 .9; animation-timing-function: cubic-bezier(.2,.8,.3,1); } 50% { translate: 0 calc(var(--amp, 1) * -12px); scale: .94 1.07; animation-timing-function: cubic-bezier(.7,0,.8,.3); } }
+@keyframes aa-bb-hopshadow { 0%, 100% { scale: 1.05 1; opacity: .5; animation-timing-function: cubic-bezier(.2,.8,.3,1); } 50% { scale: .7 .8; opacity: .25; animation-timing-function: cubic-bezier(.7,0,.8,.3); } }
+@keyframes aa-bb-starspin { 0% { rotate: 0deg; scale: 1; } 25% { scale: 1.25; } 50% { rotate: 180deg; scale: 1; } 75% { scale: 1.25; } 100% { rotate: 360deg; scale: 1; } }
+@keyframes aa-bb-vibe { 0%, 100% { translate: 0 -.6px; } 50% { translate: 0 .6px; } }
+@keyframes aa-bb-firework { 0% { scale: .1; opacity: 0; } 4% { opacity: 1; } 30% { scale: 1; opacity: 1; } 45%, 100% { scale: 1.15; opacity: 0; } }
+@keyframes aa-bb-fweyes { 0% { translate: -4px -3px; } 33.3% { translate: 4px -4px; } 66.6% { translate: 0 -5px; } }
+@keyframes aa-bb-fwbody { 0% { translate: 0 0; scale: 1.06 .94; } 25% { translate: 0 -4px; scale: .97 1.03; } 50%, 100% { translate: 0 0; scale: 1 1; } }
+@keyframes aa-bb-wiggle { 0%, 36%, 50%, 100% { rotate: 0deg; translate: 0 0; } 6% { rotate: calc(var(--amp, 1) * -9deg); } 12% { rotate: calc(var(--amp, 1) * 9deg); } 18% { rotate: calc(var(--amp, 1) * -9deg); } 24% { rotate: calc(var(--amp, 1) * 9deg); } 30% { rotate: calc(var(--amp, 1) * -6deg); } 43% { translate: 0 calc(var(--amp, 1) * -7px); rotate: 0deg; } }
+@keyframes aa-bb-zoom { 0% { translate: calc(var(--amp, 1) * -14px) 0; scale: 1 1; rotate: 6deg; animation-timing-function: cubic-bezier(.4,0,.6,1); } 40% { translate: calc(var(--amp, 1) * 14px) 0; scale: 1 1; rotate: 6deg; } 50% { translate: calc(var(--amp, 1) * 14px) 0; scale: -1 1; rotate: -6deg; animation-timing-function: cubic-bezier(.4,0,.6,1); } 90% { translate: calc(var(--amp, 1) * -14px) 0; scale: -1 1; rotate: -6deg; } 100% { translate: calc(var(--amp, 1) * -14px) 0; scale: 1 1; rotate: 6deg; } }
+@keyframes aa-bb-run { from { translate: 0 0; } to { translate: 0 -2.5px; } }
+@keyframes aa-gsh-hop { 0%, 100% { scale: 1.05 1; opacity: calc(.5 * var(--aa-shadow-strength, 1)); animation-timing-function: cubic-bezier(.2,.8,.3,1); } 50% { scale: .7 .8; opacity: calc(.25 * var(--aa-shadow-strength, 1)); animation-timing-function: cubic-bezier(.7,0,.8,.3); } }
