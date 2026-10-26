@@ -29,6 +29,16 @@ Node 18 or later; the repo uses pnpm 10. The studio and the screenshot tests liv
 
 Holiday costumes are opt-in and every holiday's `kind` is provisional (`"reviewed": false`). If you celebrate one of them, a review is one of the most useful contributions: check its five costumes, fix or remove anything that misrepresents it, set its kind, and set `reviewed` to true. Moon-based dates live in the region files with their sources; a test fails when a table ends less than two years ahead.
 
+## Releasing
+
+Releases publish from GitHub Actions with npm trusted publishing (no npm token is stored anywhere) and carry a provenance statement.
+
+1. Bump `version` in `package.json` (`npm version <patch|minor> --no-git-tag-version`), add a line to CHANGELOG.md, and merge to `main`.
+2. Create a GitHub release whose tag is that version with a `v` in front, e.g. `v1.0.2`.
+3. The Release workflow checks the tag matches `package.json`, runs every check and publishes to npm.
+
+A change that alters any avatar is a new major version (generator 2); see the rules above.
+
 ## Credits
 
 Faces and shapes come from [Blobatar](https://github.com/Alain00/blobatar) by Alain (MIT). Keep its notice in THIRD_PARTY_NOTICES.md and in the bundles.
