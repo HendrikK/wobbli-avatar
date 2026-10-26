@@ -9,6 +9,7 @@ pnpm install
 pnpm test          # unit suites: generator, behaviour, formats, calendar, render, DOM
 pnpm typecheck
 pnpm build         # dist/, then: pnpm size
+pnpm hero          # after a build: redraws the README picture (docs/hero-*.svg)
 ```
 
 Node 18 or later; the repo uses pnpm 10. The studio and the screenshot tests live with the website at [wobbli.dev](https://wobbli.dev).

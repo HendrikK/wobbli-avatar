@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/hero-dark.svg">
+    <img src="docs/hero-light.svg" width="100%" alt="Six Wobbli avatars acting out agent events, from session.start (a wave) through tool.search, tool.build and error.network to session.end (a wave goodbye)">
+  </picture>
+</p>
+
 # Wobbli
 
 An avatar that acts out what your AI agent is doing. It reads while an answer generates, celebrates when one lands, slumps when a source fails and tilts its head when a question is unclear: 39 states, five ways to act each, an optional mouth and hands, and 74 opt-in holiday costumes.
