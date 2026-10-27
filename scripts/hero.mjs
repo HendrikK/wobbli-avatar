@@ -71,7 +71,8 @@ function hero(theme) {
       const state = stateOf(event);
       const f = frame(l, state, variant || 'idle', { theme });
       f.className.split(' ').forEach(n => used.add(n));
-      const delay = -(((LOOP - PHASE * k) % LOOP) - STAGGER * c);
+      // always negative, so every frame starts part-way through the loop and none waits out a delay on load
+      const delay = PHASE * k + STAGGER * c - LOOP;
       const label = describe(state, f.className.match(/ v-([\w-]+)/)[1]);
       const pill = event.length * 10.2 + 22;
       return '<g class="ph' + (k ? ' later' : '') + '" style="animation-delay: ' + delay.toFixed(2) + 's">' +
