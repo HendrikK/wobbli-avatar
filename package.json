@@ -75,6 +75,7 @@
     "typecheck": "node scripts/build-data.mjs && tsc --noEmit",
     "size": "node scripts/size.mjs",
     "registry": "node scripts/registry.mjs",
+    "hero": "node scripts/hero.mjs",
     "prepublishOnly": "pnpm typecheck && pnpm test && pnpm build && pnpm size"
   },
   "engines": {
