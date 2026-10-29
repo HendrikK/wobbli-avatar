@@ -58,7 +58,7 @@ avatar.current?.emit("stream.end");
 </script>
 ```
 
-Attributes are the props in kebab case (`eye-color`, `doze-after`, `lead-days`). Booleans take `"true"` or `"false"`; `traits`, `events`, `still-working` and `holidays` take JSON or can be set as properties.
+Attributes are the props in kebab case (`eye-color`, `doze-after`, `lead-days`). Booleans take `"true"` or `"false"`; `traits`, `events`, `still-working` and `holidays` take JSON or can be set as properties. As properties they take objects or JSON strings, so React 19 (which sets props on custom elements as properties) and other frameworks can pass either.
 
 ## Any other framework
 
@@ -85,6 +85,8 @@ c.emit("tool.search");                        // the event-to-state machine, wit
 ```
 
 Nothing in the core touches `window` or `document` when imported.
+
+`look(name).key` is a cache key and keeps the name as typed: `look("Nova")` and `look("nova")` draw the same avatar but have different keys.
 
 ## Props
 
@@ -121,7 +123,7 @@ Only `name` is required. The studio's generated code lists name, state and motio
 | `announce` | `false` | Speak state changes through a polite live region, at most one every 5 s |
 | `static` | `false` | One still frame and no controller (chat history) |
 | `preload` | `false` | Load every state group up front, or the ones named |
-| `controller` | Its own | A controller to follow, so several avatars show one agent |
+| `controller` | Its own | A controller to follow, so several avatars show one agent (see below) |
 | `controlled` | `false` | Show exactly `state`, `variant` and `progress`, with no timers |
 
 ## Methods and callback
@@ -151,7 +153,9 @@ On the React ref and the web component:
 | `error.permission`, `error.no_results`, `error.unknown` | sad, sad, error | Next event |
 | `progress` | busy (ring), or the state's own bar | — |
 
-The last event wins. A working state that runs 20 s with no progress switches to "still working" once; idle fidgets now and then; after 10 minutes idle with no input it dozes off, and wakes with a greeting. All durations divide by `speed`, every clock pauses while the tab is hidden, and reduced motion holds still frames while states and timers still apply.
+The last event wins. A working state that runs 20 s with no progress switches to "still working" once; idle fidgets now and then; after 10 minutes idle with no input it dozes off. The next input wakes it: a 1.2 s blink, then a greeting (input in the first 0.8 s after it dozes off is ignored). All durations divide by `speed`, every clock pauses while the tab is hidden, and reduced motion holds still frames while states and timers still apply. `speed` is also the playback rate of the animations; the short transitions between poses keep their length.
+
+A controller you create with `createController()` and pass as `controller` runs on the avatars' shared ticker while at least one mounted avatar follows it: still working, fidgets, dozing and pausing while hidden all work, once per controller however many avatars follow it. An avatar going away never destroys it; call `destroy()` on it yourself. A controller with no mounted avatar has no ticker: call its `tick()` about every 400 ms, `input()` on user input and `setHidden()` when the page hides.
 
 ## Holidays
 
@@ -163,6 +167,7 @@ Off unless you ask: `holiday="auto"` dresses the avatar by date for `region`, `h
 - `--aa-shadow-color`, `--aa-shadow-strength`: the ground shadow.
 - `theme="auto"` follows the page: a `.dark` or `[data-theme="dark"]` ancestor, or a page whose `color-scheme` includes dark while the viewer prefers dark.
 - Each avatar is `role="img"` with a label like "Avatar: Busy, read".
+- Some props, costumes and effects (the Pride crown, Halloween hats, sparkles) draw outside the avatar's square. Leave some room around it, or clip with `overflow: hidden` on the host.
 
 ## Saved looks and share links
 

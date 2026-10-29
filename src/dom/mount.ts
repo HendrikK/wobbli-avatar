@@ -274,13 +274,18 @@ export function mount(host: HTMLElement, initial: AvatarProps): AvatarHandle {
     if (Date.now() - lastSaid >= 5000) say();
     else if (!sayTimer) sayTimer = setTimeout(say, 5000 - (Date.now() - lastSaid));
   }
+  const liveRegions = () => host.querySelectorAll<HTMLElement>(':scope > .aa-sr');
   function syncLive() {
     if (props.announce && !live) {
-      live = document.createElement('span');
-      live.className = 'aa-sr';
-      live.setAttribute('aria-live', 'polite');
-      host.appendChild(live);
-    } else if (!props.announce && live) { live.remove(); live = null; }
+      // take over one an earlier mount on this host left (React StrictMode mounts twice)
+      live = liveRegions()[0] ?? null;
+      if (!live) {
+        live = document.createElement('span');
+        live.className = 'aa-sr';
+        live.setAttribute('aria-live', 'polite');
+        host.appendChild(live);
+      }
+    } else if (!props.announce) { liveRegions().forEach(el => el.remove()); live = null; }
   }
 
   // ---------- holidays: the module loads only when a holiday is set ----------
@@ -304,6 +309,8 @@ export function mount(host: HTMLElement, initial: AvatarProps): AvatarHandle {
     host,
     get root() { return root; },
     follows: () => (props.motion ?? 'follow') === 'follow' && !props.static && !reduced(),
+    // the runtime ticks, wakes and pauses a shared controller itself, once for all its avatars
+    shared: () => (controller && !owned ? controller : null),
     tick: () => {
       if (own()) controller!.tick();
       // a holiday by date moves on at midnight
@@ -365,6 +372,7 @@ export function mount(host: HTMLElement, initial: AvatarProps): AvatarHandle {
       if (own()) controller!.destroy();
       unfollow?.();
       if (sayTimer) clearTimeout(sayTimer);
+      live?.remove(); live = null;
       if (hasDom()) { unregister(view); host.removeEventListener('pointerenter', onEnter); host.removeEventListener('pointerleave', onLeave); }
     }
   };

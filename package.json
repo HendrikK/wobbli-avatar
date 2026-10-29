@@ -1,6 +1,6 @@
 {
   "name": "wobbli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wobbli: an avatar that acts out what your AI agent is doing. 39 states, 191 ways to act them, 74 holidays. React, web component and plain JS. Built on Blobatar.",
   "keywords": [
     "wobbli",

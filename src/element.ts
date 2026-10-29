@@ -4,7 +4,8 @@
 //   el.emit('tool.query'); el.progress(0.4); el.addEventListener('statechange', e => e.detail.kind)
 //
 // Attributes are the props in kebab case (eye-color, doze-after, lead-days ...). Booleans take "true" or
-// "false"; objects (traits, events, still-working, holidays) take JSON or can be set as properties.
+// "false"; objects (traits, events, still-working, holidays) take JSON or can be set as properties, either as
+// objects or as JSON strings (React 19 sets them as properties).
 import type { AvatarState, StateChange } from './controller.js';
 import { mount, type AvatarHandle, type AvatarProps } from './dom/mount.js';
 
@@ -14,6 +15,7 @@ const NUMBER = ['shadow-strength', 'speed', 'intensity', 'doze-after', 'lead-day
 const BOOL = ['mouth', 'hands', 'style-from-name', 'eyebrows', 'shadow-animation', 'static', 'announce', 'preload', 'plain'] as const;
 const JSONS = ['traits', 'events', 'still-working', 'holidays'] as const;
 const camel = (s: string) => s.replace(/-(\w)/g, (_m, c: string) => c.toUpperCase());
+const OBJECTS = ['traits', 'events', 'stillWorking', 'holidays'] as const;
 
 export class WobbliElement extends HTMLElement {
   static get observedAttributes() { return [...STRING, ...NUMBER, ...BOOL, ...JSONS]; }
@@ -47,13 +49,26 @@ export class WobbliElement extends HTMLElement {
     return p as unknown as AvatarProps;
   }
 
-  /** Props that are not attributes (or objects set directly). */
-  set config(v: Partial<AvatarProps>) { this.extra = { ...v }; this.schedule(); }
+  /** Props that are not attributes (or objects set directly). The four object props also take JSON strings. */
+  set config(v: Partial<AvatarProps>) {
+    const next: Record<string, unknown> = { ...v };
+    for (const k of OBJECTS) {
+      if (typeof next[k] !== 'string') continue;
+      // unreadable JSON is ignored, as it is in an attribute: the value before it stays
+      try { next[k] = JSON.parse(next[k] as string); } catch { if (k in this.extra) next[k] = this.extra[k]; else delete next[k]; }
+    }
+    this.extra = next as Partial<AvatarProps>;
+    this.schedule();
+  }
   get config(): Partial<AvatarProps> { return this.extra; }
-  set traits(v: AvatarProps['traits']) { this.config = { ...this.extra, traits: v }; }
-  set events(v: AvatarProps['events']) { this.config = { ...this.extra, events: v }; }
-  set stillWorking(v: AvatarProps['stillWorking']) { this.config = { ...this.extra, stillWorking: v }; }
-  set holidays(v: AvatarProps['holidays']) { this.config = { ...this.extra, holidays: v }; }
+  set traits(v: AvatarProps['traits'] | string) { this.config = { ...this.extra, traits: v as AvatarProps['traits'] }; }
+  get traits(): AvatarProps['traits'] { return this.extra.traits; }
+  set events(v: AvatarProps['events'] | string) { this.config = { ...this.extra, events: v as AvatarProps['events'] }; }
+  get events(): AvatarProps['events'] { return this.extra.events; }
+  set stillWorking(v: AvatarProps['stillWorking'] | string) { this.config = { ...this.extra, stillWorking: v as AvatarProps['stillWorking'] }; }
+  get stillWorking(): AvatarProps['stillWorking'] { return this.extra.stillWorking; }
+  set holidays(v: AvatarProps['holidays'] | string) { this.config = { ...this.extra, holidays: v as AvatarProps['holidays'] }; }
+  get holidays(): AvatarProps['holidays'] { return this.extra.holidays; }
 
   emit(event: string, value?: unknown) { this.handle?.emit(event, value); }
   progress(value: number | null) { this.handle?.progress(value); }

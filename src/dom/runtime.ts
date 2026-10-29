@@ -1,12 +1,16 @@
 // What every avatar on a page shares: one 400 ms ticker, one set of input listeners (for the doze clock and
 // the eyes following the pointer), one style element, one IntersectionObserver, and the page's visibility.
-// Starts on the first mount, never at import.
+// Starts on the first mount, never at import. It drives each avatar's own controller through its view, and each
+// controller an app shares between avatars once, however many avatars follow it.
+import type { Controller } from '../controller.js';
 import { allCss, onPack } from '../registry.js';
 
 export interface RuntimeView {
   root: HTMLElement | null;
   /** Eyes follow the pointer. */
   follows(): boolean;
+  /** A controller the app passed in for this avatar to follow, or null when it has its own or none. */
+  shared(): Controller | null;
   tick(): void;
   input(): void;
   setHidden(hidden: boolean): void;
@@ -66,14 +70,28 @@ function resetGaze() {
   views.forEach(v => { if (v.root) { v.root.style.setProperty('--gx', '0'); v.root.style.setProperty('--gy', '0'); } });
 }
 
+/** The app's controllers that mounted avatars follow, each once. */
+function sharedControllers(): Set<Controller> {
+  const s = new Set<Controller>();
+  views.forEach(v => { const c = v.shared(); if (c) s.add(c); });
+  return s;
+}
+
 function start() {
   if (started) return;
   started = true;
   injectCss();
   onPack(() => injectCss());
-  setInterval(() => { if (!document.hidden) views.forEach(v => v.tick()); }, 400);
-  document.addEventListener('visibilitychange', () => views.forEach(v => v.setHidden(document.hidden)));
-  const onInput = () => views.forEach(v => v.input());
+  setInterval(() => {
+    if (document.hidden) return;
+    views.forEach(v => v.tick());
+    sharedControllers().forEach(c => c.tick());
+  }, 400);
+  document.addEventListener('visibilitychange', () => {
+    views.forEach(v => v.setHidden(document.hidden));
+    sharedControllers().forEach(c => c.setHidden(document.hidden));
+  });
+  const onInput = () => { views.forEach(v => v.input()); sharedControllers().forEach(c => c.input()); };
   ['pointerdown', 'keydown', 'wheel', 'touchstart'].forEach(ev => window.addEventListener(ev, onInput, { passive: true }));
   window.addEventListener('pointermove', e => {
     onInput();
@@ -108,6 +126,7 @@ export function register(v: RuntimeView) {
   views.add(v);
   io?.observe(v.host);
   v.setHidden(document.hidden);
+  v.shared()?.setHidden(document.hidden);
   if (gx !== null && !raf) raf = requestAnimationFrame(track);
 }
 export function unregister(v: RuntimeView) {
